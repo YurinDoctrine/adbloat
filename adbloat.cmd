@@ -1,7 +1,6 @@
 @echo off
 chcp 65001 >nul
 
-:prompt
 cls
 echo Uninstall bloat apps?
 set /p input="yes/no >_: "
