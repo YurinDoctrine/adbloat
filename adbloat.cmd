@@ -1,15 +1,12 @@
 @echo off
 chcp 65001 >nul
 
-:top
+:prompt
 cls
-echo.
 echo Uninstall bloat apps?
-echo.
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
-if /i "%input%"=="no" exit 0
-goto :top
+exit 0
 
 :start
 echo WPS Office
@@ -323,7 +320,7 @@ echo Samsung Daily
 adb shell pm uninstall --user 0 com.samsung.android.app.spage
 
 echo Samsung DeX
-adb shell pm uninstall --user 0 com.sec.android.desktopmode.uiservice
+adb shell pm uninstall --user 0 com.sec.android.desktpromptode.uiservice
 
 echo Samsung Galaxy Friends
 adb shell pm uninstall --user 0 com.samsung.android.mateagent
@@ -378,7 +375,7 @@ echo Включение голосом
 adb shell pm uninstall --user 0 com.samsung.android.bixby.wakeup
 
 echo Главный экран Samsung DeX
-adb shell pm uninstall --user 0 com.sec.android.app.desktoplauncher
+adb shell pm uninstall --user 0 com.sec.android.app.desktpromptauncher
 
 echo Google Диск
 adb shell pm uninstall --user 0 com.google.android.apps.docs
