@@ -393,8 +393,8 @@ start() {
     echo -e "Люди"
     adb shell pm uninstall --user 0 com.samsung.android.service.peoplestripe
 
-    echo -e "Мои файлы"
-    adb shell pm uninstall --user 0 com.sec.android.app.myfiles
+    # echo -e "Мои файлы"
+    # adb shell pm uninstall --user 0 com.sec.android.app.myfiles
 
     echo -e "Погода"
     adb shell pm uninstall --user 0 com.sec.android.daemonapp

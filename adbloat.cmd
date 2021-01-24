@@ -93,8 +93,8 @@ adb shell pm uninstall --user 0 com.google.android.apps.turbo
 echo Digital Wellbeing
 adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
-echo Gmail
-adb shell pm uninstall --user 0 com.google.android.gm
+:: echo Gmail
+:: adb shell pm uninstall --user 0 com.google.android.gm
 
 echo Google
 adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
@@ -400,8 +400,8 @@ adb shell pm uninstall --user 0 com.samsung.android.honeyboard
 echo Люди
 adb shell pm uninstall --user 0 com.samsung.android.service.peoplestripe
 
-echo Мои файлы
-adb shell pm uninstall --user 0 com.sec.android.app.myfiles
+:: echo Мои файлы
+:: adb shell pm uninstall --user 0 com.sec.android.app.myfiles
 
 echo Погода
 adb shell pm uninstall --user 0 com.sec.android.daemonapp
