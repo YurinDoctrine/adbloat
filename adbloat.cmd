@@ -94,8 +94,8 @@ adb shell pm uninstall com.google.android.apps.turbo
 echo Digital Wellbeing
 adb shell pm uninstall com.google.android.apps.wellbeing
 
-:: echo Gmail
-:: adb shell pm uninstall com.google.android.gm
+echo Gmail
+adb shell pm uninstall com.google.android.gm
 
 echo Google
 adb shell pm uninstall com.google.android.googlequicksearchbox
