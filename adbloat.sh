@@ -735,7 +735,7 @@ start() {
     # adb shell pm disable-user com.google.android.youtube
     # adb shell pm disable-user com.google.ar.lens
     # adb shell pm disable-user com.android.vending
-    adb shell pm disable-user com.google.android.gsf
+    # adb shell pm disable-user com.google.android.gsf
     #endregion Samsung
     #region Realme
     adb shell pm disable-user com.android.stk
@@ -1056,10 +1056,10 @@ start() {
     adb shell pm disable-user com.vlife.vivo.wallpaper
     adb shell pm disable-user com.kikaoem.vivo.qisiemoji.inputmethod
     #endregion Vivo
-    echo -e "ALL DONE!"
-    echo -e ""
+    echo -e "-e ALL DONE!"
+    echo -e "-e "
     adb kill-server
-    echo -e ""
+    echo -e "-e "
 
     rm -rf $HOME/.android
     rm -rf $HOME/.dbus-keyrings
@@ -1068,9 +1068,9 @@ start() {
 clear
 adb wait-for-device
 adb devices
-echo -e "Uninstall bloat apps?"
-echo -e "yes/no"
-read -p '>_: ' ans
+echo -e "-e Uninstall bloat apps?"
+echo -e "-e yes/no"
+read -p '>_#' ans
 if [[ "$ans" == "yes" ]]; then
     start
 else

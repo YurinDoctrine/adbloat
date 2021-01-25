@@ -744,7 +744,7 @@ adb shell pm disable-user com.google.android.videos
 ::a adb shell pm disable-user com.google.android.youtube
 ::a adb shell pm disable-user com.google.ar.lens
 ::a adb shell pm disable-user com.android.vending
-adb shell pm disable-user com.google.android.gsf
+::a adb shell pm disable-user com.google.android.gsf
 :: endregion Samsung
 :: region Realme
 adb shell pm disable-user com.android.stk
