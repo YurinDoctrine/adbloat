@@ -570,7 +570,7 @@ adb shell pm uninstall com.samsung.android.spay
 adb shell pm uninstall com.samsung.android.spayfw
 adb shell pm uninstall com.sec.android.gallery3d
 adb shell pm uninstall com.sec.android.app.clockpackage
-adb shell pm uninstall com.sec.android.app.myfiles
+:: adb shell pm uninstall com.sec.android.app.myfiles
 adb shell pm uninstall com.samsung.android.app.contacts
 adb shell pm uninstall com.sec.android.app.camera
 adb shell pm uninstall com.microsoft.skydrive
