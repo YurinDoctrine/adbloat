@@ -388,9 +388,6 @@ adb shell pm uninstall --user 0 com.sec.android.app.voicenote
 echo Карты
 adb shell pm uninstall --user 0 com.google.android.apps.maps
 
-echo Каталог живых обоев
-adb shell pm uninstall --user 0 com.android.wallpaper.livepicker
-
 echo Клавиатура Microsoft SwiftKey
 adb shell pm uninstall --user 0 com.touchtype.swiftkey
 
@@ -433,6 +430,41 @@ adb shell pm uninstall --user 0 com.samsung.android.kidsinstaller
 echo Яндекс
 adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
+echo Android Setup
+adb shell pm uninstall --user 0 com.google.android.setupwizard
+adb shell pm uninstall --user 0 com.google.android.apps.restore
+
+echo Miui Backup
+adb shell pm uninstall --user 0 com.miui.backup
+adb shell pm uninstall --user 0 com.miui.cloudbackup
+
+echo Android Browser
+adb shell pm uninstall --user 0 com.android.browser
+
+echo Feedback
+adb shell pm uninstall --user 0 com.miui.bugreport
+
+echo Mi Account
+adb shell pm uninstall --user 0 com.xiaomi.account
+
+echo Mi Browser (old)
+adb shell pm uninstall --user 0 com.mi.globalbrowser
+
+echo Mi Coin
+adb shell pm uninstall --user 0 com.xiaomi.payment
+
+echo Mi Wallet
+adb shell pm uninstall --user 0 com.mipay.wallet.in
+
+echo Mi CloudSync
+adb shell pm uninstall --user 0 com.miui.micloudsync
+adb shell pm uninstall --user 0 com.miui.cloudservice
+
+echo Google text-to-speech engine
+adb shell pm uninstall --user 0 com.google.android.tts
+
+echo ALL DONE!
+echo.
 adb kill-server
 echo.
 
