@@ -456,6 +456,9 @@ start() {
     echo -e "Google text-to-speech engine"
     adb shell pm uninstall --user 0 com.google.android.tts
 
+    echo -e "Xiaomi Find Device"
+    adb shell pm uninstall --user 0 com.xiaomi.finddevice
+
     echo -e "ALL DONE!"
     echo -e ""
     adb kill-server
@@ -466,6 +469,7 @@ start() {
 
 }
 clear
+adb devices
 echo -e "Uninstall bloat apps?"
 echo -e "yes/no"
 read -p '>_: ' ans

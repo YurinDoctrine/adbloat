@@ -2,6 +2,7 @@
 chcp 65001 >nul
 
 cls
+adb devices
 echo Uninstall bloat apps?
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
@@ -167,7 +168,7 @@ adb shell pm uninstall --user 0 com.miui.fm
 echo FM Radio Service
 adb shell pm uninstall --user 0 com.miui.fmservice
 
-echo Services & Feedback
+echo Services and Feedback
 adb shell pm uninstall --user 0 com.miui.miservice
 
 echo ShareMe
@@ -462,6 +463,9 @@ adb shell pm uninstall --user 0 com.miui.cloudservice
 
 echo Google text-to-speech engine
 adb shell pm uninstall --user 0 com.google.android.tts
+
+echo Xiaomi Find Device
+adb shell pm uninstall --user 0 com.xiaomi.finddevice
 
 echo ALL DONE!
 echo.
