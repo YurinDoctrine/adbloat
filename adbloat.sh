@@ -165,7 +165,7 @@ start() {
 
     echo -e "ShareMe"
     adb shell pm uninstall com.miui.mishare.connectivity
-    adb shell pm uninstall com.xiaomi.mi_connect.service
+    adb shell pm uninstall com.xiaomi.mi_connect_service
     adb shell pm uninstall com.xiaomi.midrop
 
     echo -e "msa"
