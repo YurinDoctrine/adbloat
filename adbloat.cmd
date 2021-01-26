@@ -18,7 +18,7 @@ exit 0
 ::a adb shell pm disable-user  cn.wps.xiaomi.abroad.lite
 
 echo Aliexpress
-adb shell pm disable-user com.alibaba.aliexpresshd
+adb shell pm uninstall --user 0 com.alibaba.aliexpresshd
 
 echo Юла
 adb shell pm disable-user com.allgoritm.youla
@@ -40,7 +40,7 @@ adb shell pm disable-user com.android.stk
 
 echo Live Wallpaper Picker
 adb shell pm disable-user com.android.wallpaper.livepicker
-adb shell pm disable-user com.android.thememanager
+adb shell pm uninstall --user 0 com.android.thememanager
 
 echo Booking.com
 adb shell pm disable-user com.booking
@@ -61,37 +61,37 @@ echo YouTube Music
 adb shell pm disable-user com.google.android.apps.youtube.music
 
 echo Android Accessibility Suite
-adb shell pm disable-user com.google.android.marvin.talkback
+adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 
 echo Facebook
-adb shell pm disable-user com.facebook.katana
-adb shell pm disable-user com.facebook.system
-adb shell pm disable-user com.facebook.appmanager
-adb shell pm disable-user com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.katana
+adb shell pm uninstall --user 0 com.facebook.system
+adb shell pm uninstall --user 0 com.facebook.appmanager
+adb shell pm uninstall --user 0 com.facebook.services
 
 ::a echo Google Drive
-adb shell pm disable-user com.google.android.apps.docs
+adb shell pm uninstall --user 0 com.google.android.apps.docs
 
 echo Google Assistant
-adb shell pm disable-user com.google.android.apps.googleassistant
+adb shell pm uninstall --user 0 com.google.android.apps.googleassistant
 
 echo Google News
-adb shell pm disable-user com.google.android.apps.magazines
+adb shell pm uninstall --user 0 com.google.android.apps.magazines
 
 echo Maps
-adb shell pm disable-user com.google.android.apps.maps
+adb shell pm uninstall --user 0 com.google.android.apps.maps
 
 ::a echo Google Photos
 ::a adb shell pm disable-user com.google.android.apps.photos
 
 echo Google Podcasts
-adb shell pm disable-user com.google.android.apps.podcasts
+adb shell pm uninstall --user 0 com.google.android.apps.podcasts
 
 echo Duo
-adb shell pm disable-user com.google.android.apps.tachyon
+adb shell pm uninstall --user 0 com.google.android.apps.tachyon
 
-echo Device Health Services
-adb shell pm disable-user com.google.android.apps.turbo
+::a echo Device Health Services
+::a adb shell pm disable-user com.google.android.apps.turbo
 
 echo Digital Wellbeing
 adb shell pm disable-user com.google.android.apps.wellbeing
@@ -100,22 +100,22 @@ adb shell pm disable-user com.google.android.apps.wellbeing
 ::a adb shell pm disable-user com.google.android.gm
 
 echo Google
-adb shell pm disable-user com.google.android.googlequicksearchbox
+adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 
 echo Google Play Music
-adb shell pm disable-user com.google.android.music
+adb shell pm uninstall --user 0 com.google.android.music
 
 echo Google Play Games
-adb shell pm disable-user com.google.android.play.games
+adb shell pm uninstall --user 0 com.google.android.play.games
 
 echo Android Auto
-adb shell pm disable-user com.google.android.projection.gearhead
+adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
 echo Android One
-adb shell pm disable-user com.google.android.apps.subscriptions.red
+adb shell pm uninstall --user 0 com.google.android.apps.subscriptions.red
 
 echo Google TV
-adb shell pm disable-user com.google.android.videos
+adb shell pm uninstall --user 0 com.google.android.videos
 
 ::a echo Объектив
 ::a adb shell pm disable-user com.google.ar.lens
@@ -125,14 +125,14 @@ adb shell pm disable-user com.google.ar.core
 
 echo Mi Browser Pro
 :: Невозможно удалить
-adb shell pm disable-user com.mi.globalbrowser
+adb shell pm uninstall --user 0 com.mi.globalbrowser
 
 echo Mi Wallpaper Carousel
 :: Unable to uninstall
 adb shell pm disable-user com.miui.android.fashiongallery
 
 echo App Vault
-adb shell pm disable-user com.mi.android.globalminusscreen
+adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
 echo Mi Credit
 adb shell pm disable-user com.micredit.in
@@ -156,7 +156,7 @@ adb shell pm disable-user com.miui.hybrid
 ::a adb shell pm disable-user com.miui.notes
 
 echo Yellow Pages
-adb shell pm disable-user com.miui.yellowpage
+adb shell pm uninstall --user 0 com.miui.yellowpage
 
 echo Analytics
 adb shell pm disable-user com.miui.analytics
@@ -176,24 +176,24 @@ adb shell pm disable-user com.miui.miservice
 echo ShareMe
 adb shell pm disable-user com.miui.mishare.connectivity
 adb shell pm disable-user com.xiaomi.mi_connect_service
-adb shell pm disable-user com.xiaomi.midrop
+adb shell pm uninstall --user 0 com.xiaomi.midrop
 
 echo msa
 adb shell pm disable-user com.miui.msa.global
 
 echo Mi Music
-adb shell pm disable-user com.miui.player
+adb shell pm uninstall --user 0 com.miui.player
 
 echo Mi Video
 :: Unable to uninstall on some devices. Only to disable
-adb shell pm disable-user com.miui.videoplayer
+adb shell pm uninstall --user 0 com.miui.videoplayer
 
 echo PartnerNetflixActivation
-adb shell pm disable-user com.netflix.partner.activation
+adb shell pm uninstall --user 0 com.netflix.partner.activation
 
 echo Opera
-adb shell pm disable-user com.opera.browser
-adb shell pm disable-user com.opera.preinstall
+adb shell pm uninstall --user 0 com.opera.browser
+adb shell pm uninstall --user 0 com.opera.preinstall
 
 echo Qualcomm Voice Assist
 adb shell pm disable-user com.quicinc.voice.activation
@@ -215,16 +215,16 @@ echo Mi Picks
 adb shell pm disable-user com.xiaomi.mipicks
 
 echo Дзен
-adb shell pm disable-user com.yandex.zen
+adb shell pm uninstall --user 0 com.yandex.zen
 
 echo TikTok
-adb shell pm disable-user com.zhiliaoapp.musically
+adb shell pm uninstall --user 0 com.zhiliaoapp.musically
 
 echo Яндекс
-adb shell pm disable-user  ru.yandex.searchplugin
+adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 echo ZenkitPartnerConfig
-adb shell pm disable-user com.yandex.zenkitpartnerconfig
+adb shell pm uninstall --user 0 com.yandex.zenkitpartnerconfig
 
 echo Miui Backup
 adb shell pm disable-user com.miui.backup
@@ -235,9 +235,6 @@ adb shell pm disable-user com.miui.bugreport
 
 echo Mi Account
 adb shell pm disable-user com.xiaomi.account
-
-echo Mi Browser (old)
-adb shell pm disable-user com.mi.globalbrowser
 
 echo Mi Coin
 adb shell pm disable-user com.xiaomi.payment
@@ -289,17 +286,17 @@ adb shell pm disable-user com.samsung.android.livestickers
 echo Dex для ПК
 adb shell pm disable-user com.sec.android.app.dexonpc
 
-echo Device Health Services
-adb shell pm disable-user com.google.android.apps.turbo
+::a echo Device Health Services
+::a adb shell pm disable-user com.google.android.apps.turbo
 
 echo Duo
-adb shell pm disable-user com.google.android.apps.tachyon
+adb shell pm uninstall --user 0 com.google.android.apps.tachyon
 
 echo Facebook
-adb shell pm disable-user com.facebook.katana
-adb shell pm disable-user com.facebook.system
-adb shell pm disable-user com.facebook.appmanager
-adb shell pm disable-user com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.katana
+adb shell pm uninstall --user 0 com.facebook.system
+adb shell pm uninstall --user 0 com.facebook.appmanager
+adb shell pm uninstall --user 0 com.facebook.services
 
 echo Galaxy Themes
 adb shell pm disable-user com.samsung.android.themestore
@@ -320,13 +317,13 @@ adb shell pm disable-user com.samsung.android.game.gos
 ::a adb shell pm disable-user com.google.android.gm
 
 echo Google
-adb shell pm disable-user com.google.android.googlequicksearchbox
+adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 
 echo Google Play Services for AR
 adb shell pm disable-user com.google.ar.core
 
 echo Google Play Фильмы
-adb shell pm disable-user com.google.android.videos
+adb shell pm uninstall --user 0 com.google.android.videos
 
 ::a echo Google Фото
 ::a adb shell pm disable-user com.google.android.apps.photos
@@ -417,7 +414,7 @@ echo Звукозапись
 adb shell pm disable-user com.sec.android.app.voicenote
 
 echo Карты
-adb shell pm disable-user com.google.android.apps.maps
+adb shell pm uninstall --user 0 com.google.android.apps.maps
 
 echo Клавиатура Microsoft SwiftKey
 adb shell pm disable-user com.touchtype.swiftkey
@@ -459,7 +456,7 @@ echo Установщик Kids
 adb shell pm disable-user com.samsung.android.kidsinstaller
 
 echo Яндекс
-adb shell pm disable-user  ru.yandex.searchplugin
+adb shell pm uninstall --user 0 ru.yandex.searchplugin
 
 echo Android Setup
 adb shell pm disable-user com.google.android.setupwizard
@@ -469,7 +466,7 @@ echo Android Browser
 adb shell pm disable-user com.android.browser
 
 echo Google text-to-speech engine
-adb shell pm disable-user com.google.android.tts
+adb shell pm uninstall --user 0 com.google.android.tts
 
 adb shell pm disable-user com.samsung.android.app.settings.bixby
 adb shell pm disable-user com.samsung.android.app.reminder
@@ -492,8 +489,8 @@ adb shell pm disable-user com.android.mms.service
 adb shell pm disable-user com.android.printspooler
 adb shell pm disable-user com.android.statementservice
 adb shell pm disable-user com.android.stk
-adb shell pm disable-user com.android.thememanager
-adb shell pm disable-user com.android.thememanager.module
+adb shell pm uninstall --user 0 com.android.thememanager
+adb shell pm uninstall --user 0 com.android.thememanager.module
 adb shell pm disable-user com.android.wallpaper.livepicker
 ::a adb shell pm disable-user com.sec.android.app.fm
 adb shell pm disable-user com.android.wallpaperbackup
@@ -716,31 +713,31 @@ adb shell pm disable-user com.samsung.android.app.galaxyfinder
 adb shell pm disable-user com.samsung.android.networkdiagnostic
 adb shell pm disable-user com.samsung.android.svcagent
 adb shell pm disable-user com.samsung.android.app.simplesharing
-adb shell pm disable-user com.facebook.system
-adb shell pm disable-user com.facebook.katana
-adb shell pm disable-user com.facebook.appmanager
-adb shell pm disable-user com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.system
+adb shell pm uninstall --user 0 com.facebook.katana
+adb shell pm uninstall --user 0 com.facebook.appmanager
+adb shell pm uninstall --user 0 com.facebook.services
 adb shell pm disable-user com.google.android.apps.restore
-adb shell pm disable-user com.google.android.apps.turbo
+::a adb shell pm disable-user com.google.android.apps.turbo
 adb shell pm disable-user com.google.android.setupwizard
 ::a adb shell pm disable-user com.google.android.gm
 :: adb shell pm disable-user com.android.chrome
 adb shell pm disable-user com.google.android.syncadapters.contacts
 adb shell pm disable-user com.google.android.partnersetup
-adb shell pm disable-user com.google.android.apps.maps
+adb shell pm uninstall --user 0 com.google.android.apps.maps
 ::a adb shell pm disable-user com.google.android.apps.photos
-adb shell pm disable-user com.google.android.apps.tachyon
+adb shell pm uninstall --user 0 com.google.android.apps.tachyon
 adb shell pm disable-user com.google.android.feedback
 ::a adb shell pm disable-user com.google.android.gms
 adb shell pm disable-user com.google.android.gms.location.history
-adb shell pm disable-user com.google.android.googlequicksearchbox
+adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 ::a adb shell pm disable-user com.google.android.inputmethod.latin
-adb shell pm disable-user com.google.android.marvin.talkback
-adb shell pm disable-user com.google.android.music
+adb shell pm uninstall --user 0 com.google.android.marvin.talkback
+adb shell pm uninstall --user 0 com.google.android.music
 adb shell pm disable-user com.google.android.printservice.recommendation
 adb shell pm disable-user com.google.android.syncadapters.calendar
-adb shell pm disable-user com.google.android.tts
-adb shell pm disable-user com.google.android.videos
+adb shell pm uninstall --user 0 com.google.android.tts
+adb shell pm uninstall --user 0 com.google.android.videos
 ::a adb shell pm disable-user com.google.android.youtube
 ::a adb shell pm disable-user com.google.ar.lens
 ::a adb shell pm disable-user com.android.vending
@@ -749,14 +746,14 @@ adb shell pm disable-user com.google.android.videos
 :: region Realme
 adb shell pm disable-user com.android.stk
 :: adb shell pm disable-user com.android.chrome
-adb shell pm disable-user com.google.android.tts
-adb shell pm disable-user com.google.android.googlequicksearchbox
+adb shell pm uninstall --user 0 com.google.android.tts
+adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 adb shell pm disable-user com.coloros.smartdrive
-adb shell pm disable-user com.google.android.marvin.talkback
+adb shell pm uninstall --user 0 com.google.android.marvin.talkback
 adb shell pm disable-user com.android.browser
-adb shell pm disable-user com.facebook.system
-adb shell pm disable-user com.facebook.appmanager
-adb shell pm disable-user com.facebook.services
+adb shell pm uninstall --user 0 com.facebook.system
+adb shell pm uninstall --user 0 com.facebook.appmanager
+adb shell pm uninstall --user 0 com.facebook.services
 adb shell pm disable-user com.coloros.pictorial
 adb shell pm disable-user com.mediatek.mtklogger
 adb shell pm disable-user com.coloros.cloud
@@ -780,9 +777,9 @@ adb shell pm disable-user com.oppo.music
 adb shell pm disable-user com.google.android.apps.docs
 ::a adb shell pm disable-user com.google.android.apps.photos
 adb shell pm disable-user com.google.android.keep
-adb shell pm disable-user com.google.android.apps.tachyon
-adb shell pm disable-user com.google.android.videos
-adb shell pm disable-user com.google.android.music
+adb shell pm uninstall --user 0 com.google.android.apps.tachyon
+adb shell pm uninstall --user 0 com.google.android.videos
+adb shell pm uninstall --user 0 com.google.android.music
 adb shell pm disable-user com.coloros.gamespace
 adb shell pm disable-user com.nearme.gamecenter
 adb shell pm disable-user com.android.bips
@@ -891,7 +888,7 @@ adb shell pm disable-user com.nearme.browser
 adb shell pm disable-user com.nearme.gamecenter
 adb shell pm disable-user com.nearme.statistics.rom
 adb shell pm disable-user com.nearme.themestore
-adb shell pm disable-user com.opera.preinstall
+adb shell pm uninstall --user 0 com.opera.preinstall
 adb shell pm disable-user com.realme.logtool
 adb shell pm disable-user com.redteamobile.roaming
 adb shell pm disable-user com.redteamobile.roaming.deamon
@@ -948,9 +945,9 @@ adb shell pm disable-user com.heytap.pictorial
 adb shell pm disable-user com.heytap.themestore
 adb shell pm disable-user com.nearme.atlas
 adb shell pm disable-user com.nearme.statistics.rom
-adb shell pm disable-user com.netflix.mediaclient
-adb shell pm disable-user com.netflix.partner.activation
-adb shell pm disable-user com.opera.preinstall
+adb shell pm uninstall --user 0 com.netflix.mediaclient
+adb shell pm uninstall --user 0 com.netflix.partner.activation
+adb shell pm uninstall --user 0 com.opera.preinstall
 adb shell pm disable-user com.redteamobile.roaming
 adb shell pm disable-user com.redteamobile.roaming.deamon
 adb shell pm disable-user com.tencent.soter.soterserver
