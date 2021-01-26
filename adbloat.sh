@@ -18,7 +18,7 @@ start() {
     adb shell pm disable-user com.android.bookmarkprovider
 
     #echo -e "Chrome"
-    #adb shell pm disable-user com.android.chrome
+    #adb shell pm uninstall --user 0 com.android.chrome
 
     echo -e "Downloads"
     adb shell pm disable-user com.android.providers.downloads.ui
@@ -269,7 +269,7 @@ start() {
     adb shell pm disable-user flipboard.boxer.app
 
     #echo -e "Chrome"
-    #adb shell pm disable-user com.android.chrome
+    #adb shell pm uninstall --user 0 com.android.chrome
 
     echo -e "DECO PIC"
     adb shell pm disable-user com.samsung.android.livestickers
@@ -712,7 +712,7 @@ start() {
     # adb shell pm disable-user com.google.android.apps.turbo
     adb shell pm disable-user com.google.android.setupwizard
     # adb shell pm disable-user com.google.android.gm
-    #adb shell pm disable-user com.android.chrome
+    #adb shell pm uninstall --user 0 com.android.chrome
     adb shell pm disable-user com.google.android.syncadapters.contacts
     adb shell pm disable-user com.google.android.partnersetup
     adb shell pm uninstall --user 0 com.google.android.apps.maps
@@ -736,7 +736,7 @@ start() {
     #endregion Samsung
     #region Realme
     adb shell pm disable-user com.android.stk
-    #adb shell pm disable-user com.android.chrome
+    #adb shell pm uninstall --user 0 com.android.chrome
     adb shell pm uninstall --user 0 com.google.android.tts
     adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
     adb shell pm disable-user com.coloros.smartdrive
