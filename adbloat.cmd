@@ -1132,7 +1132,7 @@ exit 0
     adb shell pm disable-user --user 0 com.google.android.apps.docs.editors.sheets
     adb shell pm disable-user --user 0 com.google.android.apps.docs.editors.slides
     adb shell pm disable-user --user 0 com.google.android.apps.maps
-    adb shell pm disable-user --user 0 com.google.android.apps.photos
+    ::adb shell pm disable-user --user 0 com.google.android.apps.photos
     adb shell pm disable-user --user 0 com.google.android.apps.tachyon
     adb shell pm disable-user --user 0 com.google.android.apps.wellbeing
     adb shell pm disable-user --user 0 com.google.android.apps.work.oobconfig
@@ -1146,7 +1146,7 @@ exit 0
     adb shell pm disable-user --user 0 com.google.android.syncadapters.contacts
     adb shell pm disable-user --user 0 com.google.android.tts
     adb shell pm disable-user --user 0 com.google.android.videos
-    adb shell pm disable-user --user 0 com.google.android.youtube
+    ::adb shell pm disable-user --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.android.exchange
 
     :: Carrier services
