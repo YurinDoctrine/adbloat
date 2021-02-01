@@ -290,7 +290,7 @@ exit 0
     adb shell pm disable-user --user 0 com.miui.vsimcore
     adb shell pm disable-user --user 0 com.miui.weather2
     adb shell pm disable-user --user 0 com.miui.wmsvc
-    adb shell pm disable-user --user 0 com.miui.yellowpage
+    adb shell pm uninstall --user 0 com.miui.yellowpage
 
     adb shell pm disable-user --user 0 com.xiaomi.account
     adb shell pm disable-user --user 0 com.xiaomi.discover
