@@ -49,13 +49,13 @@ exit 0
     adb shell pm disable-user --user 0 com.duokan.phone.remotecontroller
 
     echo eBay Partner Attribution
-    adb shell pm disable-user --user 0 com.ebay.carrier
+    adb shell pm uninstall --user 0 com.ebay.carrier
 
     echo eBay
-    adb shell pm disable-user --user 0 com.ebay.mobile
+    adb shell pm uninstall --user 0 com.ebay.mobile
 
     :: echo YouTube
-    :: adb shell pm disable-user --user 0 com.google.android.youtube
+    :: adb shell pm uninstall --user 0 com.google.android.youtube
 
     echo YouTube Music
     adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
@@ -94,7 +94,7 @@ exit 0
     :: adb shell pm disable-user --user 0 com.google.android.apps.turbo
 
     echo Digital Wellbeing
-    adb shell pm disable-user --user 0 com.google.android.apps.wellbeing
+    adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
 
     :: echo Gmail
     :: adb shell pm disable-user --user 0 com.google.android.gm
@@ -135,22 +135,22 @@ exit 0
     adb shell pm uninstall --user 0 com.mi.android.globalminusscreen
 
     echo Mi Credit
-    adb shell pm disable-user --user 0 com.micredit.in
+    adb shell pm uninstall --user 0 com.micredit.in
 
     echo Mi Community
-    adb shell pm disable-user --user 0 com.mi.global.bbs
+    adb shell pm uninstall --user 0 com.mi.global.bbs
 
     echo Mi Store
-    adb shell pm disable-user --user 0 com.mi.global.shop
+    adb shell pm uninstall --user 0 com.mi.global.shop
 
     echo MiDrive
-    adb shell pm disable-user --user 0 com.miui.newmidrive
+    adb shell pm uninstall --user 0 com.miui.newmidrive
 
     echo Mi Mover
-    adb shell pm disable-user --user 0 com.miui.huanji
+    adb shell pm uninstall --user 0 com.miui.huanji
 
     echo HybridAccessory
-    adb shell pm disable-user --user 0 com.miui.hybrid
+    adb shell pm uninstall --user 0 com.miui.hybrid
 
     :: echo MIUI Notes
     :: adb shell pm disable-user --user 0 com.miui.notes
@@ -162,13 +162,13 @@ exit 0
     adb shell pm disable-user --user 0 com.miui.analytics
 
     echo Compass
-    adb shell pm disable-user --user 0 com.miui.compass
+    adb shell pm uninstall --user 0 com.miui.compass
 
     :: echo FM Radio
-    :: adb shell pm disable-user --user 0 com.miui.fm
+    :: adb shell pm uninstall --user 0 com.miui.fm
 
     :: echo FM Radio Service
-    :: adb shell pm disable-user --user 0 com.miui.fmservice
+    :: adb shell pm uninstall --user 0 com.miui.fmservice
 
     echo Services and Feedback
     adb shell pm disable-user --user 0 com.miui.miservice
@@ -196,23 +196,23 @@ exit 0
     adb shell pm uninstall --user 0 com.opera.preinstall
 
     echo Qualcomm Voice Assist
-    adb shell pm disable-user --user 0 com.quicinc.voice.activation
+    adb shell pm uninstall --user 0 uninstall.voice.activation
 
     echo Joyose
-    adb shell pm disable-user --user 0 com.xiaomi.joyose
+    adb shell pm uninstall --user 0 com.xiaomi.joyose
 
     :: echo Mi Scanner
     ::Becomes unable to scan QR codes via Camera app
-    :: adb shell pm disable-user --user 0 com.xiaomi.scanner
+    :: adb shell pm uninstall --user 0 com.xiaomi.scanner
 
     echo Mi Weather
-    adb shell pm disable-user --user 0 com.miui.weather2
+    adb shell pm uninstall --user 0 com.miui.weather2
 
     echo Xiaomi Games
-    adb shell pm disable-user --user 0 com.xiaomi.glgm
+    adb shell pm uninstall --user 0 com.xiaomi.glgm
 
     echo Mi Picks
-    adb shell pm disable-user --user 0 com.xiaomi.mipicks
+    adb shell pm uninstall --user 0 com.xiaomi.mipicks
 
     echo Дзен
     adb shell pm uninstall --user 0 com.yandex.zen
@@ -237,26 +237,26 @@ exit 0
     adb shell pm disable-user --user 0 com.xiaomi.account
 
     echo Mi Coin
-    adb shell pm disable-user --user 0 com.xiaomi.payment
+    adb shell pm uninstall --user 0 com.xiaomi.payment
 
     echo Mi Wallet
-    adb shell pm disable-user --user 0 com.mipay.wallet.in
+    adb shell pm uninstall --user 0 com.mipay.wallet.in
 
     echo Mi CloudSync
-    adb shell pm disable-user --user 0 com.miui.micloudsync
-    adb shell pm disable-user --user 0 com.miui.cloudservice
+    adb shell pm uninstall --user 0 com.miui.micloudsync
+    adb shell pm uninstall --user 0 com.miui.cloudservice
 
     echo Xiaomi Find Device
     adb shell pm disable-user --user 0 com.xiaomi.finddevice
 
     adb shell pm disable-user --user 0 com.mi.android.globalminusscreen
-    adb shell pm disable-user --user 0 com.mi.global.bbs
-    adb shell pm disable-user --user 0 com.mi.global.shop
+    adb shell pm uninstall --user 0 com.mi.global.bbs
+    adb shell pm uninstall --user 0 com.mi.global.shop
     adb shell pm disable-user --user 0 com.mi.globalTrendNews
     adb shell pm disable-user --user 0 com.mi.globalbrowser
     adb shell pm disable-user --user 0 com.mi.globallayout
     adb shell pm disable-user --user 0 com.mi.webkit.core
-    adb shell pm disable-user --user 0 com.micredit.in
+    adb shell pm uninstall --user 0 com.micredit.in
     adb shell pm disable-user --user 0 com.milink.service
     adb shell pm disable-user --user 0 com.mipay.wallet.id
     adb shell pm disable-user --user 0 com.miui.analytics
@@ -264,17 +264,17 @@ exit 0
     adb shell pm disable-user --user 0 com.miui.backup
     adb shell pm disable-user --user 0 com.miui.bugreport
     adb shell pm disable-user --user 0 com.miui.cloudbackup
-    adb shell pm disable-user --user 0 com.miui.cloudservice
-    adb shell pm disable-user --user 0 com.miui.cloudservice.sysbase
-    adb shell pm disable-user --user 0 com.miui.compass
+    adb shell pm uninstall --user 0 com.miui.cloudservice
+    adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase
+    adb shell pm uninstall --user 0 com.miui.compass
     adb shell pm disable-user --user 0 com.miui.daemon
     adb shell pm disable-user --user 0 com.miui.enbbs
     adb shell pm disable-user --user 0 com.miui.extraphoto
     adb shell pm disable-user --user 0 com.miui.face
     adb shell pm disable-user --user 0 com.miui.freeform
-    adb shell pm disable-user --user 0 com.miui.hybrid
-    adb shell pm disable-user --user 0 com.miui.hybrid.accessory
-    adb shell pm disable-user --user 0 com.miui.micloudsync
+    adb shell pm uninstall --user 0 com.miui.hybrid
+    adb shell pm uninstall --user 0 com.miui.hybrid.accessory
+    adb shell pm uninstall --user 0 com.miui.micloudsync
     adb shell pm disable-user --user 0 com.miui.miservice
     adb shell pm disable-user --user 0 com.miui.misound
     adb shell pm disable-user --user 0 com.miui.miwallpaper
@@ -288,22 +288,22 @@ exit 0
     adb shell pm disable-user --user 0 com.miui.videoplayer
     adb shell pm disable-user --user 0 com.miui.virtualsim
     adb shell pm disable-user --user 0 com.miui.vsimcore
-    adb shell pm disable-user --user 0 com.miui.weather2
+    adb shell pm uninstall --user 0 com.miui.weather2
     adb shell pm disable-user --user 0 com.miui.wmsvc
     adb shell pm uninstall --user 0 com.miui.yellowpage
 
     adb shell pm disable-user --user 0 com.xiaomi.account
     adb shell pm disable-user --user 0 com.xiaomi.discover
-    adb shell pm disable-user --user 0 com.xiaomi.glgm
-    adb shell pm disable-user --user 0 com.xiaomi.joyose
+    adb shell pm uninstall --user 0 com.xiaomi.glgm
+    adb shell pm uninstall --user 0 com.xiaomi.joyose
     adb shell pm disable-user --user 0 com.xiaomi.location.fused
     adb shell pm disable-user --user 0 com.xiaomi.mi_connect_service
     adb shell pm disable-user --user 0 com.xiaomi.micloud.sdk
     adb shell pm disable-user --user 0 com.xiaomi.midrop
-    adb shell pm disable-user --user 0 com.xiaomi.mipicks
+    adb shell pm uninstall --user 0 com.xiaomi.mipicks
     adb shell pm disable-user --user 0 com.xiaomi.miplay_client
     adb shell pm disable-user --user 0 com.xiaomi.mirecycle
-    adb shell pm disable-user --user 0 com.xiaomi.payment
+    adb shell pm uninstall --user 0 com.xiaomi.payment
     adb shell pm disable-user --user 0 com.xiaomi.powerchecker
     adb shell pm disable-user --user 0 com.xiaomi.providers.appindex
     adb shell pm disable-user --user 0 com.xiaomi.simactivate.service
@@ -454,7 +454,7 @@ exit 0
     adb shell pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
 
     :: echo YouTube
-    :: adb shell pm disable-user --user 0 com.google.android.youtube
+    :: adb shell pm uninstall --user 0 com.google.android.youtube
 
     echo YouTube Music
     adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
@@ -703,7 +703,7 @@ exit 0
     adb shell pm disable-user --user 0 com.samsung.android.spay
     adb shell pm disable-user --user 0 com.samsung.android.spayfw
     adb shell pm disable-user --user 0 flipboard.boxer.app
-    adb shell pm disable-user --user 0 com.samsung.android.wellbeing
+    adb uninstall-user --user 0 com.samsung.android.wellbeing
     adb shell pm disable-user --user 0 com.samsung.android.da.daagent
     adb shell pm disable-user --user 0 com.samsung.android.service.livedrawing
     adb shell pm disable-user --user 0 Samsung AR Emoji
@@ -802,7 +802,7 @@ exit 0
     adb shell pm disable-user --user 0 com.google.android.syncadapters.calendar
     adb shell pm uninstall --user 0 com.google.android.tts
     adb shell pm uninstall --user 0 com.google.android.videos
-    :: adb shell pm disable-user --user 0 com.google.android.youtube
+    :: adb shell pm uninstall --user 0 com.google.android.youtube
     :: adb shell pm disable-user --user 0 com.google.ar.lens
     :: adb shell pm disable-user --user 0 com.android.vending
     :: adb shell pm disable-user --user 0 com.google.android.gsf
@@ -826,7 +826,7 @@ exit 0
     adb shell pm disable-user --user 0 com.oppo.operationManual
     adb shell pm disable-user --user 0 com.coloros.backuprestore
     :: adb shell pm disable-user --user 0 com.coloros.phonemanager
-    :: adb shell pm disable-user --user 0 com.google.android.youtube
+    :: adb shell pm uninstall --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.realme.logtool
     adb shell pm disable-user --user 0 com.coloros.video
     adb shell pm disable-user --user 0 com.coloros.music
@@ -1110,7 +1110,7 @@ exit 0
     adb shell pm disable-user --user 0 com.vivo.carmode
     adb shell pm disable-user --user 0 com.vivo.numbermark
     adb shell pm disable-user --user 0 com.vivo.pushservice
-    :: adb shell pm disable-user --user 0 com.vivo.safecentercom.vivo.scanner
+    :: adb shell pm disable-uninstall 0 com.vivo.safecentercom.vivo.scanner
     adb shell pm disable-user --user 0 com.vivo.setupwizard
     :: adb shell pm disable-user --user 0 com.vivo.sim.contacts
     adb shell pm disable-user --user 0 com.vivo.smartmultiwindow
@@ -1134,7 +1134,7 @@ exit 0
     adb shell pm disable-user --user 0 com.google.android.apps.maps
     ::adb shell pm disable-user --user 0 com.google.android.apps.photos
     adb shell pm disable-user --user 0 com.google.android.apps.tachyon
-    adb shell pm disable-user --user 0 com.google.android.apps.wellbeing
+    adb shell pm uninstall --user 0 com.google.android.apps.wellbeing
     adb shell pm disable-user --user 0 com.google.android.apps.work.oobconfig
     adb shell pm disable-user --user 0 com.google.android.feedback
     adb shell pm disable-user --user 0 com.google.android.googlequicksearchbox
@@ -1146,7 +1146,7 @@ exit 0
     adb shell pm disable-user --user 0 com.google.android.syncadapters.contacts
     adb shell pm disable-user --user 0 com.google.android.tts
     adb shell pm disable-user --user 0 com.google.android.videos
-    ::adb shell pm disable-user --user 0 com.google.android.youtube
+    ::adb shell pm uninstall --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.android.exchange
 
     :: Carrier services
@@ -1294,8 +1294,8 @@ exit 0
     adb shell pm disable-user --user 0 com.alibaba.aliexpresshd
     adb shell pm disable-user --user 0 com.huaqin.diaglogger
     adb shell pm disable-user --user 0 com.booking
-    adb shell pm disable-user --user 0 com.ebay.carrier
-    adb shell pm disable-user --user 0 com.ebay.mobile
+    adb shell pm uninstall --user 0 com.ebay.carrier
+    adb shell pm uninstall --user 0 com.ebay.mobile
     adb shell pm disable-user --user 0 com.facebook.appmanager
     adb shell pm disable-user --user 0 com.facebook.katana
     adb shell pm disable-user --user 0 com.facebook.services
