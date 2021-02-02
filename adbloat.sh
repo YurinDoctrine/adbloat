@@ -1198,7 +1198,6 @@ start() {
     #adb shell pm disable-user --user 0 com.android.internal.display.cutout.emulation.double
     #adb shell pm disable-user --user 0 com.android.internal.display.cutout.emulation.tall
     #adb shell pm disable-user --user 0 com.android.keychain
-    #adb shell pm disable-user --user 0 com.android.location.fused
     #adb shell pm disable-user --user 0 com.android.managedprovisioning
     #adb shell pm disable-user --user 0 com.android.mms
     #adb shell pm disable-user --user 0 com.android.mms.service
@@ -1301,6 +1300,7 @@ start() {
     adb shell pm disable-user --user 0 com.opera.browser
     adb shell pm disable-user --user 0 com.opera.preinstall
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
+    adb shell pm disable-user --user 0 com.android.egg
     echo -e "ALL DONE!"
     echo -e ""
     adb kill-server

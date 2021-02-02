@@ -175,7 +175,7 @@ exit 0
 
     echo ShareMe
     adb shell pm disable-user --user 0 com.miui.mishare.connectivity
-    adb shell pm disable-user --user 0 com.xiaomi.mi_connect_service
+    adb shell pm uninstall --user 0 com.xiaomi.mi_connect_service
     adb shell pm uninstall --user 0 com.xiaomi.midrop
 
     echo msa
@@ -297,7 +297,7 @@ exit 0
     adb shell pm uninstall --user 0 com.xiaomi.glgm
     adb shell pm uninstall --user 0 com.xiaomi.joyose
     adb shell pm disable-user --user 0 com.xiaomi.location.fused
-    adb shell pm disable-user --user 0 com.xiaomi.mi_connect_service
+    adb shell pm uninstall --user 0 com.xiaomi.mi_connect_service
     adb shell pm disable-user --user 0 com.xiaomi.micloud.sdk
     adb shell pm disable-user --user 0 com.xiaomi.midrop
     adb shell pm uninstall --user 0 com.xiaomi.mipicks
@@ -1207,7 +1207,6 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.internal.display.cutout.emulation.double
     ::adb shell pm disable-user --user 0 com.android.internal.display.cutout.emulation.tall
     ::adb shell pm disable-user --user 0 com.android.keychain
-    ::adb shell pm disable-user --user 0 com.android.location.fused
     ::adb shell pm disable-user --user 0 com.android.managedprovisioning
     ::adb shell pm disable-user --user 0 com.android.mms
     ::adb shell pm disable-user --user 0 com.android.mms.service
@@ -1310,6 +1309,7 @@ exit 0
     adb shell pm disable-user --user 0 com.opera.browser
     adb shell pm disable-user --user 0 com.opera.preinstall
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
+    adb shell pm disable-user --user 0 com.android.egg
 echo ALL DONE!
 echo.
 adb kill-server
