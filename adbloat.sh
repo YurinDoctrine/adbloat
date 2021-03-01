@@ -27,10 +27,10 @@ start() {
     adb shell pm disable-user --user 0 com.android.soundrecorder
 
     echo -e "SIM Toolkit"
-    adb shell pm disable-user --user 0 com.android.stk
+    #adb shell pm disable-user --user 0 com.android.stk
 
     echo -e "Live Wallpaper Picker"
-    adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
+    #adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
     adb shell pm uninstall -k --user 0 com.android.thememanager
 
     echo -e "Booking.com"
@@ -118,7 +118,7 @@ start() {
     #Невозможно удалить
     adb shell pm uninstall -k --user 0 com.mi.globalbrowser
 
-    echo -e "Mi Wallpaper Carousel"
+    #echo -e "Mi Wallpaper Carousel"
     #Unable to uninstall
     adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
@@ -268,7 +268,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.micloudsync
     adb shell pm disable-user --user 0 com.miui.miservice
     adb shell pm disable-user --user 0 com.miui.misound
-    adb shell pm disable-user --user 0 com.miui.miwallpaper
+    #adb shell pm disable-user --user 0 com.miui.miwallpaper
     adb shell pm disable-user --user 0 com.miui.msa.global
     adb shell pm disable-user --user 0 com.miui.player
     adb shell pm disable-user --user 0 com.miui.providers.weather
@@ -284,7 +284,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
 
     adb shell pm disable-user --user 0 com.xiaomi.account
-    adb shell pm disable-user --user 0 com.xiaomi.discover
+    #adb shell pm disable-user --user 0 com.xiaomi.discover
     adb shell pm uninstall -k --user 0 com.xiaomi.glgm
     adb shell pm uninstall -k --user 0 com.xiaomi.joyose
     adb shell pm disable-user --user 0 com.xiaomi.location.fused
@@ -532,24 +532,24 @@ start() {
     #adb shell pm disable-user --user 0 com.android.calendar
     # adb shell pm disable-user --user 0 com.samsung.android.dialer
     # adb shell pm disable-user --user 0 com.samsung.android.messaging
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
     # adb shell pm disable-user --user 0 com.android.deskclock
     #adb shell pm disable-user --user 0 com.android.dreams.basic
     #adb shell pm disable-user --user 0 com.android.dreams.phototable
-    adb shell pm disable-user --user 0 com.android.emergency
+    #adb shell pm disable-user --user 0 com.android.emergency
     adb shell pm disable-user --user 0 com.android.hotwordenrollment.okgoogle
-    adb shell pm disable-user --user 0 com.android.mms
-    adb shell pm disable-user --user 0 com.android.mms.service
-    adb shell pm disable-user --user 0 com.android.printspooler
-    adb shell pm disable-user --user 0 com.android.statementservice
-    adb shell pm disable-user --user 0 com.android.stk
+    #adb shell pm disable-user --user 0 com.android.mms
+    #adb shell pm disable-user --user 0 com.android.mms.service
+    #adb shell pm disable-user --user 0 com.android.printspooler
+    #adb shell pm disable-user --user 0 com.android.statementservice
+    #adb shell pm disable-user --user 0 com.android.stk
     adb shell pm uninstall -k --user 0 com.android.thememanager
     adb shell pm uninstall -k --user 0 com.android.thememanager.module
-    adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
+    #adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
     # adb shell pm disable-user --user 0 com.sec.android.app.fm
-    adb shell pm disable-user --user 0 com.android.wallpaperbackup
-    adb shell pm disable-user --user 0 com.android.wallpapercropper
+    #adb shell pm disable-user --user 0 com.android.wallpaperbackup
+    #adb shell pm disable-user --user 0 com.android.wallpapercropper
     adb shell pm disable-user --user 0 com.android.providers.downloads.ui
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.android.sharedstoragebackup
@@ -703,7 +703,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.emojiupdater
     adb shell pm disable-user --user 0 com.android.bips
     adb shell pm disable-user --user 0 com.google.android.printservice.recommendation
-    adb shell pm disable-user --user 0 com.android.printspooler
+    #adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.samsung.android.game.gamehome
     adb shell pm disable-user --user 0 com.enhance.gameservice
     adb shell pm disable-user --user 0 com.samsung.android.game.gametools
@@ -718,7 +718,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.kidshome
     adb shell pm disable-user --user 0 com.samsung.android.app.ledbackcover
     adb shell pm disable-user --user 0 com.sec.android.cover.ledcover
-    adb shell pm disable-user --user 0 com.cnn.mobile.android.phone.edgepanel
+    #adb shell pm disable-user --user 0 com.cnn.mobile.android.phone.edgepanel
     adb shell pm disable-user --user 0 com.samsung.android.service.peoplestripe
     adb shell pm disable-user --user 0 com.samsung.android.app.sbrowseredge
     adb shell pm disable-user --user 0 com.samsung.android.app.appsedge
@@ -751,7 +751,7 @@ start() {
     adb shell pm disable-user --user 0 com.drivemode
     # adb shell pm disable-user --user 0 com.samsung.android.app.contacts
     #adb shell pm disable-user --user 0 com.samsung.android.calendar
-    adb shell pm disable-user --user 0 com.cnn.mobile.android.phone
+    #adb shell pm disable-user --user 0 com.cnn.mobile.android.phone
     adb shell pm disable-user --user 0 com.bleacherreport.android.teamstream
     adb shell pm disable-user --user 0 net.aetherpal.device
     # adb shell pm disable-user --user 0 com.google.android.dialer
@@ -799,7 +799,7 @@ start() {
     # adb shell pm disable-user --user 0 com.google.android.gsf
     #endregion Samsung
     #region Realme
-    adb shell pm disable-user --user 0 com.android.stk
+    #adb shell pm disable-user --user 0 com.android.stk
     #adb shell pm uninstall -k --user 0 com.android.chrome
     adb shell pm uninstall -k --user 0 com.google.android.tts
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
@@ -839,17 +839,17 @@ start() {
     adb shell pm disable-user --user 0 com.nearme.gamecenter
     adb shell pm disable-user --user 0 com.android.bips
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
-    adb shell pm disable-user --user 0 com.android.calllogbackup
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
-    adb shell pm disable-user --user 0 com.android.mms
-    adb shell pm disable-user --user 0 com.android.mms.service
-    adb shell pm disable-user --user 0 com.android.printspooler
+    #adb shell pm disable-user --user 0 com.android.calllogbackup
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
+    #adb shell pm disable-user --user 0 com.android.mms
+    #adb shell pm disable-user --user 0 com.android.mms.service
+    #adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.android.sharedstoragebackup
-    adb shell pm disable-user --user 0 com.android.statementservice
-    adb shell pm disable-user --user 0 com.android.stk
-    adb shell pm disable-user --user 0 com.android.wallpaperbackup
+    #adb shell pm disable-user --user 0 com.android.statementservice
+    #adb shell pm disable-user --user 0 com.android.stk
+    #adb shell pm disable-user --user 0 com.android.wallpaperbackup
     # adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.activation
     adb shell pm disable-user --user 0 com.coloros.activation.overlay.common
@@ -954,15 +954,15 @@ start() {
     #region Oppo
     adb shell pm disable-user --user 0 com.android.bips
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
-    adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
-    adb shell pm disable-user --user 0 com.android.mms.service
-    adb shell pm disable-user --user 0 com.android.printspooler
-    adb shell pm disable-user --user 0 com.android.providers.calendar
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
+    #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
+    #adb shell pm disable-user --user 0 com.android.mms.service
+    #adb shell pm disable-user --user 0 com.android.printspooler
+    #adb shell pm disable-user --user 0 com.android.providers.calendar
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.android.providers.userdictionary
-    adb shell pm disable-user --user 0 com.android.wallpaperbackup
-    adb shell pm disable-user --user 0 com.android.wallpapercropper
+    #adb shell pm disable-user --user 0 com.android.wallpaperbackup
+    #adb shell pm disable-user --user 0 com.android.wallpapercropper
     # adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.aftersalesservice
     adb shell pm disable-user --user 0 com.coloros.alarmclock
@@ -987,7 +987,7 @@ start() {
     adb shell pm disable-user --user 0 com.coloros.soundrecorder
     adb shell pm disable-user --user 0 com.coloros.translate.engine
     adb shell pm disable-user --user 0 com.coloros.video
-    adb shell pm disable-user --user 0 com.coloros.wallpapers
+    #adb shell pm disable-user --user 0 com.coloros.wallpapers
     adb shell pm disable-user --user 0 com.coloros.weather.service
     adb shell pm disable-user --user 0 com.coloros.widget.smallweather
     adb shell pm disable-user --user 0 com.heytap.browser
@@ -1090,10 +1090,10 @@ start() {
     adb shell pm disable-user --user 0 com.vivo.globalsearch
     adb shell pm disable-user --user 0 com.vivo.hiboard
     adb shell pm disable-user --user 0 com.vivo.vivokaraoke
-    adb shell pm disable-user --user 0 com.vivo.livewallpaper.coffeetime
-    adb shell pm disable-user --user 0 com.vivo.livewallpaper.coralsea
-    adb shell pm disable-user --user 0 com.vivo.livewallpaper.floatingcloud
-    adb shell pm disable-user --user 0 com.vivo.livewallpaper.silk
+    #adb shell pm disable-user --user 0 com.vivo.livewallpaper.coffeetime
+    #adb shell pm disable-user --user 0 com.vivo.livewallpaper.coralsea
+    #adb shell pm disable-user --user 0 com.vivo.livewallpaper.floatingcloud
+    #adb shell pm disable-user --user 0 com.vivo.livewallpaper.silk
     adb shell pm disable-user --user 0 com.vivo.magazine
     adb shell pm disable-user --user 0 com.vivo.mediatune
     adb shell pm disable-user --user 0 com.vivo.minscreen
@@ -1114,7 +1114,7 @@ start() {
     adb shell pm disable-user --user 0 com.vivo.weather.provider
     adb shell pm disable-user --user 0 com.vivo.website
     adb shell pm disable-user --user 0 com.vivo.widget.calendar
-    adb shell pm disable-user --user 0 com.vlife.vivo.wallpaper
+    #adb shell pm disable-user --user 0 com.vlife.vivo.wallpaper
     adb shell pm disable-user --user 0 com.kikaoem.vivo.qisiemoji.inputmethod
     #endregion Vivo
     # GAPPS
@@ -1154,7 +1154,7 @@ start() {
     # Download
     adb shell pm disable-user --user 0 com.android.documentsui
     adb shell pm disable-user --user 0 com.android.email
-    adb shell pm disable-user --user 0 com.android.emergency
+    #adb shell pm disable-user --user 0 com.android.emergency
     adb shell pm disable-user --user 0 com.android.gallery3d
     adb shell pm disable-user --user 0 com.android.hotwordenrollment.okgoogle
     adb shell pm disable-user --user 0 com.android.hotwordenrollment.xgoogle
@@ -1162,10 +1162,10 @@ start() {
     adb shell pm disable-user --user 0 com.android.partnerbrowsercustomizations
     adb shell pm disable-user --user 0 com.android.thememanager
     adb shell pm disable-user --user 0 com.android.thememanager.module
-    adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
-    adb shell pm disable-user --user 0 com.android.wallpaperbackup
-    adb shell pm disable-user --user 0 com.android.wallpapercropper
-    adb shell pm disable-user --user 0 com.android.wallpaperpicker
+    #adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
+    #adb shell pm disable-user --user 0 com.android.wallpaperbackup
+    #adb shell pm disable-user --user 0 com.android.wallpapercropper
+    #adb shell pm disable-user --user 0 com.android.wallpaperpicker
 
     #--------------------------
     # UNDER YOUR RESPONSABILITY
