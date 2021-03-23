@@ -1,5 +1,4 @@
 #!/usr/bin/sh
-# Don't Forget to comment/uncomment!
 
 start() {
     #region Xioami
@@ -1313,7 +1312,7 @@ start() {
 clear
 adb wait-for-device
 adb devices
-echo -e "Uninstall bloat apps?"
+echo -e "Uninstall/Disable bloat apps?"
 echo -e "yes/no"
 read -p '>_:' ans
 if [[ "$ans" == "yes" ]]; then
