@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+# Don't Forget to comment/uncomment!
 
 start() {
     #region Xioami
