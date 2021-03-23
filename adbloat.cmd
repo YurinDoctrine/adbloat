@@ -1,10 +1,11 @@
 @echo off
+
 chcp 65001 >nul
 
 cls
 adb wait-for-device
 adb devices
-echo Uninstall bloat apps?
+echo Uninstall/Disable bloat apps?
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
 exit 0
