@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
 start() {
     #region Xioami
