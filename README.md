@@ -6,8 +6,8 @@ Setup all of the following to use ADB
 
 ### Setup Computer with ADB Platform Tools
 
-Windows Install with Chocolatey `choco install adb`
-Linux Install with Terminal `sudo apt install -y android-tools-adb android-tools-fastboot`
+Windows Install with Chocolatey `choco install adb -y`
+Linux Install with Terminal `sudo apt install -y --no-install-recommends android-tools-adb android-tools-fastboot`
 
 1. Open Settings, and select “About”.
 2. Tap on “Build number” seven times.
