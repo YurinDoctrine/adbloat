@@ -52,4 +52,4 @@ Linux Install with Terminal `sudo apt install -y --no-install-recommends android
 
 ## Note
 
-Comment/Uncomment packages names you mightn't want it to be uninstalled
+Comment/Uncomment packages names where you mightn't want it to be uninstalled
