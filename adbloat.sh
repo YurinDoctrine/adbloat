@@ -1301,6 +1301,7 @@ start() {
     adb shell pm disable-user --user 0 com.opera.preinstall
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
     adb shell pm disable-user --user 0 com.android.egg
+    echo -e "Optimizing ..."
     adb shell cmd package bg-dexopt-job
     echo -e "ALL DONE!"
     echo -e ""
