@@ -52,4 +52,4 @@ Linux Install with Terminal `sudo apt install -f --assume-yes android-tools-adb 
 
 ## Important
 
-Comment/Uncomment packages name where you mightn't want it to be uninstalled
+Comment/Uncomment packages name where you mightn't want it to be uninstalled.
