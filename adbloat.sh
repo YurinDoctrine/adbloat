@@ -860,7 +860,7 @@ start() {
     adb shell pm disable-user --user 0 com.coloros.backuprestore
     adb shell pm disable-user --user 0 com.coloros.backuprestore.remoteservice
     adb shell pm disable-user --user 0 com.coloros.bootreg
-    adb shell pm disable-user --user 0 com.coloros.calculator
+    #adb shell pm disable-user --user 0 com.coloros.calculator
     adb shell pm disable-user --user 0 com.coloros.childrenspace
     adb shell pm disable-user --user 0 com.coloros.compass2
     adb shell pm disable-user --user 0 com.coloros.encryption
@@ -965,10 +965,10 @@ start() {
     #adb shell pm disable-user --user 0 com.android.wallpapercropper
     # adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.aftersalesservice
-    adb shell pm disable-user --user 0 com.coloros.alarmclock
+    #adb shell pm disable-user --user 0 com.coloros.alarmclock
     adb shell pm disable-user --user 0 com.coloros.assistantscreen
     adb shell pm disable-user --user 0 com.coloros.backuprestore
-    adb shell pm disable-user --user 0 com.coloros.calculator
+    #adb shell pm disable-user --user 0 com.coloros.calculator
     adb shell pm disable-user --user 0 com.coloros.childrenspace
     adb shell pm disable-user --user 0 com.coloros.cloud
     adb shell pm disable-user --user 0 com.coloros.compass2
@@ -1038,13 +1038,13 @@ start() {
     adb shell pm disable-user --user 0 se.dirac.acs
     #endregion Oppo
     #region Vivo
-    adb shell pm disable-user --user 0 com.android.bbkcalculator
-    adb shell pm disable-user --user 0 com.android.BBKClock
+    #adb shell pm disable-user --user 0 com.android.bbkcalculator
+    #adb shell pm disable-user --user 0 com.android.BBKClock
     adb shell pm disable-user --user 0 com.android.bbklog
     adb shell pm disable-user --user 0 com.android.bbkmusic
     adb shell pm disable-user --user 0 com.android.bbksoundrecorder
     adb shell pm disable-user --user 0 com.bbk.account
-    adb shell pm disable-user --user 0 com.bbk.calendar
+    #adb shell pm disable-user --user 0 com.bbk.calendar
     adb shell pm disable-user --user 0 com.bbk.cloud
     adb shell pm disable-user --user 0 com.bbk.iqoo.logsystem
     adb shell pm disable-user --user 0 com.bbk.photoframewidget
@@ -1075,7 +1075,7 @@ start() {
     adb shell pm disable-user --user 0 com.vivo.compass
     adb shell pm disable-user --user 0 com.vivo.doubleinstance
     adb shell pm disable-user --user 0 com.vivo.doubletimezoneclock
-    adb shell pm disable-user --user 0 com.vivo.dream.clock
+    #adb shell pm disable-user --user 0 com.vivo.dream.clock
     adb shell pm disable-user --user 0 com.vivo.dream.music
     adb shell pm disable-user --user 0 com.vivo.dream.weather
     adb shell pm disable-user --user 0 com.vivo.easyshar
@@ -1235,7 +1235,7 @@ start() {
     #region Huawei
     adb shell pm disable-user --user 0 com.honor.global
     # Tunner Radio
-    adb shell pm disable-user --user 0 com.huawei.android.FMRadio
+    #adb shell pm disable-user --user 0 com.huawei.android.FMRadio
     # Theme Manager
     adb shell pm disable-user --user 0 com.huawei.android.thememanager
     # Tips and Help
