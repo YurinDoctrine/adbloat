@@ -87,8 +87,8 @@ start() {
     echo -e "Digital Wellbeing"
     adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 
-    # echo -e "Gmail"
-    # adb shell pm disable-user --user 0 com.google.android.gm
+    echo -e "Gmail"
+    adb shell pm disable-user --user 0 com.google.android.gm
 
     echo -e "Google"
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
@@ -368,8 +368,8 @@ start() {
     echo -e "Game Optimizing Service"
     adb shell pm disable-user --user 0 com.samsung.android.game.gos
 
-    # echo -e "Gmail"
-    # adb shell pm disable-user --user 0 com.google.android.gm
+    echo -e "Gmail"
+    adb shell pm disable-user --user 0 com.google.android.gm
 
     echo -e "Google"
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
@@ -775,7 +775,7 @@ start() {
     adb shell pm disable-user --user 0 com.google.android.apps.restore
     # adb shell pm disable-user --user 0 com.google.android.apps.turbo
     adb shell pm disable-user --user 0 com.google.android.setupwizard
-    # adb shell pm disable-user --user 0 com.google.android.gm
+    adb shell pm disable-user --user 0 com.google.android.gm
     #adb shell pm uninstall -k --user 0 com.android.chrome
     adb shell pm disable-user --user 0 com.google.android.syncadapters.contacts
     adb shell pm disable-user --user 0 com.google.android.partnersetup
@@ -831,6 +831,7 @@ start() {
     # adb shell pm disable-user --user 0 com.android.fmradio
     adb shell pm disable-user --user 0 com.google.android.apps.docs
     # adb shell pm disable-user --user 0 com.google.android.apps.photos
+    adb shell pm disable-user --user 0 com.google.android.talk
     adb shell pm disable-user --user 0 com.google.android.keep
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
     adb shell pm uninstall -k --user 0 com.google.android.videos
@@ -1139,6 +1140,7 @@ start() {
     adb shell pm disable-user --user 0 com.google.android.videos
     #adb shell pm uninstall -k --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.android.exchange
+    adb shell pm disable-user --user 0 com.google.android.apps.genie.geniewidget
 
     # Carrier services
     #adb shell pm disable-user --user 0 com.google.android.ims
