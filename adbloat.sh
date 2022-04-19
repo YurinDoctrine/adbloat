@@ -2,6 +2,9 @@
 
 start() {
     #region Xioami
+    echo -e "Security Plugin"
+    adb shell pm disable-user --user 0  com.miui.securityadd
+
     # echo -e "WPS Office"
     # adb shell pm disable-user --user 0  cn.wps.moffice_eng
 
@@ -10,6 +13,9 @@ start() {
 
     echo -e "Aliexpress"
     adb shell pm uninstall -k --user 0 com.alibaba.aliexpresshd
+
+    echo -e "Daily Wallpaper"
+    adb shell pm uninstall -k --user 0 com.mfashiongallery.emag
 
     echo -e "Юла"
     adb shell pm disable-user --user 0 com.allgoritm.youla
@@ -231,6 +237,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.xiaomi.payment
 
     echo -e "Mi Wallet"
+    adb shell pm uninstall -k --user 0 com.mipay.wallet.id
     adb shell pm uninstall -k --user 0 com.mipay.wallet.in
 
     echo -e "Mi CloudSync"
@@ -1303,6 +1310,7 @@ start() {
     adb shell pm disable-user --user 0 com.opera.preinstall
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
     adb shell pm disable-user --user 0 com.android.egg
+    adb shell pm disable-user --user 0 com.miui.aod
 
     echo -e "Optimizing ..."
     adb shell pm compile -a -f -m everything-profile
