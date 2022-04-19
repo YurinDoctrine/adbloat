@@ -12,6 +12,9 @@ exit 0
 
 :start
     ::region Xioami
+    echo Security Plugin
+    adb shell pm disable-user --user 0  com.miui.securityadd
+
     :: echo WPS Office
     :: adb shell pm disable-user --user 0  cn.wps.moffice_eng
 
@@ -20,6 +23,9 @@ exit 0
 
     echo Aliexpress
     adb shell pm uninstall -k --user 0 com.alibaba.aliexpresshd
+
+    echo Daily Wallpaper
+    adb shell pm uninstall -k --user 0 com.mfashiongallery.emag
 
     echo Юла
     adb shell pm disable-user --user 0 com.allgoritm.youla
@@ -241,6 +247,7 @@ exit 0
     adb shell pm uninstall -k --user 0 com.xiaomi.payment
 
     echo Mi Wallet
+    adb shell pm uninstall -k --user 0 com.mipay.wallet.id
     adb shell pm uninstall -k --user 0 com.mipay.wallet.in
 
     echo Mi CloudSync
@@ -1313,6 +1320,7 @@ exit 0
     adb shell pm disable-user --user 0 com.opera.preinstall
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
     adb shell pm disable-user --user 0 com.android.egg
+    adb shell pm disable-user --user 0 com.miui.aod
 
 echo Optimizing ...
     adb shell pm compile -a -f -m everything-profile
