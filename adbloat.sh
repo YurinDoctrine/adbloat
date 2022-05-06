@@ -290,10 +290,10 @@ start() {
     adb shell pm disable-user --user 0 com.miui.wmsvc
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
     adb shell pm disable-user --user 0 com.miui.powerkeeper
-    adb shell pm disable-user --user 0 com.miui.global.packageinstaller
 
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
+    adb shell pm disable-user --user 0 com.xiaomi.discover
     adb shell pm uninstall -k --user 0 com.xiaomi.glgm
     adb shell pm uninstall -k --user 0 com.xiaomi.joyose
     adb shell pm disable-user --user 0 com.xiaomi.location.fused
