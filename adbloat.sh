@@ -289,9 +289,12 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.weather2
     adb shell pm disable-user --user 0 com.miui.wmsvc
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
+    adb shell pm disable-user --user 0 com.miui.powerkeeper
+    adb shell pm disable-user --user 0 com.miui.global.packageinstaller
 
+    adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
-    #adb shell pm disable-user --user 0 com.xiaomi.discover
+    adb shell pm disable-user --user 0 com.xiaomi.discover
     adb shell pm uninstall -k --user 0 com.xiaomi.glgm
     adb shell pm uninstall -k --user 0 com.xiaomi.joyose
     adb shell pm disable-user --user 0 com.xiaomi.location.fused
@@ -530,6 +533,7 @@ start() {
     echo -e "Google text-to-speech engine"
     adb shell pm uninstall -k --user 0 com.google.android.tts
 
+    adb shell pm disable-user --user 0 com.samsung.android.cameraxservice
     adb shell pm disable-user --user 0 com.samsung.android.app.settings.bixby
     adb shell pm disable-user --user 0 com.samsung.android.app.reminder
     adb shell pm disable-user --user 0 com.samsung.android.beaconmanager
@@ -1239,8 +1243,8 @@ start() {
     #adb shell pm disable-user --user 0 com.google.android.configupdater
     #adb shell pm disable-user --user 0 com.google.android.ext.services
     #adb shell pm disable-user --user 0 com.google.android.ext.shared
-    #adb shell pm disable-user --user 0 com.google.android.onetimeinitializer
-    #adb shell pm disable-user --user 0 com.google.android.packageinstaller
+    adb shell pm uninstall -k  --user 0 com.google.android.onetimeinitializer
+    adb shell pm disable-user --user 0 com.google.android.packageinstaller
     #region Huawei
     adb shell pm disable-user --user 0 com.honor.global
     # Tunner Radio
@@ -1295,10 +1299,10 @@ start() {
     adb shell pm disable-user --user 0 com.booking
     adb shell pm uninstall -k --user 0 com.ebay.carrier
     adb shell pm uninstall -k --user 0 com.ebay.mobile
-    adb shell pm disable-user --user 0 com.facebook.appmanager
-    adb shell pm disable-user --user 0 com.facebook.katana
-    adb shell pm disable-user --user 0 com.facebook.services
-    adb shell pm disable-user --user 0 com.facebook.system
+    adb shell pm uninstall -k --user 0 com.facebook.appmanager
+    adb shell pm uninstall -k --user 0 com.facebook.katana
+    adb shell pm uninstall -k --user 0 com.facebook.services
+    adb shell pm uninstall -k --user 0 com.facebook.system
     adb shell pm disable-user --user 0 com.gameloft.android.GloftANPH
     adb shell pm disable-user --user 0 com.gameloft.android.GloftDBMF
     adb shell pm disable-user --user 0 com.gameloft.android.GloftDMKF
