@@ -290,6 +290,7 @@ start() {
     adb shell pm disable-user --user 0 com.miui.wmsvc
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
     adb shell pm disable-user --user 0 com.miui.powerkeeper
+    adb shell pm disable-user --user 0 com.miui.global.packageinstaller
 
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
@@ -1243,7 +1244,7 @@ start() {
     #adb shell pm disable-user --user 0 com.google.android.ext.services
     #adb shell pm disable-user --user 0 com.google.android.ext.shared
     adb shell pm uninstall -k  --user 0 com.google.android.onetimeinitializer
-    adb shell pm disable-user --user 0 com.google.android.packageinstaller
+    #adb shell pm disable-user --user 0 com.google.android.packageinstaller
     #region Huawei
     adb shell pm disable-user --user 0 com.honor.global
     # Tunner Radio
