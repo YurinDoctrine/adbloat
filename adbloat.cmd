@@ -43,7 +43,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.soundrecorder
 
     echo SIM Toolkit
-    adb shell pm disable-user --user 0 com.android.stk
+    adb shell pm uninstall -k --user 0 com.android.stk
 
     echo Live Wallpaper Picker
     ::adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
@@ -301,7 +301,7 @@ exit 0
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
     adb shell pm disable-user --user 0 com.miui.powerkeeper
     adb shell pm disable-user --user 0 com.miui.global.packageinstaller
-    
+
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
     adb shell pm disable-user --user 0 com.xiaomi.discover
@@ -564,7 +564,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.mms.service
     ::adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.android.statementservice
-    adb shell pm disable-user --user 0 com.android.stk
+    adb shell pm uninstall -k --user 0 com.android.stk
     adb shell pm uninstall -k --user 0 com.android.thememanager
     adb shell pm uninstall -k --user 0 com.android.thememanager.module
     ::adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
@@ -820,7 +820,7 @@ exit 0
     :: adb shell pm disable-user --user 0 com.google.android.gsf
     ::endregion Samsung
     ::region Realme
-    adb shell pm disable-user --user 0 com.android.stk
+    adb shell pm uninstall -k --user 0 com.android.stk
     ::adb shell pm uninstall -k --user 0 com.android.chrome
     adb shell pm uninstall -k --user 0 com.google.android.tts
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
@@ -861,7 +861,7 @@ exit 0
     adb shell pm disable-user --user 0 com.nearme.gamecenter
     adb shell pm disable-user --user 0 com.android.bips
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
-    ::adb shell pm disable-user --user 0 com.android.calllogbackup
+    adb shell pm disable-user --user 0 com.android.calllogbackup
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
     adb shell pm disable-user --user 0 com.android.mms
@@ -870,7 +870,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.android.sharedstoragebackup
     adb shell pm disable-user --user 0 com.android.statementservice
-    adb shell pm disable-user --user 0 com.android.stk
+    adb shell pm uninstall -k --user 0 com.android.stk
     ::adb shell pm disable-user --user 0 com.android.wallpaperbackup
     :: adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.activation
@@ -1200,7 +1200,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.backupconfirm
     ::adb shell pm disable-user --user 0 com.android.bluetooth
     ::adb shell pm disable-user --user 0 com.android.bluetoothmidiservice
-    ::adb shell pm disable-user --user 0 com.android.calllogbackup
+    adb shell pm disable-user --user 0 com.android.calllogbackup
     ::adb shell pm disable-user --user 0 com.android.captiveportallogin
     ::adb shell pm disable-user --user 0 com.android.carrierconfig
     ::adb shell pm disable-user --user 0 com.android.carrierdefaultapp
@@ -1244,8 +1244,8 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.sharedstoragebackup
     ::adb shell pm disable-user --user 0 com.android.shell
     ::adb shell pm disable-user --user 0 com.android.statementservice
-    ::adb shell pm disable-user --user 0 com.android.stk
-    ::adb shell pm disable-user --user 0 com.android.stk
+    adb shell pm uninstall -k --user 0 com.android.stk2
+    adb shell pm uninstall -k --user 0 com.android.stk
     ::adb shell pm disable-user --user 0 com.android.storagemanager
     ::adb shell pm disable-user --user 0 com.android.systemui
     ::adb shell pm disable-user --user 0 com.android.vpndialogs
@@ -1255,6 +1255,8 @@ exit 0
     ::adb shell pm disable-user --user 0 com.google.android.ext.shared
     adb shell pm uninstall -k  --user 0 com.google.android.onetimeinitializer
     ::adb shell pm disable-user --user 0 com.google.android.packageinstaller
+    adb shell pm uninstall -k --user 0 com.android.traceur
+    adb shell pm uninstall -k --user 0 com.android.galaxy4
     ::region Huawei
     adb shell pm disable-user --user 0 com.honor.global
     :: Tunner Radio
