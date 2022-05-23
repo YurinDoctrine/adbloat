@@ -331,6 +331,7 @@ exit 0
     adb shell pm disable-user --user 0 --user 0 com.facemoji.lite.xiaomi
     adb shell pm disable-user --user 0 android.autoinstalls.config.Xiaomi.pine
     adb shell pm uninstall -k --user 0 com.xiaomi.oversea.ecom
+    adb shell pm uninstall -k --user 0 com.mi.AutoTest
     ::endregion Xiaomi
     ::region Samsung
     echo Ar Zone
