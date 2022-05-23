@@ -293,6 +293,10 @@ start() {
     adb shell pm disable-user --user 0 com.miui.global.packageinstaller
     adb shell pm disable-user --user 0 com.miui.phrase
     adb shell pm disable-user --user 0 com.miui.audiomonitor
+    adb shell pm uninstall -k --user 0 com.miui.translationservice
+    adb shell pm uninstall -k --user 0 com.miui.translation.kingsoft
+    adb shell pm uninstall -k --user 0 com.miui.translation.youdao
+    adb shell pm uninstall -k --user 0 com.mi.android.globalpersonalassistant
 
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
@@ -315,6 +319,7 @@ start() {
     adb shell pm disable-user --user 0 --user 0 com.xiaomi.xmsfkeeper
     adb shell pm disable-user --user 0 --user 0 com.facemoji.lite.xiaomi
     adb shell pm disable-user --user 0 android.autoinstalls.config.Xiaomi.pine
+    adb shell pm uninstall -k --user 0 com.xiaomi.oversea.ecom
     #endregion Xiaomi
     #region Samsung
     echo -e "Ar Zone"
