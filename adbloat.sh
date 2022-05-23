@@ -217,6 +217,9 @@ start() {
     echo -e "TikTok"
     adb shell pm uninstall -k --user 0 com.zhiliaoapp.musically
 
+    echo -e "Amazon"
+    adb shell pm uninstall -k --user 0 in.amazon.mShop.android.shopping
+
     echo -e "Яндекс"
     adb shell pm uninstall -k --user 0 ru.yandex.searchplugin
 
@@ -1164,6 +1167,7 @@ start() {
     #adb shell pm uninstall -k --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.android.exchange
     adb shell pm disable-user --user 0 com.google.android.apps.genie.geniewidget
+    adb shell pm uninstall -k --user 0 com.autonavi.minimap
 
     # Carrier services
     #adb shell pm disable-user --user 0 com.google.android.ims
