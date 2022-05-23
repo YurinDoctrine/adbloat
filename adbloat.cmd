@@ -227,6 +227,9 @@ exit 0
     echo TikTok
     adb shell pm uninstall -k --user 0 com.zhiliaoapp.musically
 
+    echo Amazon
+    adb shell pm uninstall -k --user 0 in.amazon.mShop.android.shopping
+
     echo Яндекс
     adb shell pm uninstall -k --user 0 ru.yandex.searchplugin
 
@@ -1174,6 +1177,7 @@ exit 0
     ::adb shell pm uninstall -k --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.android.exchange
     adb shell pm disable-user --user 0 com.google.android.apps.genie.geniewidget
+    adb shell pm uninstall -k --user 0 com.autonavi.minimap
 
     :: Carrier services
     ::adb shell pm disable-user --user 0 com.google.android.ims
