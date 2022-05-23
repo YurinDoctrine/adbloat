@@ -298,6 +298,9 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.translation.youdao
     adb shell pm uninstall -k --user 0 com.mi.android.globalpersonalassistant
     adb shell pm uninstall -k --user 0 com.xiaomi.mbnloader
+    adb shell pm disable-user --user 0 com.miui.whetstone
+    adb shell pm uninstall -k --user 0 com.miui.klo.bugreport
+    adb shell pm disable-user --user 0 com.miui.contentcatcher
 
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
