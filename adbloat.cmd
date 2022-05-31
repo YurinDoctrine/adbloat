@@ -236,6 +236,10 @@ exit 0
     echo ZenkitPartnerConfig
     adb shell pm uninstall -k --user 0 com.yandex.zenkitpartnerconfig
 
+    echo Yandex Money
+    adb shell pm uninstall -k --user 0 ru.yandex.money
+    adb shell pm uninstall -k --user 0 ru.yandex.service
+
     echo Miui Backup
     adb shell pm disable-user --user 0 com.miui.backup
     adb shell pm disable-user --user 0 com.miui.cloudbackup
@@ -1273,6 +1277,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.google.android.packageinstaller
     adb shell pm uninstall -k --user 0 com.android.traceur
     adb shell pm uninstall -k --user 0 com.android.galaxy4
+    adb shell pm disable-user --user 0 com.android.apps.tag
     ::region Huawei
     adb shell pm disable-user --user 0 com.honor.global
     :: Tunner Radio
