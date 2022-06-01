@@ -963,10 +963,14 @@ start() {
     adb shell pm disable-user --user 0 com.oppo.ScoreAppMonitor
     adb shell pm disable-user --user 0 com.oppo.usercenter
     adb shell pm disable-user --user 0 com.oppoex.afterservice
+    adb shell pm disable-user --user 0 com.qualcomm.qti.performancemode
+    adb shell pm disable-user --user 0 com.qualcomm.qti.poweroffalarm
+    adb shell pm disable-user --user 0 com.qualcomm.qti.cne
+    adb shell pm disable-user --user 0 com.qualcomm.qti.qdma
     adb shell pm disable-user --user 0 com.qualcomm.qti.modemtestmode
     # adb shell pm disable-user --user 0 com.qualcomm.qti.remoteSimlockAuth
     adb shell pm disable-user --user 0 com.qualcomm.uimremoteclient
-    adb shell pm disable-user --user 0 com.qualcomm.uimremoteserve
+    adb shell pm disable-user --user 0 com.qualcomm.uimremoteserver
     adb shell pm disable-user --user 0 com.mediatek.omacp
     adb shell pm disable-user --user 0 com.mobiletools.systemhelper
     adb shell pm disable-user --user 0 com.nearme.atlas
