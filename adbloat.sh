@@ -963,6 +963,8 @@ start() {
     adb shell pm disable-user --user 0 com.oppo.ScoreAppMonitor
     adb shell pm disable-user --user 0 com.oppo.usercenter
     adb shell pm disable-user --user 0 com.oppoex.afterservice
+    adb shell pm disable-user --user 0 com.qualcomm.qti.seccamservice
+    adb shell pm disable-user --user 0 com.qualcomm.qti.uceShimService
     adb shell pm disable-user --user 0 com.qualcomm.qti.performancemode
     adb shell pm disable-user --user 0 com.qualcomm.qti.poweroffalarm
     adb shell pm disable-user --user 0 com.qualcomm.qti.cne
