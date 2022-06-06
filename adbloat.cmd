@@ -1261,7 +1261,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.providers.downloads
     ::adb shell pm disable-user --user 0 com.android.providers.downloads.ui
     ::adb shell pm disable-user --user 0 com.android.providers.media
-    ::adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
+    adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     ::adb shell pm disable-user --user 0 com.android.providers.settings
     ::adb shell pm disable-user --user 0 com.android.providers.telephony
     ::adb shell pm disable-user --user 0 com.android.providers.userdictionary
