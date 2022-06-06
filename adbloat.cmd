@@ -238,7 +238,7 @@ exit 0
 
     echo Yandex Money
     adb shell pm uninstall -k --user 0 ru.yandex.money
-    adb shell pm uninstall -k --user 0 ru.yandex.service
+    adb shell pm uninstall -k --user 0 ru.yandex.money.service
 
     echo Miui Backup
     adb shell pm disable-user --user 0 com.miui.backup
