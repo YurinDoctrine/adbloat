@@ -1355,6 +1355,7 @@ exit 0
     adb shell pm disable-user --user 0 com.tencent.soter.soterserver
     adb shell pm disable-user --user 0 com.android.egg
     adb shell pm disable-user --user 0 com.miui.aod
+    adb shell pm disable-user --user 0 com.android.localtransport
 
 echo Optimizing ...
     adb shell pm compile -a -f -m everything-profile
