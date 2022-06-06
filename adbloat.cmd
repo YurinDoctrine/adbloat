@@ -1361,6 +1361,10 @@ echo Optimizing ...
     adb shell pm compile -a -f -m everything-profile
     adb shell pm compile -a -f --compile-layouts
     adb shell pm bg-dexopt-job
+
+    adb shell settings put global window_animation_scale 0.25
+    adb shell settings put global transition_animation_scale 0.25
+    adb shell settings put global animator_duration_scale 0.0
 echo ALL DONE!
 echo.
 adb kill-server
