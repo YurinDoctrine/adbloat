@@ -1189,6 +1189,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.exchange
     adb shell pm disable-user --user 0 com.google.android.apps.genie.geniewidget
     adb shell pm uninstall -k --user 0 com.autonavi.minimap
+    adb shell pm uninstall -k --user 0 com.huaqin.wifibtrxtx
 
     :: Carrier services
     ::adb shell pm disable-user --user 0 com.google.android.ims
