@@ -147,6 +147,9 @@ exit 0
     echo Mi Community
     adb shell pm uninstall -k --user 0 com.mi.global.bbs
 
+    echo MIUI Gallery
+    adb shell pm uninstall -k --user 0 com.miui.gallery
+
     echo Mi Store
     adb shell pm uninstall -k --user 0 com.mi.global.shop
 
