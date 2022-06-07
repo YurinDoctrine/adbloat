@@ -590,7 +590,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.emergency
     adb shell pm disable-user --user 0 com.android.hotwordenrollment.okgoogle
     adb shell pm disable-user --user 0 com.android.mms
-    ::adb shell pm disable-user --user 0 com.android.mms.service
+    adb shell pm disable-user --user 0 com.android.mms.service
     ::adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.android.statementservice
     adb shell pm uninstall -k --user 0 com.android.stk
@@ -894,7 +894,7 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
     adb shell pm disable-user --user 0 com.android.mms
-    ::adb shell pm disable-user --user 0 com.android.mms.service
+    adb shell pm disable-user --user 0 com.android.mms.service
     ::adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.android.sharedstoragebackup
@@ -1014,7 +1014,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
     ::adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
-    ::adb shell pm disable-user --user 0 com.android.mms.service
+    adb shell pm disable-user --user 0 com.android.mms.service
     ::adb shell pm disable-user --user 0 com.android.printspooler
     ::adb shell pm disable-user --user 0 com.android.providers.calendar
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
@@ -1260,8 +1260,8 @@ exit 0
     ::adb shell pm disable-user --user 0 com.android.internal.display.cutout.emulation.tall
     ::adb shell pm disable-user --user 0 com.android.keychain
     ::adb shell pm disable-user --user 0 com.android.managedprovisioning
-    ::adb shell pm disable-user --user 0 com.android.mms
-    ::adb shell pm disable-user --user 0 com.android.mms.service
+    adb shell pm disable-user --user 0 com.android.mms
+    adb shell pm disable-user --user 0 com.android.mms.service
     ::adb shell pm disable-user --user 0 com.android.mtp
     ::adb shell pm disable-user --user 0 com.android.pacprocessor
     ::adb shell pm disable-user --user 0 com.android.phone
