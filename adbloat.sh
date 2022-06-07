@@ -191,6 +191,9 @@ start() {
     echo -e "PartnerNetflixActivation"
     adb shell pm uninstall -k --user 0 com.netflix.partner.activation
 
+    echo -e "Spotify"
+    adb shell pm uninstall -k --user 0 com.spotify.music
+
     echo -e "Opera"
     adb shell pm uninstall -k --user 0 com.opera.browser
     adb shell pm uninstall -k --user 0 com.opera.preinstall
@@ -463,15 +466,17 @@ start() {
     echo -e "Samsung Pay"
     adb shell pm disable-user --user 0 com.samsung.android.spay
 
-    echo -e "Secure Folder"
+    echo -e "Knox"
     adb shell pm disable-user --user 0 com.samsung.knox.securefolder
+    adb shell pm disable-user --user 0 com.samsung.android.knox.analytics.uploader
 
     echo -e "SmartThings"
     adb shell pm disable-user --user 0 com.samsung.android.beaconmanager
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
 
     echo -e "SwiftKey factory settings"
-    adb shell pm disable-user --user 0 com.touchtype.swiftkey
+    adb shell pm uninstall -k --user 0 com.touchtype.swiftkey
+    adb shell pm uninstall -k --user 0 com.swiftkey.swiftkeyconfigurator
 
     echo -e "Wearable Manager Installer"
     adb shell pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
@@ -504,7 +509,8 @@ start() {
     adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 
     echo -e "Клавиатура Microsoft SwiftKey"
-    adb shell pm disable-user --user 0 com.touchtype.swiftkey
+    adb shell pm uninstall -k --user 0 com.touchtype.swiftkey
+    adb shell pm uninstall -k --user 0 com.swiftkey.swiftkeyconfigurator
 
     echo -e "Клавиатура Samsung"
     adb shell pm disable-user --user 0 com.samsung.android.honeyboard
@@ -554,6 +560,10 @@ start() {
 
     echo -e "Google text-to-speech engine"
     adb shell pm uninstall -k --user 0 com.google.android.tts
+
+    echo -e "Fonts"
+    adb shell pm uninstall -k --user 0 com.monotype.android.font.foundation
+    adb shell pm uninstall -k --user 0 com.monotype.android.font.samsungone
 
     adb shell pm disable-user --user 0 com.samsung.android.cameraxservice
     adb shell pm disable-user --user 0 com.samsung.android.app.settings.bixby
