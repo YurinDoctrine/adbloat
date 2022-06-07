@@ -137,6 +137,9 @@ start() {
     echo -e "Mi Community"
     adb shell pm uninstall -k --user 0 com.mi.global.bbs
 
+    echo -e "MIUI Gallery"
+    adb shell pm uninstall -k --user 0 com.miui.gallery
+
     echo -e "Mi Store"
     adb shell pm uninstall -k --user 0 com.mi.global.shop
 
