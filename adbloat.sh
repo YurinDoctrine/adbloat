@@ -315,6 +315,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.klo.bugreport
     adb shell pm disable-user --user 0 com.miui.contentcatcher
 
+    adb shell pm disable-user --user 0 com.xiaomi.ab
     adb shell pm disable-user --user 0 com.xiaomi.bsp.gps.nps
     adb shell pm disable-user --user 0 com.xiaomi.account
     adb shell pm disable-user --user 0 com.xiaomi.discover
