@@ -1362,8 +1362,8 @@ start() {
     adb shell pm disable-user --user 0 com.android.localtransport
 
     echo -e "Optimizing ..."
-    adb shell pm compile -a -f -m speed
-    adb shell pm compile -a -f --compile-layouts
+    adb shell pm compile -a -f --check-prof false -m speed
+    adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
 
     adb shell settings put global window_animation_scale 0.25
