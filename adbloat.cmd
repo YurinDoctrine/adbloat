@@ -1375,7 +1375,7 @@ echo Optimizing ...
 
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
-    adb shell settings put global animator_duration_scale 0.0
+    adb shell settings put system animator_duration_scale 0.0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
@@ -1385,6 +1385,7 @@ echo Optimizing ...
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
+    adb shell settings put system font_scale 1.25
 echo ALL DONE!
 echo.
 adb kill-server
