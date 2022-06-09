@@ -1363,6 +1363,7 @@ start() {
     adb shell pm disable-user --user 0 com.android.localtransport
 
     echo -e "Optimizing ..."
+    adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
