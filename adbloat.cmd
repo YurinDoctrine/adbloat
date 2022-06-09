@@ -1387,6 +1387,7 @@ echo Optimizing ...
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system font_scale 1.25
+    adb shell settings put system mcf_continuity 0
 echo ALL DONE!
 echo.
 adb kill-server
