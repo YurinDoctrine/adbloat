@@ -1374,6 +1374,13 @@ start() {
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
+    adb shell settings put global enable_cellular_on_boot 0
+    adb shell settings put global sys_traced 0
+    adb shell settings put global wifi_verbose_logging_enabled 1
+    adb shell settings put global send_action_app_error 0
+    adb shell settings put global foreground_service_starts_logging_enabled 0
+    adb shell settings put global enable_diskstats_logging 0
+    adb shell settings put global activity_starts_logging_enabled 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
