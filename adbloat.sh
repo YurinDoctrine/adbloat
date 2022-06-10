@@ -1375,6 +1375,8 @@ start() {
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global enable_cellular_on_boot 0
+    adb shell settings put secure upload_debug_log_pref 0
+    adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
     adb shell settings put global wifi_verbose_logging_enabled 1
     adb shell settings put global send_action_app_error 0
