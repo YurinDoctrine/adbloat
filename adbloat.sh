@@ -1369,6 +1369,7 @@ start() {
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
 
+    adb shell settings put system slider_animation_duration 650
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
@@ -1394,6 +1395,7 @@ start() {
     adb shell settings put global app_auto_restriction_enabled 1
     adb shell settings put global app_standby_enabled 1
     adb shell settings put global forced_app_standby_enabled 1
+    adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
