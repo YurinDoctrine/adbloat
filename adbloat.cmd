@@ -1370,6 +1370,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.localtransport
 
 echo Optimizing ...
+    adb shell cmd shortcut reset-all-throttling
     adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --check-prof false --compile-layouts
@@ -1378,6 +1379,7 @@ echo Optimizing ...
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
+    adb shell settings put global fancy_ime_animations 0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
@@ -1386,7 +1388,9 @@ echo Optimizing ...
     adb shell settings put system user_log_enabled 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global cached_apps_freezer enabled
+    adb shell settings put global app_auto_restriction_enabled 1
     adb shell settings put global app_standby_enabled 1
+    adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
