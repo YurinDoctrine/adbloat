@@ -1398,6 +1398,7 @@ echo Optimizing ...
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
     adb shell settings put system user_log_enabled 0
+    adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global app_auto_restriction_enabled 1
