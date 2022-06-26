@@ -1376,6 +1376,7 @@ echo Optimizing ...
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
 
+    adb shell settings put system min_refresh_rate 1.0
     adb shell settings put system display_color_mode 0
     adb shell settings put system slider_animation_duration 650
     adb shell settings put global window_animation_scale 0.25
