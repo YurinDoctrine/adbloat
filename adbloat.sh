@@ -1371,11 +1371,14 @@ start() {
 
     adb shell settings put system min_refresh_rate 1.0
     adb shell settings put system display_color_mode 0
-    adb shell settings put system slider_animation_duration 650
+    adb shell settings put system slider_animation_duration 750
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put secure tap_duration_threshold 0.0
+    adb shell settings put secure touch_blocking_period 0.0
+    adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global enable_cellular_on_boot 0
