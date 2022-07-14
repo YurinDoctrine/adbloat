@@ -1385,6 +1385,8 @@ echo Optimizing ...
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put secure tap_duration_threshold 0.0
     adb shell settings put secure touch_blocking_period 0.0
+    adb shell settings put secure long_press_timeout 250
+    adb shell settings put secure multi_press_timeout 250
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
@@ -1407,11 +1409,13 @@ echo Optimizing ...
     adb shell settings put global sys_vdso 1
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
+    adb shell settings put global app_restriction_enabled true
     adb shell settings put global app_auto_restriction_enabled 1
     adb shell settings put global app_standby_enabled 1
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global adaptive_battery_management_enabled 1
+    adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
