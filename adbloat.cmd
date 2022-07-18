@@ -1375,6 +1375,7 @@ echo Optimizing ...
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
+    adb shell pm trim-caches 999999M
 
     adb shell settings put system min_refresh_rate 1.0
     adb shell settings put system display_color_mode 0
@@ -1391,6 +1392,7 @@ echo Optimizing ...
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global enable_cellular_on_boot 0
+    adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
@@ -1415,6 +1417,7 @@ echo Optimizing ...
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global adaptive_battery_management_enabled 1
+    adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
