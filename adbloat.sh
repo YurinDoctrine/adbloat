@@ -1402,6 +1402,7 @@ start() {
     adb shell settings put system user_log_enabled 0
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global sys_vdso 1
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
