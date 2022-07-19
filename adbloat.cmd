@@ -1377,6 +1377,7 @@ echo Optimizing ...
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
 
+    adb shell settings put secure support_highfps 1
     adb shell settings put system min_refresh_rate 1.0
     adb shell settings put system display_color_mode 0
     adb shell settings put system slider_animation_duration 750
