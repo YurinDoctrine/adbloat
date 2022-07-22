@@ -1419,8 +1419,8 @@ start() {
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global pm.sleep_mode 1
     adb shell settings put system intelligent_sleep_mode 0
-    adb shell settings put system pm.sleep_mode 1
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
