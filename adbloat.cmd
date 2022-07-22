@@ -1395,6 +1395,7 @@ echo Optimizing ...
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
+    adb shell settings put global wifi.supplicant_scan_interval 180
     adb shell settings put global enable_cellular_on_boot 0
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
@@ -1426,6 +1427,7 @@ echo Optimizing ...
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put system intelligent_sleep_mode 0
+    adb shell settings put system pm.sleep_mode 1
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
