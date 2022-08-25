@@ -1399,6 +1399,8 @@ echo Optimizing ...
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global wifi.supplicant_scan_interval 180
     adb shell settings put global enable_cellular_on_boot 0
+    adb shell settings put global ro.mot.eri.losalert.delay 1000
+    adb shell settings put global dalvik.vm.dexopt-flags=m=y,v=n,o=y,u=n
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
@@ -1408,6 +1410,7 @@ echo Optimizing ...
     adb shell settings put global foreground_service_starts_logging_enabled 0
     adb shell settings put global enable_diskstats_logging 0
     adb shell settings put global activity_starts_logging_enabled 0
+    adb shell settings put global ro.config.nocheckin 1
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1416,6 +1419,7 @@ echo Optimizing ...
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global sys_vdso 1
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
