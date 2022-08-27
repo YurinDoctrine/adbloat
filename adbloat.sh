@@ -1419,6 +1419,7 @@ start() {
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
+    adb shell settings put global ro.min_pointer_dur 8
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
