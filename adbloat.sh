@@ -1386,6 +1386,7 @@ start() {
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure long_press_timeout 250
     adb shell settings put secure multi_press_timeout 250
+    adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
@@ -1406,6 +1407,7 @@ start() {
     adb shell settings put global ro.config.nocheckin 1
     adb shell settings put global profiler.force_disable_err_rpt 1
     adb shell settings put global profiler.force_disable_ulog 1
+    adb shell settings put global logcat.live disable
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1416,6 +1418,7 @@ start() {
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.sys.purgeable_assets 1
+    adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
@@ -1431,8 +1434,11 @@ start() {
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.sf.hw 1
+    adb shell settings put global debug.egl.hw 1
+    adb shell settings put global debug.egl.profiler 1
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.config.hw_quickpoweron true
+    adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
