@@ -1431,6 +1431,7 @@ echo Optimizing ...
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global sys_vdso 1
+    adb shell settings put global ro.config.low_ram true
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global app_restriction_enabled true
