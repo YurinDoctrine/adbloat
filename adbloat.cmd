@@ -1446,8 +1446,9 @@ echo Optimizing ...
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
-    adb shell settings put global ro.config.hw_power_saving true
+    adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.config.hw_quickpoweron true
+    adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put system intelligent_sleep_mode 0
