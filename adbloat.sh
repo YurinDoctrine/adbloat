@@ -1415,6 +1415,7 @@ start() {
     adb shell settings put system user_log_enabled 0
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put global net.dns2 8.8.8.8
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.sys.purgeable_assets 1
