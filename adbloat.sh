@@ -1369,6 +1369,8 @@ start() {
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
+    adb shell rm -rf /data/dalvik-cache/*
+    adb shell sm fstrim
 
     #adb shell wm size 1080x1920
     #adb shell wm density 390
@@ -1386,6 +1388,7 @@ start() {
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure long_press_timeout 250
     adb shell settings put secure multi_press_timeout 250
+    adb shell settings put system speed_mode 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global enhanced_processing 1
