@@ -1425,6 +1425,7 @@ echo Optimizing ...
     adb shell settings put global net.dns2 8.8.8.8
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.ril.sensor.sleep.control 1
+    adb shell settings put global persist.sys.use_16bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.min_pointer_dur 8
@@ -1433,6 +1434,7 @@ echo Optimizing ...
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
+    adb shell settings put global ro.vold.umsdirtyratio 50
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
