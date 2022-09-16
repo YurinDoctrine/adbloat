@@ -1428,6 +1428,7 @@ start() {
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
+    adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
