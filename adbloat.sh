@@ -1369,6 +1369,7 @@ start() {
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
+    adb shell rm -rf /cache/dalvik-cache/*
     adb shell rm -rf /data/dalvik-cache/*
     adb shell sm fstrim
 
