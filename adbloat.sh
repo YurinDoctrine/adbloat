@@ -1388,8 +1388,9 @@ start() {
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
-    adb shell settings put secure tap_duration_threshold 0.0
+    adb shell settings put global touch.pressure.scale 0.1
     adb shell settings put secure touch_blocking_period 0.0
+    adb shell settings put secure tap_duration_threshold 0.0
     adb shell settings put secure long_press_timeout 250
     adb shell settings put secure multi_press_timeout 250
     adb shell settings put system speed_mode 1
@@ -1446,9 +1447,12 @@ start() {
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global hw2d.force 1
+    adb shell settings put global hw3d.force 1
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
+    adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
