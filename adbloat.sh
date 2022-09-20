@@ -1399,7 +1399,6 @@ start() {
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global wifi.supplicant_scan_interval 180
-    adb shell settings put global enable_cellular_on_boot 0
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
