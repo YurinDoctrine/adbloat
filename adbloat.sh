@@ -1458,6 +1458,7 @@ start() {
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global dev.bootcomplete 0
+    adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.secure 0
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
