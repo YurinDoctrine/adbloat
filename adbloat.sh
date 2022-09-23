@@ -1425,6 +1425,7 @@ start() {
     adb shell settings put global net.dns2 8.8.8.8
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.ril.sensor.sleep.control 1
+    adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global persist.sys.use_16bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
@@ -1433,6 +1434,7 @@ start() {
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global tunnel.decode false
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
@@ -1448,6 +1450,7 @@ start() {
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global debug.sf.hw 1
