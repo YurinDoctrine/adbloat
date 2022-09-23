@@ -1432,6 +1432,7 @@ start() {
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
+    adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
