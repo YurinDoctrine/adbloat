@@ -1441,6 +1441,7 @@ echo Optimizing ...
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global tunnel.decode false
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
@@ -1456,6 +1457,7 @@ echo Optimizing ...
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global debug.sf.hw 1
