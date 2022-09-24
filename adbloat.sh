@@ -1450,7 +1450,9 @@ start() {
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
+    adb shell settings put global ro.product.gpu.driver 1
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global debug.sf.hw 1
