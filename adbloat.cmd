@@ -1395,6 +1395,8 @@ echo Optimizing ...
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global view.touch_slop 1
+    adb shell settings put global view.scroll_friction 0
     adb shell settings put global touch.pressure.scale 0.1
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure tap_duration_threshold 0.0
@@ -1443,6 +1445,7 @@ echo Optimizing ...
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global tunnel.decode false
+    adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
