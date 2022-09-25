@@ -1424,6 +1424,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.nocheckin 1
     adb shell settings put global profiler.force_disable_err_rpt 1
     adb shell settings put global profiler.force_disable_ulog 1
+    adb shell settings put global profiler.launch false
     adb shell settings put global logcat.live disable
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
@@ -1443,6 +1444,7 @@ echo Optimizing ...
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
+    adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global tunnel.decode false
     adb shell settings put global sys.use_fifo_ui 1
