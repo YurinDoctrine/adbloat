@@ -1449,6 +1449,7 @@ echo Optimizing ...
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global tunnel.decode false
+    adb shell settings put global drm.service.enabled true
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.storage_manager.enabled true
