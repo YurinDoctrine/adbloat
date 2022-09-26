@@ -1451,6 +1451,8 @@ echo Optimizing ...
     adb shell settings put global tunnel.decode false
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
+    adb shell settings put global ro.storage_manager.enabled true
+    adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.vold.umsdirtyratio 50
     adb shell settings put global ram_expand_size_list 1
@@ -1481,6 +1483,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
+    adb shell settings put global power.saving.mode 1
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
