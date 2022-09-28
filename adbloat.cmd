@@ -1410,6 +1410,7 @@ echo Optimizing ...
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global wifi.supplicant_scan_interval 180
+    adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
