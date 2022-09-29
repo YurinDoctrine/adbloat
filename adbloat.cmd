@@ -1403,7 +1403,9 @@ echo Optimizing ...
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure long_press_timeout 250
     adb shell settings put secure multi_press_timeout 250
+    adb shell settings put secure speed_mode_enable 1
     adb shell settings put system speed_mode 1
+    adb shell settings put global speed_mode_on 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global enhanced_processing 1
