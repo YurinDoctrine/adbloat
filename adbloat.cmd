@@ -1396,6 +1396,7 @@ echo Optimizing ...
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global touch.size.bias 0
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
     adb shell settings put global touch.pressure.scale 0.1
