@@ -1380,6 +1380,7 @@ echo Optimizing ...
     adb shell rm -rf /data/crashdata/*
     adb shell rm -rf /data/dalvik-cache/*
     adb shell rm -rf /data/local/*
+    adb shell rm -rf /data/log/*
     adb shell rm -rf /data/tombstones/*
     adb shell sm fstrim
 
