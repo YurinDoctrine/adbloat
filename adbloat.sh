@@ -1423,6 +1423,7 @@ start() {
     adb shell settings put global ro.config.nocheckin 1
     adb shell settings put global profiler.force_disable_err_rpt 1
     adb shell settings put global profiler.force_disable_ulog 1
+    adb shell settings put global profiler.debugmonitor false
     adb shell settings put global profiler.launch false
     adb shell settings put global logcat.live disable
     adb shell settings put system rakuten_denwa 0
