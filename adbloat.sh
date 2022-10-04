@@ -1435,6 +1435,7 @@ start() {
     adb shell settings put global net.dns2 8.8.8.8
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.ril.sensor.sleep.control 1
+    adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global persist.sys.use_16bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
