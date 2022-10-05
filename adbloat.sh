@@ -1457,10 +1457,12 @@ start() {
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global ro.fb.mode 1
+    adb shell settings put global debug.gr.swapinterval 1
     adb shell settings put global ro.vold.umsdirtyratio 50
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
+    adb shell settings put global ro.config.low_ram.mod true
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global app_restriction_enabled true
@@ -1478,6 +1480,7 @@ start() {
     adb shell settings put global ro.product.gpu.driver 1
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global debug.enabletr true
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
