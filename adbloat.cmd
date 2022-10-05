@@ -1480,6 +1480,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.level 0
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
+    adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global ro.product.gpu.driver 1
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
