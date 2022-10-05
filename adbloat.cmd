@@ -1454,6 +1454,7 @@ echo Optimizing ...
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 150
+    adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
@@ -1501,7 +1502,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
-    adb shell settings put global power.saving.mode 1
+    adb shell settings put global power.saving. enable
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
