@@ -1403,6 +1403,7 @@ start() {
     adb shell settings put global speed_mode_on 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
+    adb shell settings put global ro.hwui.disable_scissor_opt true
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
@@ -1474,6 +1475,8 @@ start() {
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
+    adb shell settings put global ro.sys.fw.use_trim_settings true
+    adb shell settings put global ro.trim.config true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.hwui.level 0
     adb shell settings put global debug.hwui.render_dirty_regions false
