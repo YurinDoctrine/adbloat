@@ -1455,6 +1455,7 @@ start() {
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
     adb shell settings put global ro.sf.compbypass.enable 1
@@ -1492,6 +1493,7 @@ start() {
     adb shell settings put global debug.enabletr true
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.sf.enable_hwc_vds 1
+    adb shell settings put global debug.sf.swaprect 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.overlayui.enable 1
