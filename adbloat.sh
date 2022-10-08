@@ -1472,6 +1472,7 @@ start() {
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
+    adb shell settings put global ro.config.dha_tunnable 1
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global app_restriction_enabled true
