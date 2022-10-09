@@ -1457,6 +1457,8 @@ start() {
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global audio.offload.gapless.enabled true
+    adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global sys.use_fifo_ui 1
@@ -1507,11 +1509,9 @@ start() {
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put global power.saving.mode 1
+    adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
-    adb shell settings put system APP_SWITCH_DELAY_TIME false
-    adb shell settings put global audio.offload.gapless.enabled true
-    adb shell settings put global tunnel.decode false
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
