@@ -1397,6 +1397,7 @@ echo Optimizing ...
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global sys.disable_ext_animation 1
     adb shell settings put global touch.size.bias 0
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
@@ -1441,6 +1442,7 @@ echo Optimizing ...
     adb shell settings put global profiler.debugmonitor false
     adb shell settings put global profiler.launch false
     adb shell settings put global logcat.live disable
+    adb shell settings put global config.disable_consumerir true
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1450,6 +1452,7 @@ echo Optimizing ...
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
@@ -1473,7 +1476,9 @@ echo Optimizing ...
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
+    adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.fb.mode 1
+    adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
     adb shell settings put global ro.vold.umsdirtyratio 50
     adb shell settings put global ram_expand_size_list 1
@@ -1518,6 +1523,7 @@ echo Optimizing ...
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put global power.saving.mode 1
     adb shell settings put global APP_SWITCH_DELAY_TIME false
+    adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
