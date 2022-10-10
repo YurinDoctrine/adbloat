@@ -1469,6 +1469,8 @@ start() {
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.preload.common 1
+    adb shell settings put global ro.zygote.preload.disable 2
+    adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
@@ -1478,6 +1480,7 @@ start() {
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
     adb shell settings put global ro.config.dha_tunnable 1
+    adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global app_restriction_enabled true
