@@ -1479,6 +1479,7 @@ echo Optimizing ...
     adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.service.remove_unused 1
+    adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
