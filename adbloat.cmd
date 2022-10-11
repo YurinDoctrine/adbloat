@@ -1451,6 +1451,7 @@ echo Optimizing ...
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global GC_TIMEOUT false
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
