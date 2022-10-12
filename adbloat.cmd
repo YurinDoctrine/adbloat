@@ -1404,7 +1404,6 @@ echo Optimizing ...
     adb shell settings put global touch.pressure.scale 0.1
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure tap_duration_threshold 0.0
-    adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure long_press_timeout 250
     adb shell settings put secure multi_press_timeout 250
     adb shell settings put secure speed_mode_enable 1
@@ -1536,6 +1535,8 @@ echo Optimizing ...
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system font_scale 1.25
     adb shell settings put system bluetooth_discoverability 1
+    adb shell settings put system bluetooth_discoverability 1
+    adb shell settings put system master_motion 0
 echo ALL DONE!
 echo.
 adb kill-server
