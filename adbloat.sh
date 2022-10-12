@@ -1528,6 +1528,7 @@ start() {
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system font_scale 1.25
     adb shell settings put system bluetooth_discoverability 1
+    adb shell settings put system master_motion 0
     echo -e "ALL DONE!"
     echo -e ""
     adb kill-server
