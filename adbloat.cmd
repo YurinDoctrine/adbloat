@@ -1381,6 +1381,7 @@ echo Optimizing ...
     adb shell rm -rf /data/dalvik-cache/*
     adb shell rm -rf /data/local/*
     adb shell rm -rf /data/log/*
+    adb shell rm -rf /data/resource-cache/*
     adb shell rm -rf /data/tombstones/*
     adb shell sm fstrim
 
@@ -1420,6 +1421,8 @@ echo Optimizing ...
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global wifi.supplicant_scan_interval 180
     adb shell settings put global wifi_scan_always_enabled 0
+    adb shell settings put global ble_scan_always_enabled 0
+    adb shell settings put global mobile_data_always_on 0
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global persist.sys.dalvik.multithread true
