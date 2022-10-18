@@ -1433,6 +1433,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.usejit true
     adb shell settings put global dalvik.vm.checkjni false
     adb shell settings put global dalvik.vm.check-dex-sum false
+    adb shell settings put global dalvik.vm.debug.alloc 0
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
@@ -1458,6 +1459,7 @@ echo Optimizing ...
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global ACTIVITY_INACTIVE_RESET_TIME false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global debug.bt.lowspeed true
