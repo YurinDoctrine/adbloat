@@ -1481,6 +1481,7 @@ start() {
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.zygote.preload.disable 2
+    adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global debug.sqlite.syncmode 1
