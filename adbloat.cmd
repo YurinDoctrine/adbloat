@@ -1427,6 +1427,7 @@ echo Optimizing ...
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
+    adb shell settings put global dalvik.vm.heaputilization 0.25
     adb shell settings put global dalvik.vm.heaptargetutilization 0.25
     adb shell settings put global dalvik.vm.dex2oat-swap true
     adb shell settings put global dalvik.vm.verify-bytecode false
@@ -1482,6 +1483,7 @@ echo Optimizing ...
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
     adb shell settings put global ro.sf.compbypass.enable 1
+    adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.storage_manager.enabled true
@@ -1523,6 +1525,7 @@ echo Optimizing ...
     adb shell settings put global hw3d.force 1
     adb shell settings put global debug.cpurend.vsync true
     adb shell settings put global debug.enabletr true
+    adb shell settings put global debug.sf.ddms 0
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.sf.enable_hwc_vds 1
     adb shell settings put global debug.sf.swaprect 1
