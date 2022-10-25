@@ -1473,6 +1473,7 @@ start() {
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
@@ -1487,6 +1488,7 @@ start() {
     adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
     adb shell settings put global ro.service.remove_unused 1
+    adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.ril.enable.sdr 0
