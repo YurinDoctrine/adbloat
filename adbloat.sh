@@ -1473,6 +1473,7 @@ start() {
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
+    adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
