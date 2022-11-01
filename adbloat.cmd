@@ -1388,6 +1388,7 @@ echo Optimizing ...
     ::adb shell wm size 1080x1920
     ::adb shell wm density 390
 
+    adb shell settings put global vendor.display.enable_optimize_refresh 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put system thermal_limit_refresh_rate 0
@@ -1478,10 +1479,12 @@ echo Optimizing ...
     adb shell settings put global windowsmgr.max_events_per_sec 150
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
+    adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
+    adb shell settings put global audio.deep_buffer.media true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
