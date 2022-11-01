@@ -1470,6 +1470,7 @@ echo Optimizing ...
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global ro.support.signalsmooth true
+    adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.use_16bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
