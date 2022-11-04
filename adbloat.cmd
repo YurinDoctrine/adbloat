@@ -1438,6 +1438,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.debug.alloc 0
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global dalvik.vm.execution-mode int:jit
+    adb shell settings put global dalvik.vm.dexopt.secondary true
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
@@ -1470,6 +1471,7 @@ echo Optimizing ...
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global ro.support.signalsmooth true
+    adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.use_16bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
@@ -1486,10 +1488,12 @@ echo Optimizing ...
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
+    adb shell settings put global media.stagefright.enable-http true
     adb shell settings put global audio.deep_buffer.media true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
+    adb shell settings put global persist.dpm.feature 1
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
