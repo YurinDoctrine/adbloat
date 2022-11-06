@@ -1541,6 +1541,7 @@ start() {
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
+    adb shell settings put global debug.sf.latch_unsignaled 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
