@@ -1527,6 +1527,7 @@ echo Optimizing ...
     adb shell settings put global app_auto_restriction_enabled 1
     adb shell settings put global app_standby_enabled 1
     adb shell settings put global forced_app_standby_enabled 1
+    adb shell settings put global ro.sys.fw.bservice_enable true
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global fstrim_mandatory_interval 1
