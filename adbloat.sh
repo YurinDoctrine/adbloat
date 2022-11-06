@@ -1419,6 +1419,7 @@ start() {
     adb shell settings put global mobile_data_always_on 0
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
+    adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
     adb shell settings put global dalvik.vm.heaputilization 0.25
@@ -1483,6 +1484,7 @@ start() {
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global media.stagefright.enable-http true
     adb shell settings put global audio.deep_buffer.media true
+    adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global drm.service.enabled true
