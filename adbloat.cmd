@@ -1535,6 +1535,7 @@ echo Optimizing ...
     adb shell settings put global ro.sys.fw.use_trim_settings true
     adb shell settings put global ro.trim.config true
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global debug.gralloc.enable_fb_ubwc 1
     adb shell settings put global debug.hwui.level 0
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
