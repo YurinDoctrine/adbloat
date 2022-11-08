@@ -1,4 +1,4 @@
-# ADBLOAT
+# adbloat
 
 ## Pre-Requisites for Using ADB
 
