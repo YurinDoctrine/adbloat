@@ -1440,6 +1440,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global dalvik.vm.execution-mode int:jit
     adb shell settings put global dalvik.vm.dexopt.secondary true
+    adb shell settings put global dalvik.vm.dex2oat-filter interpret-only
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
