@@ -1457,6 +1457,7 @@ echo Optimizing ...
     adb shell settings put global profiler.launch false
     adb shell settings put global logcat.live disable
     adb shell settings put global config.disable_consumerir true
+    adb shell settings put global ro.debuggable 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
