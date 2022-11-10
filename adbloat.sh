@@ -1467,6 +1467,7 @@ start() {
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global ro.support.signalsmooth true
+    adb shell settings put global ro.allow.mock.location 0
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.use_16bpp_alpha 1
