@@ -1397,6 +1397,7 @@ start() {
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
     adb shell settings put global touch.pressure.scale 0.1
+    adb shell settings put global touch.distance.scale 0
     adb shell settings put secure touch_blocking_period 0.0
     adb shell settings put secure tap_duration_threshold 0.0
     adb shell settings put secure long_press_timeout 250
@@ -1539,6 +1540,7 @@ start() {
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global ro.product.gpu.driver 1
+    adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global debug.cpurend.vsync true
