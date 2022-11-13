@@ -1499,6 +1499,7 @@ echo Optimizing ...
     adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
+    adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
     adb shell settings put global ro.sf.compbypass.enable 1
