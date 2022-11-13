@@ -1461,6 +1461,7 @@ start() {
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
     adb shell settings put global ACTIVITY_INACTIVE_RESET_TIME false
     adb shell settings put global GC_TIMEOUT false
