@@ -1500,6 +1500,7 @@ echo Optimizing ...
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
+    adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
     adb shell settings put global ro.sf.compbypass.enable 1
@@ -1541,6 +1542,7 @@ echo Optimizing ...
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
     adb shell settings put global ro.trim.config true
+    adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
     adb shell settings put global debug.hwui.level 0
