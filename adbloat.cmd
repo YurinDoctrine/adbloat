@@ -1468,6 +1468,7 @@ echo Optimizing ...
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global debug.hwc.winupdate 1
     adb shell settings put global ACTIVITY_INACTIVE_RESET_TIME false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global ro.HOME_APP_ADJ 1
@@ -1507,6 +1508,7 @@ echo Optimizing ...
     adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
+    adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.preload.common 1
@@ -1566,6 +1568,8 @@ echo Optimizing ...
     adb shell settings put global debug.sf.latch_unsignaled 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
+    adb shell settings put global sys.config.activelaunch_enable true
+    adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.secure 0
