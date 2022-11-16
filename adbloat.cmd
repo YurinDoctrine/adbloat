@@ -1418,6 +1418,7 @@ echo Optimizing ...
     adb shell settings put global ro.hwui.texture_cache_size 20
     adb shell settings put global ro.hwui.texture_cache_flush_rate 0.5
     adb shell settings put global ro.hwui.gradient_cache_size 0.1
+    adb shell settings put global ENFORCE_PROCESS_LIMIT false
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
