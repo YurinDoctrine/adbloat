@@ -1506,6 +1506,7 @@ echo Optimizing ...
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
+    adb shell settings put global persist.audio.hifi true
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
