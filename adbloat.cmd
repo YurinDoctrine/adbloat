@@ -1476,6 +1476,7 @@ echo Optimizing ...
     adb shell settings put global ACTIVITY_INACTIVE_RESET_TIME false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
+    adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
