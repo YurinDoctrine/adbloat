@@ -1573,6 +1573,7 @@ echo Optimizing ...
     adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
+    adb shell settings put global debug.composition.type gpu
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
