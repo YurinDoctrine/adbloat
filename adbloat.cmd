@@ -1388,6 +1388,7 @@ echo Optimizing ...
     ::adb shell wm size 1080x1920
     ::adb shell wm density 390
 
+    adb shell settings put global vendor.display.enhance_idle_time 1
     adb shell settings put global vendor.display.enable_optimize_refresh 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
