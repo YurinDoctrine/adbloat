@@ -1510,6 +1510,7 @@ echo Optimizing ...
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hifi true
+    adb shell settings put global mpq.audio.decode true
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
@@ -1528,6 +1529,7 @@ echo Optimizing ...
     adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.fb.mode 1
+    adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
