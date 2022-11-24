@@ -1524,6 +1524,7 @@ start() {
     adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.fb.mode 1
+    adb shell settings put global ro.tb.mode 1
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
