@@ -1569,6 +1569,7 @@ echo Optimizing ...
     adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
     adb shell settings put global debug.enabletr true
     adb shell settings put global debug.sf.ddms 0
@@ -1580,7 +1581,8 @@ echo Optimizing ...
     adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
-    adb shell settings put global debug.composition.type gpu
+    adb shell settings put global debug.sf.recomputecrop 0
+    adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
