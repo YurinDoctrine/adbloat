@@ -1566,6 +1566,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global persist.sys.force_highendgfx true
+    adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
     adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global dev.pm.dyn_samplingrate 1
