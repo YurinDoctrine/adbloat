@@ -1529,6 +1529,7 @@ echo Optimizing ...
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
+    adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.syncmode 1
