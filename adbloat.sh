@@ -1458,6 +1458,7 @@ start() {
     adb shell settings put global logcat.live disable
     adb shell settings put global config.disable_consumerir true
     adb shell settings put global ro.debuggable 0
+    adb shell settings put global debug.mdpcomp.logs 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1558,6 +1559,7 @@ start() {
     adb shell settings put global debug.hwui.level 0
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
+    adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
@@ -1578,6 +1580,7 @@ start() {
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
     adb shell settings put global debug.sf.recomputecrop 0
+    adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
