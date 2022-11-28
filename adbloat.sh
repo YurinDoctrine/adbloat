@@ -1483,6 +1483,7 @@ start() {
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
+    adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.use_16bpp_alpha 1
@@ -1523,6 +1524,7 @@ start() {
     adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
+    adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.syncmode 1
