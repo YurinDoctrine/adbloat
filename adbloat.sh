@@ -1520,6 +1520,7 @@ start() {
     adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
+    adb shell settings put global ro.recentMode 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
