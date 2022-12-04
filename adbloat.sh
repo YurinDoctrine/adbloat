@@ -1579,6 +1579,7 @@ start() {
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
     adb shell settings put global debug.enabletr true
