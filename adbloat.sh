@@ -1594,6 +1594,7 @@ start() {
     adb shell settings put global debug.sf.recomputecrop 0
     adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
     adb shell settings put global debug.enable.sglscale 1
+    adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
