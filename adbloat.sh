@@ -1430,9 +1430,9 @@ start() {
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
+    adb shell settings put global dalvik.vm.dex2oat64.enabled true
     adb shell settings put global dalvik.vm.heaputilization 0.25
     adb shell settings put global dalvik.vm.heaptargetutilization 0.25
-    adb shell settings put global dalvik.vm.dex2oat64.enabled true
     adb shell settings put global dalvik.vm.dex2oat-swap true
     adb shell settings put global dalvik.vm.verify-bytecode false
     adb shell settings put global dalvik.vm.usejit true
