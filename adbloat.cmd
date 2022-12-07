@@ -1614,6 +1614,7 @@ echo Optimizing ...
     adb shell settings put global ro.secure 0
     adb shell settings put global ro.wmt.blcr.enable 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
+    adb shell settings put global ro.charger.disable_init_blank true
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.ril.power_collapse 1
