@@ -1550,6 +1550,7 @@ echo Optimizing ...
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
+    adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
     adb shell settings put global ro.vold.umsdirtyratio 50
