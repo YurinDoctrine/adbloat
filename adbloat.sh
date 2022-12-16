@@ -1543,6 +1543,7 @@ start() {
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
+    adb shell settings put global ro.ril.enable.dtm 0
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
@@ -1648,4 +1649,5 @@ read -p '>_:' ans
 if [[ "$ans" == "yes" ]]; then
     start
 else
+    exit 0
 fi
