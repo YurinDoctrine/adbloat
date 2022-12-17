@@ -1453,7 +1453,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.dexopt.secondary true
     adb shell settings put global dalvik.vm.dex2oat-filter interpret-only
     adb shell settings put global dalvik.vm.deadlock-predict off
-    adb shell settings put global dalvik.vm.dex2oat-backend=Quick
+    adb shell settings put global dalvik.vm.dex2oat-backend Quick
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
     adb shell settings put global ro.dalvik.vm.native.bridge 0
