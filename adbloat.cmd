@@ -1621,6 +1621,7 @@ echo Optimizing ...
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 1
+    adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
@@ -1628,6 +1629,7 @@ echo Optimizing ...
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.secure 0
+    adb shell settings put global ro.treble.enabled true
     adb shell settings put global ro.wmt.blcr.enable 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
     adb shell settings put global ro.charger.disable_init_blank true
