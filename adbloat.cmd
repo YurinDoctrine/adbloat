@@ -1563,6 +1563,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
+    adb shell settings put global ro.board_ram_size low
     adb shell settings put global ro.config.dha_tunnable 1
     adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global persist.sys.binary_xml false
