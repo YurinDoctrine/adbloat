@@ -1577,6 +1577,7 @@ echo Optimizing ...
     adb shell settings put global adaptive_battery_management_enabled 1
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
+    adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
@@ -1631,6 +1632,7 @@ echo Optimizing ...
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.secure 0
     adb shell settings put global ro.treble.enabled true
+    adb shell settings put global ro.config.ksm.support true
     adb shell settings put global ro.wmt.blcr.enable 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
     adb shell settings put global ro.charger.disable_init_blank true
