@@ -1532,6 +1532,7 @@ echo Optimizing ...
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
+    adb shell settings put global persist.sys.support.vt false
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
