@@ -429,6 +429,9 @@ exit 0
     :: echo Google Фото
     :: adb shell pm disable-user --user 0 com.google.android.apps.photos
 
+    echo Google Chat
+    adb shell pm uninstall -k --user 0 com.google.android.apps.dynamite
+
     echo Health Service
     adb shell pm disable-user --user 0 com.sec.android.service.health
 
@@ -443,6 +446,9 @@ exit 0
 
     echo Outlook
     adb shell pm disable-user --user 0 com.microsoft.office.outlook
+
+    echo Skype
+    adb shell pm disable-user --user 0 com.skype.raider
 
     echo Samsung Daily
     adb shell pm disable-user --user 0 com.samsung.android.app.spage
