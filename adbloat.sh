@@ -1630,6 +1630,7 @@ start() {
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
+    adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global ro.secure 0
     adb shell settings put global ro.treble.enabled true
     adb shell settings put global ro.config.ksm.support true
