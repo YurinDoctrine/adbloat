@@ -1582,6 +1582,8 @@ echo Optimizing ...
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
     adb shell settings put global ro.board_ram_size low
+    adb shell settings put global ro.ime.lowmemory true
+    adb shell settings put global ro.cp_system_other_odex 1
     adb shell settings put global ro.config.dha_tunnable 1
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.core_ctl_min_cpu 0
