@@ -1571,6 +1571,7 @@ echo Optimizing ...
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
     adb shell settings put global ro.ril.enable.dtm 0
+    adb shell settings put global ro.product.enhanced_4g_lte true
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
