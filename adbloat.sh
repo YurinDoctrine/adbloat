@@ -1392,6 +1392,7 @@ start() {
     adb shell settings put global vendor.display.enhance_idle_time 1
     adb shell settings put global vendor.display.enable_optimize_refresh 1
     adb shell settings put global vendor.display.disable_metadata_dynamic_fps 1
+    adb shell settings put global vendor.display.use_smooth_motion 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put system thermal_limit_refresh_rate 0
