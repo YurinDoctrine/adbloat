@@ -1436,6 +1436,7 @@ echo Optimizing ...
     adb shell settings put global ro.hwui.drop_shadow_cache_size 1
     adb shell settings put global ro.hwui.shape_cache_size 1
     adb shell settings put global ro.hwui.r_buffer_cache_size 1
+    adb shell settings put global ro.hwui.path_cache_size 1
     adb shell settings put global omap.enhancement true
     adb shell settings put global ENFORCE_PROCESS_LIMIT false
     adb shell settings put global enhanced_processing 1
