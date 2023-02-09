@@ -1530,7 +1530,7 @@ start() {
     adb shell settings put global audio.deep_buffer.media true
     adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.gapless.enabled true
-    adb shell settings put global audio.offload.pcm.16bit.enable false
+    adb shell settings put global audio.offload.pcm.24bit.enable false
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hifi true
