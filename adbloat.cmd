@@ -1523,7 +1523,7 @@ echo Optimizing ...
     adb shell settings put global ro.min_pointer_dur 8
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
-    adb shell settings put global windowsmgr.max_events_per_sec 150
+    adb shell settings put global windowsmgr.max_events_per_sec 90
     adb shell settings put global iop.enable_prefetch_ofr 1
     adb shell settings put global iop.enable_uxe 0
     adb shell settings put global persist.mm.enable.prefetch true
@@ -1537,7 +1537,7 @@ echo Optimizing ...
     adb shell settings put global audio.deep_buffer.media true
     adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.gapless.enabled true
-    adb shell settings put global audio.offload.pcm.24bit.enable false
+    adb shell settings put global audio.offload.pcm.16bit.enable false
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hifi true
