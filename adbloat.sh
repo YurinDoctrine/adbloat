@@ -1671,6 +1671,7 @@ start() {
     adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
     adb shell settings put global sys.autobrightness_optimize true
+    adb shell settings put global persist.perf.wm_static_blur true
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
