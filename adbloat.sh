@@ -1494,6 +1494,7 @@ start() {
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
     adb shell settings put global debug.hwc.otf 1
