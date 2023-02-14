@@ -1505,6 +1505,8 @@ start() {
     adb shell settings put global PROC_START_TIMEOUT false
     adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global persist.data.netmgrd.qos.enable true
+    adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.radio.data_no_toggle 1
