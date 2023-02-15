@@ -1506,12 +1506,16 @@ echo Optimizing ...
     adb shell settings put global libc.debug.malloc 0
     adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
+    adb shell settings put global debug.hwui.use_buffer_age false
     adb shell settings put global CPU_MIN_CHECK_DURATION false
     adb shell settings put global ACTIVITY_INACTIVE_RESET_TIME false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
     adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global persist.service.lgospd.enable 0
+    adb shell settings put global persist.service.pcsync.enable 0
+    adb shell settings put global persist.data.mode concurrent
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global debug.bt.lowspeed true
