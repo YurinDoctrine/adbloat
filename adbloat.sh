@@ -1489,6 +1489,7 @@ start() {
     adb shell settings put global ro.debuggable 0
     adb shell settings put global debug.mdpcomp.logs 0
     adb shell settings put global ro.kernel.checkjni 0
+    adb shell settings put global debug.atrace.tags.enableflags 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1522,6 +1523,7 @@ start() {
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
+    adb shell settings put global security.perf_harden 1
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
