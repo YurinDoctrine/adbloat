@@ -1566,6 +1566,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.hifi_always_on true
     adb shell settings put global ro.config.hifi_enhance_support 1
     adb shell settings put global audio.sys.routing.latency 0
+    adb shell settings put global audio.sys.mute.latency.factor 2
     adb shell settings put global mpq.audio.decode true
     adb shell settings put global debug.stagefright.ccodec 1
     adb shell settings put global af.fast_track_multiplier 1
