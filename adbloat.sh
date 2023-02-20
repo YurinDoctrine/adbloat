@@ -1524,6 +1524,9 @@ start() {
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
     adb shell settings put global security.perf_harden 1
+    adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
+    adb shell settings put global ro.surface_flinger.set_idle_timer_ms 500
+    adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
@@ -1632,6 +1635,7 @@ start() {
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global sdm.perf_hint_window 50
+    adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
     adb shell settings put global ro.mtk_perf_response_time 1
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
