@@ -1498,6 +1498,7 @@ start() {
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global config.disable_rtt true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
@@ -1510,6 +1511,7 @@ start() {
     adb shell settings put global PROC_START_TIMEOUT false
     adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global persist.rcs.supported 1
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
     adb shell settings put global persist.data.mode concurrent
