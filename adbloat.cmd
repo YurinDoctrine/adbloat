@@ -1531,9 +1531,9 @@ echo Optimizing ...
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
     adb shell settings put global security.perf_harden 1
-    adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
-    adb shell settings put global ro.surface_flinger.set_idle_timer_ms 500
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
+    adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
+    adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
