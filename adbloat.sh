@@ -1578,6 +1578,7 @@ start() {
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
+    adb shell settings put global persist.sys.prelaunch.off 0
     adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
