@@ -1658,6 +1658,7 @@ echo Optimizing ...
     adb shell settings put global sys.hwc.gpu_perf_mode 1
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
