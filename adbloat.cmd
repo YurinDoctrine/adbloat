@@ -1679,6 +1679,7 @@ echo Optimizing ...
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 1
+    adb shell settings put global debug.migrate.bigcore false
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
