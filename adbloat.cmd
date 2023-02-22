@@ -1618,6 +1618,7 @@ echo Optimizing ...
     adb shell settings put global ro.core_ctl_min_cpu 0
     adb shell settings put global ro.core_ctl_present 1
     adb shell settings put global ro.thermal_warmreset true
+    adb shell settings put global persist.thermalmanager.enable true
     adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global persist.sys.binary_xml false
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
