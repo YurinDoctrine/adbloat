@@ -1527,16 +1527,20 @@ start() {
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
     adb shell settings put global security.perf_harden 1
+    adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
+    adb shell settings put global ro.surface_flinger.running_without_sync_framework true
+    adb shell settings put global ro.surface_flinger.supports_background_blur 0
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
-    adb shell settings put global persist.sys.use_32bpp_alpha 1
+    adb shell settings put global persist.sys.sf.disable_blurs 1
     adb shell settings put global persist.sys.static_blur_mode false
     adb shell settings put global persist.sys.disable_blur_view true
     adb shell settings put global persist.sys.shadow.open 0
+    adb shell settings put global persist.sys.use_32bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.vendor.perf.scroll_opt true
