@@ -1450,6 +1450,7 @@ echo Optimizing ...
     adb shell settings put global mobile_data_always_on 0
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
+    adb shell settings put global ro.telephony.call_ring.delay 0
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.memopt.switch 1
     adb shell settings put global persist.sys.dalvik.multithread true
