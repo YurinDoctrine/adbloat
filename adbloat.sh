@@ -1528,6 +1528,7 @@ start() {
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 0
     adb shell settings put global security.perf_harden 1
+    adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework true
     adb shell settings put global ro.surface_flinger.supports_background_blur 0
