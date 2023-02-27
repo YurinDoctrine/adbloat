@@ -1492,6 +1492,7 @@ start() {
     adb shell settings put global debug.mdpcomp.logs 0
     adb shell settings put global ro.kernel.checkjni 0
     adb shell settings put global debug.atrace.tags.enableflags 0
+    adb shell settings put global logd.kernel false
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1553,6 +1554,7 @@ start() {
     adb shell settings put global windowsmgr.max_events_per_sec 244
     adb shell settings put global iop.enable_prefetch_ofr 1
     adb shell settings put global iop.enable_uxe 0
+    adb shell settings put global persist.sys.autoclearsave 3
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
