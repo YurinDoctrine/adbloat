@@ -1686,6 +1686,10 @@ echo Optimizing ...
     adb shell settings put global debug.sf.recomputecrop 0
     adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
     adb shell settings put global debug.sf.disable_client_composition_cache 1
+    adb shell settings put global debug.sf.showupdates 0
+    adb shell settings put global debug.sf.showcpu 0
+    adb shell settings put global debug.sf.showbackground 0
+    adb shell settings put global debug.sf.showfps 0
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 1
