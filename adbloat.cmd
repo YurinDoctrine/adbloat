@@ -1547,6 +1547,7 @@ echo Optimizing ...
     adb shell settings put global persist.sys.sf.disable_blurs 1
     adb shell settings put global persist.sys.static_blur_mode false
     adb shell settings put global persist.sys.disable_blur_view true
+    adb shell settings put global persist.perf.wm_static_blur true
     adb shell settings put global persist.sys.shadow.open 0
     adb shell settings put global persist.sys.use_32bpp_alpha 1
     adb shell settings put global persist.sys.purgeable_assets 1
@@ -1710,7 +1711,7 @@ echo Optimizing ...
     adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
     adb shell settings put global sys.autobrightness_optimize true
-    adb shell settings put global persist.perf.wm_static_blur true
+    adb shell settings put global ro.build.smartcharging 1
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
