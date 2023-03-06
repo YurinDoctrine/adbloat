@@ -1605,6 +1605,7 @@ echo Optimizing ...
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.mtk_perfservice_support 0
+    adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.tb.mode 1
@@ -1701,6 +1702,8 @@ echo Optimizing ...
     adb shell settings put global debug.doze.component 1
     adb shell settings put global debug.migrate.bigcore false
     adb shell settings put global sdm.debug.disable_skip_validate 1
+    adb shell settings put global sdm.debug.disable_dest_sc 1
+    adb shell settings put global sdm.debug.disable_scalar 0
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
