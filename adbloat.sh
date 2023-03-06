@@ -1471,6 +1471,7 @@ start() {
     adb shell settings put global pm.dexopt.shared quicken
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global vnswap.enabled false
+    adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.config.hw_fast_dormancy 0,0
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put secure upload_debug_log_pref 0
