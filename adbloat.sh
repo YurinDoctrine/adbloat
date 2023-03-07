@@ -1514,6 +1514,7 @@ start() {
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
     adb shell settings put global MIN_RECENT_TASKS false
+    adb shell settings put global MAX_RECENT_TASKS false
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global persist.rcs.supported 1
     adb shell settings put global persist.service.lgospd.enable 0
