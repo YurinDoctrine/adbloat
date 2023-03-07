@@ -1719,6 +1719,7 @@ start() {
     adb shell settings put global power.saving.mode 1
     adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
+    adb shell settings put global MAX_SERVICE_INACTIVITY false
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put system intelligent_sleep_mode 0
