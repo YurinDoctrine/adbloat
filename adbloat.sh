@@ -1405,6 +1405,7 @@ start() {
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global sys.disable_ext_animation 1
     adb shell settings put global sys.enable_grip_rejection 1
+    adb shell settings put global ro.vendor.touchfeature.gamemode.enable true
     adb shell settings put global ro.floatingtouch.available 1
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
