@@ -1671,6 +1671,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global debug.hwui.enable_bp_cache false
     adb shell settings put global persist.sys.force_highendgfx true
+    adb shell settings put global vendor.display.enable_perf_hint_large_comp_cycle 1
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
