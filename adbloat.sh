@@ -1470,6 +1470,8 @@ start() {
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
+    adb shell settings put global pm.dexopt.boot verify
+    adb shell settings put global pm.dexopt.first-boot verify
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
@@ -1576,10 +1578,12 @@ start() {
     adb shell settings put global persist.audio.hifi true
     adb shell settings put global ro.config.hifi_always_on true
     adb shell settings put global ro.config.hifi_enhance_support 1
+    adb shell settings put global ro.vendor.audio.game.effect true
     adb shell settings put global audio.sys.routing.latency 0
     adb shell settings put global audio.sys.mute.latency.factor 2
     adb shell settings put global mpq.audio.decode true
     adb shell settings put global debug.stagefright.ccodec 1
+    adb shell settings put global debug.stagefright.omx_default_rank 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
@@ -1603,6 +1607,7 @@ start() {
     adb shell settings put global ro.mtk_perfservice_support 0
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
+    adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.tb.mode 1
     adb shell settings put global ro.ril.hsxpa 2
@@ -1632,6 +1637,7 @@ start() {
     adb shell settings put global persist.sys.binary_xml false
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
     adb shell settings put global cached_apps_freezer enabled
+    adb shell settings put global persist.device_config.use_cgroup_freezer true
     adb shell settings put global app_restriction_enabled true
     adb shell settings put global app_auto_restriction_enabled 1
     adb shell settings put global app_standby_enabled 1
