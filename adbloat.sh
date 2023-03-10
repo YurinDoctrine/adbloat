@@ -1690,6 +1690,7 @@ start() {
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.overlayui.enable 1
+    adb shell settings put global debug.sf.enable_advanced_sf_phase_offset 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
     adb shell settings put global debug.sf.recomputecrop 0
