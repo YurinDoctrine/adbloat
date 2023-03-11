@@ -1710,6 +1710,7 @@ start() {
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 1
     adb shell settings put global debug.migrate.bigcore false
+    adb shell settings put global debug.sdm.support_writeback 0
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
