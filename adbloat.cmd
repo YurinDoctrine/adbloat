@@ -1505,6 +1505,7 @@ echo Optimizing ...
     adb shell settings put global ro.kernel.checkjni 0
     adb shell settings put global debug.atrace.tags.enableflags 0
     adb shell settings put global logd.kernel false
+    adb shell settings put global vendor.display.disable_hw_recovery_dump 1
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
