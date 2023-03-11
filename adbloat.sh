@@ -1665,6 +1665,9 @@ start() {
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global debug.hwui.enable_bp_cache false
     adb shell settings put global persist.sys.force_highendgfx true
+    adb shell settings put global vendor.display.use_layer_ext 1
+    adb shell settings put global vendor.display.enable_posted_start_dyn 1
+    adb shell settings put global vendor.display.comp_mask 0
     adb shell settings put global vendor.display.enable_perf_hint_large_comp_cycle 1
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
@@ -1710,6 +1713,7 @@ start() {
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
     adb shell settings put global persist.android.strictmode 0
+    adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
     adb shell settings put global persist.bootanim.preload 1
