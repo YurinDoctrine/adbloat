@@ -1702,6 +1702,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.sf.enable_hwc_vds 1
     adb shell settings put global debug.sf.swaprect 1
+    adb shell settings put global debug.sf.gpu_freq_index 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.overlayui.enable 1
