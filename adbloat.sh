@@ -1387,6 +1387,7 @@ start() {
     #adb shell wm size 1080x1920
     #adb shell wm density 390
 
+    adb shell settings put global vendor.display.disable_ext_anim 1
     adb shell settings put global vendor.display.idle_time 0
     adb shell settings put global vendor.display.idle_time_inactive 0
     adb shell settings put global vendor.display.enhance_idle_time 1
