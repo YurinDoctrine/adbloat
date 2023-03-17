@@ -1519,8 +1519,12 @@ start() {
     adb shell settings put global CPU_MIN_CHECK_DURATION false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
+    adb shell settings put global MAX_SERVICE_INACTIVITY false
     adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global MAX_RECENT_TASKS false
+    adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
+    adb shell settings put global APP_SWITCH_DELAY_TIME false
+    adb shell settings put global CONTENT_APP_IDLE_OFFSET false
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.app.optimization true
     adb shell settings put global persist.rcs.supported 1
@@ -1738,9 +1742,6 @@ start() {
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put global power.saving.mode 1
-    adb shell settings put global APP_SWITCH_DELAY_TIME false
-    adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
-    adb shell settings put global MAX_SERVICE_INACTIVITY false
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put system intelligent_sleep_mode 0
