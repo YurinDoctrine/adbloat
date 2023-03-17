@@ -1517,6 +1517,7 @@ start() {
     adb shell settings put global debug.hwc.winupdate 1
     adb shell settings put global debug.hwui.use_buffer_age false
     adb shell settings put global CPU_MIN_CHECK_DURATION false
+    adb shell settings put global GC_MIN_INTERVAL false
     adb shell settings put global GC_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
     adb shell settings put global MAX_SERVICE_INACTIVITY false
