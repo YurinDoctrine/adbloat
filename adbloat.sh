@@ -1444,6 +1444,7 @@ start() {
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global mobile_data_always_on 0
     adb shell settings put global ro.ril.hep 1
+    adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
@@ -1536,6 +1537,7 @@ start() {
     adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
+    adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.ril.uart.flowctrl 99
@@ -1624,7 +1626,10 @@ start() {
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
     adb shell settings put global ro.ril.enable.dtm 0
+    adb shell settings put global ro.ril.enable.amr.wideband 1
+    adb shell settings put global ro.ril.enable.imc.feature 1
     adb shell settings put global ro.product.enhanced_4g_lte true
+    adb shell settings put global ro.telephony.call_ring.multiple false
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
@@ -1724,6 +1729,10 @@ start() {
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
+    adb shell settings put global ro.qti.sensors.pedometer false
+    adb shell settings put global ro.qti.sensors.step_counter false
+    adb shell settings put global ro.qti.sensors.step_detector false
+    adb shell settings put global ro.qti.sensors.pick_up false
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
@@ -1737,6 +1746,7 @@ start() {
     adb shell settings put global ro.config.ksm.support true
     adb shell settings put global ro.wmt.blcr.enable 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
+    adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
