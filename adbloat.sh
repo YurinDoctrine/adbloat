@@ -1694,6 +1694,7 @@ start() {
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global cpu.fps auto
     adb shell settings put global sys.hwc.gpu_perf_mode 1
+    adb shell settings put global ro.hwc.legacy_api true
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global persist.sys.force_sw_gles 1
