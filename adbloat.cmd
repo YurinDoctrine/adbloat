@@ -1635,6 +1635,9 @@ echo Optimizing ...
     adb shell settings put global ro.ril.enable.dtm 0
     adb shell settings put global ro.ril.enable.amr.wideband 1
     adb shell settings put global ro.ril.enable.imc.feature 1
+    adb shell settings put global ro.ril.enable.enhance.search 1
+    adb shell settings put global ro.ril.fast.dormancy.rule 1
+    adb shell settings put global ro.fast.dormancy 1
     adb shell settings put global ro.product.enhanced_4g_lte true
     adb shell settings put global ro.telephony.call_ring.multiple false
     adb shell settings put global persist.vendor.mwqem.enable 1
