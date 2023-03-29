@@ -1501,6 +1501,7 @@ start() {
     adb shell settings put global debug.atrace.tags.enableflags 0
     adb shell settings put global logd.kernel false
     adb shell settings put global vendor.display.disable_hw_recovery_dump 1
+    adb shell settings put global profiler.hung.dumpdobugreport false
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1543,6 +1544,8 @@ start() {
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 1
+    adb shell settings put global ro.com.google.locationfeatures 0
+    adb shell settings put global ro.com.google.networklocation 0
     adb shell settings put global security.perf_harden 1
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
