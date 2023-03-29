@@ -1542,7 +1542,7 @@ start() {
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
-    adb shell settings put global ro.allow.mock.location 0
+    adb shell settings put global ro.allow.mock.location 1
     adb shell settings put global security.perf_harden 1
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
@@ -1629,8 +1629,8 @@ start() {
     adb shell settings put global ro.ril.enable.amr.wideband 1
     adb shell settings put global ro.ril.enable.imc.feature 1
     adb shell settings put global ro.ril.enable.enhance.search 1
-    adb shell settings put global ro.ril.fast.dormancy.rule 1
-    adb shell settings put global ro.fast.dormancy 1
+    adb shell settings put global ro.ril.fast.dormancy.rule 0
+    adb shell settings put global ro.fast.dormancy 0
     adb shell settings put global ro.product.enhanced_4g_lte true
     adb shell settings put global ro.telephony.call_ring.multiple false
     adb shell settings put global persist.vendor.mwqem.enable 1
@@ -1728,7 +1728,7 @@ start() {
     adb shell settings put global debug.sf.showfps 0
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
-    adb shell settings put global debug.doze.component 1
+    adb shell settings put global debug.doze.component 0
     adb shell settings put global debug.migrate.bigcore false
     adb shell settings put global debug.sdm.support_writeback 0
     adb shell settings put global sdm.debug.disable_skip_validate 1
@@ -1755,6 +1755,7 @@ start() {
     adb shell settings put global ro.charger.disable_init_blank true
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
+    adb shell settings put global ro.config.hw_fast_dormancy 0
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global pm.sleep_mode 1
     adb shell settings put global power.saving.mode 1
