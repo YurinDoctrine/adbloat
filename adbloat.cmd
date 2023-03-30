@@ -1510,6 +1510,16 @@ echo Optimizing ...
     adb shell settings put global vendor.display.disable_hw_recovery_dump 1
     adb shell settings put global profiler.hung.dumpdobugreport false
     adb shell settings put global trustkernel.log.state disable
+    adb shell settings put global debug.systemui.latency_tracking 0
+    adb shell settings put global persist.sample.eyetracking.log 0
+    adb shell settings put global media.metrics.enabled 0
+    adb shell settings put global media.metrics 0
+    adb shell settings put global sys.debug.watchdog 0
+    adb shell settings put global logd.statistics 0
+    adb shell settings put global config.stats 0
+    adb shell settings put global persist.sys.loglevel 0
+    adb shell settings put global sys.log.app 0
+    adb shell settings put global ro.logd.size.stats 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
