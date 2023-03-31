@@ -1513,6 +1513,15 @@ start() {
     adb shell settings put global persist.sys.loglevel 0
     adb shell settings put global sys.log.app 0
     adb shell settings put global ro.logd.size.stats 0
+    adb shell settings put global ro.logdumpd.enabled 0
+    adb shell settings put global persist.anr.dumpthr 0
+    adb shell settings put global persist.vendor.dpm.loglevel 0
+    adb shell settings put global persist.vendor.dpmhalservice.loglevel 0
+    adb shell settings put global persist.vendor.sys.modem.logging.enable false
+    adb shell settings put global debug.enable.wl_log 0
+    adb shell settings put global debug.als.logs 0
+    adb shell settings put global debug.svi.logs 0
+    adb shell settings put global log.tag.stats_log 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
@@ -1740,6 +1749,7 @@ start() {
     adb shell settings put global debug.sf.showcpu 0
     adb shell settings put global debug.sf.showbackground 0
     adb shell settings put global debug.sf.showfps 0
+    adb shell settings put global debug.sf.dump 0
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
