@@ -1749,6 +1749,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.enable_advanced_sf_phase_offset 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
+    adb shell settings put global debug.sf.auto_latch_unsignaled 0
     adb shell settings put global debug.sf.recomputecrop 0
     adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
     adb shell settings put global debug.sf.disable_client_composition_cache 1
