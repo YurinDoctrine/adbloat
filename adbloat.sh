@@ -6,10 +6,8 @@ start() {
     adb shell pm disable-user --user 0 com.amazon.mp3
     adb shell pm disable-user --user 0 com.amazon.mShop.android
     adb shell pm disable-user --user 0 com.amazon.venezia
-    adb shell pm disable-user --user 0 com.android.dreams.phototable
     adb shell pm disable-user --user 0 com.android.egg
     adb shell pm disable-user --user 0 com.android.exchange
-    adb shell pm disable-user --user 0 com.android.printspooler
     adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
     adb shell pm disable-user --user 0 com.asurion.android.verizon.vms
     adb shell pm disable-user --user 0 com.audible.application
@@ -103,7 +101,6 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.lool
     adb shell pm disable-user --user 0 com.samsung.android.mateagent
     adb shell pm disable-user --user 0 com.samsung.android.mdm
-    adb shell pm disable-user --user 0 com.samsung.android.messaging
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
     adb shell pm disable-user --user 0 com.samsung.android.providers.context
     adb shell pm disable-user --user 0 com.samsung.android.rubin.app
@@ -131,7 +128,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.visionintelligence
     adb shell pm disable-user --user 0 com.samsung.android.voicewakeup
     adb shell pm disable-user --user 0 com.samsung.android.weather
-    adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yagooedge.sport
+    adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yahooedge.sport
     adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yahooedge.finance
     adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yahooedge.sport
     adb shell pm disable-user --user 0 com.samsung.clipboardsaveservice
@@ -141,7 +138,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.fresco.logging
     adb shell pm disable-user --user 0 com.samsung.groupcast
     adb shell pm disable-user --user 0 com.samsung.klmsagent
-    adb shell pm disable-user --user 0 com.samsung.know.securefolder.setuppage
+    adb shell pm disable-user --user 0 com.samsung.knox.securefolder.setuppage
     adb shell pm disable-user --user 0 com.samsung.knox.securefolder
     adb shell pm disable-user --user 0 com.samsung.oh
     adb shell pm disable-user --user 0 com.samsung.sec.android.application.csc
