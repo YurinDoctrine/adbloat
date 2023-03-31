@@ -50,6 +50,6 @@ Linux Install with Terminal `sudo apt install -f --assume-yes android-tools-adb 
   - `fastboot -w` - wipes device
   - `fastboot update </path/to/your/Rom.zip>` - flashes zip to the device
 
-## *Note Important
+## **Note Important**
 
-Comment/Uncomment name packages where you mightn't want it to be uninstalled...
+Comment/Uncomment name packages where you mightn't want it to be removed...
