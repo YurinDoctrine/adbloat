@@ -1,6 +1,211 @@
 #!/usr/bin/env bash
 
 start() {
+    adb shell pm disable-user --user 0 com.amazon.fv
+    adb shell pm disable-user --user 0 com.amazon.kindle
+    adb shell pm disable-user --user 0 com.amazon.mp3
+    adb shell pm disable-user --user 0 com.amazon.mShop.android
+    adb shell pm disable-user --user 0 com.amazon.venezia
+    adb shell pm disable-user --user 0 com.android.dreams.phototable
+    adb shell pm disable-user --user 0 com.android.egg
+    adb shell pm disable-user --user 0 com.android.exchange
+    adb shell pm disable-user --user 0 com.android.printspooler
+    adb shell pm disable-user --user 0 com.android.providers.partnerbookmarks
+    adb shell pm disable-user --user 0 com.asurion.android.verizon.vms
+    adb shell pm disable-user --user 0 com.audible.application
+    adb shell pm disable-user --user 0 com.blurb.checkout
+    adb shell pm disable-user --user 0 com.cequint.ecid
+    adb shell pm disable-user --user 0 com.cnn.mobile.android.phone.edgepanel
+    adb shell pm disable-user --user 0 com.diotek.sec.lookup.dictionary
+    adb shell pm disable-user --user 0 com.dsi.ant.antplus
+    adb shell pm disable-user --user 0 com.dsi.ant.plugins.antplus
+    adb shell pm disable-user --user 0 com.dsi.ant.sample.acquirechannels
+    adb shell pm disable-user --user 0 com.dsi.ant.server
+    adb shell pm disable-user --user 0 com.dsi.ant.service.socket
+    adb shell pm disable-user --user 0 com.enhance.gameservice
+    adb shell pm disable-user --user 0 com.facebook.appmanager
+    adb shell pm disable-user --user 0 com.facebook.katana
+    adb shell pm disable-user --user 0 com.facebook.services
+    adb shell pm disable-user --user 0 com.facebook.system
+    adb shell pm disable-user --user 0 com.google.android.apps.books
+    adb shell pm disable-user --user 0 com.google.android.apps.docs
+    adb shell pm disable-user --user 0 com.google.android.apps.magazines
+    adb shell pm disable-user --user 0 com.google.android.apps.maps
+    adb shell pm disable-user --user 0 com.google.android.apps.plus
+    adb shell pm disable-user --user 0 com.google.android.apps.tachyon
+    adb shell pm disable-user --user 0 com.google.android.music
+    adb shell pm disable-user --user 0 com.google.android.printservice.recommendation
+    adb shell pm disable-user --user 0 com.google.android.talk
+    adb shell pm disable-user --user 0 com.google.android.videos
+    adb shell pm disable-user --user 0 com.google.vr.vrcore
+    adb shell pm disable-user --user 0 com.gotv.nflgamecenter.us.lite
+    adb shell pm disable-user --user 0 com.hancom.office.editor.hidden
+    adb shell pm disable-user --user 0 com.imdb.mobile
+    adb shell pm disable-user --user 0 com.infraware.polarisoffice5
+    adb shell pm disable-user --user 0 com.lookout
+    adb shell pm disable-user --user 0 com.microsoft.office.excel
+    adb shell pm disable-user --user 0 com.microsoft.office.powerpoint
+    adb shell pm disable-user --user 0 com.microsoft.office.word
+    adb shell pm disable-user --user 0 com.microsoft.skydrive
+    adb shell pm disable-user --user 0 com.mobeam.barcodeService
+    adb shell pm disable-user --user 0 com.mobitv.client.tmobiletvhd
+    adb shell pm disable-user --user 0 com.motricity.verizon.ssodownloadable
+    adb shell pm disable-user --user 0 com.nuance.swype.input
+    adb shell pm disable-user --user 0 com.osp.app.signin
+    adb shell pm disable-user --user 0 com.samsung.aasaservice
+    adb shell pm disable-user --user 0 com.samsung.android.allshare.service.fileshare
+    adb shell pm disable-user --user 0 com.samsung.android.allshare.service.mediashare
+    adb shell pm disable-user --user 0 com.samsung.android.app.amcagent
+    adb shell pm disable-user --user 0 com.samsung.android.app.aodservice
+    adb shell pm disable-user --user 0 com.samsung.android.app.appsedge
+    adb shell pm disable-user --user 0 com.samsung.android.app.episodes
+    adb shell pm disable-user --user 0 com.samsung.android.app.galaxyfinder
+    adb shell pm disable-user --user 0 com.samsung.android.app.ledcoverdream
+    adb shell pm disable-user --user 0 com.samsung.android.app.memo
+    adb shell pm disable-user --user 0 com.samsung.android.app.mirrorlink
+    adb shell pm disable-user --user 0 com.samsung.android.app.news
+    adb shell pm disable-user --user 0 com.samsung.android.app.omcagent
+    adb shell pm disable-user --user 0 com.samsung.android.app.reminder
+    adb shell pm disable-user --user 0 com.samsung.android.app.sbrowseredge
+    adb shell pm disable-user --user 0 com.samsung.android.app.simplesharing
+    adb shell pm disable-user --user 0 com.samsung.android.app.spage
+    adb shell pm disable-user --user 0 com.samsung.android.app.storyalbumwidget
+    adb shell pm disable-user --user 0 com.samsung.android.app.talkback
+    adb shell pm disable-user --user 0 com.samsung.android.app.vrsetupwizards
+    adb shell pm disable-user --user 0 com.samsung.android.app.vrsetupwizardstub
+    adb shell pm disable-user --user 0 com.samsung.android.app.watchmanager
+    adb shell pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
+    adb shell pm disable-user --user 0 com.samsung.android.app.withtv
+    adb shell pm disable-user --user 0 com.samsung.android.authfw
+    adb shell pm disable-user --user 0 com.samsung.android.bbc.bbcagent
+    adb shell pm disable-user --user 0 com.samsung.android.beaconmanager
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.agent
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.agent.dummy
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.es.globalaction
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.plmsync
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.service
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.voiceinput
+    adb shell pm disable-user --user 0 com.samsung.android.bixby.wakeup
+    adb shell pm disable-user --user 0 com.samsung.android.clipboarduiservice
+    adb shell pm disable-user --user 0 com.samsung.android.da.daagent
+    adb shell pm disable-user --user 0 com.samsung.android.dlp.service
+    adb shell pm disable-user --user 0 com.samsung.android.dqagent
+    adb shell pm disable-user --user 0 com.samsung.android.drivelink.stub
+    adb shell pm disable-user --user 0 com.samsung.android.easysetup
+    adb shell pm disable-user --user 0 com.samsung.android.email.provider
+    adb shell pm disable-user --user 0 com.samsung.android.fmm
+    adb shell pm disable-user --user 0 com.samsung.android.game.gamehome
+    adb shell pm disable-user --user 0 com.samsung.android.game.gametools
+    adb shell pm disable-user --user 0 com.samsung.android.hmt.vrshell
+    adb shell pm disable-user --user 0 com.samsung.android.hmt.vrsvc
+    adb shell pm disable-user --user 0 com.samsung.android.intelligenceservice2
+    adb shell pm disable-user --user 0 com.samsung.android.keyguardwallpaperupdator
+    adb shell pm disable-user --user 0 com.samsung.android.lool
+    adb shell pm disable-user --user 0 com.samsung.android.mateagent
+    adb shell pm disable-user --user 0 com.samsung.android.mdm
+    adb shell pm disable-user --user 0 com.samsung.android.messaging
+    adb shell pm disable-user --user 0 com.samsung.android.oneconnect
+    adb shell pm disable-user --user 0 com.samsung.android.providers.context
+    adb shell pm disable-user --user 0 com.samsung.android.rubin.app
+    adb shell pm disable-user --user 0 com.samsung.android.samsungpass
+    adb shell pm disable-user --user 0 com.samsung.android.samsungpassautofill
+    adb shell pm disable-user --user 0 com.samsung.android.samsungpositioning
+    adb shell pm disable-user --user 0 com.samsung.android.scloud
+    adb shell pm disable-user --user 0 com.samsung.android.sdk.professionalaudio.app.audioconnectionservice
+    adb shell pm disable-user --user 0 com.samsung.android.sdk.professionalaudio.utility.jammonitor
+    adb shell pm disable-user --user 0 com.samsung.android.securitylogagent
+    adb shell pm disable-user --user 0 com.samsung.android.service.travel
+    adb shell pm disable-user --user 0 com.samsung.android.slinkcloud
+    adb shell pm disable-user --user 0 com.samsung.android.smartcallprovider
+    adb shell pm disable-user --user 0 com.samsung.android.smartmirroring
+    adb shell pm disable-user --user 0 com.samsung.android.sm.devicesecurity
+    adb shell pm disable-user --user 0 com.samsung.android.sm.policy
+    adb shell pm disable-user --user 0 com.samsung.android.spay
+    adb shell pm disable-user --user 0 com.samsung.android.spayfw
+    adb shell pm disable-user --user 0 com.samsung.android.spdfnote
+    adb shell pm disable-user --user 0 com.samsung.android.svcagent
+    adb shell pm disable-user --user 0 com.samsung.android.svoice
+    adb shell pm disable-user --user 0 com.samsung.android.tripwidget
+    adb shell pm disable-user --user 0 com.samsung.android.unifiedprofile
+    adb shell pm disable-user --user 0 com.samsung.android.visioncloudagent
+    adb shell pm disable-user --user 0 com.samsung.android.visionintelligence
+    adb shell pm disable-user --user 0 com.samsung.android.voicewakeup
+    adb shell pm disable-user --user 0 com.samsung.android.weather
+    adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yagooedge.sport
+    adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yahooedge.finance
+    adb shell pm disable-user --user 0 com.samsung.android.widgetapp.yahooedge.sport
+    adb shell pm disable-user --user 0 com.samsung.clipboardsaveservice
+    adb shell pm disable-user --user 0 com.samsung.crane
+    adb shell pm disable-user --user 0 com.samsung.dcmservice
+    adb shell pm disable-user --user 0 com.samsung.enhanceservice
+    adb shell pm disable-user --user 0 com.samsung.fresco.logging
+    adb shell pm disable-user --user 0 com.samsung.groupcast
+    adb shell pm disable-user --user 0 com.samsung.klmsagent
+    adb shell pm disable-user --user 0 com.samsung.know.securefolder.setuppage
+    adb shell pm disable-user --user 0 com.samsung.knox.securefolder
+    adb shell pm disable-user --user 0 com.samsung.oh
+    adb shell pm disable-user --user 0 com.samsung.sec.android.application.csc
+    adb shell pm disable-user --user 0 com.samsung.SMT
+    adb shell pm disable-user --user 0 com.samsung.svoice.sync
+    adb shell pm disable-user --user 0 com.samsung.systemui.bixby
+    adb shell pm disable-user --user 0 com.samsung.systemui.bixby2
+    adb shell pm disable-user --user 0 com.samsung.vmmhux
+    adb shell pm disable-user --user 0 com.samsung.voiceserviceplatform
+    adb shell pm disable-user --user 0 com.samsung.vvm
+    adb shell pm disable-user --user 0 com.sec.android.app.apex
+    adb shell pm disable-user --user 0 com.sec.android.app.billing
+    adb shell pm disable-user --user 0 com.sec.android.app.clockpackage
+    adb shell pm disable-user --user 0 com.sec.android.app.desktoplauncher
+    adb shell pm disable-user --user 0 com.sec.android.app.easysetup
+    adb shell pm disable-user --user 0 com.sec.android.app.gamehub
+    adb shell pm disable-user --user 0 com.sec.android.app.ocr
+    adb shell pm disable-user --user 0 com.sec.android.app.samsungapps
+    adb shell pm disable-user --user 0 com.sec.android.app.sbrowser
+    adb shell pm disable-user --user 0 com.sec.android.app.scloud
+    adb shell pm disable-user --user 0 com.sec.android.app.SecSetupWizard
+    adb shell pm disable-user --user 0 com.sec.android.app.shealth
+    adb shell pm disable-user --user 0 com.sec.android.app.sns3
+    adb shell pm disable-user --user 0 com.sec.android.app.translator
+    adb shell pm disable-user --user 0 com.sec.android.app.withtv
+    adb shell pm disable-user --user 0 com.sec.android.AutoPreconfig
+    adb shell pm disable-user --user 0 com.sec.android.cover.ledcover
+    adb shell pm disable-user --user 0 com.sec.android.daemonapp
+    adb shell pm disable-user --user 0 com.sec.android.desktopmode.uiservice
+    adb shell pm disable-user --user 0 com.sec.android.easyonehand
+    adb shell pm disable-user --user 0 com.sec.android.game.gamehome
+    adb shell pm disable-user --user 0 com.sec.android.mimae.gear360editor
+    adb shell pm disable-user --user 0 com.sec.android.mimage.gear360editor
+    adb shell pm disable-user --user 0 com.sec.android.provider.snote
+    adb shell pm disable-user --user 0 com.sec.android.service.health
+    adb shell pm disable-user --user 0 com.sec.android.servicehealth
+    adb shell pm disable-user --user 0 com.sec.android.sidesync30
+    adb shell pm disable-user --user 0 com.sec.android.widgetapp.diotek.smemo
+    adb shell pm disable-user --user 0 com.sec.android.widgetapp.samsungapps
+    adb shell pm disable-user --user 0 com.sec.android.widgetapp.webmanual
+    adb shell pm disable-user --user 0 com.sec.edgtestapp
+    adb shell pm disable-user --user 0 com.sec.epdgtestapp
+    adb shell pm disable-user --user 0 com.sec.everglades
+    adb shell pm disable-user --user 0 com.sec.everglades.update
+    adb shell pm disable-user --user 0 com.sec.kidsplat.installer
+    adb shell pm disable-user --user 0 com.sec.location.nsflp2
+    adb shell pm disable-user --user 0 com.sec.readershub
+    adb shell pm disable-user --user 0 com.sec.spp.push
+    adb shell pm disable-user --user 0 com.sec.yosemite.phone
+    adb shell pm disable-user --user 0 com.sem.factoryapp
+    adb shell pm disable-user --user 0 com.skms.android.agent
+    adb shell pm disable-user --user 0 com.skype.raider
+    adb shell pm disable-user --user 0 com.tripadvisor.tripadvisor
+    adb shell pm disable-user --user 0 com.trustonic.tuiservice
+    adb shell pm disable-user --user 0 com.vcast.mediamanager
+    adb shell pm disable-user --user 0 com.vlingo.midas
+    adb shell pm disable-user --user 0 com.vzw.hs.android.modlite
+    adb shell pm disable-user --user 0 com.vzw.hss.myverizon
+    adb shell pm disable-user --user 0 com.wsomacp
+    adb shell pm disable-user --user 0 de.axelspringer.yana.zeropage
+    adb shell pm disable-user --user 0 flipboard.app
+    adb shell pm disable-user --user 0 flipboard.boxer.app
+    adb shell pm disable-user --user 0 tv.peel.samsung.app
+
     #region Xioami
     echo -e "Security Plugin"
     adb shell pm disable-user --user 0  com.miui.securityadd
@@ -642,7 +847,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.voicenote
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
     adb shell pm disable-user --user 0 com.samsung.android.voc
-    adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
+    # adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
     adb shell pm disable-user --user 0 com.sec.android.splitsound
     adb shell pm disable-user --user 0 com.mobeam.barcodeService
     adb shell pm disable-user --user 0 com.samsung.android.app.dressroom
@@ -675,7 +880,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.clockpackage
     #adb shell pm disable-user --user 0 com.sec.android.app.myfiles
     # adb shell pm disable-user --user 0 com.samsung.android.app.contacts
-    adb shell pm disable-user --user 0 com.sec.android.app.camera
+    # adb shell pm disable-user --user 0 com.sec.android.app.camera
     adb shell pm disable-user --user 0 com.microsoft.skydrive
     adb shell pm disable-user --user 0 com.samsung.android.bixby.agent
     adb shell pm disable-user --user 0 com.samsung.android.bixby.agent.dummy
@@ -715,7 +920,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.voicenote
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
     adb shell pm disable-user --user 0 com.samsung.android.voc
-    adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
+    # adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
     adb shell pm disable-user --user 0 com.sec.android.splitsound
     adb shell pm disable-user --user 0 com.mobeam.barcodeService
     adb shell pm disable-user --user 0 com.samsung.android.app.dressroom
@@ -818,6 +1023,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.networkdiagnostic
     adb shell pm disable-user --user 0 com.samsung.android.svcagent
     adb shell pm disable-user --user 0 com.samsung.android.app.simplesharing
+    adb shell pm disable-user --user 0 com.samsung.voiceserviceplatform
     adb shell pm uninstall -k --user 0 com.facebook.system
     adb shell pm uninstall -k --user 0 com.facebook.katana
     adb shell pm uninstall -k --user 0 com.facebook.appmanager
