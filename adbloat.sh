@@ -205,7 +205,7 @@ start() {
 
     #region Xioami
     echo -e "Security Plugin"
-    adb shell pm disable-user --user 0  com.miui.securityadd
+    adb shell pm disable-user --user 0 com.miui.securityadd
 
     # echo -e "WPS Office"
     # adb shell pm disable-user --user 0  cn.wps.moffice_eng
@@ -1494,7 +1494,7 @@ start() {
     #adb shell pm disable-user --user 0 com.google.android.configupdater
     #adb shell pm disable-user --user 0 com.google.android.ext.services
     #adb shell pm disable-user --user 0 com.google.android.ext.shared
-    adb shell pm uninstall -k  --user 0 com.google.android.onetimeinitializer
+    adb shell pm uninstall -k --user 0 com.google.android.onetimeinitializer
     #adb shell pm disable-user --user 0 com.google.android.packageinstaller
     adb shell pm uninstall -k --user 0 com.android.traceur
     adb shell pm uninstall -k --user 0 com.android.galaxy4
