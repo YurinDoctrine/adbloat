@@ -1732,6 +1732,7 @@ echo Optimizing ...
     adb shell settings put global debug.als.logs 0
     adb shell settings put global debug.svi.logs 0
     adb shell settings put global log.tag.stats_log 0
+    adb shell settings put global ro.lmk.debug false
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
