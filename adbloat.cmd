@@ -1925,6 +1925,8 @@ echo Optimizing ...
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
     adb shell settings put global ro.mtk_perf_response_time 1
+    adb shell settings put global persist.sys.performance true
+    adb shell settings put global persist.sys.cpuset.enable 1
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
