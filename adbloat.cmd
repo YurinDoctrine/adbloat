@@ -1740,7 +1740,8 @@ echo Optimizing ...
     adb shell settings put system user_log_enabled 0
     adb shell settings put system window_orientation_listener_log 0
     adb shell settings put system multicore_packet_scheduler 1
-    adb shell settings put global net.dns2 8.8.8.8
+    adb shell settings put global dns1 8.8.8.8
+    adb shell settings put global dns2 8.8.4.4
     adb shell settings put global config.disable_rtt true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
