@@ -1861,6 +1861,7 @@ start() {
     adb shell settings put global ro.fast.dormancy 0
     adb shell settings put global ro.product.enhanced_4g_lte true
     adb shell settings put global ro.telephony.call_ring.multiple false
+    adb shell settings put global persist.vendor.data.mode offload
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
