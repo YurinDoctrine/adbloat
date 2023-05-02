@@ -1693,6 +1693,8 @@ echo Optimizing ...
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
+    adb shell settings put global persist.traced.enable 0
+    adb shell settings put global persist.traced_perf.enable 0
     adb shell settings put global wifi_verbose_logging_enabled 0
     adb shell settings put global send_action_app_error 0
     adb shell settings put global foreground_service_starts_logging_enabled 0
@@ -1733,6 +1735,10 @@ echo Optimizing ...
     adb shell settings put global debug.svi.logs 0
     adb shell settings put global log.tag.stats_log 0
     adb shell settings put global ro.lmk.debug false
+    adb shell settings put global ro.lmk.log_stats false
+    adb shell settings put global sys.lmk.reportkills false
+    adb shell settings put global persist.sys.lmk.reportkills false
+    adb shell settings put global persist.vendor.dpm.loglevel 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
