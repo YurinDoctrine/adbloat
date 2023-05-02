@@ -1738,6 +1738,7 @@ echo Optimizing ...
     adb shell settings put global ro.lmk.log_stats false
     adb shell settings put global sys.lmk.reportkills false
     adb shell settings put global persist.sys.lmk.reportkills false
+    adb shell settings put global ro.config.hw.logsystem.send 0
     adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
