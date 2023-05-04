@@ -1693,6 +1693,7 @@ start() {
     adb shell settings put global foreground_service_starts_logging_enabled 0
     adb shell settings put global enable_diskstats_logging 0
     adb shell settings put global activity_starts_logging_enabled 0
+    adb shell settings put global ro.config.htc.nocheckin 1
     adb shell settings put global ro.config.nocheckin 1
     adb shell settings put global profiler.force_disable_err_rpt 1
     adb shell settings put global profiler.force_disable_ulog 1
