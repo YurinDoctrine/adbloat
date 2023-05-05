@@ -1648,6 +1648,8 @@ echo Optimizing ...
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
+    adb shell settings put global GPUTURBO_SWITCH 1
+    adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global wifi.supplicant_scan_interval 180
     adb shell settings put global wifi_scan_always_enabled 0
