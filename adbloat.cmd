@@ -1740,12 +1740,15 @@ echo Optimizing ...
     adb shell settings put global sys.lmk.reportkills false
     adb shell settings put global persist.sys.lmk.reportkills false
     adb shell settings put global ro.config.hw.logsystem.send 0
-    adb shell settings put system rakuten_denwa 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
     adb shell settings put system user_log_enabled 0
     adb shell settings put system window_orientation_listener_log 0
+    adb shell settings put system rakuten_denwa 0
+    adb shell settings put system mcf_continuity 0
+    adb shell settings put system mcf_continuity_permission_denied 1
+    adb shell settings put system mcf_permission_denied 1
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global dns1 8.8.8.8
     adb shell settings put global dns2 8.8.4.4
@@ -2010,6 +2013,11 @@ echo Optimizing ...
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put global accessibility_reduce_transparency 1
+    adb shell settings put secure screensaver_enabled 0
+    adb shell settings put secure screensaver_activate_on_sleep 0
+    adb shell settings put secure screensaver_activate_on_dock 0
+    adb shell settings put secure fingerprint_effect 0
+    adb shell settings put secure adaptive_sleep 0
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
@@ -2019,6 +2027,9 @@ echo Optimizing ...
     adb shell settings put system bluetooth_discoverability 1
     adb shell settings put system bluetooth_discoverability 1
     adb shell settings put system master_motion 0
+    adb shell settings put system motion_merged_mute_pause 0
+    adb shell settings put system motion_overturn 0
+    adb shell settings put system charging_info_always 0
 echo ALL DONE!
 echo.
 adb kill-server
