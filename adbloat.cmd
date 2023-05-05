@@ -2022,6 +2022,7 @@ echo Optimizing ...
     adb shell settings put secure fingerprint_effect 0
     adb shell settings put secure adaptive_sleep 0
     adb shell settings put system intelligent_sleep_mode 0
+    adb shell settings put system power_mode high
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
