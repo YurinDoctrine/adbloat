@@ -1607,7 +1607,7 @@ echo Optimizing ...
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put system thermal_limit_refresh_rate 0
-    adb shell settings put system min_refresh_rate 1.0
+    adb shell settings put system min_refresh_rate 60.0
     adb shell settings put system display_color_mode 0
     adb shell settings put system slider_animation_duration 750
     adb shell settings put global window_animation_scale 0.25
