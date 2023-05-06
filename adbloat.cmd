@@ -1609,6 +1609,7 @@ echo Optimizing ...
     adb shell settings put system thermal_limit_refresh_rate 0
     adb shell settings put system min_refresh_rate 60.0
     adb shell settings put system display_color_mode 0
+    adb shell settings put system reduce_animations 1
     adb shell settings put system slider_animation_duration 750
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
