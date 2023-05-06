@@ -1579,6 +1579,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.localtransport
 
 echo Optimizing ...
+    adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
