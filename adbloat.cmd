@@ -1933,6 +1933,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global debug.hwui.enable_bp_cache false
+    adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global vendor.display.use_layer_ext 1
     adb shell settings put global vendor.display.enable_posted_start_dyn 1
