@@ -1586,13 +1586,29 @@ echo Optimizing ...
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
+    adb shell rm -rf /cache/*.apk
+    adb shell rm -rf /cache/*.tmp
+    adb shell rm -rf /cache/*.log
+    adb shell rm -rf /data/log/*
+    adb shell rm -rf /data/*.log
+    adb shell rm -rf /data/mlog/*
+    adb shell rm -rf /data/last_alog
+    adb shell rm -rf /data/last_kmsg
+    adb shell rm -rf /data/tombstones/*
+    adb shell rm -rf /data/backup/pending/*
+    adb shell rm -rf /data/system/dropbox/*
+    adb shell rm -rf /data/system/usagestats/*
     adb shell rm -rf /data/anr/*
     adb shell rm -rf /data/crashdata/*
     adb shell rm -rf /data/dalvik-cache/*
-    adb shell rm -rf /data/local/*
-    adb shell rm -rf /data/log/*
+    adb shell rm -rf /data/data/*/cache/*
+    adb shell rm -rf /data/cache/*.*
     adb shell rm -rf /data/resource-cache/*
-    adb shell rm -rf /data/tombstones/*
+    adb shell rm -rf /data/local/*
+    adb shell rm -rf /data/clipboard/*
+    adb shell rm -rf /dev/log/main/*
+    adb shell rm -rf /storage/sdcard0/LOST.DIR/*
+    adb shell rm -rf /storage/sdcard1/LOST.DIR/*
     adb shell sm fstrim
 
     ::adb shell wm size 1080x1920
@@ -1958,6 +1974,7 @@ echo Optimizing ...
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
+    adb shell settings put global com.qc.hardware true
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
