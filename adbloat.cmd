@@ -1944,6 +1944,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
+    adb shell settings put global debug.hwui.renderer_mode 0
     adb shell settings put global debug.hwui.level 0
     adb shell settings put global debug.hwui.swap_with_damage true
     adb shell settings put global debug.hwui.render_dirty_regions false
