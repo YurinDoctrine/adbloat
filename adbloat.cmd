@@ -1592,8 +1592,16 @@ echo Optimizing ...
     adb shell rm -rfd /data/log/*
     adb shell rm -rfd /data/*.log
     adb shell rm -rfd /data/mlog/*
+    adb shell rm -rfd /data/klog/*
+    adb shell rm -rfd /data/ap-log/*
+    adb shell rm -rfd /data/cp-log/*
     adb shell rm -rfd /data/last_alog
     adb shell rm -rfd /data/last_kmsg
+    adb shell rm -rfd /data/dontpanic/*
+    adb shell rm -rfd /data/memorydump/*
+    adb shell rm -rfd /data/dumplog/*
+    adb shell rm -rfd /data/rdr/*
+    adb shell rm -rfd /data/adb/*
     adb shell rm -rfd /data/tombstones/*
     adb shell rm -rfd /data/backup/pending/*
     adb shell rm -rfd /data/system/dropbox/*
@@ -1607,6 +1615,10 @@ echo Optimizing ...
     adb shell rm -rfd /data/local/*
     adb shell rm -rfd /data/clipboard/*
     adb shell rm -rfd /dev/log/main/*
+    adb shell rm -rfd /sdcard/log/*
+    adb shell rm -rfd /sdcard/LogService/*
+    adb shell rm -rfd /storage/sdcard0/LogService/*
+    adb shell rm -rfd /storage/sdcard1/LogService/*
     adb shell rm -rfd /storage/sdcard0/LOST.DIR/*
     adb shell rm -rfd /storage/sdcard1/LOST.DIR/*
     adb shell sm fstrim
