@@ -1668,6 +1668,7 @@ start() {
     adb shell settings put global ro.hwui.path_cache_size 1
     adb shell settings put global ro.hwui.disable_asset_atlas true
     adb shell settings put global disable_hw_overlays 1
+    adb shell settings put global renderthread.skia.reduceopstasksplitting true
     adb shell settings put global omap.enhancement true
     adb shell settings put global ENFORCE_PROCESS_LIMIT false
     adb shell settings put global enhanced_processing 1
