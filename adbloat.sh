@@ -1769,6 +1769,7 @@ start() {
     adb shell settings put global persist.sys.lmk.reportkills false
     adb shell settings put global ro.config.hw.logsystem.send 0
     adb shell settings put global anr_show_error_cause false
+    adb shell settings put global debug.hwui.skia_atrace_enabled false
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
@@ -1809,6 +1810,7 @@ start() {
     adb shell settings put global persist.data.mode concurrent
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
+    adb shell settings put global persist.data.iwlan.enable true
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.radio.no_wait_for_card 1
@@ -1996,7 +1998,7 @@ start() {
     adb shell settings put global debug.enabletr true
     adb shell settings put global debug.sf.ddms 0
     adb shell settings put global debug.sf.hw 1
-    adb shell settings put global debug.sf.enable_hwc_vds 1
+    adb shell settings put global debug.sf.enable_hwc_vds 0
     adb shell settings put global debug.sf.swaprect 1
     adb shell settings put global debug.sf.gpu_freq_index 1
     adb shell settings put global debug.egl.hw 1
