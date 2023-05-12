@@ -1586,6 +1586,7 @@ echo Optimizing ...
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
+    adb shell wipe cache
     adb shell rm -rf /cache/*.apk
     adb shell rm -rf /cache/*.tmp
     adb shell rm -rf /cache/*.log
