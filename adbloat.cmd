@@ -1587,6 +1587,7 @@ echo Optimizing ...
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
     adb shell wipe cache
+    adb shell recovery --wipe_cache
     adb shell rm -rf /cache/*.apk
     adb shell rm -rf /cache/*.tmp
     adb shell rm -rf /cache/*.log
