@@ -1773,6 +1773,7 @@ start() {
     adb shell settings put global ro.config.hw.logsystem.send 0
     adb shell settings put global anr_show_error_cause false
     adb shell settings put global debug.hwui.skia_atrace_enabled false
+    adb shell settings put global persist.sys.mdlog_dumpback 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
