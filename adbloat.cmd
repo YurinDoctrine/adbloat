@@ -1907,7 +1907,7 @@ echo Optimizing ...
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
     adb shell settings put global ro.service.remove_unused 1
-    adb shell settings put global ro.mtk_perfservice_support 0
+    adb shell settings put global ro.mtk_perfservice_support 1
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
