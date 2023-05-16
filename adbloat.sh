@@ -1784,6 +1784,8 @@ start() {
     adb shell settings put system mcf_continuity_permission_denied 1
     adb shell settings put system mcf_permission_denied 1
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put global multipath-tcp-enable 1
+    adb shell settings put global dns_resolvability_required 0
     adb shell settings put global dns1 8.8.8.8
     adb shell settings put global dns2 8.8.4.4
     adb shell settings put global config.disable_rtt true
