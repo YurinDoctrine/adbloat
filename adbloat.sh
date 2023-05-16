@@ -2069,6 +2069,7 @@ start() {
     adb shell settings put secure screensaver_activate_on_dock 0
     adb shell settings put secure fingerprint_effect 0
     adb shell settings put secure adaptive_sleep 0
+    adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system power_mode high
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
