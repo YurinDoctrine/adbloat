@@ -1774,6 +1774,7 @@ start() {
     adb shell settings put global anr_show_error_cause false
     adb shell settings put global debug.hwui.skia_atrace_enabled false
     adb shell settings put global persist.sys.mdlog_dumpback 0
+    adb shell settings put global vendor.swvdec.log.level 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
@@ -1998,6 +1999,8 @@ start() {
     adb shell settings put global ro.hwc.legacy_api true
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global persist.sys.ui.hw 1
+    adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
