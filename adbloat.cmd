@@ -1878,12 +1878,14 @@ echo Optimizing ...
     adb shell settings put global audio.offload.multiple.enabled true
     adb shell settings put global audio.offload.pcm.16bit.enable false
     adb shell settings put global audio.offload.pcm.24bit.enable true
+    adb shell settings put global vendor.audio.lowpower true
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hifi true
     adb shell settings put global ro.config.hifi_always_on true
     adb shell settings put global ro.config.hifi_enhance_support 1
     adb shell settings put global ro.vendor.audio.game.effect true
+    adb shell settings put global ro.vendor.audio.spk.clean true
     adb shell settings put global audio.sys.routing.latency 0
     adb shell settings put global audio.sys.mute.latency.factor 2
     adb shell settings put global mpq.audio.decode true
