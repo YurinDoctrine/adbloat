@@ -2045,6 +2045,7 @@ start() {
     adb shell settings put global ro.qti.sensors.pick_up false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global persist.android.strictmode 0
+    adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
