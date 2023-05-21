@@ -1861,6 +1861,7 @@ echo Optimizing ...
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
     adb shell settings put global windowsmgr.max_events_per_sec 244
+    adb shell settings put global ro.launcher.blur.appLaunch 0
     adb shell settings put global iop.enable_prefetch_ofr 1
     adb shell settings put global iop.enable_uxe 0
     adb shell settings put global persist.sys.autoclearsave 3
