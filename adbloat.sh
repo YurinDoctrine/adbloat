@@ -1621,6 +1621,7 @@ start() {
     #adb shell wm size 1080x1920
     #adb shell wm density 390
 
+    adb shell settings put global vendor.display.enable_async_powermode 1
     adb shell settings put global vendor.display.disable_ext_anim 1
     adb shell settings put global vendor.display.idle_time 0
     adb shell settings put global vendor.display.idle_time_inactive 0
@@ -2035,6 +2036,7 @@ start() {
     adb shell settings put global debug.sf.showbackground 0
     adb shell settings put global debug.sf.showfps 0
     adb shell settings put global debug.sf.dump 0
+    adb shell settings put global debug.sf.enable_egl_image_tracker 0
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
