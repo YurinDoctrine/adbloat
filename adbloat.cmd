@@ -1897,6 +1897,7 @@ echo Optimizing ...
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.dpm.feature 1
     adb shell settings put global persist.sys.support.vt false
+    adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
     adb shell settings put global sys.use_fifo_ui 1
@@ -1979,6 +1980,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
+    adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer 1
     adb shell settings put global debug.hwui.renderer_mode 0
     adb shell settings put global debug.hwui.level 0
@@ -2026,6 +2028,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.gpu_freq_index 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
+    adb shell settings put global debug.egl.force_msaa 1
     adb shell settings put global debug.overlayui.enable 1
     adb shell settings put global debug.sf.enable_advanced_sf_phase_offset 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
