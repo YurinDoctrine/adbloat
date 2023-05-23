@@ -1851,6 +1851,7 @@ echo Optimizing ...
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.refresh_rate_switching true
+    adb shell settings put global ro.surface_flinger.enable_layer_caching true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.sf.hs_mode 0
