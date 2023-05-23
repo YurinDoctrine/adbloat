@@ -2041,7 +2041,7 @@ start() {
     adb shell settings put global debug.sf.showfps 0
     adb shell settings put global debug.sf.dump 0
     adb shell settings put global debug.sf.enable_egl_image_tracker 0
-    adb shell settings put global debug.sf.predict_hwc_composition_strategy 0
+    adb shell settings put global debug.sf.predict_hwc_composition_strategy 1
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
