@@ -1628,6 +1628,8 @@ echo Optimizing ...
     ::adb shell wm size 1080x1920
     ::adb shell wm density 390
 
+    adb shell settings put global vendor.display.disable_excl_rect 0
+    adb shell settings put global vendor.display.disable_excl_rect_partial_fb 1
     adb shell settings put global vendor.display.enable_async_powermode 1
     adb shell settings put global vendor.display.disable_ext_anim 1
     adb shell settings put global vendor.display.idle_time 0
@@ -1636,6 +1638,7 @@ echo Optimizing ...
     adb shell settings put global vendor.display.enable_optimize_refresh 1
     adb shell settings put global vendor.display.disable_metadata_dynamic_fps 1
     adb shell settings put global vendor.display.use_smooth_motion 1
+    adb shell settings put global vendor.display.enable_camera_smooth 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put system thermal_limit_refresh_rate 0
@@ -1846,6 +1849,7 @@ echo Optimizing ...
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
+    adb shell settings put global ro.surface_flinger.refresh_rate_switching true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.sf.hs_mode 0
@@ -2044,6 +2048,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.showfps 0
     adb shell settings put global debug.sf.dump 0
     adb shell settings put global debug.sf.enable_egl_image_tracker 0
+    adb shell settings put global debug.sf.predict_hwc_composition_strategy 0
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
@@ -2057,6 +2062,7 @@ echo Optimizing ...
     adb shell settings put global ro.qti.sensors.step_detector false
     adb shell settings put global ro.qti.sensors.pick_up false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
+    adb shell settings put global persist.metadata_dynfps.disable true
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
