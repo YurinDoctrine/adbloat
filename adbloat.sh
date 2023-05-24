@@ -1969,6 +1969,7 @@ start() {
     adb shell settings put global always_finish_activities 1
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
+    adb shell settings put global sys.io.scheduler cfq
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
     adb shell settings put global service.sf.prime_shader_cache 1
