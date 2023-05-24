@@ -1978,6 +1978,7 @@ echo Optimizing ...
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
+    adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global fstrim_mandatory_interval 1
@@ -2088,6 +2089,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.config.hw_fast_dormancy 0
+    adb shell settings put global ro.config.small_battery true
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global low_power 0
     adb shell settings put global pm.sleep_mode 1
