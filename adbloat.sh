@@ -1845,6 +1845,8 @@ start() {
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.refresh_rate_switching true
     adb shell settings put global ro.surface_flinger.enable_layer_caching true
+    adb shell settings put global ro.surface_flinger.use_context_priority true
+    adb shell settings put global ro.surface_flinger.start_graphics_allocator_service true
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
     adb shell settings put global persist.sys.sf.hs_mode 0
@@ -2044,6 +2046,7 @@ start() {
     adb shell settings put global debug.sf.dump 0
     adb shell settings put global debug.sf.enable_egl_image_tracker 0
     adb shell settings put global debug.sf.predict_hwc_composition_strategy 1
+    adb shell settings put global debug.sf.enable_planner_prediction true
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
