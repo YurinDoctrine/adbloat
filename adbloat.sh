@@ -1881,6 +1881,7 @@ start() {
     adb shell settings put global audio.offload.multiple.enabled true
     adb shell settings put global audio.offload.pcm.16bit.enable false
     adb shell settings put global audio.offload.pcm.24bit.enable true
+    adb shell settings put global audio.track.enablemonoorstereo 1
     adb shell settings put global vendor.audio.lowpower true
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
