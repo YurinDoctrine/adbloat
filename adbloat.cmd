@@ -1836,6 +1836,7 @@ echo Optimizing ...
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
     adb shell settings put global persist.radio.add_power_save 1
+    adb shell settings put global persist.radio.jbims 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
@@ -2080,6 +2081,7 @@ echo Optimizing ...
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
+    adb shell settings put global sys.config.spcm_preload_enable true
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
