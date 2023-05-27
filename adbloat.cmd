@@ -1695,6 +1695,7 @@ echo Optimizing ...
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global mobile_data_always_on 0
     adb shell settings put global ro.ril.hep 1
+    adb shell settings put global ro.mtk_lte_support 1
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
     adb shell settings put global ro.mot.eri.losalert.delay 1000
@@ -1927,6 +1928,8 @@ echo Optimizing ...
     adb shell settings put global sys.ipo.disable 0
     adb shell settings put global ro.mtk_ipo_support 1
     adb shell settings put global ro.mtk_perfservice_support 1
+    adb shell settings put global ro.mtk_bg_power_saving_support 1
+    adb shell settings put global ro.mtk_bg_power_saving_ui 1
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
