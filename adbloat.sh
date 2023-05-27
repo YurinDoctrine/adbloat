@@ -2081,6 +2081,7 @@ start() {
     adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global ro.secure 0
+    adb shell settings put global androidboot.selinux 0
     adb shell settings put global selinux.disabled true
     adb shell settings put global ro.treble.enabled true
     adb shell settings put global ro.config.ksm.support true
