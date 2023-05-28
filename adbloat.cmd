@@ -1868,6 +1868,7 @@ echo Optimizing ...
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.vendor.perf.scroll_opt true
+    adb shell settings put global ro.vendor.scroll.preobtain.enable false
     adb shell settings put global ro.min_pointer_dur 8
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
@@ -2012,6 +2013,7 @@ echo Optimizing ...
     adb shell settings put global vendor.display.enable_posted_start_dyn 1
     adb shell settings put global vendor.display.comp_mask 0
     adb shell settings put global vendor.display.enable_perf_hint_large_comp_cycle 1
+    adb shell settings put global vendor.display.disable_decimation 0
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
