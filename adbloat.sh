@@ -1870,7 +1870,10 @@ start() {
     adb shell settings put global ro.launcher.blur.appLaunch 0
     adb shell settings put global iop.enable_prefetch_ofr 1
     adb shell settings put global iop.enable_uxe 1
+    adb shell settings put global iop.enable_iop 1
     adb shell settings put global vendor.perf.iop_v3.enable true
+    adb shell settings put global vendor.perf.iop_v3.enable.debug false
+    adb shell settings put global vendor.perf.workloadclassifier.enable true
     adb shell settings put global persist.sys.autoclearsave 3
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
