@@ -1868,7 +1868,7 @@ echo Optimizing ...
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.vendor.perf.scroll_opt true
-    adb shell settings put global ro.vendor.scroll.preobtain.enable false
+    adb shell settings put global ro.vendor.scroll.preobtain.enable true
     adb shell settings put global ro.min_pointer_dur 8
     adb shell settings put global ro.max.fling_velocity 12000
     adb shell settings put global ro.min.fling_velocity 8000
