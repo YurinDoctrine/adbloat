@@ -1996,6 +1996,7 @@ echo Optimizing ...
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
+    adb shell settings put global ro.sys.fw.empty_app_percent 50
     adb shell settings put global ro.trim.config true
     adb shell settings put global ro.trim.memory.launcher 1
     adb shell settings put global ro.trim.memory.font_cache 1
