@@ -1913,6 +1913,7 @@ echo Optimizing ...
     adb shell settings put global debug.stagefright.omx_default_rank.sw-audio 1
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
+    adb shell settings put global persist.vendor.cne.feature 1
     adb shell settings put global persist.dpm.feature 1
     adb shell settings put global persist.sys.support.vt false
     adb shell settings put global ro.sf.blurs_are_expensive 0
@@ -2100,6 +2101,7 @@ echo Optimizing ...
     adb shell settings put global ro.treble.enabled true
     adb shell settings put global ro.config.ksm.support true
     adb shell settings put global ro.wmt.blcr.enable 0
+    adb shell settings put global ro.vendor.at_library true
     adb shell settings put global persist.sys.NV_POWERMODE 1
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
