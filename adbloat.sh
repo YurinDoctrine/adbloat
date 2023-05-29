@@ -2098,6 +2098,8 @@ start() {
     adb shell settings put global ro.wmt.blcr.enable 0
     adb shell settings put global ro.vendor.at_library true
     adb shell settings put global ro.vendor.gt_library true
+    adb shell settings put global persist.sys.NV_STEREOCTRL 0
+    adb shell settings put global persist.sys.NV_STEREOSEPCHG 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
