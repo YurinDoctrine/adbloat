@@ -2010,6 +2010,9 @@ start() {
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global force_gpu_rendering 1
+    adb shell settings put global gpu_rendering_mode 1
+    adb shell settings put global opengl_renderer 1
+    adb shell settings put global opengl_trace false
     adb shell settings put global vendor.display.use_layer_ext 1
     adb shell settings put global vendor.display.enable_posted_start_dyn 1
     adb shell settings put global vendor.display.comp_mask 0
