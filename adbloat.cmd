@@ -2015,7 +2015,7 @@ echo Optimizing ...
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
-    adb shell settings put global debug.hwui.enable_bp_cache false
+    adb shell settings put global debug.hwui.enable_bp_cache true
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global force_gpu_rendering 1
