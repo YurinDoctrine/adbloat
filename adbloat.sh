@@ -1817,9 +1817,11 @@ start() {
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
-    adb shell settings put global persist.rcs.supported 0
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
+    adb shell settings put global persist.sys.ssr.restart_level 1
+    adb shell settings put global persist.sys.ap.restart_level 1
+    adb shell settings put global persist.rcs.supported 0
     adb shell settings put global persist.data.mode concurrent
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
