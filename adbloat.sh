@@ -2049,6 +2049,7 @@ start() {
     adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
     adb shell settings put global debug.enabletr true
+    adb shell settings put global debug.sf.no_hw_vsync 0
     adb shell settings put global debug.sf.ddms 0
     adb shell settings put global debug.sf.hw 1
     adb shell settings put global debug.sf.enable_hwc_vds 0
