@@ -2044,6 +2044,7 @@ echo Optimizing ...
     adb shell settings put global cpu.fps auto
     adb shell settings put global sys.hwc.gpu_perf_mode 1
     adb shell settings put global ro.hwc.legacy_api true
+    adb shell settings put global hwc.scenario 2
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
     adb shell settings put global persist.sys.ui.hw 1
@@ -2075,6 +2076,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.disable_client_composition_cache 1
     adb shell settings put global debug.egl.debug_proc 0
     adb shell settings put global debug.egl.trace 0
+    adb shell settings put global debug.egl.callstack 0
     adb shell settings put global debug.sf.showupdates 0
     adb shell settings put global debug.sf.showcpu 0
     adb shell settings put global debug.sf.showbackground 0
