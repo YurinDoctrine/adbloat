@@ -2066,7 +2066,7 @@ start() {
     adb shell settings put global debug.sf.auto_latch_unsignaled 0
     adb shell settings put global debug.sf.recomputecrop 0
     adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
-    adb shell settings put global debug.sf.disable_client_composition_cache 1
+    adb shell settings put global debug.sf.disable_client_composition_cache 0
     adb shell settings put global debug.egl.debug_proc 0
     adb shell settings put global debug.egl.trace 0
     adb shell settings put global debug.egl.callstack 0
