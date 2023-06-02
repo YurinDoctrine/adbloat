@@ -1799,6 +1799,7 @@ start() {
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global dns1 8.8.8.8
     adb shell settings put global dns2 8.8.4.4
+    adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global config.disable_rtt true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
