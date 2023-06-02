@@ -2002,6 +2002,7 @@ start() {
     adb shell settings put global ro.trim.config true
     adb shell settings put global ro.trim.memory.launcher 1
     adb shell settings put global ro.trim.memory.font_cache 1
+    adb shell settings put global ro.zstd.default_compression_level 1
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
