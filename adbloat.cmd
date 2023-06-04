@@ -1628,6 +1628,8 @@ echo Optimizing ...
     ::adb shell wm size 1080x1920
     ::adb shell wm density 390
 
+    adb shell settings put global ro.fps_enable 1
+    adb shell settings put global ro.fps.capsmin 60fps
     adb shell settings put global dont.lower.fps true
     adb shell settings put global stabilizer.fps true
     adb shell settings put global stable.fps.enable true
