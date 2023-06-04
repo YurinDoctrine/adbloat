@@ -1728,6 +1728,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.dex2oat-minidebuginfo false
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
+    adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
     adb shell settings put global pm.dexopt.boot verify
@@ -2012,6 +2013,7 @@ echo Optimizing ...
     adb shell settings put global ro.trim.memory.launcher 1
     adb shell settings put global ro.trim.memory.font_cache 1
     adb shell settings put global ro.zstd.default_compression_level 1
+    adb shell settings put global vold.post_fs_data_done 1
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
