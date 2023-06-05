@@ -2094,6 +2094,7 @@ echo Optimizing ...
     adb shell settings put global debug.sf.enable_egl_image_tracker 0
     adb shell settings put global debug.sf.predict_hwc_composition_strategy 1
     adb shell settings put global debug.sf.enable_planner_prediction true
+    adb shell settings put global debug.sf.gpu_comp_tiling 1
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.doze.component 0
