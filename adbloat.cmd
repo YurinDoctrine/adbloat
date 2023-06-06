@@ -1796,6 +1796,7 @@ echo Optimizing ...
     adb shell settings put global vendor.swvdec.log.level 0
     adb shell settings put global debug.sf.enable_transaction_tracing false
     adb shell settings put global persist.vendor.console.silent.config 1
+    adb shell settings put global ro.statsd.enable false
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
@@ -1975,6 +1976,7 @@ echo Optimizing ...
     adb shell settings put global debug.gr.swapinterval 1
     adb shell settings put global ro.vold.umsdirtyratio 50
     adb shell settings put global debug.kill_allocating_task 1
+    adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
