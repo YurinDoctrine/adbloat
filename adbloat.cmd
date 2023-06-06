@@ -551,6 +551,7 @@ exit 0
     adb shell pm disable-user --user 0 android.autoinstalls.config.Xiaomi.pine
     adb shell pm uninstall -k --user 0 com.xiaomi.oversea.ecom
     adb shell pm uninstall -k --user 0 com.mi.AutoTest
+    adb shell pm disable-user --user 0 com.miui.systemAdSolution
     ::endregion Xiaomi
     ::region Samsung
     echo Ar Zone
@@ -1583,6 +1584,7 @@ echo Optimizing ...
     adb shell cmd shortcut reset-all-throttling
     adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
+    adb shell pm compile -a -f --secondary-dex --check-prof false -m speed
     adb shell pm compile -a -f --check-prof false --compile-layouts
     adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
@@ -1797,6 +1799,13 @@ echo Optimizing ...
     adb shell settings put global debug.sf.enable_transaction_tracing false
     adb shell settings put global persist.vendor.console.silent.config 1
     adb shell settings put global ro.statsd.enable false
+    adb shell settings put global persist.debug.sf.statistics 0
+    adb shell settings put global persist.radio.ramdump 0
+    adb shell settings put global persist.ims.disableDebugLogs 1
+    adb shell settings put global persist.ims.disableADBLogs 1
+    adb shell settings put global persist.ims.disableQXDMLogs 1
+    adb shell settings put global persist.ims.disableIMSLogs 1
+    adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
