@@ -1728,6 +1728,7 @@ echo Optimizing ...
     adb shell settings put global dalvik.vm.dex2oat-minidebuginfo false
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
+    adb shell settings put global dalvik.vm.jit.codecachesize 0
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
