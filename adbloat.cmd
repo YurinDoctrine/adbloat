@@ -2116,6 +2116,7 @@ echo Optimizing ...
     adb shell settings put global sys.config.activelaunch_enable true
     adb shell settings put global sys.config.spcm_preload_enable true
     adb shell settings put global persist.bootanim.preload 1
+    adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
