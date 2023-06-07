@@ -1583,8 +1583,8 @@ echo Optimizing ...
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
-    adb shell cmd set-adaptive-power-saver-enabled false
-    adb shell cmd set-mode 0
+    adb shell cmd power set-adaptive-power-saver-enabled false
+    adb shell cmd power set-mode 0
     adb shell cmd activity idle-maintenance
     adb shell cmd thermalservice override-status 1
     adb shell cmd looper_stats disable
