@@ -1916,6 +1916,7 @@ start() {
     adb shell settings put global vendor.audio.lowpower true
     adb shell settings put global tunnel.decode false
     adb shell settings put global persist.speaker.prot.enable false
+    adb shell settings put global persist.audio.hp true
     adb shell settings put global persist.audio.hifi true
     adb shell settings put global ro.config.hifi_always_on true
     adb shell settings put global ro.config.hifi_enhance_support 1
