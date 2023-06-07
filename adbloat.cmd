@@ -1582,6 +1582,10 @@ exit 0
 echo Optimizing ...
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
+    adb shell cmd power set-fixed-performance-mode-enabled true
+    adb shell cmd activity idle-maintenance
+    adb shell cmd thermalservice override-status 1
+    adb shell cmd looper_stats disable
     adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --secondary-dex --check-prof false -m speed
