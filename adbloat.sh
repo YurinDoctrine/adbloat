@@ -1571,7 +1571,9 @@ start() {
     adb shell pm disable-user --user 0 com.android.egg
     adb shell pm disable-user --user 0 com.miui.aod
     adb shell pm disable-user --user 0 com.android.localtransport
+}
 
+tweaks() {
     echo -e "Optimizing ..."
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
@@ -2194,6 +2196,6 @@ echo -e "yes/no"
 read -p '>_:' ans
 if [[ "$ans" == "yes" ]]; then
     start
-else
-    exit 0
 fi
+tweaks
+exit 0
