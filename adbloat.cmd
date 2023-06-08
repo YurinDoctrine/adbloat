@@ -733,7 +733,7 @@ exit 0
     adb shell pm uninstall -k --user 0 com.swiftkey.swiftkeyconfigurator
 
     echo Клавиатура Samsung
-    adb shell pm disable-user --user 0 com.samsung.android.honeyboard
+    ::adb shell pm disable-user --user 0 com.samsung.android.honeyboard
 
     echo Люди
     adb shell pm disable-user --user 0 com.samsung.android.service.peoplestripe
