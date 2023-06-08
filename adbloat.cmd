@@ -5,7 +5,7 @@ chcp 65001 >nul
 cls
 adb wait-for-device
 adb devices
-echo Uninstall/Disable bloat apps?
+echo "Uninstall/Disable bloat apps? (NOT RECOMMENDED)"
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
 goto :tweaks
@@ -1581,7 +1581,7 @@ exit 0
     adb shell pm disable-user --user 0 com.android.localtransport
 
 :tweaks
-echo Optimizing ...
+echo Applying Tweaks ...
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
