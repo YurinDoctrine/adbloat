@@ -1574,7 +1574,7 @@ start() {
 }
 
 tweaks() {
-    echo -e "Optimizing ..."
+    echo -e "Applying Tweaks ..."
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
@@ -2191,7 +2191,7 @@ tweaks() {
 clear
 adb wait-for-device
 adb devices
-echo -e "Uninstall/Disable bloat apps?"
+echo -e "Uninstall/Disable bloat apps? (NOT RECOMMENDED)"
 echo -e "yes/no"
 read -p '>_:' ans
 if [[ "$ans" == "yes" ]]; then
