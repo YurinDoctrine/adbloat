@@ -1814,6 +1814,8 @@ echo "Applying Tweaks ..."
     adb shell settings put global persist.ims.disableQXDMLogs 1
     adb shell settings put global persist.ims.disableIMSLogs 1
     adb shell settings put global app_usage_enabled 0
+    adb shell settings put global package_usage_stats_enabled 0
+    adb shell settings put global recent_usage_data_enabled 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
