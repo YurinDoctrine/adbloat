@@ -8,6 +8,7 @@ adb devices
 echo Uninstall/Disable bloat apps?
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
+goto :tweaks
 exit 0
 
 :start
@@ -1579,6 +1580,7 @@ exit 0
     adb shell pm disable-user --user 0 com.miui.aod
     adb shell pm disable-user --user 0 com.android.localtransport
 
+:tweaks
 echo Optimizing ...
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
