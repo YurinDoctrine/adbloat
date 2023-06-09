@@ -1951,7 +1951,7 @@ echo "Applying Tweaks ..."
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.vendor.cne.feature 1
-    adb shell settings put global persist.dpm.feature 1
+    adb shell settings put global persist.dpm.feature 0
     adb shell settings put global persist.sys.support.vt false
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
