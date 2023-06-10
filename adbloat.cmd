@@ -22,6 +22,7 @@ exit 0
     adb shell pm uninstall -k --user 0 com.google.android.apps.work.oobconfig
     adb shell pm uninstall -k --user 0 com.google.android.feedback
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
+    adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox.nga_resources
     adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
     adb shell pm uninstall -k --user 0 com.google.android.music
     adb shell pm uninstall -k --user 0 com.google.android.partnersetup
@@ -75,6 +76,8 @@ exit 0
     adb shell pm uninstall -k --user 0 com.netflix.partner.activation
     adb shell pm uninstall -k --user 0 com.opera.browser
     adb shell pm uninstall -k --user 0 com.opera.preinstall
+    adb shell pm uninstall -k --user 0 com.opera.mini.native.beta
+    adb shell pm uninstall -k --user 0 com.opera.gx
     adb shell pm uninstall -k --user 0 com.tencent.soter.soterserver
     adb shell pm uninstall -k --user 0 com.android.egg
     adb shell pm uninstall -k --user 0 com.android.localtransport
@@ -145,6 +148,36 @@ exit 0
     adb shell pm uninstall -k --user 0 de.axelspringer.yana.zeropage
     adb shell pm uninstall -k --user 0 flipboard.app
     adb shell pm uninstall -k --user 0 flipboard.boxer.app
+    adb shell pm uninstall -k --user 0 com.android.musicfx
+    adb shell pm uninstall -k --user 0 com.google.android.apps.nbu.files
+    adb shell pm uninstall -k --user 0 com.google.android.apps.recorder
+    adb shell pm uninstall -k --user 0 com.google.android.apps.tips
+    adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
+    adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
+    adb shell pm uninstall -k --user 0 com.microsoft.emmx
+    adb shell pm uninstall -k --user 0 bbc.mobile.news.www
+    adb shell pm uninstall -k --user 0 com.abc.abcnews
+    adb shell pm uninstall -k --user 0 com.aljazeera.mobile
+    adb shell pm uninstall -k --user 0 com.cbsnews.ott
+    adb shell pm uninstall -k --user 0 com.cnn.mobile.android.phone
+    adb shell pm uninstall -k --user 0 com.devhd.feedly
+    adb shell pm uninstall -k --user 0 com.eterno
+    adb shell pm uninstall -k --user 0 com.foxnews.android
+    adb shell pm uninstall -k --user 0 com.google.android.apps.magazines
+    adb shell pm uninstall -k --user 0 com.microsoft.amp.apps.bingnews
+    adb shell pm uninstall -k --user 0 com.guardian
+    adb shell pm uninstall -k --user 0 com.nytimes.android
+    adb shell pm uninstall -k --user 0 com.opera.app.news
+    adb shell pm uninstall -k --user 0 com.particlenews.newsbreak
+    adb shell pm uninstall -k --user 0 com.spotcrime.spotcrimemobilev2
+    adb shell pm uninstall -k --user 0 com.treemolabs.apps.cbsnews
+    adb shell pm uninstall -k --user 0 com.yahoo.mobile.client.android.yahoo
+    adb shell pm uninstall -k --user 0 com.zumobi.msnbc
+    adb shell pm uninstall -k --user 0 flipboard.app
+    adb shell pm uninstall -k --user 0 jp.gocro.smartnews.android
+    adb shell pm uninstall -k --user 0 mnn.Android
+    adb shell pm uninstall -k --user 0 org.npr.one
+    adb shell pm uninstall -k --user 0 sp0n.citizen
 
 :tweaks
 echo "Applying Tweaks ..."
