@@ -432,6 +432,7 @@ echo "Applying Tweaks ..."
     adb shell settings put global dns2 8.8.4.4
     adb shell settings put global private_dns_mode off
     adb shell settings put global wifi_connected_mac_randomization_supported 2
+    adb shell settings put global wifi_safe_mode 1
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global config.disable_rtt true
