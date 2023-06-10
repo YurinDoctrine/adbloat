@@ -221,7 +221,7 @@ start() {
     echo -e "Bookmark Provider"
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
 
-    #echo -e "Chrome"
+    # echo -e "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo -e "Downloads"
@@ -322,7 +322,7 @@ start() {
     #Невозможно удалить
     adb shell pm uninstall -k --user 0 com.mi.globalbrowser
 
-    #echo -e "Mi Wallpaper Carousel"
+    # echo -e "Mi Wallpaper Carousel"
     adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
     echo -e "App Vault"
@@ -566,7 +566,7 @@ start() {
     echo -e "Briefing"
     adb shell pm disable-user --user 0 flipboard.boxer.app
 
-    #echo -e "Chrome"
+    # echo -e "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo -e "DECO PIC"
@@ -723,7 +723,7 @@ start() {
     echo -e "Люди"
     adb shell pm disable-user --user 0 com.samsung.android.service.peoplestripe
 
-    #echo -e "Мои файлы"
+    # echo -e "Мои файлы"
     #adb shell pm disable-user --user 0 com.sec.android.app.myfiles
 
     echo -e "Погода"
@@ -2186,6 +2186,7 @@ tweaks() {
 
     rm -rf $HOME/.android
     rm -rf $HOME/.dbus-keyrings
+    read
 }
 clear
 adb wait-for-device
@@ -2197,4 +2198,3 @@ if [[ "$ans" == "yes" ]]; then
     start
 fi
 tweaks
-exit 0
