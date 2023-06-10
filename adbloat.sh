@@ -799,3 +799,4 @@ if [[ "$ans" == "yes" ]]; then
     start
 fi
 tweaks
+exit 0
