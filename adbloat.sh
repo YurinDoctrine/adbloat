@@ -203,11 +203,11 @@ start() {
     echo -e "Security Plugin"
     adb shell pm disable-user --user 0 com.miui.securityadd
 
-    # echo -e "WPS Office"
-    #adb shell pm disable-user --user 0  cn.wps.moffice_eng
+    #echo -e "WPS Office"
+    #adb shell pm disable-user --user 0 cn.wps.moffice_eng
 
-    # echo -e "Mi Doc Viewer (Powered by WPS)"
-    #adb shell pm disable-user --user 0  cn.wps.xiaomi.abroad.lite
+    #echo -e "Mi Doc Viewer (Powered by WPS)"
+    #adb shell pm disable-user --user 0 cn.wps.xiaomi.abroad.lite
 
     echo -e "Aliexpress"
     adb shell pm uninstall -k --user 0 com.alibaba.aliexpresshd
@@ -221,7 +221,7 @@ start() {
     echo -e "Bookmark Provider"
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
 
-    # echo -e "Chrome"
+    #echo -e "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo -e "Downloads"
@@ -249,7 +249,7 @@ start() {
     echo -e "eBay"
     adb shell pm uninstall -k --user 0 com.ebay.mobile
 
-    # echo -e "YouTube"
+    #echo -e "YouTube"
     #adb shell pm uninstall -k --user 0 com.google.android.youtube
 
     echo -e "YouTube Music"
@@ -264,7 +264,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.facebook.appmanager
     adb shell pm uninstall -k --user 0 com.facebook.services
 
-    # echo -e "Google Drive"
+    #echo -e "Google Drive"
     adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 
     echo -e "Google Assistant"
@@ -276,7 +276,7 @@ start() {
     echo -e "Maps"
     adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 
-    # echo -e "Google Photos"
+    #echo -e "Google Photos"
     #adb shell pm disable-user --user 0 com.google.android.apps.photos
 
     echo -e "Google Podcasts"
@@ -285,7 +285,7 @@ start() {
     echo -e "Duo"
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
 
-    # echo -e "Device Health Services"
+    #echo -e "Device Health Services"
     #adb shell pm disable-user --user 0 com.google.android.apps.turbo
 
     echo -e "Digital Wellbeing"
@@ -312,7 +312,7 @@ start() {
     echo -e "Google TV"
     adb shell pm uninstall -k --user 0 com.google.android.videos
 
-    # echo -e "Объектив"
+    #echo -e "Объектив"
     #adb shell pm disable-user --user 0 com.google.ar.lens
 
     echo -e "Google Play Services for AR"
@@ -322,7 +322,7 @@ start() {
     #Невозможно удалить
     adb shell pm uninstall -k --user 0 com.mi.globalbrowser
 
-    # echo -e "Mi Wallpaper Carousel"
+    #echo -e "Mi Wallpaper Carousel"
     adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
     echo -e "App Vault"
@@ -349,7 +349,7 @@ start() {
     echo -e "HybridAccessory"
     adb shell pm uninstall -k --user 0 com.miui.hybrid
 
-    # echo -e "MIUI Notes"
+    #echo -e "MIUI Notes"
     #adb shell pm disable-user --user 0 com.miui.notes
 
     echo -e "Yellow Pages"
@@ -361,10 +361,10 @@ start() {
     echo -e "Compass"
     adb shell pm uninstall -k --user 0 com.miui.compass
 
-    # echo -e "FM Radio"
+    #echo -e "FM Radio"
     #adb shell pm uninstall -k --user 0 com.miui.fm
 
-    # echo -e "FM Radio Service"
+    #echo -e "FM Radio Service"
     #adb shell pm uninstall -k --user 0 com.miui.fmservice
 
     echo -e "Services and Feedback"
@@ -401,7 +401,7 @@ start() {
     echo -e "Joyose"
     adb shell pm uninstall -k --user 0 com.xiaomi.joyose
 
-    # echo -e "Mi Scanner"
+    #echo -e "Mi Scanner"
     #Becomes unable to scan QR codes via Camera app
     #adb shell pm uninstall -k --user 0 com.xiaomi.scanner
 
@@ -566,7 +566,7 @@ start() {
     echo -e "Briefing"
     adb shell pm disable-user --user 0 flipboard.boxer.app
 
-    # echo -e "Chrome"
+    #echo -e "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo -e "DECO PIC"
@@ -575,7 +575,7 @@ start() {
     echo -e "Dex для ПК"
     adb shell pm disable-user --user 0 com.sec.android.app.dexonpc
 
-    # echo -e "Device Health Services"
+    #echo -e "Device Health Services"
     #adb shell pm disable-user --user 0 com.google.android.apps.turbo
 
     echo -e "Duo"
@@ -614,7 +614,7 @@ start() {
     echo -e "Google Play Фильмы"
     adb shell pm uninstall -k --user 0 com.google.android.videos
 
-    # echo -e "Google Фото"
+    #echo -e "Google Фото"
     #adb shell pm disable-user --user 0 com.google.android.apps.photos
 
     echo -e "Google Chat"
@@ -659,7 +659,7 @@ start() {
     echo -e "Samsung Kids"
     adb shell pm disable-user --user 0 com.sec.android.app.kidshome
 
-    # echo -e "Samsung Notes"
+    #echo -e "Samsung Notes"
     #adb shell pm disable-user --user 0 com.samsung.android.app.notes
 
     echo -e "Samsung Pass"
@@ -686,7 +686,7 @@ start() {
     echo -e "Wearable Manager Installer"
     adb shell pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
 
-    # echo -e "YouTube"
+    #echo -e "YouTube"
     #adb shell pm uninstall -k --user 0 com.google.android.youtube
 
     echo -e "YouTube Music"
@@ -701,7 +701,7 @@ start() {
     echo -e "Главный экран Samsung DeX"
     adb shell pm disable-user --user 0 com.sec.android.app.desktoplauncher
 
-    # echo -e "Google Диск"
+    #echo -e "Google Диск"
     adb shell pm disable-user --user 0 com.google.android.apps.docs
 
     echo -e "Диспетчер вашего телефона"
@@ -723,7 +723,7 @@ start() {
     echo -e "Люди"
     adb shell pm disable-user --user 0 com.samsung.android.service.peoplestripe
 
-    # echo -e "Мои файлы"
+    #echo -e "Мои файлы"
     #adb shell pm disable-user --user 0 com.sec.android.app.myfiles
 
     echo -e "Погода"
