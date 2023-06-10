@@ -232,7 +232,7 @@ exit 0
     echo "Bookmark Provider"
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
 
-    ::echo "Chrome"
+    :: echo "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo "Downloads"
@@ -333,7 +333,7 @@ exit 0
     ::Невозможно удалить
     adb shell pm uninstall -k --user 0 com.mi.globalbrowser
 
-    ::echo "Mi Wallpaper Carousel"
+    :: echo "Mi Wallpaper Carousel"
     adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
     echo "App Vault"
@@ -577,7 +577,7 @@ exit 0
     echo "Briefing"
     adb shell pm disable-user --user 0 flipboard.boxer.app
 
-    ::echo "Chrome"
+    :: echo "Chrome"
     adb shell pm uninstall -k --user 0 com.android.chrome
 
     echo "DECO PIC"
@@ -734,7 +734,7 @@ exit 0
     echo "Люди"
     adb shell pm disable-user --user 0 com.samsung.android.service.peoplestripe
 
-    ::echo "Мои файлы"
+    :: echo "Мои файлы"
     ::adb shell pm disable-user --user 0 com.sec.android.app.myfiles
 
     echo "Погода"
