@@ -204,10 +204,10 @@ start() {
     adb shell pm disable-user --user 0 com.miui.securityadd
 
     # echo -e "WPS Office"
-    # adb shell pm disable-user --user 0  cn.wps.moffice_eng
+    #adb shell pm disable-user --user 0  cn.wps.moffice_eng
 
     # echo -e "Mi Doc Viewer (Powered by WPS)"
-    # adb shell pm disable-user --user 0  cn.wps.xiaomi.abroad.lite
+    #adb shell pm disable-user --user 0  cn.wps.xiaomi.abroad.lite
 
     echo -e "Aliexpress"
     adb shell pm uninstall -k --user 0 com.alibaba.aliexpresshd
@@ -250,7 +250,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.ebay.mobile
 
     # echo -e "YouTube"
-    # adb shell pm uninstall -k --user 0 com.google.android.youtube
+    #adb shell pm uninstall -k --user 0 com.google.android.youtube
 
     echo -e "YouTube Music"
     adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
@@ -277,7 +277,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 
     # echo -e "Google Photos"
-    # adb shell pm disable-user --user 0 com.google.android.apps.photos
+    #adb shell pm disable-user --user 0 com.google.android.apps.photos
 
     echo -e "Google Podcasts"
     adb shell pm uninstall -k --user 0 com.google.android.apps.podcasts
@@ -286,7 +286,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
 
     # echo -e "Device Health Services"
-    # adb shell pm disable-user --user 0 com.google.android.apps.turbo
+    #adb shell pm disable-user --user 0 com.google.android.apps.turbo
 
     echo -e "Digital Wellbeing"
     adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
@@ -313,7 +313,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.google.android.videos
 
     # echo -e "Объектив"
-    # adb shell pm disable-user --user 0 com.google.ar.lens
+    #adb shell pm disable-user --user 0 com.google.ar.lens
 
     echo -e "Google Play Services for AR"
     adb shell pm disable-user --user 0 com.google.ar.core
@@ -323,7 +323,6 @@ start() {
     adb shell pm uninstall -k --user 0 com.mi.globalbrowser
 
     #echo -e "Mi Wallpaper Carousel"
-    #Unable to uninstall
     adb shell pm disable-user --user 0 com.miui.android.fashiongallery
 
     echo -e "App Vault"
@@ -351,7 +350,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.hybrid
 
     # echo -e "MIUI Notes"
-    # adb shell pm disable-user --user 0 com.miui.notes
+    #adb shell pm disable-user --user 0 com.miui.notes
 
     echo -e "Yellow Pages"
     adb shell pm uninstall -k --user 0 com.miui.yellowpage
@@ -363,10 +362,10 @@ start() {
     adb shell pm uninstall -k --user 0 com.miui.compass
 
     # echo -e "FM Radio"
-    # adb shell pm uninstall -k --user 0 com.miui.fm
+    #adb shell pm uninstall -k --user 0 com.miui.fm
 
     # echo -e "FM Radio Service"
-    # adb shell pm uninstall -k --user 0 com.miui.fmservice
+    #adb shell pm uninstall -k --user 0 com.miui.fmservice
 
     echo -e "Services and Feedback"
     adb shell pm disable-user --user 0 com.miui.miservice
@@ -404,7 +403,7 @@ start() {
 
     # echo -e "Mi Scanner"
     #Becomes unable to scan QR codes via Camera app
-    # adb shell pm uninstall -k --user 0 com.xiaomi.scanner
+    #adb shell pm uninstall -k --user 0 com.xiaomi.scanner
 
     echo -e "Mi Weather"
     adb shell pm uninstall -k --user 0 com.miui.weather2
@@ -577,7 +576,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.dexonpc
 
     # echo -e "Device Health Services"
-    # adb shell pm disable-user --user 0 com.google.android.apps.turbo
+    #adb shell pm disable-user --user 0 com.google.android.apps.turbo
 
     echo -e "Duo"
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
@@ -616,7 +615,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.google.android.videos
 
     # echo -e "Google Фото"
-    # adb shell pm disable-user --user 0 com.google.android.apps.photos
+    #adb shell pm disable-user --user 0 com.google.android.apps.photos
 
     echo -e "Google Chat"
     adb shell pm uninstall -k --user 0 com.google.android.apps.dynamite
@@ -661,7 +660,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.kidshome
 
     # echo -e "Samsung Notes"
-    # adb shell pm disable-user --user 0 com.samsung.android.app.notes
+    #adb shell pm disable-user --user 0 com.samsung.android.app.notes
 
     echo -e "Samsung Pass"
     adb shell pm disable-user --user 0 com.samsung.android.authfw
@@ -688,7 +687,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.app.watchmanagerstub
 
     # echo -e "YouTube"
-    # adb shell pm uninstall -k --user 0 com.google.android.youtube
+    #adb shell pm uninstall -k --user 0 com.google.android.youtube
 
     echo -e "YouTube Music"
     adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
@@ -779,11 +778,11 @@ start() {
     adb shell pm disable-user --user 0 com.android.bookmarkprovider
     adb shell pm disable-user --user 0 com.android.browser
     #adb shell pm disable-user --user 0 com.android.calendar
-    # adb shell pm disable-user --user 0 com.samsung.android.dialer
-    # adb shell pm disable-user --user 0 com.samsung.android.messaging
+    #adb shell pm disable-user --user 0 com.samsung.android.dialer
+    #adb shell pm disable-user --user 0 com.samsung.android.messaging
     #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver
     #adb shell pm disable-user --user 0 com.android.cellbroadcastreceiver.overlay.common
-    # adb shell pm disable-user --user 0 com.android.deskclock
+    #adb shell pm disable-user --user 0 com.android.deskclock
     #adb shell pm disable-user --user 0 com.android.dreams.basic
     #adb shell pm disable-user --user 0 com.android.dreams.phototable
     #adb shell pm disable-user --user 0 com.android.emergency
@@ -796,7 +795,7 @@ start() {
     adb shell pm uninstall -k --user 0 com.android.thememanager
     adb shell pm uninstall -k --user 0 com.android.thememanager.module
     #adb shell pm disable-user --user 0 com.android.wallpaper.livepicker
-    # adb shell pm disable-user --user 0 com.sec.android.app.fm
+    #adb shell pm disable-user --user 0 com.sec.android.app.fm
     #adb shell pm disable-user --user 0 com.android.wallpaperbackup
     #adb shell pm disable-user --user 0 com.android.wallpapercropper
     adb shell pm disable-user --user 0 com.android.providers.downloads.ui
@@ -817,7 +816,7 @@ start() {
     adb shell pm disable-user --user 0 com.samsung.android.setupindiaservicestnc
     adb shell pm disable-user --user 0 com.mygalaxy
     adb shell pm disable-user --user 0 com.samsung.android.forest
-    # adb shell pm disable-user --user 0 com.samsung.android.fmm
+    #adb shell pm disable-user --user 0 com.samsung.android.fmm
     adb shell pm disable-user --user 0 com.samsung.android.mfi
     adb shell pm disable-user --user 0 com.samsung.android.dsms
     adb shell pm disable-user --user 0 com.aura.oobe.samsung
@@ -841,7 +840,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.voicenote
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
     adb shell pm disable-user --user 0 com.samsung.android.voc
-    # adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
+    #adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
     adb shell pm disable-user --user 0 com.sec.android.splitsound
     adb shell pm disable-user --user 0 com.mobeam.barcodeService
     adb shell pm disable-user --user 0 com.samsung.android.app.dressroom
@@ -873,8 +872,8 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.gallery3d
     adb shell pm disable-user --user 0 com.sec.android.app.clockpackage
     #adb shell pm disable-user --user 0 com.sec.android.app.myfiles
-    # adb shell pm disable-user --user 0 com.samsung.android.app.contacts
-    # adb shell pm disable-user --user 0 com.sec.android.app.camera
+    #adb shell pm disable-user --user 0 com.samsung.android.app.contacts
+    #adb shell pm disable-user --user 0 com.sec.android.app.camera
     adb shell pm disable-user --user 0 com.microsoft.skydrive
     adb shell pm disable-user --user 0 com.samsung.android.bixby.agent
     adb shell pm disable-user --user 0 com.samsung.android.bixby.agent.dummy
@@ -900,7 +899,7 @@ start() {
     adb shell pm disable-user --user 0 com.dsi.ant.service.socket
     adb shell pm disable-user --user 0 com.dsi.ant.server
     adb shell pm disable-user --user 0 com.dsi.ant.plugins.antplus
-    # adb shell pm disable-user --user 0 com.samsung.android.messaging
+    #adb shell pm disable-user --user 0 com.samsung.android.messaging
     adb shell pm disable-user --user 0 com.sec.android.easyonehand
     adb shell pm disable-user --user 0 com.samsung.android.drivelink.stub
     adb shell pm disable-user --user 0 com.sec.android.widgetapp.samsungapps
@@ -914,7 +913,7 @@ start() {
     adb shell pm disable-user --user 0 com.sec.android.app.voicenote
     adb shell pm disable-user --user 0 com.samsung.android.oneconnect
     adb shell pm disable-user --user 0 com.samsung.android.voc
-    # adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
+    #adb shell pm disable-user --user 0 com.sec.android.app.popupcalculator
     adb shell pm disable-user --user 0 com.sec.android.splitsound
     adb shell pm disable-user --user 0 com.mobeam.barcodeService
     adb shell pm disable-user --user 0 com.samsung.android.app.dressroom
@@ -998,12 +997,12 @@ start() {
     adb shell pm disable-user --user 0 co.hunge.app
     adb shell pm disable-user --user 0 com.greatbigstory.greatbigstory
     adb shell pm disable-user --user 0 com.drivemode
-    # adb shell pm disable-user --user 0 com.samsung.android.app.contacts
+    #adb shell pm disable-user --user 0 com.samsung.android.app.contacts
     #adb shell pm disable-user --user 0 com.samsung.android.calendar
     #adb shell pm disable-user --user 0 com.cnn.mobile.android.phone
     adb shell pm disable-user --user 0 com.bleacherreport.android.teamstream
     adb shell pm disable-user --user 0 net.aetherpal.device
-    # adb shell pm disable-user --user 0 com.google.android.dialer
+    #adb shell pm disable-user --user 0 com.google.android.dialer
     adb shell pm disable-user --user 0 com.wb.goog.got.conquest
     adb shell pm disable-user --user 0 com.wb.goog.dcuniverse
     adb shell pm disable-user --user 0 com.innogames.foeandroid
@@ -1023,30 +1022,30 @@ start() {
     adb shell pm uninstall -k --user 0 com.facebook.appmanager
     adb shell pm uninstall -k --user 0 com.facebook.services
     adb shell pm disable-user --user 0 com.google.android.apps.restore
-    # adb shell pm disable-user --user 0 com.google.android.apps.turbo
+    #adb shell pm disable-user --user 0 com.google.android.apps.turbo
     adb shell pm disable-user --user 0 com.google.android.setupwizard
     adb shell pm disable-user --user 0 com.google.android.gm
     adb shell pm uninstall -k --user 0 com.android.chrome
     adb shell pm disable-user --user 0 com.google.android.syncadapters.contacts
     adb shell pm disable-user --user 0 com.google.android.partnersetup
     adb shell pm uninstall -k --user 0 com.google.android.apps.maps
-    # adb shell pm disable-user --user 0 com.google.android.apps.photos
+    #adb shell pm disable-user --user 0 com.google.android.apps.photos
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
     adb shell pm disable-user --user 0 com.google.android.feedback
-    # adb shell pm disable-user --user 0 com.google.android.gms
+    #adb shell pm disable-user --user 0 com.google.android.gms
     adb shell pm disable-user --user 0 com.google.android.gms.location.history
     adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
-    # adb shell pm disable-user --user 0 com.google.android.inputmethod.latin
+    #adb shell pm disable-user --user 0 com.google.android.inputmethod.latin
     adb shell pm uninstall -k --user 0 com.google.android.marvin.talkback
     adb shell pm uninstall -k --user 0 com.google.android.music
     adb shell pm disable-user --user 0 com.google.android.printservice.recommendation
     adb shell pm disable-user --user 0 com.google.android.syncadapters.calendar
     adb shell pm uninstall -k --user 0 com.google.android.tts
     adb shell pm uninstall -k --user 0 com.google.android.videos
-    # adb shell pm uninstall -k --user 0 com.google.android.youtube
-    # adb shell pm disable-user --user 0 com.google.ar.lens
-    # adb shell pm disable-user --user 0 com.android.vending
-    # adb shell pm disable-user --user 0 com.google.android.gsf
+    #adb shell pm uninstall -k --user 0 com.google.android.youtube
+    #adb shell pm disable-user --user 0 com.google.ar.lens
+    #adb shell pm disable-user --user 0 com.android.vending
+    #adb shell pm disable-user --user 0 com.google.android.gsf
     #endregion Samsung
     #region Realme
     adb shell pm uninstall -k --user 0 com.android.stk
@@ -1066,21 +1065,21 @@ start() {
     adb shell pm disable-user --user 0 com.nearme.statistics.rom
     adb shell pm disable-user --user 0 com.oppo.operationManual
     adb shell pm disable-user --user 0 com.coloros.backuprestore
-    # adb shell pm disable-user --user 0 com.coloros.phonemanager
-    # adb shell pm uninstall -k --user 0 com.google.android.youtube
+    #adb shell pm disable-user --user 0 com.coloros.phonemanager
+    #adb shell pm uninstall -k --user 0 com.google.android.youtube
     adb shell pm disable-user --user 0 com.realme.logtool
     adb shell pm disable-user --user 0 com.coloros.video
     adb shell pm disable-user --user 0 com.coloros.music
-    # adb shell pm disable-user --user 0 com.coloros.ocrscanner
+    #adb shell pm disable-user --user 0 com.coloros.ocrscanner
     adb shell pm disable-user --user 0 com.coloros.assistantscreen
     adb shell pm disable-user --user 0 com.oppo.aod
     adb shell pm disable-user --user 0 com.oppo.sos
     adb shell pm disable-user --user 0 com.oppo.qualityprotect
     adb shell pm disable-user --user 0 com.oppo.partnerbrowsercustomizations
     adb shell pm disable-user --user 0 com.oppo.music
-    # adb shell pm disable-user --user 0 com.android.fmradio
+    #adb shell pm disable-user --user 0 com.android.fmradio
     adb shell pm disable-user --user 0 com.google.android.apps.docs
-    # adb shell pm disable-user --user 0 com.google.android.apps.photos
+    #adb shell pm disable-user --user 0 com.google.android.apps.photos
     adb shell pm disable-user --user 0 com.google.android.talk
     adb shell pm disable-user --user 0 com.google.android.keep
     adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
@@ -1101,7 +1100,7 @@ start() {
     #adb shell pm disable-user --user 0 com.android.statementservice
     adb shell pm uninstall -k --user 0 com.android.stk
     #adb shell pm disable-user --user 0 com.android.wallpaperbackup
-    # adb shell pm disable-user --user 0 com.caf.fmradio
+    #adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.activation
     adb shell pm disable-user --user 0 com.coloros.activation.overlay.common
     adb shell pm disable-user --user 0 com.coloros.appmanager
@@ -1115,24 +1114,24 @@ start() {
     adb shell pm disable-user --user 0 com.coloros.childrenspace
     adb shell pm disable-user --user 0 com.coloros.compass2
     adb shell pm disable-user --user 0 com.coloros.encryption
-    # adb shell pm disable-user --user 0 com.coloros.filemanager
+    #adb shell pm disable-user --user 0 com.coloros.filemanager
     adb shell pm disable-user --user 0 com.coloros.floatassistant
     adb shell pm disable-user --user 0 com.coloros.focusmode
     adb shell pm disable-user --user 0 com.coloros.gallery3d
     adb shell pm disable-user --user 0 com.coloros.gamespace
     adb shell pm disable-user --user 0 coloros.gamespaceui
     adb shell pm disable-user --user 0 com.coloros.healthcheck
-    # adb shell pm disable-user --user 0 com.coloros.ocrscanner
+    #adb shell pm disable-user --user 0 com.coloros.ocrscanner
     adb shell pm disable-user --user 0 com.coloros.oppomultiapp
     adb shell pm disable-user --user 0 com.coloros.oshare
-    # adb shell pm disable-user --user 0 com.coloros.phonemanager
+    #adb shell pm disable-user --user 0 com.coloros.phonemanager
     adb shell pm disable-user --user 0 com.coloros.phonenoareainquire
     adb shell pm disable-user --user 0 com.coloros.pictorial
     adb shell pm disable-user --user 0 com.coloros.resmonitor
     adb shell pm disable-user --user 0 com.coloros.safesdkproxy
     adb shell pm disable-user --user 0 com.coloros.sauhelper
     adb shell pm disable-user --user 0 com.coloros.sceneservice
-    # adb shell pm disable-user --user 0 com.coloros.screenrecorder
+    #adb shell pm disable-user --user 0 com.coloros.screenrecorder
     adb shell pm disable-user --user 0 com.coloros.securepay
     adb shell pm disable-user --user 0 com.coloros.smartdrive
     adb shell pm disable-user --user 0 com.coloros.soundrecorder
@@ -1191,7 +1190,7 @@ start() {
     adb shell pm disable-user --user 0 com.qualcomm.qti.cne
     adb shell pm disable-user --user 0 com.qualcomm.qti.qdma
     adb shell pm disable-user --user 0 com.qualcomm.qti.modemtestmode
-    # adb shell pm disable-user --user 0 com.qualcomm.qti.remoteSimlockAuth
+    #adb shell pm disable-user --user 0 com.qualcomm.qti.remoteSimlockAuth
     adb shell pm disable-user --user 0 com.qualcomm.uimremoteclient
     adb shell pm disable-user --user 0 com.qualcomm.uimremoteserver
     adb shell pm disable-user --user 0 com.mediatek.omacp
@@ -1221,7 +1220,7 @@ start() {
     adb shell pm disable-user --user 0 com.android.providers.userdictionary
     #adb shell pm disable-user --user 0 com.android.wallpaperbackup
     #adb shell pm disable-user --user 0 com.android.wallpapercropper
-    # adb shell pm disable-user --user 0 com.caf.fmradio
+    #adb shell pm disable-user --user 0 com.caf.fmradio
     adb shell pm disable-user --user 0 com.coloros.aftersalesservice
     #adb shell pm disable-user --user 0 com.coloros.alarmclock
     adb shell pm disable-user --user 0 com.coloros.assistantscreen
@@ -1230,7 +1229,7 @@ start() {
     adb shell pm disable-user --user 0 com.coloros.childrenspace
     adb shell pm disable-user --user 0 com.coloros.cloud
     adb shell pm disable-user --user 0 com.coloros.compass2
-    # adb shell pm disable-user --user 0 com.coloros.filemanager
+    #adb shell pm disable-user --user 0 com.coloros.filemanager
     adb shell pm disable-user --user 0 com.coloros.floatassistant
     adb shell pm disable-user --user 0 com.coloros.focusmode
     adb shell pm disable-user --user 0 com.coloros.gallery3d
@@ -1238,7 +1237,7 @@ start() {
     adb shell pm disable-user --user 0 com.coloros.healthcheck
     adb shell pm disable-user --user 0 com.coloros.healthservice
     adb shell pm disable-user --user 0 com.coloros.musiclink
-    # adb shell pm disable-user --user 0 com.coloros.screenrecorder
+    #adb shell pm disable-user --user 0 com.coloros.screenrecorder
     adb shell pm disable-user --user 0 com.coloros.securepay
     adb shell pm disable-user --user 0 com.coloros.smartsidebar
     adb shell pm disable-user --user 0 com.coloros.speechassist
@@ -1279,7 +1278,7 @@ start() {
     adb shell pm disable-user --user 0 com.oppo.usercenter
     adb shell pm disable-user --user 0 com.oppoex.afterservice
     adb shell pm disable-user --user 0 com.qti.qualcomm.deviceinfo
-    # adb shell pm disable-user --user 0 com.qti.confuridialer
+    #adb shell pm disable-user --user 0 com.qti.confuridialer
     adb shell pm disable-user --user 0 com.qti.dpmserviceapp
     adb shell pm disable-user --user 0 com.qti.qualcomm.datastatusnotification
     adb shell pm disable-user --user 0 com.qti.xdivert
@@ -1287,8 +1286,8 @@ start() {
     adb shell pm disable-user --user 0 com.qualcomm.qti.dynamicddsservice
     adb shell pm disable-user --user 0 com.qualcomm.qti.lpa
     adb shell pm disable-user --user 0 com.qualcomm.qti.qmmi
-    # adb shell pm disable-user --user 0 com.qualcomm.qti.simcontacts
-    # adb shell pm disable-user --user 0 com.qualcomm.qti.simsettings
+    #adb shell pm disable-user --user 0 com.qualcomm.qti.simcontacts
+    #adb shell pm disable-user --user 0 com.qualcomm.qti.simsettings
     adb shell pm disable-user --user 0 com.qualcomm.qti.uimGbaApp
     adb shell pm disable-user --user 0 com.mediatek.gnssdebugreport
     adb shell pm disable-user --user 0 com.mediatek.mdmlsample
@@ -1315,7 +1314,7 @@ start() {
     adb shell pm disable-user --user 0 com.qti.qualcomm.deviceinfo
     adb shell pm disable-user --user 0 com.qualcomm.qti.ims
     adb shell pm disable-user --user 0 com.qualcomm.qti.lpa
-    # adb shell pm disable-user --user 0 com.qti.confuridialer
+    #adb shell pm disable-user --user 0 com.qti.confuridialer
     adb shell pm disable-user --user 0 com.qti.dpmserviceapp
     adb shell pm disable-user --user 0 com.qti.qualcomm.datastatusnotification
     adb shell pm disable-user --user 0 com.qualcomm.embms
@@ -1341,9 +1340,9 @@ start() {
     adb shell pm disable-user --user 0 com.vivo.ewarranty
     adb shell pm disable-user --user 0 com.vivo.favorite
     adb shell pm disable-user --user 0 com.vivo.floatingball
-    # adb shell pm disable-user --user 0 com.vivo.FMRadio
+    #adb shell pm disable-user --user 0 com.vivo.FMRadio
     adb shell pm disable-user --user 0 com.vivo.fuelsummary
-    # adb shell pm disable-user --user 0 com.vivo.gallery
+    #adb shell pm disable-user --user 0 com.vivo.gallery
     adb shell pm disable-user --user 0 com.vivo.gamewatch
     adb shell pm disable-user --user 0 com.vivo.globalsearch
     adb shell pm disable-user --user 0 com.vivo.hiboard
@@ -1359,9 +1358,9 @@ start() {
     adb shell pm disable-user --user 0 com.vivo.carmode
     adb shell pm disable-user --user 0 com.vivo.numbermark
     adb shell pm disable-user --user 0 com.vivo.pushservice
-    # adb shell pm disable-user --user 0 com.vivo.safecentercom.vivo.scanner
+    #adb shell pm disable-user --user 0 com.vivo.safecentercom.vivo.scanner
     adb shell pm disable-user --user 0 com.vivo.setupwizard
-    # adb shell pm disable-user --user 0 com.vivo.sim.contacts
+    #adb shell pm disable-user --user 0 com.vivo.sim.contacts
     adb shell pm disable-user --user 0 com.vivo.smartmultiwindow
     adb shell pm disable-user --user 0 com.vivo.smartshot
     adb shell pm disable-user --user 0 com.vivo.translator
