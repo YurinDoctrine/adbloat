@@ -356,6 +356,7 @@ echo "Applying Tweaks ..."
     adb shell settings put global persist.traced_perf.enable 0
     adb shell settings put global wifi_verbose_logging_enabled 0
     adb shell settings put global send_action_app_error 0
+    adb shell settings put global send_action_app_error_native 0
     adb shell settings put global foreground_service_starts_logging_enabled 0
     adb shell settings put global enable_diskstats_logging 0
     adb shell settings put global activity_starts_logging_enabled 0
