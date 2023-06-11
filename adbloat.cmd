@@ -17,8 +17,9 @@ exit 0
         $packageName = $_ -replace '^package:', ''
         adb shell pm uninstall -k --user 0 $packageName
     }
+
 :tweaks
-echo "Applying Tweaks ..."
+    echo "Applying Tweaks ..."
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
@@ -634,11 +635,11 @@ echo "Applying Tweaks ..."
     adb shell settings put system motion_merged_mute_pause 0
     adb shell settings put system motion_overturn 0
     adb shell settings put system charging_info_always 0
-echo "ALL DONE!"
-echo.
-adb kill-server
-echo.
+    echo "ALL DONE!"
+    echo.
+    adb kill-server
+    echo.
 
-RMDIR /S /Q %USERPROFILE%\.android
-RMDIR /S /Q %USERPROFILE%\.dbus-keyrings
-pause
+    RMDIR /S /Q %USERPROFILE%\.android
+    RMDIR /S /Q %USERPROFILE%\.dbus-keyrings
+    pause
