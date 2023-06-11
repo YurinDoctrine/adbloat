@@ -422,8 +422,10 @@ tweaks() {
     adb shell settings put global dns1 8.8.8.8
     adb shell settings put global dns2 8.8.4.4
     adb shell settings put global private_dns_mode off
+    adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
+    adb shell settings put global wifi_stability 1
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global config.disable_rtt true
@@ -606,6 +608,7 @@ tweaks() {
     adb shell settings put global ro.core_ctl_present 1
     adb shell settings put global ro.thermal_warmreset true
     adb shell settings put global persist.thermalmanager.enable true
+    adb shell settings put global thermal_offload 0
     adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global persist.sys.binary_xml false
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
