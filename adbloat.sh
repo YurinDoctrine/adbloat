@@ -616,6 +616,7 @@ tweaks() {
     adb shell settings put secure screensaver_activate_on_dock 0
     adb shell settings put secure fingerprint_effect 0
     adb shell settings put secure adaptive_sleep 0
+    adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system power_mode high
@@ -632,6 +633,7 @@ tweaks() {
     adb shell settings put system air_motion_engine 0
     adb shell settings put system air_motion_wake_up 0
     adb shell settings put system surface_palm_touch 0
+    adb shell settings put system lift_to_wake 0
     adb shell settings put system charging_info_always 0
     echo -e "ALL DONE!"
     echo -e ""
