@@ -5,6 +5,11 @@ start() {
     cut -d ':' -f 2 |
     tr -d '\r' |
     xargs -L1 -t adb shell pm uninstall -k --user 0
+
+    adb shell pm list packages -s |
+    cut -d ':' -f 2 |
+    tr -d '\r' |
+    xargs -L1 -t adb shell pm clear --user 0
 }
 
 tweaks() {
