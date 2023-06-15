@@ -620,6 +620,7 @@ tweaks() {
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system font_scale 1.25
     adb shell settings put system bluetooth_discoverability 1
+    adb shell settings put system motion_engine 0
     adb shell settings put system master_motion 0
     adb shell settings put system motion_merged_mute_pause 0
     adb shell settings put system motion_overturn 0
