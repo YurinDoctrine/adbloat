@@ -623,6 +623,9 @@ tweaks() {
     adb shell settings put system master_motion 0
     adb shell settings put system motion_merged_mute_pause 0
     adb shell settings put system motion_overturn 0
+    adb shell settings put system air_motion_engine 0
+    adb shell settings put system air_motion_wake_up 0
+    adb shell settings put system surface_palm_touch 0
     adb shell settings put system charging_info_always 0
     echo -e "ALL DONE!"
     echo -e ""
