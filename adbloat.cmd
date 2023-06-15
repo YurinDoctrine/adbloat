@@ -18,6 +18,12 @@ exit 0
         adb shell pm uninstall -k --user 0 $packageName
     }
 
+    adb shell pm list packages -s |
+    ForEach-Object {
+        $packageName = $_ -replace '^package:', ''
+        adb shell pm clear --user 0 $packageName
+    }
+
 :tweaks
     echo "Applying Tweaks ..."
     adb shell dumpsys deviceidle whitelist +com.android.systemui
