@@ -255,9 +255,11 @@ exit 0
     adb shell settings put global persist.debug.sf.statistics 0
     adb shell settings put global persist.radio.ramdump 0
     adb shell settings put global persist.ims.disableDebugLogs 1
+    adb shell settings put global persist.ims.disableDebugDataPathLogs 1
     adb shell settings put global persist.ims.disableADBLogs 1
     adb shell settings put global persist.ims.disableQXDMLogs 1
     adb shell settings put global persist.ims.disableIMSLogs 1
+    adb shell settings put global persist.ims.disableSigHandler 1
     adb shell settings put global app_usage_enabled 0
     adb shell settings put global package_usage_stats_enabled 0
     adb shell settings put global recent_usage_data_enabled 0
