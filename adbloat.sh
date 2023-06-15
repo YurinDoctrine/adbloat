@@ -367,6 +367,7 @@ tweaks() {
     adb shell settings put global media.stagefright.enable-http true
     adb shell settings put global persist.media.hls.enhancements true
     adb shell settings put global audio.deep_buffer.media true
+    adb shell settings put global audio.offload.disable true
     adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global audio.offload.multiple.enabled true
