@@ -577,6 +577,7 @@ exit 0
     adb shell settings put global debug.sf.gpu_comp_tiling 1
     adb shell settings put global debug.enable.sglscale 1
     adb shell settings put global debug.qctwa.preservebuf 1
+    adb shell settings put global debug.mdpcomp.idletime 0
     adb shell settings put global debug.doze.component 0
     adb shell settings put global debug.migrate.bigcore false
     adb shell settings put global debug.sdm.support_writeback 1
