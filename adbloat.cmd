@@ -286,6 +286,7 @@ exit 0
     adb shell settings put global wifi_stability 1
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global persist.data.tcp_rst_drop true
+    adb shell settings put global ro.data.large_tcp_window_size true
     adb shell settings put global config.disable_rtt true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
