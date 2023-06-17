@@ -80,6 +80,7 @@ exit 0
     adb shell sm fstrim
 
     adb shell setprop persist.log.tag S
+    adb shell setprop persist.logd.size 0
 
     ::adb shell wm size 1080x1920
     ::adb shell wm density 390
