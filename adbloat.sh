@@ -67,6 +67,8 @@ tweaks() {
     adb shell rm -rf /storage/sdcard1/LOST.DIR/*
     adb shell sm fstrim
 
+    adb shell setprop persist.log.tag V
+
     #adb shell wm size 1080x1920
     #adb shell wm density 390
 
