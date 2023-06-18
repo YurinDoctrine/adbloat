@@ -256,6 +256,7 @@ tweaks() {
     adb shell settings put global persist.service.debuggable 0
     adb shell settings put global persist.logd.size 0
     adb shell settings put system anr_debugging_mechanism 0
+    adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
     adb shell settings put system remote_control 0
     adb shell settings put system dk_log_level 0
