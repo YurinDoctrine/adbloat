@@ -171,12 +171,14 @@ exit 0
     adb shell settings put global dalvik.vm.dex2oat-swap true
     adb shell settings put global dalvik.vm.verify-bytecode false
     adb shell settings put global dalvik.vm.usejit true
+    adb shell settings put global dalvik.vm.usejitprofiles true
     adb shell settings put global dalvik.vm.checkjni false
     adb shell settings put global dalvik.vm.check-dex-sum false
     adb shell settings put global dalvik.vm.debug.alloc 0
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global dalvik.vm.execution-mode int:jit
     adb shell settings put global dalvik.vm.dexopt.secondary true
+    adb shell settings put global dalvik.vm.dexopt.thermal-cutoff 2
     adb shell settings put global dalvik.vm.dex2oat-filter interpret-only
     adb shell settings put global dalvik.vm.deadlock-predict off
     adb shell settings put global dalvik.vm.dex2oat-backend Quick
@@ -185,6 +187,7 @@ exit 0
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
     adb shell settings put global dalvik.vm.jit.codecachesize 0
+    adb shell settings put global dalvik.vm.appimageformat lz4
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
