@@ -453,6 +453,7 @@ tweaks() {
     adb shell settings put global ro.config.low_ram.mod true
     adb shell settings put global ro.board_ram_size low
     adb shell settings put global ro.ime.lowmemory true
+    adb shell settings put global ro.am.enabled_low_mem_maint true
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
     adb shell settings put global ro.config.dha_tunnable 1
