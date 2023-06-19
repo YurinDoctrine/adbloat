@@ -176,6 +176,7 @@ tweaks() {
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
     adb shell settings put global dalvik.vm.jit.codecachesize 0
     adb shell settings put global dalvik.vm.appimageformat lz4
+    adb shell settings put global dalvik.vm.systemservercompilerfilter speed
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.shared quicken
@@ -184,6 +185,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.install quicken
     adb shell settings put global pm.dexopt.bg-dexopt speed
     adb shell settings put global pm.dexopt.ab-ota speed
+    adb shell settings put global pm.dexopt.forced-dexopt everything
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
