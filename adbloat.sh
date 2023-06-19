@@ -424,6 +424,7 @@ tweaks() {
     adb shell settings put global ro.mtk_bg_power_saving_ui 1
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global def_bg_power_saving 1
+    adb shell settings put global persist.bg.dexopt.enable true
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.incremental.enable 1
