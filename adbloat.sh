@@ -383,6 +383,8 @@ tweaks() {
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global media.stagefright.enable-http true
     adb shell settings put global persist.media.hls.enhancements true
+    adb shell settings put global aaudio.mmap_policy 1
+    adb shell settings put global aaudio.mmap_exclusive_policy 2
     adb shell settings put global audio.deep_buffer.media true
     adb shell settings put global audio.offload.disable true
     adb shell settings put global audio.offload.video true
