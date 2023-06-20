@@ -431,6 +431,7 @@ exit 0
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.sys.prelaunch.off 0
+    adb shell settings put global persist.vendor.enable.preload true
     adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
@@ -440,6 +441,9 @@ exit 0
     adb shell settings put global persist.device_config.runtime_native.usap_refill_threshold 1
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
+    adb shell settings put global persist.device_config.runtime_native.metrics.reporting-mods 0
+    adb shell settings put global persist.device_config.runtime_native.metrics.reporting-mods-server 0
+    adb shell settings put global persist.device_config.runtime_native.metrics.write-to-statsd false
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global sys.ipo.disable 0
     adb shell settings put global ro.mtk_ipo_support 1
