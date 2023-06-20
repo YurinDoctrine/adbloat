@@ -100,6 +100,7 @@ exit 0
     adb shell settings put global vendor.display.disable_metadata_dynamic_fps 1
     adb shell settings put global vendor.display.use_smooth_motion 1
     adb shell settings put global vendor.display.enable_camera_smooth 1
+    adb shell settings put global debug.refresh_rate.view_override 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put system thermal_limit_refresh_rate 0
@@ -275,6 +276,7 @@ exit 0
     adb shell settings put global recent_usage_data_enabled 0
     adb shell settings put global persist.service.debuggable 0
     adb shell settings put global persist.logd.size 0
+    adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
@@ -305,6 +307,7 @@ exit 0
     adb shell settings put global libc.debug.malloc 0
     adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
+    adb shell settings put global debug.hwc.disabletonemapping true
     adb shell settings put global debug.hwui.use_buffer_age false
     adb shell settings put global CPU_MIN_CHECK_DURATION false
     adb shell settings put global GC_MIN_INTERVAL false
@@ -474,6 +477,7 @@ exit 0
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
     adb shell settings put global ro.vold.umsdirtyratio 50
+    adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ram_expand_size_list 1
@@ -519,6 +523,9 @@ exit 0
     adb shell settings put global ro.trim.memory.font_cache 1
     adb shell settings put global ro.zstd.default_compression_level 1
     adb shell settings put global vold.post_fs_data_done 1
+    adb shell settings put global vold.storage.prepared 1
+    adb shell settings put global vold.has_compress 1
+    adb shell settings put global vold.has_quota 0
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
@@ -531,6 +538,7 @@ exit 0
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
+    adb shell settings put global debug.hwui.disabledither true
     adb shell settings put global debug.hwui.enable_bp_cache true
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.force_highendgfx true
