@@ -101,6 +101,7 @@ tweaks() {
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global sys.disable_ext_animation 1
     adb shell settings put global sys.enable_grip_rejection 1
+    adb shell settings put global ro.config.enable_touchboost true
     adb shell settings put global ro.vendor.touchfeature.gamemode.enable true
     adb shell settings put global ro.floatingtouch.available 1
     adb shell settings put global view.touch_slop 1
@@ -310,6 +311,7 @@ tweaks() {
     adb shell settings put global hidden_api_policy_pre_p_apps 1
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
+    adb shell settings put global persist.sys.ssr.enable_ramdumps 0
     adb shell settings put global persist.sys.ssr.restart_level 1
     adb shell settings put global persist.sys.ap.restart_level 1
     adb shell settings put global persist.rcs.supported 0
@@ -420,8 +422,10 @@ tweaks() {
     adb shell settings put global persist.preload.common 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
+    adb shell settings put global persist.device_config.runtime_native.use_app_image_startup_cache true
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
     adb shell settings put global persist.device_config.runtime_native.usap_pool_size_min 1
+    adb shell settings put global persist.device_config.runtime_native.usap_refill_threshold 1
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
     adb shell settings put global ro.service.remove_unused 1
@@ -595,6 +599,7 @@ tweaks() {
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global persist.metadata_dynfps.disable true
     adb shell settings put global persist.android.strictmode 0
+    adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
