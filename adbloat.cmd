@@ -278,6 +278,8 @@ exit 0
     adb shell settings put global persist.service.debuggable 0
     adb shell settings put global persist.logd.size 0
     adb shell settings put global persist.bt.iot.enablelogging false
+    adb shell settings put global ro.vendor.connsys.dedicated.log 0
+    adb shell settings put global persist.vendor.verbose_logging_enabled false
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
