@@ -174,6 +174,7 @@ tweaks() {
     adb shell settings put global dalvik.vm.deadlock-predict off
     adb shell settings put global dalvik.vm.dex2oat-backend Quick
     adb shell settings put global dalvik.vm.dex2oat-minidebuginfo false
+    adb shell settings put global dalvik.vm.dex2oat-resolve-startup-strings false
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
     adb shell settings put global dalvik.vm.jit.codecachesize 0
@@ -268,6 +269,7 @@ tweaks() {
     adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
     adb shell settings put global persist.vendor.verbose_logging_enabled false
+    adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
@@ -386,6 +388,7 @@ tweaks() {
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global media.stagefright.enable-http true
     adb shell settings put global persist.media.hls.enhancements true
+    adb shell settings put global persist.media.treble_omx false
     adb shell settings put global aaudio.mmap_policy 1
     adb shell settings put global aaudio.mmap_exclusive_policy 2
     adb shell settings put global audio.deep_buffer.media true
