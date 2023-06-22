@@ -173,7 +173,6 @@ tweaks() {
     adb shell settings put global dalvik.vm.dex2oat-filter interpret-only
     adb shell settings put global dalvik.vm.deadlock-predict off
     adb shell settings put global dalvik.vm.dex2oat-backend Quick
-    adb shell settings put global dalvik.vm.dex2oat-thread_count 4
     adb shell settings put global dalvik.vm.dex2oat-minidebuginfo false
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
