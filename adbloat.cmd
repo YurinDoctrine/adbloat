@@ -144,6 +144,7 @@ exit 0
     adb shell settings put global ro.hwui.path_cache_size 1
     adb shell settings put global ro.hwui.disable_asset_atlas true
     adb shell settings put global disable_hw_overlays 1
+    adb shell settings put global overlay_disable_force_hwc 1
     adb shell settings put global renderthread.skia.reduceopstasksplitting true
     adb shell settings put global omap.enhancement true
     adb shell settings put global ENFORCE_PROCESS_LIMIT false
@@ -635,6 +636,7 @@ exit 0
     adb shell settings put global persist.metadata_dynfps.disable true
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global persist.sys.strictmode.visual 0
+    adb shell settings put global persist.sys.strictmode.violation 0
     adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
