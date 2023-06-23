@@ -332,7 +332,7 @@ tweaks() {
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global persist.data.iwlan.enable true
-    adb shell settings put global ro.com.android.dataroaming true
+    adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.sensor.sleep.control 1
     adb shell settings put global persist.radio.no_wait_for_card 1
