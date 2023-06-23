@@ -120,6 +120,7 @@ exit 0
     adb shell settings put global ro.floatingtouch.available 1
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
+    adb shell settings put global persist.touch_move_opt 1
     adb shell settings put global touch.size.bias 0
     adb shell settings put global touch.pressure.scale 0.1
     adb shell settings put global touch.distance.scale 0
@@ -376,7 +377,7 @@ exit 0
     adb shell settings put global persist.sys.disable_blur_view true
     adb shell settings put global persist.perf.wm_static_blur true
     adb shell settings put global persist.sys.shadow.open 0
-    adb shell settings put global persist.sys.use_32bpp_alpha 1
+    adb shell settings put global persist.sys.use_16bpp_alpha 0
     adb shell settings put global persist.sys.purgeable_assets 1
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.vendor.perf.scroll_opt true
@@ -407,15 +408,17 @@ exit 0
     adb shell settings put global aaudio.mmap_policy 1
     adb shell settings put global aaudio.mmap_exclusive_policy 2
     adb shell settings put global audio.deep_buffer.media true
-    adb shell settings put global audio.offload.disable true
     adb shell settings put global audio.offload.video true
+    adb shell settings put global audio.offload.track.enable true
+    adb shell settings put global audio.offload.passthrough false
     adb shell settings put global audio.offload.gapless.enabled true
     adb shell settings put global audio.offload.multiple.enabled true
     adb shell settings put global audio.offload.pcm.16bit.enable false
-    adb shell settings put global audio.offload.pcm.24bit.enable true
+    adb shell settings put global audio.offload.pcm.24bit.enable false
     adb shell settings put global audio.track.enablemonoorstereo 1
     adb shell settings put global vendor.audio.lowpower true
     adb shell settings put global tunnel.decode false
+    adb shell settings put global tunnel.encode false
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hp true
     adb shell settings put global persist.audio.hifi true
@@ -438,12 +441,14 @@ exit 0
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
+    adb shell settings put global sys.tp.grip_enable 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
     adb shell settings put global ro.recentMode 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
+    adb shell settings put global persist.sys.preloads.file_cache_expired 0
     adb shell settings put global persist.sys.prelaunch.off 0
     adb shell settings put global persist.vendor.enable.preload true
     adb shell settings put global persist.preload.common 1
@@ -468,6 +473,7 @@ exit 0
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
     adb shell settings put global background_gpu_usage 0
+    adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.incremental.enable 1
@@ -569,6 +575,8 @@ exit 0
     adb shell settings put global ro.mtk_perf_response_time 1
     adb shell settings put global persist.sys.performance true
     adb shell settings put global persist.sys.cpuset.enable 1
+    adb shell settings put global persist.sys.cpuset.subswitch 1
+    adb shell settings put global persist.tuning.qdcm 1
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
@@ -635,6 +643,7 @@ exit 0
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global persist.metadata_dynfps.disable true
     adb shell settings put global persist.android.strictmode 0
+    adb shell settings put global persist.sys.strictmode.disable 1
     adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global persist.sys.strictmode.violation 0
     adb shell settings put global ro.hw_timeout_multiplier 1
