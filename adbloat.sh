@@ -657,6 +657,7 @@ tweaks() {
     adb shell settings put global persist.sys.NV_STEREOCTRL 0
     adb shell settings put global persist.sys.NV_STEREOSEPCHG 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
+    adb shell settings put global sys.fw.powermanager 1
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
     adb shell settings put global ro.config.hw_quickpoweron true
@@ -680,7 +681,6 @@ tweaks() {
     adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
-    adb shell settings put system sys.fw.powermanager 1
     adb shell settings put system power_mode high
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
