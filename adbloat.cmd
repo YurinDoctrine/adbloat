@@ -287,6 +287,7 @@ exit 0
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
     adb shell settings put global persist.service.crash.enable 0
+    adb shell settings put global persist.sys.log.user 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
@@ -448,6 +449,7 @@ exit 0
     adb shell settings put global sys_vdso 1
     adb shell settings put global sys.enable_lpm 1
     adb shell settings put global ro.recentMode 0
+    adb shell settings put global persist.vendor.enable.hans true
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
