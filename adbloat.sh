@@ -432,6 +432,7 @@ tweaks() {
     adb shell settings put global sys.tp.grip_enable 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
+    adb shell settings put global sys.enable_lpm 1
     adb shell settings put global ro.recentMode 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
@@ -679,6 +680,7 @@ tweaks() {
     adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
+    adb shell settings put system sys.fw.powermanager 1
     adb shell settings put system power_mode high
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
     adb shell settings put system tube_amp_effect 1
