@@ -103,6 +103,7 @@ exit 0
     adb shell settings put global debug.refresh_rate.view_override 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
+    adb shell settings put secure user_wait_timeout 0
     adb shell settings put system thermal_limit_refresh_rate 0
     adb shell settings put system min_refresh_rate 60.0
     adb shell settings put system display_color_mode 0
@@ -465,6 +466,7 @@ exit 0
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
+    adb shell settings put global background_gpu_usage 0
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
     adb shell settings put global ro.incremental.enable 1
