@@ -291,6 +291,7 @@ exit 0
     adb shell settings put global persist.sys.log-main.enable 0
     adb shell settings put global persist.sys.log-system.enable 0
     adb shell settings put global persist.sys.log-events.enable 0
+    adb shell settings put global persist.sys.log-radio.enable 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
