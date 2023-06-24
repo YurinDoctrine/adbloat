@@ -341,6 +341,7 @@ exit 0
     adb shell settings put global hidden_api_policy_pre_p_apps 1
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
+    adb shell settings put global persist.sys.ssr.enable_debug 0
     adb shell settings put global persist.sys.ssr.enable_ramdumps 0
     adb shell settings put global persist.sys.ssr.restart_level 1
     adb shell settings put global persist.sys.ap.restart_level 1
@@ -473,6 +474,8 @@ exit 0
     adb shell settings put global persist.device_config.runtime_native.metrics.reporting-mods-server 0
     adb shell settings put global persist.device_config.runtime_native.metrics.write-to-statsd false
     adb shell settings put global ro.service.remove_unused 1
+    adb shell settings put global ro.iorapd.enable true
+    adb shell settings put global ro.kernel.ebpf.supported true
     adb shell settings put global sys.ipo.disable 0
     adb shell settings put global ro.mtk_ipo_support 1
     adb shell settings put global ro.mtk_perfservice_support 1
@@ -666,6 +669,8 @@ exit 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global persist.security.ams.enforcing 0
+    adb shell settings put global persist.sys.strict_op_enable false
+    adb shell settings put global ro.config.tima 0
     adb shell settings put global ro.secure 0
     adb shell settings put global androidboot.selinux 0
     adb shell settings put global selinux.disabled true
