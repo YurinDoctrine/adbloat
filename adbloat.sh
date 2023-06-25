@@ -504,6 +504,10 @@ tweaks() {
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ro.lmk.use_minfree_levels true
+    adb shell settings put global persist.vendor.memplus.enable 1
+    adb shell settings put global persist.sys.ramboost.enable true
+    adb shell settings put global persist.sys.ramboost.ioppreload true
+    adb shell settings put global persist.sys.ramboost.olmemplus_option 2
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
