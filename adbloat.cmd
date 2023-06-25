@@ -609,6 +609,7 @@ exit 0
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.hwc.mdpcomp.enable true
+    adb shell settings put global persist.hwc.ptor.enable true
     adb shell settings put global com.qc.hardware true
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
