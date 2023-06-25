@@ -438,6 +438,7 @@ tweaks() {
     adb shell settings put global persist.vendor.cne.feature 1
     adb shell settings put global persist.vendor.dpm.feature 1
     adb shell settings put global persist.vendor.dpm.tcm 1
+    adb shell settings put global persist.vendor.dc.enable 2
     adb shell settings put global persist.sys.support.vt false
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
