@@ -614,7 +614,7 @@ exit 0
     adb shell settings put global persist.hwc.mdpcomp.enable true
     adb shell settings put global persist.hwc.ptor.enable true
     adb shell settings put global persist.hwc.pubypass true
-    adb shell settings put global persist.hwc2.skip_client_color_transform false
+    adb shell settings put global persist.hwc2.skip_client_color_transform true
     adb shell settings put global com.qc.hardware true
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
