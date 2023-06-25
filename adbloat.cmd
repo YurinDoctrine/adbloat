@@ -293,6 +293,7 @@ exit 0
     adb shell settings put global persist.sys.log-system.enable 0
     adb shell settings put global persist.sys.log-events.enable 0
     adb shell settings put global persist.sys.log-radio.enable 0
+    adb shell settings put global persist.data.qmi.adb_logmask 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
@@ -447,7 +448,7 @@ exit 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global persist.vendor.cne.feature 1
-    adb shell settings put global persist.dpm.feature 0
+    adb shell settings put global persist.vendor.dpm.feature 1
     adb shell settings put global persist.sys.support.vt false
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
@@ -513,6 +514,7 @@ exit 0
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
+    adb shell settings put global ro.lmk.use_minfree_levels true
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
@@ -584,6 +586,7 @@ exit 0
     adb shell settings put global vendor.display.comp_mask 0
     adb shell settings put global vendor.display.enable_perf_hint_large_comp_cycle 1
     adb shell settings put global vendor.display.disable_decimation 0
+    adb shell settings put global vendor.display.disable_ui_3d_tonemap 1
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
@@ -611,6 +614,7 @@ exit 0
     adb shell settings put global persist.hwc.mdpcomp.enable true
     adb shell settings put global persist.hwc.ptor.enable true
     adb shell settings put global persist.hwc.pubypass true
+    adb shell settings put global persist.hwc2.skip_client_color_transform false
     adb shell settings put global com.qc.hardware true
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
