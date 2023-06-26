@@ -242,6 +242,7 @@ exit 0
     adb shell settings put global persist.sample.eyetracking.log 0
     adb shell settings put global media.metrics.enabled 0
     adb shell settings put global media.metrics 0
+    adb shell settings put global debug.brcm.mm.logs 0
     adb shell settings put global sys.debug.watchdog 0
     adb shell settings put global logd.statistics 0
     adb shell settings put global config.stats 0
