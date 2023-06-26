@@ -664,6 +664,7 @@ tweaks() {
     adb shell settings put global ro.qti.sensors.step_detector false
     adb shell settings put global ro.qti.sensors.pick_up false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
+    adb shell settings put global persist.radio.sar_sar_sensor false
     adb shell settings put global persist.metadata_dynfps.disable true
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global persist.sys.strictmode.disable 1
