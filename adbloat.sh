@@ -577,6 +577,7 @@ tweaks() {
     adb shell settings put global persist.sys.font 2
     adb shell settings put global persist.sys.font_clarity 0
     adb shell settings put global persist.sys.force_highendgfx true
+    adb shell settings put global ro.config.avoid_gfx_accel false
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
     adb shell settings put global opengl_renderer 1
