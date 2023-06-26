@@ -513,6 +513,7 @@ tweaks() {
     adb shell settings put global persist.sys.ramboost.enable true
     adb shell settings put global persist.sys.ramboost.ioppreload true
     adb shell settings put global persist.sys.ramboost.olmemplus_option 2
+    adb shell settings put global ro.memperf.enable true
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
