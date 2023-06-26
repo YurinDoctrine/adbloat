@@ -281,6 +281,7 @@ tweaks() {
     adb shell settings put global persist.sys.log-system.enable 0
     adb shell settings put global persist.sys.log-events.enable 0
     adb shell settings put global persist.sys.log-radio.enable 0
+    adb shell settings put global persist.sys.tcpdump.lognum 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
@@ -479,6 +480,7 @@ tweaks() {
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
     adb shell settings put global background_gpu_usage 0
+    adb shell settings put global persist.sys.gamespeed.enable true
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
