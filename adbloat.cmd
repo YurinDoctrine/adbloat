@@ -492,6 +492,7 @@ exit 0
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
     adb shell settings put global background_gpu_usage 0
+    adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.sqlite.journalmode WAL
@@ -584,6 +585,7 @@ exit 0
     adb shell settings put global debug.hwui.disabledither true
     adb shell settings put global debug.hwui.enable_bp_cache true
     adb shell settings put global sysui_font_cache_persist true
+    adb shell settings put global persist.sys.font 2
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
