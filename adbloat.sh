@@ -297,6 +297,7 @@ tweaks() {
     adb shell settings put system mcf_continuity_permission_denied 1
     adb shell settings put system mcf_permission_denied 1
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put secure adaptive_connectivity_enabled 0
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global dns1 8.8.8.8
@@ -306,6 +307,7 @@ tweaks() {
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
     adb shell settings put global wifi_stability 1
+    adb shell settings put global wifi_suspend_optimizations_enabled 0
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global ro.data.large_tcp_window_size true
     adb shell settings put global persist.data.tcp_rst_drop true
@@ -716,6 +718,7 @@ tweaks() {
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put global accessibility_reduce_transparency 1
+    adb shell settings put secure adaptive_charging_enabled 0
     adb shell settings put secure screensaver_enabled 0
     adb shell settings put secure screensaver_activate_on_sleep 0
     adb shell settings put secure screensaver_activate_on_dock 0
