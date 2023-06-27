@@ -722,6 +722,7 @@ tweaks() {
     adb shell settings put secure screensaver_enabled 0
     adb shell settings put secure screensaver_activate_on_sleep 0
     adb shell settings put secure screensaver_activate_on_dock 0
+    adb shell settings put secure wake_gesture_enabled 0
     adb shell settings put secure fingerprint_effect 0
     adb shell settings put secure adaptive_sleep 0
     adb shell settings put secure game_auto_temperature_control 0
