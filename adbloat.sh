@@ -277,6 +277,7 @@ tweaks() {
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
     adb shell settings put global persist.service.crash.enable 0
+    adb shell settings put global persist.sys.perf.debug false
     adb shell settings put global persist.sys.log.user 0
     adb shell settings put global persist.sys.log-main.enable 0
     adb shell settings put global persist.sys.log-system.enable 0
@@ -680,6 +681,7 @@ tweaks() {
     adb shell settings put global sys.config.spcm_preload_enable true
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global ro.config.max_starting_bg 2
+    adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
