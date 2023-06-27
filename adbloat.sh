@@ -611,6 +611,7 @@ tweaks() {
     adb shell settings put global hwc.scenario 2
     adb shell settings put global hw2d.force 1
     adb shell settings put global hw3d.force 1
+    adb shell settings put global persist.sys.force_hw_ui true
     adb shell settings put global persist.sys.ui.hw 1
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
