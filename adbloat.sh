@@ -145,7 +145,7 @@ tweaks() {
     adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global updatable_driver_all_apps 1
-    adb shell settings put global wifi.supplicant_scan_interval 180
+    adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global mobile_data_always_on 0
