@@ -575,6 +575,7 @@ exit 0
     adb shell settings put global vold.storage.prepared 1
     adb shell settings put global vold.has_compress 1
     adb shell settings put global vold.has_quota 0
+    adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
