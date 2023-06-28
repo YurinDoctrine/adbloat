@@ -100,6 +100,7 @@ exit 0
     adb shell settings put global vendor.display.disable_metadata_dynamic_fps 1
     adb shell settings put global vendor.display.use_smooth_motion 1
     adb shell settings put global vendor.display.enable_camera_smooth 1
+    adb shell settings put global camera.disable_zsl_mode 1
     adb shell settings put global debug.refresh_rate.view_override 1
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
@@ -358,7 +359,7 @@ exit 0
     adb shell settings put global persist.data.iwlan.enable true
     adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global debug.bt.lowspeed true
-    adb shell settings put global ro.ril.sensor.sleep.control 1
+    adb shell settings put global ro.ril.sensor.sleep.control 0
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
     adb shell settings put global persist.radio.add_power_save 1
