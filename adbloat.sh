@@ -123,6 +123,7 @@ tweaks() {
     adb shell settings put global speed_mode_on 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
+    adb shell settings put global ro.config.hw_voicerecord true
     adb shell settings put global debug.hwui.use_partial_updates true
     adb shell settings put global ro.hwui.renderer.disable_opaque true
     adb shell settings put global ro.hwui.disable_scissor_opt true
