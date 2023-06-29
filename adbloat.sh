@@ -549,8 +549,13 @@ tweaks() {
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global always_finish_activities 1
-    adb shell settings put global sys.config.spcm_enable false
-    adb shell settings put global sys.config.samp_spcm_enable false
+    adb shell settings put global sys.config.spcm_enable true
+    adb shell settings put global sys.config.samp_spcm_enable true
+    adb shell settings put global sys.config.spcm_preload_enable true
+    adb shell settings put global sys.config.spcm_kill_skip true
+    adb shell settings put global sys.config.spcm_gcm_kill_enable false
+    adb shell settings put global sys.config.spcm_db_enable false
+    adb shell settings put global sys.config.spcm_db_launcher false
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global sys.io.scheduler cfq
@@ -623,6 +628,7 @@ tweaks() {
     adb shell settings put global persist.sys.ui.hw 1
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
+    adb shell settings put global ro.kernel.qemu.gles 1
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.hwc.ptor.enable true
@@ -721,7 +727,7 @@ tweaks() {
     adb shell settings put global ro.config.small_battery true
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global low_power 0
-    adb shell settings put global pm.sleep_mode 1
+    adb shell settings put global pm.sleep_mode 3
     adb shell settings put global power.saving.mode 1
     adb shell settings put global vendor.power.pasr.enabled true
     adb shell settings put global vendor.pasr.activemode.enabled true
