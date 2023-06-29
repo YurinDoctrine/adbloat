@@ -204,6 +204,7 @@ tweaks() {
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.config.hw_dts true
+    adb shell settings put global ro.config.hw_disable_cops true
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
