@@ -196,6 +196,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.ab-ota speed
     adb shell settings put global pm.dexopt.forced-dexopt everything
     adb shell settings put global ro.dalvik.vm.native.bridge 0
+    adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.cpufreq.game 1
@@ -453,6 +454,7 @@ tweaks() {
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
     adb shell settings put global sys.enable_lpm 1
+    adb shell settings put global ro.vndk.lite true
     adb shell settings put global ro.recentMode 0
     adb shell settings put global persist.vendor.enable.hans true
     adb shell settings put global ro.config.rm_preload_enabled 1
