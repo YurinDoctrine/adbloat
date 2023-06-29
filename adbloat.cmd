@@ -138,7 +138,7 @@ exit 0
     adb shell settings put global ro.config.hw_voicerecord true
     adb shell settings put global debug.hwui.use_partial_updates false
     adb shell settings put global ro.hwui.renderer.disable_opaque true
-    adb shell settings put global ro.hwui.disable_scissor_opt true
+    adb shell settings put global ro.hwui.disable_scissor_opt false
     adb shell settings put global ro.hwui.texture_cache_size 20
     adb shell settings put global ro.hwui.texture_cache_flush_rate 0.5
     adb shell settings put global ro.hwui.gradient_cache_size 0.1
