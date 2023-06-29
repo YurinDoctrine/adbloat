@@ -573,7 +573,7 @@ tweaks() {
     adb shell settings put global debug.hwui.renderer 1
     adb shell settings put global debug.hwui.renderer_mode 0
     adb shell settings put global debug.hwui.level 0
-    adb shell settings put global debug.hwui.swap_with_damage true
+    adb shell settings put global debug.hwui.swap_with_damage false
     adb shell settings put global debug.hwui.render_dirty_regions false
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
