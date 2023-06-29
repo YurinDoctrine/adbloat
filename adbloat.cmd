@@ -136,7 +136,7 @@ exit 0
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global ro.config.hw_voicerecord true
-    adb shell settings put global debug.hwui.use_partial_updates true
+    adb shell settings put global debug.hwui.use_partial_updates false
     adb shell settings put global ro.hwui.renderer.disable_opaque true
     adb shell settings put global ro.hwui.disable_scissor_opt true
     adb shell settings put global ro.hwui.texture_cache_size 20
@@ -761,12 +761,12 @@ exit 0
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system power_mode high
-    adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 1800
+    adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 0
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system font_scale 1.25
-    adb shell settings put system bluetooth_discoverability 1
+    adb shell settings put system bluetooth_discoverability 0
     adb shell settings put system motion_engine 0
     adb shell settings put system master_motion 0
     adb shell settings put system motion_merged_mute_pause 0
