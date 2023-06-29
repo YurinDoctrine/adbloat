@@ -200,6 +200,8 @@ exit 0
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
+    adb shell settings put global pm.dexopt.nsys-library speed
+    adb shell settings put global pm.dexopt.core-app speed
     adb shell settings put global pm.dexopt.shared quicken
     adb shell settings put global pm.dexopt.boot verify
     adb shell settings put global pm.dexopt.first-boot quicken
