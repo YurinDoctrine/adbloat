@@ -693,6 +693,7 @@ exit 0
     adb shell settings put global persist.sys.strictmode.disable 1
     adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global persist.sys.strictmode.violation 0
+    adb shell settings put global persist.service.acm.enable 0
     adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
