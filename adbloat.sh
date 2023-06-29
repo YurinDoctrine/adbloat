@@ -188,15 +188,15 @@ tweaks() {
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
-    adb shell settings put global pm.dexopt.nsys-library speed
-    adb shell settings put global pm.dexopt.core-app speed
+    adb shell settings put global pm.dexopt.nsys-library quicken
+    adb shell settings put global pm.dexopt.core-app quicken
     adb shell settings put global pm.dexopt.shared quicken
-    adb shell settings put global pm.dexopt.boot verify
+    adb shell settings put global pm.dexopt.boot verify-at-runtime
     adb shell settings put global pm.dexopt.first-boot quicken
     adb shell settings put global pm.dexopt.install quicken
-    adb shell settings put global pm.dexopt.bg-dexopt speed
-    adb shell settings put global pm.dexopt.ab-ota speed
-    adb shell settings put global pm.dexopt.forced-dexopt everything
+    adb shell settings put global pm.dexopt.bg-dexopt quicken
+    adb shell settings put global pm.dexopt.ab-ota quicken
+    adb shell settings put global pm.dexopt.forced-dexopt quicken
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
@@ -549,6 +549,8 @@ tweaks() {
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global always_finish_activities 1
+    adb shell settings put global sys.config.spcm_enable false
+    adb shell settings put global sys.config.samp_spcm_enable false
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global sys.io.scheduler cfq
