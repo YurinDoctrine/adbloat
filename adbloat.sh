@@ -161,6 +161,7 @@ tweaks() {
     adb shell settings put global ro.telephony.call_ring.delay 0
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.memopt.switch 1
+    adb shell settings put global persist.sys.art.opt.enable true
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
     adb shell settings put global dalvik.vm.dex2oat64.enabled true
@@ -322,6 +323,7 @@ tweaks() {
     adb shell settings put global ro.data.large_tcp_window_size true
     adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global config.disable_rtt true
+    adb shell settings put global ro.config.hw_perfhub true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
