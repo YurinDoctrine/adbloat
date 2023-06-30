@@ -637,6 +637,7 @@ tweaks() {
     adb shell settings put global ro.kernel.qemu.gles 1
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
+    adb shell settings put global persist.sys.jankenable false
     adb shell settings put global persist.hwc.ptor.enable true
     adb shell settings put global persist.hwc.mdpcomp.enable true
     adb shell settings put global persist.hwc.pubypass true
