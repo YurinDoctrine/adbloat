@@ -217,6 +217,9 @@ exit 0
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put global ro.config.hw_disable_cops true
+    adb shell settings put global ro.config.hw_accesscontrol false
+    adb shell settings put global ro.config.updatelocation false
+    adb shell settings put global ro.config.delay_send_signal false
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
@@ -525,7 +528,7 @@ exit 0
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 1
     adb shell settings put global debug.gr.swapinterval 1
-    adb shell settings put global ro.vold.umsdirtyratio 50
+    adb shell settings put global ro.vold.umsdirtyratio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
@@ -574,6 +577,7 @@ exit 0
     adb shell settings put global sys.io.scheduler cfq
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
+    adb shell settings put global ro.sys.fw.force_adoptable true
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global ro.config.fha_enable true
