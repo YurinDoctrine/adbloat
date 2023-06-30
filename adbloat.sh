@@ -709,6 +709,7 @@ tweaks() {
     adb shell settings put global sys.config.activelaunch_enable true
     adb shell settings put global sys.config.spcm_preload_enable true
     adb shell settings put global persist.bootanim.preload 1
+    adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global dev.bootcomplete 0
@@ -728,6 +729,7 @@ tweaks() {
     adb shell settings put global persist.sys.NV_STEREOCTRL 0
     adb shell settings put global persist.sys.NV_STEREOSEPCHG 0
     adb shell settings put global persist.sys.NV_POWERMODE 1
+    adb shell settings put global persist.sys.smart_power 2
     adb shell settings put global sys.fw.powermanager 1
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
