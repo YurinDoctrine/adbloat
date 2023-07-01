@@ -707,7 +707,6 @@ tweaks() {
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
-    adb shell settings put global sys.config.spcm_preload_enable true
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
