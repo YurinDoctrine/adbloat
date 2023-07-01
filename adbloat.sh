@@ -205,9 +205,11 @@ tweaks() {
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.cpufreq.game 1
+    adb shell settings put global ro.config.hw_simpleui_enable 1
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put global ro.config.hw_disable_cops true
     adb shell settings put global ro.config.hw_accesscontrol false
+    adb shell settings put global ro.config.hw_restrict_gps true
     adb shell settings put global ro.config.updatelocation false
     adb shell settings put global ro.config.delay_send_signal false
     adb shell settings put secure upload_debug_log_pref 0
@@ -269,6 +271,7 @@ tweaks() {
     adb shell settings put global debug.sf.enable_transaction_tracing false
     adb shell settings put global persist.vendor.console.silent.config 1
     adb shell settings put global ro.statsd.enable false
+    adb shell settings put global ro.systemui.debug false
     adb shell settings put global persist.debug.sf.statistics 0
     adb shell settings put global persist.radio.ramdump 0
     adb shell settings put global persist.ims.disableDebugLogs 1
