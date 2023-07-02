@@ -148,6 +148,7 @@ exit 0
     adb shell settings put global ro.hwui.r_buffer_cache_size 1
     adb shell settings put global ro.hwui.path_cache_size 1
     adb shell settings put global ro.hwui.disable_asset_atlas true
+    adb shell settings put global persist.texture_cache_opt 1
     adb shell settings put global disable_hw_overlays 1
     adb shell settings put global overlay_disable_force_hwc 1
     adb shell settings put global renderthread.skia.reduceopstasksplitting true
@@ -301,6 +302,7 @@ exit 0
     adb shell settings put global persist.logd.size 0
     adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
+    adb shell settings put global persist.ai.timedebug.enable false
     adb shell settings put global persist.vendor.verbose_logging_enabled false
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
@@ -341,6 +343,7 @@ exit 0
     adb shell settings put global config.disable_rtt true
     adb shell settings put global ro.config.hw_privacymode true
     adb shell settings put global ro.config.hw_perfhub true
+    adb shell settings put global ro.config.hw_perfgenius true
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
@@ -348,6 +351,7 @@ exit 0
     adb shell settings put global debug.hwc.winupdate 1
     adb shell settings put global debug.hwc.disabletonemapping true
     adb shell settings put global debug.hwui.use_buffer_age false
+    adb shell settings put global persist.alloc_buffer_sync true
     adb shell settings put global CPU_MIN_CHECK_DURATION false
     adb shell settings put global GC_MIN_INTERVAL false
     adb shell settings put global GC_TIMEOUT false
@@ -437,6 +441,7 @@ exit 0
     adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global media.stagefright.enable-http true
+    adb shell settings put global persist.media.lowlatency.enable true
     adb shell settings put global persist.media.hls.enhancements true
     adb shell settings put global persist.media.treble_omx false
     adb shell settings put global aaudio.mmap_policy 1
@@ -590,6 +595,7 @@ exit 0
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global ro.config.fha_enable true
+    adb shell settings put global ro.config.enable_rcc true
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
     adb shell settings put global ro.sys.fw.empty_app_percent 50
@@ -606,6 +612,7 @@ exit 0
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
+    adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer 1
     adb shell settings put global debug.hwui.renderer_mode 0
@@ -638,6 +645,7 @@ exit 0
     adb shell settings put global persist.sys.performance true
     adb shell settings put global persist.sys.cpuset.enable 1
     adb shell settings put global persist.sys.cpuset.subswitch 1
+    adb shell settings put global persist.sys.iaware.cpuenable true
     adb shell settings put global persist.tuning.qdcm 1
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
@@ -750,6 +758,7 @@ exit 0
     adb shell settings put global sys.fw.powermanager 1
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
+    adb shell settings put global ro.config.hw_board_ipa true
     adb shell settings put global ro.config.hw_quickpoweron true
     adb shell settings put global ro.config.hw_power_saving true
     adb shell settings put global ro.config.hw_fast_dormancy 0
