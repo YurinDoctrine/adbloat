@@ -412,7 +412,7 @@ tweaks() {
     adb shell settings put global persist.perf.wm_static_blur true
     adb shell settings put global persist.sys.shadow.open 0
     adb shell settings put global persist.sys.use_16bpp_alpha 0
-    adb shell settings put global persist.sys.purgeable_assets 1
+    adb shell settings put global persist.sys.purgeable_assets 0
     adb shell settings put global persist.sys.scrollingcache 3
     adb shell settings put global ro.vendor.perf.scroll_opt true
     adb shell settings put global ro.vendor.scroll.preobtain.enable true
