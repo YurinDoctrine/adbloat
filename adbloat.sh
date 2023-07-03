@@ -608,6 +608,7 @@ tweaks() {
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
+    adb shell settings put global debug.gralloc.gfx_ubwc_disable 0
     adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer_mode 1
