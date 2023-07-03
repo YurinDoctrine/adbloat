@@ -154,6 +154,7 @@ tweaks() {
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global mobile_data_always_on 0
+    adb shell settings put global data_saver_mode 1
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mtk_lte_support 1
     adb shell settings put global ro.config.hw_lte_support true
