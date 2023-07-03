@@ -644,6 +644,7 @@ exit 0
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
     adb shell settings put global ro.mtk_perf_response_time 1
+    adb shell settings put global persist.sys.max_rdh_delay 0
     adb shell settings put global persist.sys.performance true
     adb shell settings put global persist.sys.cpuset.enable 1
     adb shell settings put global persist.sys.cpuset.subswitch 1
