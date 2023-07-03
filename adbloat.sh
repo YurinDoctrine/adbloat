@@ -207,6 +207,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.ab-ota quicken
     adb shell settings put global pm.dexopt.forced-dexopt quicken
     adb shell settings put global ro.dalvik.vm.native.bridge 0
+    adb shell settings put global persist.sys.nativebridge 1
     adb shell settings put global ro.maple.enable 1
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
@@ -295,6 +296,8 @@ tweaks() {
     adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
     adb shell settings put global persist.ai.timedebug.enable false
+    adb shell settings put global persist.sys.hw_statistics 0
+    adb shell settings put global persist.sys.apps_statistics 0
     adb shell settings put global persist.vendor.verbose_logging_enabled false
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
