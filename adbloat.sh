@@ -206,6 +206,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.ab-ota quicken
     adb shell settings put global pm.dexopt.forced-dexopt quicken
     adb shell settings put global ro.dalvik.vm.native.bridge 0
+    adb shell settings put global ro.maple.enable 1
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
