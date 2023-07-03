@@ -123,6 +123,7 @@ exit 0
     adb shell settings put global ro.floatingtouch.available 1
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
+    adb shell settings put global persist.touch_vsync_opt 1
     adb shell settings put global persist.touch_move_opt 1
     adb shell settings put global touch.size.bias 0
     adb shell settings put global touch.pressure.scale 0.1
@@ -168,6 +169,7 @@ exit 0
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mtk_lte_support 1
     adb shell settings put global ro.config.hw_lte_support true
+    adb shell settings put global ro.config.hw_volte_on true
     adb shell settings put global persist.radio.lte_enabled true
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
