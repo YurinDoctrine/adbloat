@@ -723,10 +723,10 @@ exit 0
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
     adb shell settings put global ro.config.hw_sensorhub false
-    adb shell settings put global ro.qti.sensors.pedometer false
-    adb shell settings put global ro.qti.sensors.step_counter false
-    adb shell settings put global ro.qti.sensors.step_detector false
-    adb shell settings put global ro.qti.sensors.pick_up false
+    adb shell settings put global ro.vendor.sensors.pedometer false
+    adb shell settings put global ro.vendor.sensors.step_counter false
+    adb shell settings put global ro.vendor.sensors.step_detector false
+    adb shell settings put global ro.vendor.sensors.pick_up false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global ro.vendor.display.sensortype 0
     adb shell settings put global persist.radio.sar_sar_sensor false
