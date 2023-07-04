@@ -94,6 +94,7 @@ exit 0
     adb shell settings put global vendor.display.disable_excl_rect 0
     adb shell settings put global vendor.display.disable_excl_rect_partial_fb 1
     adb shell settings put global vendor.display.enable_async_powermode 1
+    adb shell settings put global vendor.display.disable_inline_rotator 1
     adb shell settings put global vendor.display.disable_ext_anim 1
     adb shell settings put global vendor.display.idle_time 0
     adb shell settings put global vendor.display.idle_time_inactive 0
