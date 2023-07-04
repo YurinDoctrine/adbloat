@@ -412,6 +412,7 @@ exit 0
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.refresh_rate_switching true
     adb shell settings put global ro.surface_flinger.enable_layer_caching true
+    adb shell settings put global ro.surface_flinger.layer_caching_active_layer_timeout_ms 0
     adb shell settings put global ro.surface_flinger.use_context_priority true
     adb shell settings put global ro.surface_flinger.start_graphics_allocator_service true
     adb shell settings put global ro.surface_flinger.max_frame_buffer_acquired_buffers 1
@@ -517,6 +518,7 @@ exit 0
     adb shell settings put global persist.device_config.runtime_native.metrics.write-to-statsd false
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.iorapd.enable true
+    adb shell settings put global iorapd.readahead.enable true
     adb shell settings put global ro.kernel.ebpf.supported true
     adb shell settings put global sys.ipo.disable 0
     adb shell settings put global ro.mtk_ipo_support 1
