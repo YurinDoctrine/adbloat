@@ -90,6 +90,7 @@ exit 0
     adb shell settings put global stabilizer.fps true
     adb shell settings put global stable.fps.enable true
     adb shell settings put global vendor.display.enable_default_color_mode 1
+    adb shell settings put global vendor.display.disable_scalar 0
     adb shell settings put global vendor.display.disable_excl_rect 0
     adb shell settings put global vendor.display.disable_excl_rect_partial_fb 1
     adb shell settings put global vendor.display.enable_async_powermode 1
