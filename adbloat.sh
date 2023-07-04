@@ -719,6 +719,7 @@ tweaks() {
     adb shell settings put global ro.vendor.sensors.pick_up false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global ro.vendor.display.sensortype 0
+    adb shell settings put global persist.vendor.sensors.enable.mag_filter true
     adb shell settings put global persist.radio.sar_sar_sensor false
     adb shell settings put global persist.radio.dynamic_sar false
     adb shell settings put global persist.metadata_dynfps.disable true
