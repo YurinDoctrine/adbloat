@@ -184,6 +184,7 @@ tweaks() {
     adb shell settings put global dalvik.vm.checkjni false
     adb shell settings put global dalvik.vm.check-dex-sum false
     adb shell settings put global dalvik.vm.debug.alloc 0
+    adb shell settings put global dalvik.vm.dexopt-data-only 1
     adb shell settings put global dalvik.vm.dexopt-flags m=y,v=n,o=y,u=n
     adb shell settings put global dalvik.vm.execution-mode int:jit
     adb shell settings put global dalvik.vm.dexopt.secondary true
@@ -437,6 +438,7 @@ tweaks() {
     adb shell settings put global persist.sys.autoclearsave 3
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
+    adb shell settings put global sys.media.vdec.sw 1
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
     adb shell settings put global media.stagefright.use-awesome false
     adb shell settings put global media.stagefright.enable-record false
@@ -618,6 +620,7 @@ tweaks() {
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
     adb shell settings put global debug.gralloc.gfx_ubwc_disable 0
+    adb shell settings put global debug.gr.numframebuffers 1
     adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer_mode 1
