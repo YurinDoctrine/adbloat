@@ -542,6 +542,7 @@ exit 0
     adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.tb.mode 1
+    adb shell settings put global ro.ril.gprsclass 10
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
