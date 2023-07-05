@@ -764,6 +764,7 @@ exit 0
     adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global persist.sys.strict_op_enable false
+    adb shell settings put global sys.checkfs.fat false
     adb shell settings put global ro.config.tima 0
     adb shell settings put global ro.secure 0
     adb shell settings put global androidboot.selinux 0
