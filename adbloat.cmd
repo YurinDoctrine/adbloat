@@ -508,6 +508,7 @@ exit 0
     adb shell settings put global persist.sys.prelaunch.off 0
     adb shell settings put global persist.vendor.enable.preload true
     adb shell settings put global persist.preload.common 1
+    adb shell settings put global enable_app_prefetch 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.device_config.runtime_native.use_app_image_startup_cache true
