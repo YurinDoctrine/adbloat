@@ -152,6 +152,7 @@ exit 0
     adb shell settings put global ro.hwui.r_buffer_cache_size 1
     adb shell settings put global ro.hwui.path_cache_size 1
     adb shell settings put global ro.hwui.disable_asset_atlas true
+    adb shell settings put global ro.hwui.layer_cache_size 1
     adb shell settings put global persist.texture_cache_opt 1
     adb shell settings put global disable_hw_overlays 1
     adb shell settings put global overlay_disable_force_hwc 1
