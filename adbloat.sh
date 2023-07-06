@@ -422,7 +422,7 @@ tweaks() {
     adb shell settings put global persist.sys.shadow.open 0
     adb shell settings put global persist.sys.use_16bpp_alpha 0
     adb shell settings put global persist.sys.purgeable_assets 0
-    adb shell settings put global persist.sys.scrollingcache 3
+    adb shell settings put global persist.sys.scrollingcache 2
     adb shell settings put global ro.vendor.perf.scroll_opt true
     adb shell settings put global ro.vendor.scroll.preobtain.enable true
     adb shell settings put global vendor.perf.gestureflingboost.enable true
@@ -437,7 +437,7 @@ tweaks() {
     adb shell settings put global vendor.perf.iop_v3.enable true
     adb shell settings put global vendor.perf.iop_v3.enable.debug false
     adb shell settings put global vendor.perf.workloadclassifier.enable true
-    adb shell settings put global persist.sys.autoclearsave 3
+    adb shell settings put global persist.sys.autoclearsave 2
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global sys.media.vdec.sw 1
@@ -579,7 +579,7 @@ tweaks() {
     adb shell settings put global thermal_offload 0
     adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global persist.sys.binary_xml false
-    adb shell settings put global unused_static_shared_lib_min_cache_period_ms 3600
+    adb shell settings put global unused_static_shared_lib_min_cache_period_ms 250
     adb shell settings put global cached_apps_freezer enabled
     adb shell settings put global persist.device_config.use_cgroup_freezer true
     adb shell settings put global app_restriction_enabled true
