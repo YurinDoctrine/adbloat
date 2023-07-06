@@ -424,6 +424,7 @@ tweaks() {
     adb shell settings put global persist.sys.purgeable_assets 0
     adb shell settings put global persist.sys.scrollingcache 2
     adb shell settings put global ro.vendor.perf.scroll_opt true
+    adb shell settings put global ro.vendor.perf.scroll_opt.heavy_app true
     adb shell settings put global ro.vendor.scroll.preobtain.enable true
     adb shell settings put global vendor.perf.gestureflingboost.enable true
     adb shell settings put global ro.min_pointer_dur 1
