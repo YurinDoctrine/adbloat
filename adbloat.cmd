@@ -117,6 +117,7 @@ exit 0
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global persist.sys.rotationanimation false
     adb shell settings put global sys.disable_ext_animation 1
     adb shell settings put global sys.enable_grip_rejection 1
     adb shell settings put global sys.refresh.dirty 0
@@ -126,6 +127,7 @@ exit 0
     adb shell settings put global ro.floatingtouch.available 1
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
+    adb shell settings put global view.fading_edge_length 1
     adb shell settings put global persist.touch_vsync_opt 1
     adb shell settings put global persist.touch_move_opt 1
     adb shell settings put global touch.size.bias 0
