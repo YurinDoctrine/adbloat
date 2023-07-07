@@ -425,6 +425,7 @@ exit 0
     adb shell settings put global ro.surface_flinger.max_frame_buffer_acquired_buffers 1
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
+    adb shell settings put global persist.sys.sf.native_mode 0
     adb shell settings put global persist.sys.sf.hs_mode 0
     adb shell settings put global persist.sys.sf.disable_blurs 1
     adb shell settings put global persist.sys.static_blur_mode false
