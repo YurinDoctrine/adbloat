@@ -764,6 +764,7 @@ exit 0
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
+    adb shell settings put global sys.logbootcomplete 1
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
