@@ -314,6 +314,7 @@ exit 0
     adb shell settings put global persist.logd.size 0
     adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
+    adb shell settings put global sys.wifitracing.started 0
     adb shell settings put global persist.ai.timedebug.enable false
     adb shell settings put global persist.sys.hw_statistics 0
     adb shell settings put global persist.sys.apps_statistics 0
