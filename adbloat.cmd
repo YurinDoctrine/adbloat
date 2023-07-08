@@ -776,6 +776,7 @@ exit 0
     adb shell settings put global ro.secure 0
     adb shell settings put global androidboot.selinux 0
     adb shell settings put global selinux.disabled true
+    adb shell settings put global selinux.reload_policy 0
     adb shell settings put global ro.treble.enabled true
     adb shell settings put global ro.config.ksm.support true
     adb shell settings put global ro.wmt.blcr.enable 0
