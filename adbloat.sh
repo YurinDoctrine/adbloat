@@ -773,7 +773,7 @@ tweaks() {
     adb shell settings put global ro.vendor.gt_library true
     adb shell settings put global persist.sys.NV_STEREOCTRL 0
     adb shell settings put global persist.sys.NV_STEREOSEPCHG 0
-    adb shell settings put global persist.sys.NV_POWERMODE 1
+    adb shell settings put global persist.sys.NV_POWERMODE 2
     adb shell settings put global persist.sys.smart_power 2
     adb shell settings put global sys.fw.powermanager 1
     adb shell settings put global ro.product.use_charge_counter 1
@@ -786,7 +786,7 @@ tweaks() {
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global low_power 0
     adb shell settings put global pm.sleep_mode 3
-    adb shell settings put global power.saving.mode 1
+    adb shell settings put global power.saving.mode 2
     adb shell settings put global vendor.power.pasr.enabled true
     adb shell settings put global vendor.pasr.activemode.enabled true
     adb shell settings put global sys.autobrightness_optimize true
