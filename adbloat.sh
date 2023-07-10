@@ -319,6 +319,7 @@ tweaks() {
     adb shell settings put global persist.sys.log-radio.enable 0
     adb shell settings put global persist.sys.tcpdump.lognum 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
+    adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
     adb shell settings put system send_security_reports 0
@@ -707,6 +708,7 @@ tweaks() {
     adb shell settings put global debug.sf.recomputecrop 0
     adb shell settings put global debug.sf.use_phase_offsets_as_durations 1
     adb shell settings put global debug.sf.disable_client_composition_cache 0
+    adb shell settings put global debug.egl.buffcount 1
     adb shell settings put global debug.egl.debug_proc 0
     adb shell settings put global debug.egl.trace 0
     adb shell settings put global debug.egl.callstack 0
