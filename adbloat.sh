@@ -447,7 +447,7 @@ tweaks() {
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global sys.media.vdec.sw 1
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
-    adb shell settings put global media.stagefright.use-awesome false
+    adb shell settings put global media.stagefright.use-awesome true
     adb shell settings put global media.stagefright.enable-record false
     adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
