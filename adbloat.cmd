@@ -357,6 +357,7 @@ exit 0
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global ro.data.large_tcp_window_size true
+    adb shell settings put global ro.config.hw_new_wifitopdp 1
     adb shell settings put global config.disable_rtt true
     adb shell settings put global ro.config.hw_privacymode true
     adb shell settings put global ro.config.hw_perfhub true
@@ -457,6 +458,8 @@ exit 0
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global sys.media.vdec.sw 1
+    adb shell settings put global ro.media.dec.aud.wma.enabled 1
+    adb shell settings put global ro.media.dec.vid.wmv.enabled 1
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
     adb shell settings put global media.stagefright.use-awesome true
     adb shell settings put global media.stagefright.enable-record false
@@ -491,6 +494,8 @@ exit 0
     adb shell settings put global audio.sys.routing.latency 0
     adb shell settings put global audio.sys.mute.latency.factor 2
     adb shell settings put global mpq.audio.decode true
+    adb shell settings put global htc.audio.alt.enable 0
+    adb shell settings put global htc.audio.hac.enable 0
     adb shell settings put global debug.stagefright.ccodec 1
     adb shell settings put global debug.stagefright.omx_default_rank 0
     adb shell settings put global debug.stagefright.omx_default_rank.sw-audio 1
@@ -551,6 +556,8 @@ exit 0
     adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.tb.mode 1
+    adb shell settings put global ro.ril.hsupa.category 6
+    adb shell settings put global ro.ril.hsdpa.category 8
     adb shell settings put global ro.ril.gprsclass 10
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
@@ -654,6 +661,8 @@ exit 0
     adb shell settings put global persist.sys.font_clarity 0
     adb shell settings put global persist.sys.force_highendgfx true
     adb shell settings put global ro.config.avoid_gfx_accel false
+    adb shell settings put global rs.gpu.rsIntrinsic 0
+    adb shell settings put global rs.gpu.filterscript 0
     adb shell settings put global rs.gpu.renderscript 0
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
