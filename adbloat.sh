@@ -204,6 +204,7 @@ tweaks() {
     adb shell settings put global dalvik.vm.appimageformat lz4
     adb shell settings put global dalvik.vm.systemservercompilerfilter speed
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
+    adb shell settings put global dalvik.vm.houdini on
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.nsys-library quicken
