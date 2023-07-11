@@ -829,6 +829,8 @@ tweaks() {
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
     adb shell settings put system screen_auto_brightness_adj 0
+    adb shell settings put system display_night_theme 1
+    adb shell settings put system dark_theme 1
     adb shell settings put system font_scale 1.25
     adb shell settings put system bluetooth_discoverability 0
     adb shell settings put system motion_engine 0
