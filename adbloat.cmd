@@ -111,12 +111,12 @@ exit 0
     adb shell settings put system thermal_limit_refresh_rate 0
     adb shell settings put system min_refresh_rate 60.0
     adb shell settings put system display_color_mode 0
+    adb shell settings put system remove_animations 1
     adb shell settings put system reduce_animations 1
     adb shell settings put system slider_animation_duration 250
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
-    adb shell settings put global remove_animations 1
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global persist.sys.rotationanimation false
     adb shell settings put global sys.disable_ext_animation 1
