@@ -116,7 +116,7 @@ exit 0
     adb shell settings put global window_animation_scale 0.25
     adb shell settings put global transition_animation_scale 0.25
     adb shell settings put global animator_duration_scale 0.0
-    adb shell settings put global remove_animations	0
+    adb shell settings put global remove_animations	1
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global persist.sys.rotationanimation false
     adb shell settings put global sys.disable_ext_animation 1
