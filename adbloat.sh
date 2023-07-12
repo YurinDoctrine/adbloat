@@ -373,7 +373,9 @@ tweaks() {
     adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
     adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put global CONTENT_APP_IDLE_OFFSET false
+    adb shell settings put global ro.FOREGROUND_APP_ADJ 0
     adb shell settings put global ro.HOME_APP_ADJ 1
+    adb shell settings put global ro.VISIBLE_APP_ADJ 2
     adb shell settings put global ro.app.optimization true
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
