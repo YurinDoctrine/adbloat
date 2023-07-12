@@ -236,6 +236,7 @@ exit 0
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
+    adb shell settings put global ro.has.cpu.setting true
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.config.hw_simpleui_enable 1
     adb shell settings put global ro.config.hw_dts true
@@ -524,6 +525,7 @@ exit 0
     adb shell settings put global ro.vndk.lite true
     adb shell settings put global ro.recentMode 0
     adb shell settings put global persist.vendor.enable.hans true
+    adb shell settings put global ro.amlogic.no.preloadclass 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
@@ -647,6 +649,7 @@ exit 0
     adb shell settings put global vold.storage.prepared 1
     adb shell settings put global vold.has_compress 1
     adb shell settings put global vold.has_quota 0
+    adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
