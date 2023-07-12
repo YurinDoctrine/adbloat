@@ -214,7 +214,7 @@ exit 0
     adb shell settings put global dalvik.vm.dex2oat-resolve-startup-strings false
     adb shell settings put global dalvik.vm.madvise-random true
     adb shell settings put global dalvik.vm.foreground-heap-growth-multiplier 1.0
-    adb shell settings put global dalvik.vm.jit.codecachesize 0
+    adb shell settings put global dalvik.vm.jit.codecachesize 1
     adb shell settings put global dalvik.vm.appimageformat lz4
     adb shell settings put global dalvik.vm.systemservercompilerfilter speed
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
@@ -237,7 +237,6 @@ exit 0
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.has.cpu.setting true
-    adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.config.hw_simpleui_enable 1
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put global ro.config.hw_disable_cops true
