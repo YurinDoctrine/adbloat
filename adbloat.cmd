@@ -26,6 +26,7 @@ exit 0
 
 :tweaks
     echo "Applying Tweaks ..."
+    adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
