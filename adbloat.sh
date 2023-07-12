@@ -513,6 +513,7 @@ tweaks() {
     adb shell settings put global ro.vndk.lite true
     adb shell settings put global ro.recentMode 0
     adb shell settings put global persist.vendor.enable.hans true
+    adb shell settings put global ro.amlogic.no.preloadclass 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
     adb shell settings put global persist.sys.storage_preload 1
@@ -591,6 +592,7 @@ tweaks() {
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
     adb shell settings put global ro.config.dha_tunnable 1
+    adb shell settings put global ro.has.cpu.setting true
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.core_ctl_min_cpu 0
     adb shell settings put global ro.core_ctl_present 1
@@ -636,6 +638,7 @@ tweaks() {
     adb shell settings put global vold.storage.prepared 1
     adb shell settings put global vold.has_compress 1
     adb shell settings put global vold.has_quota 0
+    adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
