@@ -376,6 +376,8 @@ tweaks() {
     adb shell settings put global ro.FOREGROUND_APP_ADJ 0
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.VISIBLE_APP_ADJ 2
+    adb shell settings put global ro.PERCEPTIBLE_APP_ADJ 3
+    adb shell settings put global ro.HEAVY_WEIGHT_APP_ADJ 4
     adb shell settings put global ro.app.optimization true
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
