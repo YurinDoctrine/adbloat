@@ -405,6 +405,7 @@ exit 0
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global persist.data.iwlan.enable true
+    adb shell settings put global ro.use_data_netmgrd true
     adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
@@ -637,6 +638,7 @@ exit 0
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global ro.config.enable_rcc true
+    adb shell settings put global ro.config.sync 0
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
     adb shell settings put global ro.sys.fw.empty_app_percent 50
@@ -653,6 +655,7 @@ exit 0
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.performance.tuning 1
+    adb shell settings put global debug.gralloc.map_fb_memory 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
     adb shell settings put global debug.gralloc.gfx_ubwc_disable 0
     adb shell settings put global debug.gr.numframebuffers 1
