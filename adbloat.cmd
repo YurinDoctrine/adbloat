@@ -370,6 +370,7 @@ exit 0
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
+    adb shell settings put global debug.hwc.fakevsync 1
     adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
     adb shell settings put global debug.hwc.disabletonemapping true
