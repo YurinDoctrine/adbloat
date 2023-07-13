@@ -564,6 +564,7 @@ tweaks() {
     adb shell settings put global ro.ril.enable.amr.wideband 1
     adb shell settings put global ro.ril.enable.imc.feature 1
     adb shell settings put global ro.ril.enable.enhance.search 1
+    adb shell settings put global ro.ril.enable.nitz 0
     adb shell settings put global ro.ril.fast.dormancy.rule 0
     adb shell settings put global ro.fast.dormancy 0
     adb shell settings put global ro.product.enhanced_4g_lte true
