@@ -813,6 +813,7 @@ tweaks() {
     adb shell settings put global ro.config.hw_fast_dormancy 0
     adb shell settings put global ro.config.small_battery true
     adb shell settings put global ro.ril.power_collapse 1
+    adb shell settings put global ro.smps.enable true
     adb shell settings put global low_power 0
     adb shell settings put global pm.sleep_mode 3
     adb shell settings put global power.saving.mode 2
