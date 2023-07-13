@@ -243,7 +243,6 @@ tweaks() {
     adb shell settings put global foreground_service_starts_logging_enabled 0
     adb shell settings put global enable_diskstats_logging 0
     adb shell settings put global activity_starts_logging_enabled 0
-    adb shell settings put global ro.config.htc.nocheckin 1
     adb shell settings put global ro.config.nocheckin 1
     adb shell settings put global profiler.force_disable_err_rpt 1
     adb shell settings put global profiler.force_disable_ulog 1
@@ -396,6 +395,7 @@ tweaks() {
     adb shell settings put global persist.data.iwlan.enable true
     adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global debug.bt.lowspeed true
+    adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
@@ -492,8 +492,6 @@ tweaks() {
     adb shell settings put global audio.sys.routing.latency 0
     adb shell settings put global audio.sys.mute.latency.factor 2
     adb shell settings put global mpq.audio.decode true
-    adb shell settings put global htc.audio.alt.enable 0
-    adb shell settings put global htc.audio.hac.enable 0
     adb shell settings put global debug.stagefright.ccodec 1
     adb shell settings put global debug.stagefright.omx_default_rank 0
     adb shell settings put global debug.stagefright.omx_default_rank.sw-audio 1
