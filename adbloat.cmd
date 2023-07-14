@@ -238,7 +238,7 @@ exit 0
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
-    adb shell settings put global ro.has.cpu.setting true
+    adb shell settings put global ro.systemui.burn_in_protection true
     adb shell settings put global ro.config.hw_simpleui_enable 1
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put global ro.config.hw_disable_cops true
@@ -610,6 +610,7 @@ exit 0
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
     adb shell settings put global ro.config.dha_tunnable 1
+    adb shell settings put global ro.has.cpu.setting true
     adb shell settings put global ro.cpufreq.game 1
     adb shell settings put global ro.core_ctl_min_cpu 0
     adb shell settings put global ro.core_ctl_present 1
@@ -647,7 +648,9 @@ exit 0
     adb shell settings put global ro.config.sync 0
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
-    adb shell settings put global ro.sys.fw.empty_app_percent 50
+    adb shell settings put global ro.sys.fw.trim_empty_percent 50
+    adb shell settings put global ro.sys.fw.trim_cache_percent 50
+    adb shell settings put global ro.sys.fw.empty_app_percent 25
     adb shell settings put global ro.trim.config true
     adb shell settings put global ro.trim.memory.launcher 1
     adb shell settings put global ro.trim.memory.font_cache 1
@@ -783,6 +786,7 @@ exit 0
     adb shell settings put global persist.radio.sar_sar_sensor false
     adb shell settings put global persist.radio.dynamic_sar false
     adb shell settings put global persist.metadata_dynfps.disable true
+    adb shell settings put global persist.sys.doze_powersave true
     adb shell settings put global persist.android.strictmode 0
     adb shell settings put global persist.sys.strictmode.disable 1
     adb shell settings put global persist.sys.strictmode.visual 0
@@ -805,6 +809,7 @@ exit 0
     adb shell settings put global sys.checkfs.fat false
     adb shell settings put global vendor.gatekeeper.disable_spu true
     adb shell settings put global ro.config.tima 0
+    adb shell settings put global ro.profile.header 0
     adb shell settings put global ro.secure 0
     adb shell settings put global androidboot.selinux 0
     adb shell settings put global selinux.disabled true
