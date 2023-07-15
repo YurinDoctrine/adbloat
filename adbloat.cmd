@@ -478,6 +478,7 @@ exit 0
     adb shell settings put global media.stagefright.enable-scan false
     adb shell settings put global media.stagefright.enable-meta true
     adb shell settings put global media.stagefright.enable-http true
+    adb shell settings put global media.enable-commonsource true
     adb shell settings put global persist.media.lowlatency.enable true
     adb shell settings put global persist.media.hls.enhancements true
     adb shell settings put global persist.media.treble_omx false
