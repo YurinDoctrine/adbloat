@@ -359,6 +359,8 @@ tweaks() {
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
+    adb shell settings put global debug.hwc.nodirtyregion 1
+    adb shell settings put global debug.hwc.force_gpu 1
     adb shell settings put global debug.hwc.fakevsync 1
     adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
@@ -591,6 +593,8 @@ tweaks() {
     adb shell settings put global persist.sys.ramboost.olmemplus_option 2
     adb shell settings put global ro.memperf.enable true
     adb shell settings put global ram_expand_size_list 1
+    adb shell settings put global sys.config.bigdata_enable true
+    adb shell settings put global sys.config.bigdata_mem_enable true
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
@@ -599,6 +603,7 @@ tweaks() {
     adb shell settings put global ro.am.enabled_low_mem_maint true
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
+    adb shell settings put global ro.config.dha_pwhitelist_enable 1
     adb shell settings put global ro.config.dha_tunnable 1
     adb shell settings put global ro.has.cpu.setting true
     adb shell settings put global ro.cpufreq.game 1
@@ -625,6 +630,8 @@ tweaks() {
     adb shell settings put global sys.config.spcm_gcm_kill_enable false
     adb shell settings put global sys.config.spcm_db_enable false
     adb shell settings put global sys.config.spcm_db_launcher false
+    adb shell settings put global sys.config.samp_oak_enable false
+    adb shell settings put global sys.config.samp_oakoom_enable false
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global sys.io.scheduler cfq
@@ -794,6 +801,7 @@ tweaks() {
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
+    adb shell settings put global ro.security.reactive.active 2
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global persist.sys.strict_op_enable false
     adb shell settings put global sys.checkfs.fat false
