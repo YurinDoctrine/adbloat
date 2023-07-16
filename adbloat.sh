@@ -123,6 +123,8 @@ tweaks() {
     adb shell settings put global persist.touch_vsync_opt 1
     adb shell settings put global persist.touch_move_opt 1
     adb shell settings put global touch.size.bias 0
+    adb shell settings put global touch.size.isSummed 0
+    adb shell settings put global touch.size.scale 1
     adb shell settings put global touch.pressure.scale 0.1
     adb shell settings put global touch.distance.scale 0
     adb shell settings put secure touch_blocking_period 0.0
@@ -473,6 +475,7 @@ tweaks() {
     adb shell settings put global persist.media.lowlatency.enable true
     adb shell settings put global persist.media.hls.enhancements true
     adb shell settings put global persist.media.treble_omx false
+    adb shell settings put global av.debug.disable.pers.cache 0
     adb shell settings put global aaudio.mmap_policy 1
     adb shell settings put global aaudio.mmap_exclusive_policy 2
     adb shell settings put global audio.deep_buffer.media true
