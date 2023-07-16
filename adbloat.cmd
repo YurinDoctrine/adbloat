@@ -813,6 +813,7 @@ exit 0
     adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
+    adb shell settings put global ro.build.shutdown_timeout 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global ro.security.reactive.active 2
