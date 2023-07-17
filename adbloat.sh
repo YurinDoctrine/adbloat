@@ -417,7 +417,7 @@ tweaks() {
     adb shell settings put global ro.ril.def.agps.feature 0
     adb shell settings put global ro.ril.def.agps.mode 0
     adb shell settings put global net.tethering.noprovisioning true
-    adb shell settings put global security.perf_harden 1
+    adb shell settings put global security.perf_harden 0
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework true
