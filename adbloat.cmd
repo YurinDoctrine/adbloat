@@ -451,6 +451,7 @@ exit 0
     adb shell settings put global persist.sys.static_blur_mode false
     adb shell settings put global persist.sys.disable_blur_view true
     adb shell settings put global persist.perf.wm_static_blur true
+    adb shell settings put global sys.fb.bits 32
     adb shell settings put global persist.sys.shadow.open 0
     adb shell settings put global persist.sys.use_16bpp_alpha 0
     adb shell settings put global persist.sys.purgeable_assets 0
