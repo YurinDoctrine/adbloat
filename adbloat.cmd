@@ -599,8 +599,8 @@ exit 0
     adb shell settings put global ro.telephony.call_ring.multiple false
     adb shell settings put global persist.vendor.data.mode offload
     adb shell settings put global persist.vendor.mwqem.enable 1
-    adb shell settings put global vendor.debug.egl.swapinterval 1
-    adb shell settings put global debug.gr.swapinterval 1
+    adb shell settings put global vendor.debug.egl.swapinterval 0
+    adb shell settings put global debug.gr.swapinterval 0
     adb shell settings put global ro.vold.umsdirtyratio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
