@@ -414,6 +414,8 @@ exit 0
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
     adb shell settings put global persist.data.iwlan.enable true
+    adb shell settings put global persist.data.wda.enable true
+    adb shell settings put global persist.rmnet.data.enable true
     adb shell settings put global ro.use_data_netmgrd true
     adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global debug.bt.lowspeed true
