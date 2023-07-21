@@ -370,9 +370,13 @@ tweaks() {
     adb shell settings put global debug.hwui.use_buffer_age false
     adb shell settings put global persist.alloc_buffer_sync true
     adb shell settings put global CPU_MIN_CHECK_DURATION false
+    adb shell settings put global MIN_CRASH_INTERVAL false
     adb shell settings put global GC_MIN_INTERVAL false
     adb shell settings put global GC_TIMEOUT false
+    adb shell settings put global SERVICE_TIMEOUT false
     adb shell settings put global PROC_START_TIMEOUT false
+    adb shell settings put global MAX_PROCESSES false
+    adb shell settings put global MAX_ACTIVITIES false
     adb shell settings put global MAX_SERVICE_INACTIVITY false
     adb shell settings put global MIN_RECENT_TASKS false
     adb shell settings put global MAX_RECENT_TASKS false
@@ -713,6 +717,7 @@ tweaks() {
     adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global cpu.fps auto
+    adb shell settings put global gpu.fps auto
     adb shell settings put global sys.hwc.gpu_perf_mode 1
     adb shell settings put global ro.hwc.legacy_api true
     adb shell settings put global hwc.scenario 2
