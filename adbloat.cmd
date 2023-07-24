@@ -583,6 +583,7 @@ exit 0
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.sqlite.journalmode WAL
     adb shell settings put global debug.sqlite.syncmode 1
+    adb shell settings put global ro.vendor.gpu.dataspace 1
     adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
     adb shell settings put global ro.tb.mode 1
@@ -706,6 +707,7 @@ exit 0
     adb shell settings put global rs.gpu.rsIntrinsic 0
     adb shell settings put global rs.gpu.filterscript 0
     adb shell settings put global rs.gpu.renderscript 0
+    adb shell settings put global graphics.gpu.profiler.support true
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
     adb shell settings put global opengl_renderer 1
@@ -765,6 +767,8 @@ exit 0
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.egl.force_msaa 1
     adb shell settings put global debug.overlayui.enable 0
+    adb shell settings put global debug.sf.high_fps_late_app_phase_offset_ns 0
+    adb shell settings put global debug.sf.high_fps_late_sf_phase_offset_ns 0
     adb shell settings put global debug.sf.enable_advanced_sf_phase_offset 1
     adb shell settings put global debug.sf.enable_gl_backpressure 1
     adb shell settings put global debug.sf.latch_unsignaled 1
@@ -813,6 +817,8 @@ exit 0
     adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global persist.sys.strictmode.violation 0
     adb shell settings put global persist.service.acm.enable 0
+    adb shell settings put global ro.hw.use_hwc_services 1
+    adb shell settings put global ro.hw.use_secure_encoder_only 1
     adb shell settings put global ro.hw_timeout_multiplier 1
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
