@@ -437,7 +437,7 @@ exit 0
     adb shell settings put global security.perf_harden 0
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
-    adb shell settings put global ro.surface_flinger.running_without_sync_framework true
+    adb shell settings put global ro.surface_flinger.running_without_sync_framework false
     adb shell settings put global ro.surface_flinger.supports_background_blur 0
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
