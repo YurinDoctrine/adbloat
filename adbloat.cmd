@@ -837,6 +837,7 @@ exit 0
     adb shell settings put global persist.sys.strict_op_enable false
     adb shell settings put global sys.checkfs.fat false
     adb shell settings put global vendor.gatekeeper.disable_spu true
+    adb shell settings put global ro.config.dmverity false
     adb shell settings put global ro.config.rkp false
     adb shell settings put global ro.config.tima 0
     adb shell settings put global ro.profile.header 0
