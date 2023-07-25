@@ -725,6 +725,7 @@ tweaks() {
     adb shell settings put global cpu.fps auto
     adb shell settings put global gpu.fps auto
     adb shell settings put global sys.hwc.gpu_perf_mode 1
+    adb shell settings put global ro.hw.use_hwc_cpu_perf_mode 1
     adb shell settings put global ro.hwc.legacy_api true
     adb shell settings put global hwc.scenario 2
     adb shell settings put global hw2d.force 1
