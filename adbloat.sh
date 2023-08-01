@@ -524,6 +524,7 @@ tweaks() {
     adb shell settings put global persist.vendor.dpm.tcm 1
     adb shell settings put global persist.vendor.dc.enable 2
     adb shell settings put global persist.sys.support.vt false
+    adb shell settings put global ro.sf.use_latest_hwc_vsync_period 1
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
