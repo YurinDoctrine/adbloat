@@ -439,6 +439,7 @@ exit 0
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework false
     adb shell settings put global ro.surface_flinger.supports_background_blur 0
+    adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 100
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 1000
