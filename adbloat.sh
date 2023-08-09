@@ -611,6 +611,7 @@ tweaks() {
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global sys.config.bigdata_enable true
     adb shell settings put global sys.config.bigdata_mem_enable true
+    adb shell settings put global ro.config.per_app_memcg true
     adb shell settings put global ro.config.low_mem true
     adb shell settings put global ro.config.low_ram true
     adb shell settings put global ro.config.low_ram.mod true
