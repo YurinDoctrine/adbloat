@@ -508,6 +508,7 @@ exit 0
     adb shell settings put global audio.offload.pcm.16bit.enable false
     adb shell settings put global audio.offload.pcm.24bit.enable false
     adb shell settings put global audio.track.enablemonoorstereo 1
+    adb shell settings put global ro.vendor.audio_tunning.nr 1
     adb shell settings put global vendor.audio.lowpower true
     adb shell settings put global lpa.use-stagefright true
     adb shell settings put global lpa.decode false
