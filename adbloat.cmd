@@ -788,6 +788,7 @@ exit 0
     adb shell settings put global debug.egl.debug_proc 0
     adb shell settings put global debug.egl.trace 0
     adb shell settings put global debug.egl.callstack 0
+    adb shell settings put global debug.egl.finish 1
     adb shell settings put global debug.sf.showupdates 0
     adb shell settings put global debug.sf.showcpu 0
     adb shell settings put global debug.sf.showbackground 0
