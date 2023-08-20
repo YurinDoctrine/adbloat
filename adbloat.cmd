@@ -191,6 +191,7 @@ exit 0
     adb shell settings put global ro.mot.proximity.jitter false
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
+    adb shell settings put global persist.sys.fuse.passthrough.enable true
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.memopt.switch 1
     adb shell settings put global persist.sys.art.opt.enable true
