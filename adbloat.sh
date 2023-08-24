@@ -433,11 +433,13 @@ tweaks() {
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework false
     adb shell settings put global ro.surface_flinger.supports_background_blur 0
+    adb shell settings put global ro.surface_flinger.support_kernel_idle_timer true
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 100
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
     adb shell settings put global ro.surface_flinger.vsync_event_phase_offset_ns 0
     adb shell settings put global ro.surface_flinger.vsync_sf_event_phase_offset_ns 0
+    adb shell settings put global ro.surface_flinger.present_time_offset_from_vsync_ns 0
     adb shell settings put global ro.surface_flinger.use_content_detection_for_refresh_rate true
     adb shell settings put global ro.surface_flinger.refresh_rate_switching true
     adb shell settings put global ro.surface_flinger.enable_layer_caching true
@@ -835,6 +837,7 @@ tweaks() {
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
+    adb shell settings put global service.wait_for_bootanim 0
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.build.shutdown_timeout 0
