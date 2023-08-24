@@ -182,6 +182,7 @@ tweaks() {
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.memopt.switch 1
     adb shell settings put global persist.sys.fuse.passthrough.enable true
+    adb shell settings put global persist.sys.ifaa 1
     adb shell settings put global persist.sys.klo on
     adb shell settings put global persist.sys.art.opt.enable true
     adb shell settings put global persist.sys.dalvik.multithread true
