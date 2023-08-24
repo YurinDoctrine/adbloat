@@ -188,7 +188,7 @@ exit 0
     adb shell settings put global persist.radio.lte_enabled true
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
-    adb shell settings put global persist.sys.klo off
+    adb shell settings put global persist.sys.klo on
     adb shell settings put global ro.mot.proximity.jitter false
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
@@ -641,6 +641,8 @@ exit 0
     adb shell settings put global ro.core_ctl_min_cpu 0
     adb shell settings put global ro.core_ctl_present 1
     adb shell settings put global ro.thermal_warmreset true
+    adb shell settings put global persist.sys.thermal_policy_update 1
+    adb shell settings put global persist.sys.thermal.enable 1
     adb shell settings put global persist.thermalmanager.enable true
     adb shell settings put global thermal_offload 0
     adb shell settings put global persist.sys.lowcost 1
@@ -742,6 +744,8 @@ exit 0
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global cpu.fps auto
     adb shell settings put global gpu.fps auto
+    adb shell settings put global persist.sys.fpsctrl.enable 1
+    adb shell settings put global persist.sys.autofps.mode 1
     adb shell settings put global sys.perf.hmp 6:2
     adb shell settings put global sys.hwc.gpu_perf_mode 1
     adb shell settings put global ro.hw.use_hwc_cpu_perf_mode 1
