@@ -316,6 +316,7 @@ tweaks() {
     adb shell settings put global persist.ai.timedebug.enable false
     adb shell settings put global persist.sys.hw_statistics 0
     adb shell settings put global persist.sys.apps_statistics 0
+    adb shell settings put global persist.sys.apr.enabled 0
     adb shell settings put global persist.vendor.verbose_logging_enabled false
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
