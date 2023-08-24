@@ -176,14 +176,13 @@ tweaks() {
     adb shell settings put global persist.radio.lte_enabled true
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
+    adb shell settings put global persist.sys.klo off
     adb shell settings put global ro.mot.proximity.jitter false
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
     adb shell settings put global persist.sys.job_delay false
     adb shell settings put global persist.sys.memopt.switch 1
     adb shell settings put global persist.sys.fuse.passthrough.enable true
-    adb shell settings put global persist.sys.ifaa 1
-    adb shell settings put global persist.sys.klo on
     adb shell settings put global persist.sys.art.opt.enable true
     adb shell settings put global persist.sys.dalvik.multithread true
     adb shell settings put global persist.sys.dalvik.hyperthreading true
