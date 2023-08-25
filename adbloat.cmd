@@ -671,6 +671,8 @@ exit 0
     adb shell settings put global sys.config.spcm_db_launcher false
     adb shell settings put global sys.config.samp_oak_enable false
     adb shell settings put global sys.config.samp_oakoom_enable false
+    adb shell settings put global persist.sys.ss.enable false
+    adb shell settings put global persist.sys.pwctl.enable 0
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global sys.io.scheduler cfq
