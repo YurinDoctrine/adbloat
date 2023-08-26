@@ -749,6 +749,7 @@ exit 0
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
+    adb shell settings put global ro.vendor.gpu.boost 1
     adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global cpu.fps auto
