@@ -395,6 +395,7 @@ tweaks() {
     adb shell settings put global ro.PERCEPTIBLE_APP_ADJ 3
     adb shell settings put global ro.HEAVY_WEIGHT_APP_ADJ 4
     adb shell settings put global ro.app.optimization true
+    adb shell settings put global ro.launcher.dynamic true
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
