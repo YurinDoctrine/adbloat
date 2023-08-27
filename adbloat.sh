@@ -109,7 +109,10 @@ tweaks() {
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global remove_animations 1
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global ro.launcher.anim.app.exit false
+    adb shell settings put global ro.launcher.anim.launchtask false
     adb shell settings put global persist.sys.rotationanimation false
+    adb shell settings put global sys.rotation.animscale 0.25
     adb shell settings put global sys.disable_ext_animation 1
     adb shell settings put global sys.enable_grip_rejection 1
     adb shell settings put global sys.refresh.dirty 0
@@ -396,6 +399,7 @@ tweaks() {
     adb shell settings put global ro.HEAVY_WEIGHT_APP_ADJ 4
     adb shell settings put global ro.app.optimization true
     adb shell settings put global ro.launcher.dynamic true
+    adb shell settings put global ro.launcher.label.fastupdate true
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
@@ -614,6 +618,7 @@ tweaks() {
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ro.lmk.use_minfree_levels true
+    adb shell settings put global ro.lmk.vmpressurenhanced true
     adb shell settings put global persist.vendor.memplus.enable 1
     adb shell settings put global persist.sys.ramboost.enable true
     adb shell settings put global persist.sys.ramboost.ioppreload true
