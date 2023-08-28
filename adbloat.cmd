@@ -12,7 +12,7 @@ goto :tweaks
 exit 0
 
 :start
-    adb shell pm list packages -3 |
+    powershell -c "adb shell pm list packages -3 |
     ForEach-Object {
         $packageName = $_ -replace '^package:', ''
         adb shell pm uninstall -k --user 0 $packageName
@@ -22,7 +22,7 @@ exit 0
     ForEach-Object {
         $packageName = $_ -replace '^package:', ''
         adb shell pm clear --user 0 $packageName
-    }
+    }"
 
 :tweaks
     echo "Applying Tweaks ..."
