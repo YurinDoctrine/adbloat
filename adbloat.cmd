@@ -531,6 +531,7 @@ exit 0
     adb shell settings put global lpa.encode false
     adb shell settings put global tunnel.decode false
     adb shell settings put global tunnel.encode false
+    adb shell settings put global persist.sys.audio.source true
     adb shell settings put global persist.speaker.prot.enable false
     adb shell settings put global persist.audio.hp true
     adb shell settings put global persist.audio.hifi true
