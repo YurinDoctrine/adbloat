@@ -182,6 +182,7 @@ tweaks() {
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
     adb shell settings put global persist.sys.klo on
+    adb shell settings put global persist.sys.once_scan true
     adb shell settings put global ro.mot.proximity.jitter false
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
