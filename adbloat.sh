@@ -419,6 +419,7 @@ tweaks() {
     adb shell settings put global persist.net.doxlat true
     adb shell settings put global ro.use_data_netmgrd true
     adb shell settings put global ro.com.android.dataroaming false
+    adb shell settings put global ro.wcn enabled
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
