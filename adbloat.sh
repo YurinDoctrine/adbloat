@@ -66,6 +66,7 @@ tweaks() {
     adb shell rm -rf /storage/sdcard1/LogService/*
     adb shell rm -rf /storage/sdcard0/LOST.DIR/*
     adb shell rm -rf /storage/sdcard1/LOST.DIR/*
+    adb shell pm trim-caches 999999M
     adb shell sm fstrim
 
     adb shell setprop persist.log.tag S
