@@ -601,6 +601,7 @@ exit 0
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
+    adb shell settings put global persist.sys.ps.enable 1
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
