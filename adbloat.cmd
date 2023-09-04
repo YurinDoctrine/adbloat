@@ -180,13 +180,14 @@ exit 0
     adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global updatable_driver_all_apps 1
-    adb shell settings put global wifi_sleep_policy 0
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global mobile_data_always_on 0
+    adb shell settings put global background_data 0
     adb shell settings put global data_saver_mode 1
     adb shell settings put global ro.wifi.signal.optimized true
+    adb shell settings put global ro.sf.wifi_sleep_policy_default 2
     adb shell settings put global ro.mds.enable true
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mtk_lte_support 1
@@ -600,7 +601,6 @@ exit 0
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
-    adb shell settings put global background_data 0
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
