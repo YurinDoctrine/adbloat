@@ -180,6 +180,7 @@ exit 0
     adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global updatable_driver_all_apps 1
+    adb shell settings put global wifi_sleep_policy 0
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
@@ -413,6 +414,7 @@ exit 0
     adb shell settings put global ro.app.optimization true
     adb shell settings put global ro.launcher.dynamic true
     adb shell settings put global ro.launcher.label.fastupdate true
+    adb shell settings put global device_idle_constants idle_duration=0
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
@@ -598,6 +600,7 @@ exit 0
     adb shell settings put global vendor.mtk_thumbnail_optimization true
     adb shell settings put global def_bg_power_saving 1
     adb shell settings put global persist.bg.dexopt.enable true
+    adb shell settings put global background_data 0
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
@@ -760,6 +763,7 @@ exit 0
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
     adb shell settings put global ro.vendor.gpu.boost 1
+    adb shell settings put global multi_sampling_enabled 0
     adb shell settings put global persist.sampling_profiler 0
     adb shell settings put global dev.pm.dyn_samplingrate 1
     adb shell settings put global cpu.fps auto
