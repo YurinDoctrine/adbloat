@@ -562,6 +562,7 @@ tweaks() {
     adb shell settings put global ro.amlogic.no.preloadclass 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
+    adb shell settings put global persist.dummy_storage 1
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.sys.prelaunch.off 0
     adb shell settings put global persist.sys.preloads.file_cache_expired 0
