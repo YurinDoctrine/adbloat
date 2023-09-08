@@ -777,6 +777,7 @@ exit 0
     adb shell settings put global gpu.fps auto
     adb shell settings put global persist.sys.fpsctrl.enable 1
     adb shell settings put global persist.sys.autofps.mode 1
+    adb shell settings put global sys.perf.heavy false
     adb shell settings put global sys.perf.status false
     adb shell settings put global sys.perf.zygote true
     adb shell settings put global sys.perf.iop true
