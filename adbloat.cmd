@@ -343,6 +343,7 @@ exit 0
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
     adb shell settings put global persist.service.crash.enable 0
+    adb shell settings put global persist.sys.perfettologging.enable 0
     adb shell settings put global persist.sys.perf.debug false
     adb shell settings put global persist.sys.log.user 0
     adb shell settings put global persist.sys.log-main.enable 0
@@ -773,7 +774,13 @@ exit 0
     adb shell settings put global gpu.fps auto
     adb shell settings put global persist.sys.fpsctrl.enable 1
     adb shell settings put global persist.sys.autofps.mode 1
+    adb shell settings put global sys.perf.status false
+    adb shell settings put global sys.perf.zygote true
+    adb shell settings put global sys.perf.iop true
+    adb shell settings put global sys.perf.schd true
     adb shell settings put global sys.perf.hmp 6:2
+    adb shell settings put global sys.perf.fbooster true
+    adb shell settings put global sys.perf.tbooster true
     adb shell settings put global sys.hwc.gpu_perf_mode 1
     adb shell settings put global ro.hw.use_hwc_cpu_perf_mode 1
     adb shell settings put global ro.hw.use_disable_composition_type_gles 0
