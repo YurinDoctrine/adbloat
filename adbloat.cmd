@@ -345,6 +345,9 @@ exit 0
     adb shell settings put global persist.service.crash.enable 0
     adb shell settings put global persist.sys.perfettologging.enable 0
     adb shell settings put global persist.sys.perf.debug false
+    adb shell settings put global persist.sys.offlinelog.kernel false
+    adb shell settings put global persist.sys.offlinelog.logcat false
+    adb shell settings put global persist.sys.offlinelog.logcatkernel false
     adb shell settings put global persist.sys.log.user 0
     adb shell settings put global persist.sys.log-main.enable 0
     adb shell settings put global persist.sys.log-system.enable 0
