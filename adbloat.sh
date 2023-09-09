@@ -375,6 +375,7 @@ tweaks() {
     adb shell settings put global ro.config.hw_privacymode true
     adb shell settings put global ro.config.hw_perfhub true
     adb shell settings put global ro.config.hw_perfgenius true
+    adb shell settings put global persist.perf.level 2
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
