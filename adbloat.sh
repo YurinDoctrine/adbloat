@@ -494,6 +494,7 @@ tweaks() {
     adb shell settings put global vendor.perf.iop_v3.enable true
     adb shell settings put global vendor.perf.iop_v3.enable.debug false
     adb shell settings put global vendor.perf.workloadclassifier.enable true
+    adb shell settings put global ro.vendor.iocgrp.config 1
     adb shell settings put global persist.sys.autoclearsave 2
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
@@ -749,6 +750,7 @@ tweaks() {
     adb shell settings put global vendor.display.enable_perf_hint_large_comp_cycle 1
     adb shell settings put global vendor.display.disable_decimation 0
     adb shell settings put global vendor.display.disable_ui_3d_tonemap 1
+    adb shell settings put global vendor.display.enable_rotator_ui 1
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
