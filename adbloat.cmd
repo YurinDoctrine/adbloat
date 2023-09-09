@@ -577,6 +577,7 @@ exit 0
     adb shell settings put global ro.amlogic.no.preloadclass 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
+    adb shell settings put global storage.preload.complete 1
     adb shell settings put global persist.dummy_storage 1
     adb shell settings put global persist.sys.storage_preload 1
     adb shell settings put global persist.sys.preloads.file_cache_expired 0
@@ -884,6 +885,7 @@ exit 0
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global service.wait_for_bootanim 0
+    adb shell settings put global sys.boot.start_preload 1
     adb shell settings put global sys.boot.end_package 1
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
