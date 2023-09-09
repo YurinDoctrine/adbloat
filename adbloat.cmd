@@ -580,8 +580,8 @@ exit 0
     adb shell settings put global storage.preload.complete 1
     adb shell settings put global persist.dummy_storage 1
     adb shell settings put global persist.sys.storage_preload 1
-    adb shell settings put global persist.sys.preloads.file_cache_expired 0
     adb shell settings put global persist.sys.prelaunch.off 0
+    adb shell settings put global persist.sys.preloads.file_cache_expired 0
     adb shell settings put global persist.vendor.enable.preload true
     adb shell settings put global persist.preload.common 1
     adb shell settings put global enable_app_prefetch 1
