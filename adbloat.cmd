@@ -683,6 +683,7 @@ exit 0
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global always_finish_activities 1
+    adb shell settings put global sys.isdumpstaterunning 0
     adb shell settings put global sys.config.spcm_enable true
     adb shell settings put global sys.config.samp_spcm_enable true
     adb shell settings put global sys.config.spcm_preload_enable true
@@ -718,6 +719,7 @@ exit 0
     adb shell settings put global vold.storage.prepared 1
     adb shell settings put global vold.has_compress 1
     adb shell settings put global vold.has_quota 0
+    adb shell settings put global vold.should_defrag 1
     adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
@@ -882,6 +884,7 @@ exit 0
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global service.wait_for_bootanim 0
+    adb shell settings put global sys.boot.end_package 1
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global ro.build.shutdown_timeout 0
