@@ -195,6 +195,7 @@ exit 0
     adb shell settings put global ro.config.hw_lte_support true
     adb shell settings put global ro.config.hw_volte_on true
     adb shell settings put global ro.config.hw_volte_dyn true
+    adb shell settings put global ro.config.full_network_support true
     adb shell settings put global persist.eons.enabled true
     adb shell settings put global persist.cust.tel.eons 1
     adb shell settings put global persist.sys.klo on
