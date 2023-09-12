@@ -581,6 +581,7 @@ tweaks() {
     adb shell settings put global enable_app_prefetch 1
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
+    adb shell settings put global persist.irqbalance.enable true
     adb shell settings put global persist.device_config.runtime_native.use_app_image_startup_cache true
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
     adb shell settings put global persist.device_config.runtime_native.usap_pool_size_min 1
@@ -606,6 +607,7 @@ tweaks() {
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
+    adb shell settings put global ro.config.gameassist 1
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.slsi_platform 1
     adb shell settings put global debug.sqlite.journalmode WAL
