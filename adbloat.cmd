@@ -388,6 +388,7 @@ exit 0
     adb shell settings put global ro.config.hw_privacymode true
     adb shell settings put global ro.config.hw_perfhub true
     adb shell settings put global ro.config.hw_perfgenius true
+    adb shell settings put global ro.config.enable_perfhub_fling true
     adb shell settings put global persist.perf.level 2
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
@@ -776,6 +777,8 @@ exit 0
     adb shell settings put global persist.sys.cpuset.enable 1
     adb shell settings put global persist.sys.cpuset.subswitch 1
     adb shell settings put global persist.sys.iaware.cpuenable true
+    adb shell settings put global persist.sys.iaware.vsyncfirst true
+    adb shell settings put global persist.sys.enable_iaware true
     adb shell settings put global persist.tuning.qdcm 1
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
@@ -888,6 +891,8 @@ exit 0
     adb shell settings put global vendor.display.enable_early_wakeup 1
     adb shell settings put global sys.config.phone_start_early true
     adb shell settings put global sys.config.activelaunch_enable true
+    adb shell settings put global persist.sys.appstart.enable true
+    adb shell settings put global persist.sys.appstart.sync true
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
