@@ -706,6 +706,7 @@ exit 0
     adb shell settings put global persist.sys.pwctl.enable 0
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global adaptive_battery_management_enabled 0
+    adb shell settings put global sched.colocate.enable 1
     adb shell settings put global sys.io.scheduler cfq
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
