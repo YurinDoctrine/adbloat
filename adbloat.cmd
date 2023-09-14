@@ -812,6 +812,7 @@ exit 0
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global ro.kernel.qemu.gles 1
+    adb shell settings put global persist.oem.dump 0
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.sys.jankenable false
