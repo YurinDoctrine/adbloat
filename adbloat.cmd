@@ -358,6 +358,7 @@ exit 0
     adb shell settings put global persist.sys.log-events.enable 0
     adb shell settings put global persist.sys.log-radio.enable 0
     adb shell settings put global persist.sys.tcpdump.lognum 0
+    adb shell settings put global persist.sys.wifipacketlog.state false
     adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
     adb shell settings put system status_logging_cnt 0
