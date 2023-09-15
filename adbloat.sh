@@ -523,6 +523,7 @@ tweaks() {
     adb shell settings put global aaudio.mmap_exclusive_policy 2
     adb shell settings put global audio.legacy.postproc true
     adb shell settings put global audio.deep_buffer.media true
+    adb shell settings put global audio.parser.ip.buffer.size 0
     adb shell settings put global audio.offload.video true
     adb shell settings put global audio.offload.track.enable true
     adb shell settings put global audio.offload.passthrough false
