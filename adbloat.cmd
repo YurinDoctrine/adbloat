@@ -180,6 +180,7 @@ exit 0
     adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global updatable_driver_all_apps 1
+    adb shell settings put global persist.sys.cfu_auto 1
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
@@ -344,6 +345,7 @@ exit 0
     adb shell settings put global persist.vendor.verbose_logging_enabled false
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
+    adb shell settings put global persist.oem.dump 0
     adb shell settings put global persist.service.crash.enable 0
     adb shell settings put global persist.sys.perfettologging.enable 0
     adb shell settings put global persist.sys.perf.debug false
@@ -812,7 +814,6 @@ exit 0
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global ro.kernel.qemu.gles 1
-    adb shell settings put global persist.oem.dump 0
     adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.sys.jankenable false
@@ -886,6 +887,7 @@ exit 0
     adb shell settings put global persist.sys.strictmode.disable 1
     adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global persist.sys.strictmode.violation 0
+    adb shell settings put global persist.sys.assert.enable false
     adb shell settings put global persist.service.acm.enable 0
     adb shell settings put global ro.hw.use_hwc_services 1
     adb shell settings put global ro.hw.use_secure_encoder_only 1
