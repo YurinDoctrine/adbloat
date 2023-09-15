@@ -346,6 +346,7 @@ tweaks() {
     adb shell settings put global persist.sys.log-events.enable 0
     adb shell settings put global persist.sys.log-radio.enable 0
     adb shell settings put global persist.sys.tcpdump.lognum 0
+    adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
     adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
@@ -803,7 +804,6 @@ tweaks() {
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global ro.kernel.qemu.gles 1
-    adb shell settings put global persist.debug.wfd.enable 1
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.sys.jankenable false
     adb shell settings put global persist.hwc.ptor.enable true
