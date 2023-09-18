@@ -310,6 +310,7 @@ tweaks() {
     adb shell settings put global ro.statsd.enable false
     adb shell settings put global ro.systemui.debug false
     adb shell settings put global ro.aee.enforcing no
+    adb shell settings put global ro.aee.enperf off
     adb shell settings put global persist.debug.sf.statistics 0
     adb shell settings put global persist.radio.ramdump 0
     adb shell settings put global persist.ims.disableDebugLogs 1
