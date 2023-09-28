@@ -237,6 +237,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.bg-dexopt quicken
     adb shell settings put global pm.dexopt.ab-ota quicken
     adb shell settings put global pm.dexopt.forced-dexopt quicken
+    adb shell settings put global ro.dex.async.opt 1
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global persist.sys.nativebridge 1
     adb shell settings put global ro.maple.enable 1
