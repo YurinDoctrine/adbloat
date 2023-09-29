@@ -321,6 +321,7 @@ exit 0
     adb shell settings put global vendor.swvdec.log.level 0
     adb shell settings put global debug.sf.enable_transaction_tracing false
     adb shell settings put global persist.vendor.console.silent.config 1
+    adb shell settings put global persist.vendor.recovery_update false
     adb shell settings put global ro.statsd.enable false
     adb shell settings put global ro.systemui.debug false
     adb shell settings put global ro.have_aee_feature 0
