@@ -311,7 +311,7 @@ tweaks() {
     adb shell settings put global persist.vendor.console.silent.config 1
     adb shell settings put global ro.statsd.enable false
     adb shell settings put global ro.systemui.debug false
-    adb shell settings put global ro.have_aee_feature 1
+    adb shell settings put global ro.have_aee_feature 0
     adb shell settings put global ro.aee.enforcing no
     adb shell settings put global ro.aee.enperf off
     adb shell settings put global persist.debug.sf.statistics 0
