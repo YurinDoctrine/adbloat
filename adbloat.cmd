@@ -305,6 +305,7 @@ exit 0
     adb shell settings put global persist.anr.dumpthr 0
     adb shell settings put global persist.vendor.dpm.loglevel 0
     adb shell settings put global persist.vendor.dpmhalservice.loglevel 0
+    adb shell settings put global persist.vendor.sys.core.enabled 0
     adb shell settings put global persist.vendor.sys.modem.logging.enable false
     adb shell settings put global debug.enable.wl_log 0
     adb shell settings put global debug.als.logs 0
