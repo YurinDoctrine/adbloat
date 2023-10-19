@@ -470,6 +470,7 @@ exit 0
     adb shell settings put global ro.allow.mock.location 1
     adb shell settings put global ro.com.google.locationfeatures 0
     adb shell settings put global ro.com.google.networklocation 0
+    adb shell settings put global ro.gps.agps_provider 0
     adb shell settings put global ro.ril.def.agps.feature 0
     adb shell settings put global ro.ril.def.agps.mode 0
     adb shell settings put global net.tethering.noprovisioning true
