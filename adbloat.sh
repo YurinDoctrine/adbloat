@@ -805,6 +805,7 @@ tweaks() {
     adb shell settings put global sys.perf.fbooster true
     adb shell settings put global sys.perf.tbooster true
     adb shell settings put global sys.hwc.gpu_perf_mode 1
+    adb shell settings put global ro.qualcomm.perf.cores_online 2
     adb shell settings put global ro.hw.use_hwc_cpu_perf_mode 1
     adb shell settings put global ro.hw.use_disable_composition_type_gles 0
     adb shell settings put global ro.hwc.legacy_api true
