@@ -640,6 +640,7 @@ exit 0
     adb shell settings put global debug.slsi_platform 1
     adb shell settings put global debug.sqlite.journalmode OFF
     adb shell settings put global debug.sqlite.syncmode OFF
+    adb shell settings put global debug.sqlite.wal.syncmode OFF
     adb shell settings put global ro.vendor.gpu.dataspace 1
     adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
