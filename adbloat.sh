@@ -626,8 +626,8 @@ tweaks() {
     adb shell settings put global ro.config.gameassist 1
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.slsi_platform 1
-    adb shell settings put global debug.sqlite.journalmode WAL
-    adb shell settings put global debug.sqlite.syncmode 1
+    adb shell settings put global debug.sqlite.journalmode OFF
+    adb shell settings put global debug.sqlite.syncmode OFF
     adb shell settings put global ro.vendor.gpu.dataspace 1
     adb shell settings put global ro.incremental.enable 1
     adb shell settings put global ro.fb.mode 1
