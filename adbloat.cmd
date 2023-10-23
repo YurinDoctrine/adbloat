@@ -93,6 +93,7 @@ exit 0
     adb shell settings put global dont.lower.fps true
     adb shell settings put global stabilizer.fps true
     adb shell settings put global stable.fps.enable true
+    adb shell settings put global ro.vendor.display.touch.idle.enable true
     adb shell settings put global vendor.display.enable_default_color_mode 1
     adb shell settings put global vendor.display.disable_scaler 0
     adb shell settings put global vendor.display.disable_excl_rect 0
@@ -356,6 +357,7 @@ exit 0
     adb shell settings put global persist.sys.apr.enabled 0
     adb shell settings put global persist.vendor.aprservice.enabled 0
     adb shell settings put global persist.vendor.verbose_logging_enabled false
+    adb shell settings put global persist.vendor.sys.fp.dump_data 0
     adb shell settings put global persist.debug.xlog.enable 0
     adb shell settings put global persist.meta.dumpdata 0
     adb shell settings put global persist.oem.dump 0
@@ -480,6 +482,9 @@ exit 0
     adb shell settings put global ro.ril.def.agps.mode 0
     adb shell settings put global net.tethering.noprovisioning true
     adb shell settings put global security.perf_harden 0
+    adb shell settings put global ro.vendor.display.mode_change_optimize.enable true
+    adb shell settings put global ro.vendor.display.switch_resolution.support 1
+    adb shell settings put global ro.vendor.display.video_or_camera_fps.support true
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework false
@@ -488,6 +493,7 @@ exit 0
     adb shell settings put global ro.surface_flinger.set_display_power_timer_ms 100
     adb shell settings put global ro.surface_flinger.set_idle_timer_ms 250
     adb shell settings put global ro.surface_flinger.set_touch_timer_ms 500
+    adb shell settings put global ro.surface_flinger.set_fps_stat_timer_ms 750
     adb shell settings put global ro.surface_flinger.vsync_event_phase_offset_ns 0
     adb shell settings put global ro.surface_flinger.vsync_sf_event_phase_offset_ns 0
     adb shell settings put global ro.surface_flinger.present_time_offset_from_vsync_ns 0
@@ -531,7 +537,10 @@ exit 0
     adb shell settings put global persist.sys.autoclearsave 2
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
+    adb shell settings put global debug.media.video.frc false
+    adb shell settings put global debug.media.video.vpp false
     adb shell settings put global sys.media.vdec.sw 1
+    adb shell settings put global ro.vendor.media_performance_class 0
     adb shell settings put global ro.media.dec.aud.wma.enabled 1
     adb shell settings put global ro.media.dec.vid.wmv.enabled 1
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
@@ -585,6 +594,9 @@ exit 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global af.thread.throttle 0
     adb shell settings put global drm.service.enabled true
+    adb shell settings put global persist.vendor.firmware.update true
+    adb shell settings put global persist.vendor.battery.health true
+    adb shell settings put global persist.vendor.accelerate.charge true
     adb shell settings put global persist.vendor.cne.feature 1
     adb shell settings put global persist.vendor.dpm.feature 1
     adb shell settings put global persist.vendor.dpm.tcm 1
@@ -785,6 +797,7 @@ exit 0
     adb shell settings put global gpu_rendering_mode 1
     adb shell settings put global opengl_renderer 1
     adb shell settings put global opengl_trace false
+    adb shell settings put global vendor.display.enable_fb_scaling 1
     adb shell settings put global vendor.display.use_layer_ext 1
     adb shell settings put global vendor.display.enable_posted_start_dyn 1
     adb shell settings put global vendor.display.comp_mask 0
