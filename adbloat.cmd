@@ -301,6 +301,7 @@ exit 0
     adb shell settings put global config.stats 0
     adb shell settings put global persist.sys.loglevel 0
     adb shell settings put global sys.log.app 0
+    adb shell settings put global ro.logd.size 0
     adb shell settings put global ro.logd.size.stats 0
     adb shell settings put global ro.logdumpd.enabled 0
     adb shell settings put global persist.anr.dumpthr 0
