@@ -576,6 +576,7 @@ exit 0
     adb shell settings put global debug.stagefright.ccodec 1
     adb shell settings put global debug.stagefright.omx_default_rank 0
     adb shell settings put global debug.stagefright.omx_default_rank.sw-audio 1
+    adb shell settings put global vendor.media.omx 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global af.thread.throttle 0
     adb shell settings put global drm.service.enabled true
