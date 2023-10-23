@@ -295,6 +295,7 @@ exit 0
     adb shell settings put global media.metrics.enabled 0
     adb shell settings put global media.metrics 0
     adb shell settings put global debug.brcm.mm.logs 0
+    adb shell settings put global sys.miui.ndcd off
     adb shell settings put global sys.debug.watchdog 0
     adb shell settings put global logd.statistics 0
     adb shell settings put global config.stats 0
@@ -340,12 +341,15 @@ exit 0
     adb shell settings put global package_usage_stats_enabled 0
     adb shell settings put global recent_usage_data_enabled 0
     adb shell settings put global persist.service.debuggable 0
+    adb shell settings put global persist.logd.limit off
     adb shell settings put global persist.logd.size 0
     adb shell settings put global persist.bt.iot.enablelogging false
+    adb shell settings put global vendor.bluetooth.startbtlogger false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
     adb shell settings put global sys.wifitracing.started 0
     adb shell settings put global persist.zygote.core_dump 0
     adb shell settings put global persist.ai.timedebug.enable false
+    adb shell settings put global persist.sys.qlogd 0
     adb shell settings put global persist.sys.hw_statistics 0
     adb shell settings put global persist.sys.apps_statistics 0
     adb shell settings put global persist.sys.apr.enabled 0
@@ -660,6 +664,7 @@ exit 0
     adb shell settings put global ro.fast.dormancy 0
     adb shell settings put global ro.product.enhanced_4g_lte true
     adb shell settings put global ro.telephony.call_ring.multiple false
+    adb shell settings put global sys.fflag.override.settings_seamless_transfer true
     adb shell settings put global persist.vendor.data.mode offload
     adb shell settings put global persist.vendor.mwqem.enable 1
     adb shell settings put global vendor.debug.egl.swapinterval 0
