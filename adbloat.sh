@@ -227,6 +227,7 @@ tweaks() {
     adb shell settings put global dalvik.vm.systemservercompilerfilter speed
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
     adb shell settings put global dalvik.vm.houdini on
+    adb shell settings put global persist.vm.stackdump.threshold 0
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
     adb shell settings put global pm.dexopt.nsys-library quicken
@@ -241,6 +242,7 @@ tweaks() {
     adb shell settings put global ro.dex.async.opt 1
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global persist.sys.nativebridge 1
+    adb shell settings put global ro.malloc.impl jemalloc
     adb shell settings put global ro.maple.enable 1
     adb shell settings put global tombstoned.max_tombstone_count 20
     adb shell settings put global vnswap.enabled false
@@ -310,10 +312,12 @@ tweaks() {
     adb shell settings put global anr_show_error_cause false
     adb shell settings put global debug.hwui.skia_atrace_enabled false
     adb shell settings put global persist.sys.mdlog_dumpback 0
+    adb shell settings put global persist.vendor.mdlog.need_dump 0
     adb shell settings put global vendor.swvdec.log.level 0
     adb shell settings put global debug.sf.enable_transaction_tracing false
     adb shell settings put global persist.vendor.console.silent.config 1
     adb shell settings put global persist.vendor.recovery_update false
+    adb shell settings put global persist.binder.check.enable false
     adb shell settings put global ro.statsd.enable false
     adb shell settings put global ro.systemui.debug false
     adb shell settings put global ro.have_aee_feature 0
@@ -469,6 +473,7 @@ tweaks() {
     adb shell settings put global ro.gps.agps_provider 0
     adb shell settings put global ro.ril.def.agps.feature 0
     adb shell settings put global ro.ril.def.agps.mode 0
+    adb shell settings put global ro.vendor.net.enable_sla 1
     adb shell settings put global net.tethering.noprovisioning true
     adb shell settings put global security.perf_harden 0
     adb shell settings put global ro.vendor.display.mode_change_optimize.enable true
