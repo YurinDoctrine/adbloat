@@ -76,6 +76,7 @@ tweaks() {
 
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
+    adb shell settings put global ro.rom.zone 1
     adb shell settings put global ro.fps_enable 1
     adb shell settings put global ro.fps.capsmin 60
     adb shell settings put global dont.lower.fps true
