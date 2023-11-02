@@ -812,6 +812,7 @@ tweaks() {
     adb shell settings put global persist.sys.iaware.cpuenable true
     adb shell settings put global persist.sys.iaware.vsyncfirst true
     adb shell settings put global persist.sys.enable_iaware true
+    adb shell settings put global persist.sys.periodic.enable true
     adb shell settings put global persist.tuning.qdcm 1
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
