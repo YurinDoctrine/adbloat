@@ -1008,6 +1008,7 @@ exit 0
     adb shell settings put secure fingerprint_effect 0
     adb shell settings put secure adaptive_sleep 0
     adb shell settings put secure game_auto_temperature_control 0
+    adb shell settings put secure sensors_off 1
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
     adb shell settings put system power_mode high
