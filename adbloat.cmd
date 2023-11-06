@@ -948,6 +948,7 @@ exit 0
     adb shell settings put global sys.boot.end_package 1
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
+    adb shell settings put global vendor.post_boot.parsed 1
     adb shell settings put global ro.build.shutdown_timeout 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
