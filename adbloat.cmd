@@ -303,6 +303,8 @@ exit 0
     adb shell settings put global sys.debug.watchdog 0
     adb shell settings put global logd.statistics 0
     adb shell settings put global config.stats 0
+    adb shell settings put global persist.sys.watchdog_enhanced false
+    adb shell settings put global persist.sys.oom_crash_on_watchdog false
     adb shell settings put global persist.sys.loglevel 0
     adb shell settings put global sys.log.app 0
     adb shell settings put global ro.logd.size 0
@@ -755,6 +757,7 @@ exit 0
     adb shell settings put global ro.sys.fw.force_adoptable true
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
+    adb shell settings put global persist.enable_task_snapshots false
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global ro.config.enable_rcc true
     adb shell settings put global ro.config.sync 0
