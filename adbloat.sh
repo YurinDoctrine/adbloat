@@ -464,7 +464,7 @@ tweaks() {
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
-    adb shell settings put global persist.radio.NETWORK_SWITCH 1
+    adb shell settings put global persist.radio.NETWORK_SWITCH 2
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
     adb shell settings put global persist.radio.add_power_save 1
