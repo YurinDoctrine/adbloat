@@ -470,6 +470,7 @@ exit 0
     adb shell settings put global persist.net.doxlat true
     adb shell settings put global ro.use_data_netmgrd true
     adb shell settings put global ro.com.android.dataroaming false
+    adb shell settings put global ro.ril.enable.managed.roaming 0
     adb shell settings put global ro.wcn enabled
     adb shell settings put global debug.bt.lowspeed true
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
@@ -479,6 +480,7 @@ exit 0
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.radio.jbims 1
     adb shell settings put global persist.ril.uart.flowctrl 99
+    adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 1
@@ -683,6 +685,7 @@ exit 0
     adb shell settings put global ro.ril.enable.imc.feature 1
     adb shell settings put global ro.ril.enable.enhance.search 1
     adb shell settings put global ro.ril.enable.nitz 0
+    adb shell settings put global ro.ril.disable.cpc 1
     adb shell settings put global ro.ril.fast.dormancy.rule 0
     adb shell settings put global ro.fast.dormancy 0
     adb shell settings put global ro.product.enhanced_4g_lte true
