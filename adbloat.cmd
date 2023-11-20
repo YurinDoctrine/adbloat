@@ -677,6 +677,7 @@ exit 0
     adb shell settings put global ro.ril.hsupa.category 6
     adb shell settings put global ro.ril.hsdpa.category 8
     adb shell settings put global ro.ril.gprsclass 10
+    adb shell settings put global ro.ril.hsdpa.dbdc 1
     adb shell settings put global ro.ril.hsxpa 2
     adb shell settings put global ro.ril.enable.sdr 0
     adb shell settings put global ro.ril.enable.a52 1
