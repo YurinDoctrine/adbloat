@@ -461,6 +461,7 @@ exit 0
     adb shell settings put global persist.sys.ap.restart_level 1
     adb shell settings put global persist.sys.enable_strategy true
     adb shell settings put global persist.rcs.supported 0
+    adb shell settings put global persist.data.profile_update true
     adb shell settings put global persist.data.mode concurrent
     adb shell settings put global persist.data.netmgrd.qos.enable true
     adb shell settings put global persist.data.tcpackprio.enable true
