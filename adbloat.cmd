@@ -646,13 +646,13 @@ exit 0
     adb shell settings put global persist.device_config.runtime_native.usap_pool_size_min 1
     adb shell settings put global persist.device_config.runtime_native.usap_refill_threshold 1
     adb shell settings put global persist.device_config.runtime_native_boot.iorap_readahead_enable true
-    adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable true
+    adb shell settings put global persist.device_config.runtime_native_boot.iorap_perfetto_enable false
     adb shell settings put global persist.device_config.runtime_native.metrics.reporting-mods 0
     adb shell settings put global persist.device_config.runtime_native.metrics.reporting-mods-server 0
     adb shell settings put global persist.device_config.runtime_native.metrics.write-to-statsd false
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.iorapd.enable true
-    adb shell settings put global iorapd.perfetto.enable true
+    adb shell settings put global iorapd.perfetto.enable false
     adb shell settings put global iorapd.readahead.enable true
     adb shell settings put global ro.kernel.ebpf.supported true
     adb shell settings put global sys.ipo.disable 0
