@@ -504,6 +504,7 @@ tweaks() {
     adb shell settings put global ro.surface_flinger.layer_caching_active_layer_timeout_ms 0
     adb shell settings put global ro.surface_flinger.use_context_priority true
     adb shell settings put global ro.surface_flinger.start_graphics_allocator_service true
+    adb shell settings put global ro.surface_flinger.uclamp.min 0
     adb shell settings put global ro.surface_flinger.max_frame_buffer_acquired_buffers 1
     adb shell settings put global ro.surface_flinger.has_wide_color_display false
     adb shell settings put global persist.sys.sf.color_saturation 1.0
