@@ -641,6 +641,7 @@ tweaks() {
     adb shell settings put global persist.device_config.runtime_native.metrics.write-to-statsd false
     adb shell settings put global ro.service.remove_unused 1
     adb shell settings put global ro.iorapd.enable true
+    adb shell settings put global iorapd.perfetto.enable true
     adb shell settings put global iorapd.readahead.enable true
     adb shell settings put global ro.kernel.ebpf.supported true
     adb shell settings put global sys.ipo.disable 0
