@@ -812,6 +812,7 @@ tweaks() {
     adb shell settings put global vendor.display.disable_decimation 0
     adb shell settings put global vendor.display.disable_ui_3d_tonemap 1
     adb shell settings put global vendor.display.enable_rotator_ui 1
+    adb shell settings put global vendor.display.skip_refresh_rate_change 1
     adb shell settings put global sdm.perf_hint_window 50
     adb shell settings put global ro.mtk_perf_fast_start_win 1
     adb shell settings put global ro.mtk_perf_simple_start_win 1
