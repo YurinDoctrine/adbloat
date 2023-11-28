@@ -774,6 +774,7 @@ tweaks() {
     adb shell settings put global vold.has_compress 1
     adb shell settings put global vold.has_quota 0
     adb shell settings put global vold.should_defrag 1
+    adb shell settings put global vold.checkpoint_committed 1
     adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
