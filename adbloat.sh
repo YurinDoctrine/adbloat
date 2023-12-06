@@ -940,6 +940,7 @@ tweaks() {
     adb shell settings put global persist.sys.strictmode.visual 0
     adb shell settings put global persist.sys.strictmode.violation 0
     adb shell settings put global persist.sys.assert.enable false
+    adb shell settings put global persist.sys.opbf.enable true
     adb shell settings put global persist.service.acm.enable 0
     adb shell settings put global ro.hw.use_hwc_services 1
     adb shell settings put global ro.hw.use_secure_encoder_only 1
