@@ -673,7 +673,6 @@ exit 0
     adb shell settings put global persist.bg.dexopt.enable true
     adb shell settings put global persist.sys.ps.enable 1
     adb shell settings put global background_gpu_usage 0
-    adb shell settings put global persist.sys.powersave.rotate 0
     adb shell settings put global persist.sys.gamespeed.enable true
     adb shell settings put global ro.config.gameassist 1
     adb shell settings put global debug.enable.gamed 1
