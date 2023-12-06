@@ -380,6 +380,7 @@ exit 0
     adb shell settings put global persist.sys.log-events.enable 0
     adb shell settings put global persist.sys.log-radio.enable 0
     adb shell settings put global persist.sys.tcpdump.lognum 0
+    adb shell settings put global persist.sys.tcpdump.logsize 0
     adb shell settings put global persist.sys.wifipacketlog.state false
     adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
@@ -494,6 +495,7 @@ exit 0
     adb shell settings put global ro.vendor.net.enable_sla 1
     adb shell settings put global net.tethering.noprovisioning true
     adb shell settings put global security.perf_harden 0
+    adb shell settings put global persist.sys.resolution_change 1
     adb shell settings put global ro.vendor.display.mode_change_optimize.enable true
     adb shell settings put global ro.vendor.display.switch_resolution.support 1
     adb shell settings put global ro.vendor.display.video_or_camera_fps.support true
@@ -641,6 +643,10 @@ exit 0
     adb shell settings put global ro.zygote.preload.disable 2
     adb shell settings put global ro.zygote.disable_gl_preload false
     adb shell settings put global persist.zygote.preload_threads 2
+    adb shell settings put global persist.sys.preload.preload_num 2
+    adb shell settings put global persist.sys.preLoadDrawable.debug false
+    adb shell settings put global persist.sys.preLoadDrawable.enable true
+    adb shell settings put global persist.sys.powersave.rotate 1
     adb shell settings put global persist.irqbalance.enable true
     adb shell settings put global persist.device_config.runtime_native.use_app_image_startup_cache true
     adb shell settings put global persist.device_config.runtime_native.usap_pool_enabled true
@@ -954,6 +960,7 @@ exit 0
     adb shell settings put global sys.config.activelaunch_enable true
     adb shell settings put global persist.sys.appstart.enable true
     adb shell settings put global persist.sys.appstart.sync true
+    adb shell settings put global persist.sys.op_power_first_boot 1
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
