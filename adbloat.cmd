@@ -962,6 +962,7 @@ exit 0
     adb shell settings put global persist.sys.appstart.enable true
     adb shell settings put global persist.sys.appstart.sync true
     adb shell settings put global persist.sys.op_power_first_boot 1
+    adb shell settings put global persist.sys.pre_bootloader yes
     adb shell settings put global persist.bootanim.preload 1
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
