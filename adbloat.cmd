@@ -341,6 +341,7 @@ exit 0
     adb shell settings put global ro.aee.enperf off
     adb shell settings put global persist.debug.sf.statistics 0
     adb shell settings put global persist.sys.crash_dumps 0
+    adb shell settings put global persist.sys.pstore_dumps 0
     adb shell settings put global persist.debug.host.ramdump 0
     adb shell settings put global persist.radio.ramdump 0
     adb shell settings put global persist.ims.disableDebugLogs 1
@@ -591,6 +592,8 @@ exit 0
     adb shell settings put global ro.have_aacencode_feature 1
     adb shell settings put global ro.vendor.audio_tunning.nr 1
     adb shell settings put global vendor.audio.lowpower true
+    adb shell settings put global vendor.audio.use.sw.alac.decoder true
+    adb shell settings put global vendor.audio.use.sw.ape.decoder true
     adb shell settings put global lpa.use-stagefright true
     adb shell settings put global lpa.decode false
     adb shell settings put global lpa.encode false
