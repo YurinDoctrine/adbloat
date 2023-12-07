@@ -305,6 +305,7 @@ exit 0
     adb shell settings put global config.stats 0
     adb shell settings put global persist.sys.watchdog_enhanced false
     adb shell settings put global persist.sys.oom_crash_on_watchdog false
+    adb shell settings put global persist.sys.logging 0
     adb shell settings put global persist.sys.loglevel 0
     adb shell settings put global sys.log.app 0
     adb shell settings put global ro.logd.size 0
@@ -339,6 +340,8 @@ exit 0
     adb shell settings put global ro.aee.enforcing no
     adb shell settings put global ro.aee.enperf off
     adb shell settings put global persist.debug.sf.statistics 0
+    adb shell settings put global persist.sys.crash_dumps 0
+    adb shell settings put global persist.debug.host.ramdump 0
     adb shell settings put global persist.radio.ramdump 0
     adb shell settings put global persist.ims.disableDebugLogs 1
     adb shell settings put global persist.ims.disableDebugDataPathLogs 1
@@ -347,6 +350,7 @@ exit 0
     adb shell settings put global persist.ims.disableIMSLogs 1
     adb shell settings put global persist.ims.disableSigHandler 1
     adb shell settings put global persist.sys.qxdm no
+    adb shell settings put global persist.sys.qxdm_logs 0
     adb shell settings put global app_usage_enabled 0
     adb shell settings put global package_usage_stats_enabled 0
     adb shell settings put global recent_usage_data_enabled 0
