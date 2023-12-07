@@ -346,6 +346,7 @@ exit 0
     adb shell settings put global persist.ims.disableQXDMLogs 1
     adb shell settings put global persist.ims.disableIMSLogs 1
     adb shell settings put global persist.ims.disableSigHandler 1
+    adb shell settings put global persist.sys.qxdm no
     adb shell settings put global app_usage_enabled 0
     adb shell settings put global package_usage_stats_enabled 0
     adb shell settings put global recent_usage_data_enabled 0
