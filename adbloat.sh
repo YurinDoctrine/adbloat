@@ -476,6 +476,7 @@ tweaks() {
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
     adb shell settings put global persist.radio.data_con_rprt true
+    adb shell settings put global persist.radio.data_ltd_sys_ind 1
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.radio.jbims 1
     adb shell settings put global persist.ril.uart.flowctrl 99
