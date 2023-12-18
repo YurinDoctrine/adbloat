@@ -89,6 +89,7 @@ exit 0
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
     adb shell settings put global ro.rom.zone 2
+    adb shell settings put global ro.setupwizard.enterprise_mode 1
     adb shell settings put global ro.fps_enable 1
     adb shell settings put global ro.fps.capsmin 60
     adb shell settings put global dont.lower.fps true
@@ -390,6 +391,7 @@ exit 0
     adb shell settings put global persist.sys.wifipacketlog.state false
     adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
+    adb shell settings put global ro.bionic.ld.warning 0
     adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
@@ -989,6 +991,7 @@ exit 0
     adb shell settings put global ro.security.reactive.active 2
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global persist.sys.strict_op_enable false
+    adb shell settings put global persist.sys.disable_rescue true
     adb shell settings put global sys.checkfs.fat false
     adb shell settings put global vendor.gatekeeper.disable_spu true
     adb shell settings put global ro.control_privapp_permissions enforce
