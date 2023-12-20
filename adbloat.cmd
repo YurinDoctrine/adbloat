@@ -1030,6 +1030,7 @@ exit 0
     adb shell settings put global power.saving.mode 2
     adb shell settings put global vendor.power.pasr.enabled true
     adb shell settings put global vendor.pasr.activemode.enabled true
+    adb shell settings put global vendor.camera.lowpower.record.enable 1
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put global accessibility_reduce_transparency 1
