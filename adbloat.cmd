@@ -804,6 +804,7 @@ exit 0
     adb shell settings put global vold.has_quota 0
     adb shell settings put global vold.should_defrag 1
     adb shell settings put global vold.checkpoint_committed 1
+    adb shell settings put global ro.storaged.event.interval 999999
     adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
@@ -814,6 +815,7 @@ exit 0
     adb shell settings put global debug.gralloc.gfx_ubwc_disable 0
     adb shell settings put global debug.gr.numframebuffers 1
     adb shell settings put global persist.smart_pool 1
+    adb shell settings put global ro.hardware.gralloc default
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer_mode 1
     adb shell settings put global debug.hwui.level 0
@@ -988,6 +990,7 @@ exit 0
     adb shell settings put global ro.build.shutdown_timeout 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
+    adb shell settings put global ro.oem_unlock_supported 1
     adb shell settings put global ro.security.reactive.active 2
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global persist.sys.strict_op_enable false
