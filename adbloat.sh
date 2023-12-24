@@ -720,6 +720,7 @@ tweaks() {
     adb shell settings put global persist.sys.ramboost.olmemplus_option 2
     adb shell settings put global ro.memperf.enable true
     adb shell settings put global ram_expand_size_list 1
+    adb shell settings put global sys.use_memfd true
     adb shell settings put global sys.config.bigdata_enable true
     adb shell settings put global sys.config.bigdata_mem_enable true
     adb shell settings put global ro.config.per_app_memcg true
@@ -805,6 +806,7 @@ tweaks() {
     adb shell settings put global debug.gr.numframebuffers 1
     adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hardware.gralloc default
+    adb shell settings put global ro.hardware.hwcomposer default
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer_mode 1
     adb shell settings put global debug.hwui.level 0
@@ -822,6 +824,7 @@ tweaks() {
     adb shell settings put global rs.gpu.rsIntrinsic 0
     adb shell settings put global rs.gpu.filterscript 0
     adb shell settings put global rs.gpu.renderscript 0
+    adb shell settings put global ro.graphics.hwcomposer.kvm true
     adb shell settings put global graphics.gpu.profiler.support true
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
