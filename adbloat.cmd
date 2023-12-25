@@ -622,6 +622,7 @@ exit 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global af.thread.throttle 0
     adb shell settings put global drm.service.enabled true
+    adb shell settings put global vendor.hwc.drm.scale_with_gpu 1
     adb shell settings put global persist.vendor.firmware.update true
     adb shell settings put global persist.vendor.battery.health true
     adb shell settings put global persist.vendor.accelerate.charge true
