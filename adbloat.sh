@@ -84,6 +84,7 @@ tweaks() {
     adb shell settings put global stabilizer.fps true
     adb shell settings put global stable.fps.enable true
     adb shell settings put global ro.vendor.display.touch.idle.enable true
+    adb shell settings put global persist.vendor.disable_idle_fps true
     adb shell settings put global vendor.display.enable_default_color_mode 1
     adb shell settings put global vendor.display.disable_scaler 0
     adb shell settings put global vendor.display.disable_excl_rect 0
