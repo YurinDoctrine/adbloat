@@ -498,6 +498,7 @@ tweaks() {
     adb shell settings put global ro.vendor.display.mode_change_optimize.enable true
     adb shell settings put global ro.vendor.display.switch_resolution.support 1
     adb shell settings put global ro.vendor.display.video_or_camera_fps.support true
+    adb shell settings put global ro.vendor.fps.switch.thermal true
     adb shell settings put global ro.surface_flinger.protected_contents true
     adb shell settings put global ro.surface_flinger.force_hwc_copy_for_virtual_displays true
     adb shell settings put global ro.surface_flinger.running_without_sync_framework false
@@ -614,7 +615,9 @@ tweaks() {
     adb shell settings put global vendor.hwc.drm.scale_with_gpu 1
     adb shell settings put global persist.vendor.firmware.update true
     adb shell settings put global persist.vendor.battery.health true
+    adb shell settings put global persist.vendor.battery.health.optimise true
     adb shell settings put global persist.vendor.accelerate.charge true
+    adb shell settings put global persist.vendor.low.cutoff true
     adb shell settings put global persist.vendor.cool.mode true
     adb shell settings put global persist.vendor.cne.feature 1
     adb shell settings put global persist.vendor.dpm.feature 1
@@ -677,6 +680,7 @@ tweaks() {
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.gamespeed.enable true
     adb shell settings put global ro.config.gameassist 1
+    adb shell settings put global debug.game.video.support true
     adb shell settings put global debug.enable.gamed 1
     adb shell settings put global debug.slsi_platform 1
     adb shell settings put global debug.sqlite.journalmode OFF
