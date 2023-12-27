@@ -115,6 +115,7 @@ tweaks() {
     adb shell settings put global animator_duration_scale 0.0
     adb shell settings put global remove_animations 1
     adb shell settings put global fancy_ime_animations 0
+    adb shell settings put global visual_bars false
     adb shell settings put global ro.launcher.anim.app.exit false
     adb shell settings put global ro.launcher.anim.launchtask false
     adb shell settings put global persist.sys.rotationanimation false
@@ -147,6 +148,7 @@ tweaks() {
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global ro.config.hw_voicerecord true
+    adb shell settings put global hwui.private_hal_readback 1
     adb shell settings put global debug.hwui.use_partial_updates false
     adb shell settings put global ro.vendor.hwui.platform 1
     adb shell settings put global ro.hwui.renderer.disable_opaque true
@@ -164,6 +166,7 @@ tweaks() {
     adb shell settings put global disable_hw_overlays 1
     adb shell settings put global overlay_disable_force_hwc 1
     adb shell settings put global renderthread.skia.reduceopstasksplitting true
+    adb shell settings put global skia.force_gl_texture 1
     adb shell settings put global omap.enhancement true
     adb shell settings put global ENFORCE_PROCESS_LIMIT false
     adb shell settings put global enhanced_processing 1
@@ -291,6 +294,7 @@ tweaks() {
     adb shell settings put global debug.brcm.mm.logs 0
     adb shell settings put global sys.miui.ndcd off
     adb shell settings put global sys.debug.watchdog 0
+    adb shell settings put global logd.logpersistd.enable false
     adb shell settings put global logd.statistics 0
     adb shell settings put global config.stats 0
     adb shell settings put global persist.sys.watchdog_enhanced false
@@ -329,6 +333,8 @@ tweaks() {
     adb shell settings put global ro.have_aee_feature 0
     adb shell settings put global ro.aee.enforcing no
     adb shell settings put global ro.aee.enperf off
+    adb shell settings put global ro.vendor.tran_perf_plus 1
+    adb shell settings put global persist.vendor.product.perf 1
     adb shell settings put global persist.debug.sf.statistics 0
     adb shell settings put global persist.sys.crash_dumps 0
     adb shell settings put global persist.sys.pstore_dumps 0
@@ -831,6 +837,7 @@ tweaks() {
     adb shell settings put global rs.gpu.filterscript 0
     adb shell settings put global rs.gpu.renderscript 0
     adb shell settings put global ro.graphics.hwcomposer.kvm true
+    adb shell settings put global fku.perf.profile 1
     adb shell settings put global graphics.gpu.profiler.support true
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
