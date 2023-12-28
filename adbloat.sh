@@ -150,6 +150,9 @@ tweaks() {
     adb shell settings put global ro.config.hw_voicerecord true
     adb shell settings put global hwui.private_hal_readback 1
     adb shell settings put global debug.hwui.use_partial_updates false
+    adb shell settings put global debug.hwui.show_layers_updates false
+    adb shell settings put global debug.hwui.overdraw false
+    adb shell settings put global debug.hwui.profile false
     adb shell settings put global ro.vendor.hwui.platform 1
     adb shell settings put global ro.hwui.renderer.disable_opaque true
     adb shell settings put global ro.hwui.disable_scissor_opt false
