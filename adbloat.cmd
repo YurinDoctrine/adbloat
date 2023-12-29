@@ -248,6 +248,7 @@ exit 0
     adb shell settings put global dalvik.vm.systemservercompilerfilter speed
     adb shell settings put global dalvik.vm.systemuicompilerfilter speed
     adb shell settings put global dalvik.vm.houdini on
+    adb shell settings put global dalvik.vm.zygotemaxfailedboots 3
     adb shell settings put global persist.vm.stackdump.threshold 0
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
@@ -841,6 +842,8 @@ exit 0
     adb shell settings put global debug.hwui.show_dirty_regions false
     adb shell settings put global debug.hwui.use_gpu_pixel_buffers false
     adb shell settings put global debug.hwui.disabledither true
+    adb shell settings put global debug.hwui.disable_draw_defer true
+    adb shell settings put global debug.hwui.disable_draw_reorder true
     adb shell settings put global debug.hwui.enable_bp_cache true
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.font 2
