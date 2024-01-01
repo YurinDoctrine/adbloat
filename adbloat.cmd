@@ -252,6 +252,7 @@ exit 0
     adb shell settings put global persist.vm.stackdump.threshold 0
     adb shell settings put global vm.scan_unevictable_pages 0
     adb shell settings put global dalvik.gc.type precise
+    adb shell settings put global top_app_dexopt_with_speed_profile true
     adb shell settings put global pm.dexopt.nsys-library quicken
     adb shell settings put global pm.dexopt.core-app quicken
     adb shell settings put global pm.dexopt.shared quicken
@@ -740,6 +741,7 @@ exit 0
     adb shell settings put global ro.vold.umsdirtyratio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
+    adb shell settings put global no_kill_cached_processes_until_boot_completed false
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ro.lmk.use_minfree_levels true
     adb shell settings put global ro.lmk.vmpressurenhanced true
@@ -808,6 +810,7 @@ exit 0
     adb shell settings put global ro.config.fha_enable true
     adb shell settings put global ro.config.enable_rcc true
     adb shell settings put global ro.config.sync 0
+    adb shell settings put global max_empty_time_millis 0
     adb shell settings put global fstrim_mandatory_interval 1
     adb shell settings put global ro.sys.fw.use_trim_settings true
     adb shell settings put global ro.sys.fw.trim_empty_percent 50
