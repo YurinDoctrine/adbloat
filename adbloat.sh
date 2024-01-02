@@ -730,7 +730,6 @@ tweaks() {
     adb shell settings put global ro.vold.umsdirtyratio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
-    adb shell settings put global no_kill_cached_processes_until_boot_completed false
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ro.lmk.use_minfree_levels true
     adb shell settings put global ro.lmk.vmpressurenhanced true
@@ -750,6 +749,8 @@ tweaks() {
     adb shell settings put global ro.board_ram_size low
     adb shell settings put global ro.ime.lowmemory true
     adb shell settings put global ro.am.enabled_low_mem_maint true
+    adb shell settings put global ro.am.no_kill_cached_processes_until_boot_completed true
+    adb shell settings put global ro.am.no_kill_cached_processes_post_boot_completed_duration_millis 0
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
     adb shell settings put global ro.config.dha_pwhitelist_enable 1
