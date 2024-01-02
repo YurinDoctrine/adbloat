@@ -26,15 +26,24 @@ exit 0
 
 :tweaks
     echo "Applying Tweaks ..."
+    adb shell device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
+    adb shell device_config put systemui window_cornerRadius 0
+    adb shell device_config put systemui window_blur 0
+    adb shell device_config put systemui window_shadow 0
     adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
+    adb shell am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
     adb shell dumpsys deviceidle whitelist +com.android.systemui
+    adb shell dumpsys power set_sampling_rate 0
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
     adb shell cmd power set-adaptive-power-saver-enabled false
     adb shell cmd power set-mode 0
+    adb shell cmd netpolicy set restrict-background false
     adb shell cmd activity idle-maintenance
     adb shell cmd thermalservice override-status 1
     adb shell cmd looper_stats disable
+    adb shell cmd display ab-logging-disable
+    adb shell cmd display dwb-logging-disable
     adb shell pm trim-caches 999999M
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --secondary-dex --check-prof false -m speed
@@ -81,6 +90,9 @@ exit 0
     adb shell pm trim-caches 999999M
     adb shell sm fstrim
 
+    adb shell logcat -P ""
+    adb shell logcat -c
+
     adb shell setprop persist.log.tag S
 
     ::adb shell wm size 1080x1920
@@ -117,6 +129,7 @@ exit 0
     adb shell settings put secure refresh_rate_mode 2
     adb shell settings put secure user_wait_timeout 0
     adb shell settings put system thermal_limit_refresh_rate 0
+    adb shell settings put system min_frame_rate 60.0
     adb shell settings put system min_refresh_rate 60.0
     adb shell settings put system display_color_mode 0
     adb shell settings put system remove_animations 1
@@ -128,6 +141,9 @@ exit 0
     adb shell settings put global remove_animations 1
     adb shell settings put global fancy_ime_animations 0
     adb shell settings put global visual_bars false
+    adb shell settings put global reduce_transitions 1
+    adb shell settings put global shadow_animation_scale 0
+    adb shell settings put global window_focus_timeout 250
     adb shell settings put global ro.launcher.anim.app.exit false
     adb shell settings put global ro.launcher.anim.launchtask false
     adb shell settings put global persist.sys.rotationanimation false
@@ -189,8 +205,12 @@ exit 0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global GPUTURBO_SWITCH 1
     adb shell settings put global GPUTUNER_SWITCH 1
+    adb shell settings put global game_low_latency_mode 1
+    adb shell settings put global game_driver_mode 1
     adb shell settings put global game_driver_all_apps 1
+    adb shell settings put global game_driver_opt_out_apps 1
     adb shell settings put global updatable_driver_all_apps 1
+    adb shell settings put global updatable_driver_production_opt_out_apps 1
     adb shell settings put global persist.sys.cfu_auto 1
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
@@ -739,6 +759,7 @@ exit 0
     adb shell settings put global vendor.debug.egl.swapinterval 0
     adb shell settings put global debug.gr.swapinterval 0
     adb shell settings put global ro.vold.umsdirtyratio 1
+    adb shell settings put global debug.ioprio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
     adb shell settings put global ro.lmk.kill_heaviest_task true
@@ -862,6 +883,7 @@ exit 0
     adb shell settings put global ro.graphics.hwcomposer.kvm true
     adb shell settings put global fku.perf.profile 1
     adb shell settings put global graphics.gpu.profiler.support true
+    adb shell settings put global force_gpu_render 1
     adb shell settings put global force_gpu_rendering 1
     adb shell settings put global gpu_rendering_mode 1
     adb shell settings put global opengl_renderer 1
@@ -937,6 +959,7 @@ exit 0
     adb shell settings put global debug.sf.enable_hwc_vds 0
     adb shell settings put global debug.sf.swaprect 1
     adb shell settings put global debug.sf.gpu_freq_index 1
+    adb shell settings put global debug.sf.perf_mode 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.egl.force_msaa 1
