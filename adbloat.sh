@@ -160,6 +160,10 @@ tweaks() {
     adb shell settings put secure speed_mode_enable 1
     adb shell settings put system speed_mode 1
     adb shell settings put global speed_mode_on 1
+    adb shell settings put global hardware_accelerated_rendering_enabled 1
+    adb shell settings put global hardware_accelerated_graphics_decoding 1
+    adb shell settings put global hardware_accelerated_video_decode 1
+    adb shell settings put global hardware_accelerated_video_encode 1
     adb shell settings put global media.sf.hwaccel 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
