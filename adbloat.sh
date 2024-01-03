@@ -170,6 +170,7 @@ tweaks() {
     adb shell settings put global ro.config.enable.hw_accel true
     adb shell settings put global ro.config.hw_voicerecord true
     adb shell settings put global hwui.private_hal_readback 1
+    adb shell settings put global debug.hwui.render_priority 1
     adb shell settings put global debug.hwui.use_partial_updates false
     adb shell settings put global debug.hwui.show_layers_updates false
     adb shell settings put global debug.hwui.overdraw false
