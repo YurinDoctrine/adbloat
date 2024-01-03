@@ -104,6 +104,7 @@ exit 0
     adb shell settings put global ro.setupwizard.enterprise_mode 1
     adb shell settings put global ro.fps_enable 1
     adb shell settings put global ro.fps.capsmin 60
+    adb shell settings put global debug.fps.render.fast 1
     adb shell settings put global dont.lower.fps true
     adb shell settings put global stabilizer.fps true
     adb shell settings put global stable.fps.enable true
