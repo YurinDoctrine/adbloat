@@ -885,6 +885,12 @@ exit 0
     adb shell settings put global rs.gpu.rsIntrinsic 0
     adb shell settings put global rs.gpu.filterscript 0
     adb shell settings put global rs.gpu.renderscript 0
+    adb shell settings put global debug.rs.debug 0
+    adb shell settings put global debug.rs.visual 0
+    adb shell settings put global debug.rs.reduce 1
+    adb shell settings put global debug.rs.shader 0
+    adb shell settings put global debug.rs.shader.attributes 0
+    adb shell settings put global debug.rs.shader.uniforms 0
     adb shell settings put global ro.graphics.hwcomposer.kvm true
     adb shell settings put global fku.perf.profile 1
     adb shell settings put global graphics.gpu.profiler.support true
