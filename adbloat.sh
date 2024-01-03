@@ -880,7 +880,6 @@ tweaks() {
     adb shell settings put global debug.rs.shader 0
     adb shell settings put global debug.rs.shader.attributes 0
     adb shell settings put global debug.rs.shader.uniforms 0
-    adb shell settings put global debug.rs.forcecompat 0
     adb shell settings put global ro.graphics.hwcomposer.kvm true
     adb shell settings put global fku.perf.profile 1
     adb shell settings put global graphics.gpu.profiler.support true
