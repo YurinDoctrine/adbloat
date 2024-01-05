@@ -754,6 +754,8 @@ tweaks() {
     adb shell settings put global vendor.debug.egl.swapinterval 0
     adb shell settings put global debug.gr.swapinterval 0
     adb shell settings put global ro.vold.umsdirtyratio 1
+    adb shell settings put global debug.cpuprio 1
+    adb shell settings put global debug.gpuprio 1
     adb shell settings put global debug.ioprio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
@@ -821,6 +823,7 @@ tweaks() {
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
     adb shell settings put global ro.sys.fw.force_adoptable true
+    adb shell settings put global debug.hwui.disable_gpu_cache false
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global persist.enable_task_snapshots false
