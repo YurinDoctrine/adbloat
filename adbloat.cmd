@@ -1095,6 +1095,7 @@ exit 0
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global ro.smps.enable true
     adb shell settings put global low_power 0
+    adb shell settings put global low_power_exceptions 1
     adb shell settings put global pm.sleep_mode 4
     adb shell settings put global power.saving.mode 2
     adb shell settings put global vendor.power.pasr.enabled true
