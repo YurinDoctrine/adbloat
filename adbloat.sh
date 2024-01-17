@@ -455,6 +455,7 @@ tweaks() {
     adb shell settings put global vidc.debug.perf.mode 2
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
+    adb shell settings put global debug.syncopts 3
     adb shell settings put global debug.hwc.nodirtyregion 1
     adb shell settings put global debug.hwc.force_gpu 1
     adb shell settings put global debug.hwc.fakevsync 1
