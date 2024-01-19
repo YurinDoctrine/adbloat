@@ -977,6 +977,8 @@ exit 0
     adb shell settings put global debug.sf.swaprect 1
     adb shell settings put global debug.sf.gpu_freq_index 1
     adb shell settings put global debug.sf.perf_mode 1
+    adb shell settings put global debug.gfx.driver 1
+    adb shell settings put global debug.gl.hw 1
     adb shell settings put global debug.egl.hw 1
     adb shell settings put global debug.egl.profiler 1
     adb shell settings put global debug.egl.force_msaa 1
