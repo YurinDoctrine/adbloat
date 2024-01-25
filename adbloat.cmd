@@ -126,6 +126,7 @@ exit 0
     adb shell settings put global vendor.display.enable_camera_smooth 1
     adb shell settings put global camera.disable_zsl_mode 1
     adb shell settings put global debug.refresh_rate.view_override 1
+    adb shell settings put global debug.threadedOpt 1
     adb shell settings put secure thread_priority highest HIGHEST
     adb shell settings put secure support_highfps 1
     adb shell settings put secure refresh_rate_mode 2
