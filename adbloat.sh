@@ -820,6 +820,7 @@ tweaks() {
     adb shell settings put global persist.sys.ss.enable false
     adb shell settings put global persist.sys.pwctl.enable 0
     adb shell settings put global sys.ipo.pwrdncap 0
+    adb shell settings put global dynamic_power_savings_enabled 1
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global sched.colocate.enable 1
     adb shell settings put global debug.smart_scheduling 1
