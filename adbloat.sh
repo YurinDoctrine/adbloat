@@ -175,6 +175,8 @@ tweaks() {
     adb shell settings put global debug.hwui.render_priority 1
     adb shell settings put global debug.hwui.use_partial_updates false
     adb shell settings put global debug.hwui.show_layers_updates false
+    adb shell settings put global debug.hwui.show_layer_grid 0
+    adb shell settings put global debug.hwui.show_layer_bounds 0
     adb shell settings put global debug.hwui.overdraw false
     adb shell settings put global debug.hwui.profile false
     adb shell settings put global debug.hwui.use_d2d 1
