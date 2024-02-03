@@ -683,6 +683,7 @@ exit 0
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
     adb shell settings put global ro.compcache.default 1
+    adb shell settings put global enable_gpu_debug_layers 0
     adb shell settings put global sys.tp.grip_enable 1
     adb shell settings put global sys.use_fifo_ui 1
     adb shell settings put global sys_vdso 1
@@ -870,6 +871,7 @@ exit 0
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
     adb shell settings put global debug.hwui.force_dark true
+    adb shell settings put global debug.hwui.perfetto_profile_mode both
     adb shell settings put global debug.performance.tuning 1
     adb shell settings put global debug.gralloc.map_fb_memory 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
