@@ -875,6 +875,7 @@ tweaks() {
     adb shell settings put global debug.hwui.disable_draw_defer true
     adb shell settings put global debug.hwui.disable_draw_reorder true
     adb shell settings put global debug.hwui.enable_bp_cache true
+    adb shell settings put global debug.hwui.use_small_cache 1
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.font 2
     adb shell settings put global persist.sys.font_clarity 0
