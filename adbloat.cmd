@@ -472,8 +472,10 @@ exit 0
     adb shell settings put global vidc.debug.level 0
     adb shell settings put global libc.debug.malloc 0
     adb shell settings put global debug.syncopts 3
+    adb shell settings put global debug.hwc.logvsync 0
     adb shell settings put global debug.hwc.nodirtyregion 1
     adb shell settings put global debug.hwc.force_gpu 1
+    adb shell settings put global debug.hwc.force_gpu_vsync 1
     adb shell settings put global debug.hwc.fakevsync 1
     adb shell settings put global debug.hwc.otf 1
     adb shell settings put global debug.hwc.winupdate 1
@@ -843,6 +845,7 @@ exit 0
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
     adb shell settings put global ro.sys.fw.force_adoptable true
+    adb shell settings put global debug.hwui.disable_vsync 0
     adb shell settings put global debug.hwui.disable_gpu_cache false
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global persist.sys.engpc.disable 0
@@ -980,6 +983,7 @@ exit 0
     adb shell settings put global debug.qc.hardware true
     adb shell settings put global debug.composition.type gpu
     adb shell settings put global debug.cpurend.vsync true
+    adb shell settings put global debug.gpurend.vsync true
     adb shell settings put global debug.enabletr true
     adb shell settings put global debug.sf.layer_timeout 0
     adb shell settings put global debug.sf.layer_smoothness 1
