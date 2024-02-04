@@ -14,6 +14,8 @@ start() {
 
 tweaks() {
     echo -e "Applying Tweaks ..."
+    adb shell cmd activity kill-all
+    adb shell am kill-all
     adb shell device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
     adb shell device_config put systemui window_cornerRadius 0
     adb shell device_config put systemui window_blur 0
