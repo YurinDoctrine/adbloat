@@ -214,6 +214,7 @@ exit 0
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
+    adb shell settings put global debug.multicore.processing 1
     adb shell settings put global GPUTURBO_SWITCH 1
     adb shell settings put global GPUTUNER_SWITCH 1
     adb shell settings put global game_low_latency_mode 1
