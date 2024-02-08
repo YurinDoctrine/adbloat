@@ -874,6 +874,7 @@ exit 0
     adb shell settings put global vold.should_defrag 1
     adb shell settings put global vold.checkpoint_committed 1
     adb shell settings put global ro.storaged.event.interval 999999
+    adb shell settings put global virtualsd.enable true
     adb shell settings put global gadget.nand.force_sync true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
