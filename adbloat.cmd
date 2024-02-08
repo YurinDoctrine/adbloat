@@ -883,6 +883,7 @@ exit 0
     adb shell settings put global debug.gralloc.map_fb_memory 1
     adb shell settings put global debug.gralloc.enable_fb_ubwc 1
     adb shell settings put global debug.gralloc.gfx_ubwc_disable 0
+    adb shell settings put global debug.gralloc.disable_ahardware_buffer 1
     adb shell settings put global debug.gr.numframebuffers 1
     adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hardware.gralloc default
@@ -1048,6 +1049,7 @@ exit 0
     adb shell settings put global ro.vendor.sensors.step_counter false
     adb shell settings put global ro.vendor.sensors.step_detector false
     adb shell settings put global ro.vendor.sensors.pick_up false
+    adb shell settings put global ro.vendor.sensors.cmc false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global ro.vendor.display.sensortype 0
     adb shell settings put global persist.vendor.sensors.enable.mag_filter true
