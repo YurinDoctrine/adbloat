@@ -436,9 +436,11 @@ exit 0
     adb shell settings put global persist.sys.tcpdump.lognum 0
     adb shell settings put global persist.sys.tcpdump.logsize 0
     adb shell settings put global persist.sys.wifipacketlog.state false
+    adb shell settings put global persist.net.monitor false
     adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
     adb shell settings put global ro.bionic.ld.warning 0
+    adb shell settings put global ro.platform.has.systemlog false
     adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
@@ -544,6 +546,8 @@ exit 0
     adb shell settings put global persist.radio.jbims 1
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global persist.gps.qc_nlp_in_use 0
+    adb shell settings put global hw.nogps true
+    adb shell settings put global config.disable_location true
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 1
@@ -618,6 +622,7 @@ exit 0
     adb shell settings put global debug.media.video.vpp false
     adb shell settings put global sys.media.vdec.sw 1
     adb shell settings put global ro.vendor.media_performance_class 0
+    adb shell settings put global ro.media.maxresolution 0
     adb shell settings put global ro.media.dec.aud.wma.enabled 1
     adb shell settings put global ro.media.dec.vid.wmv.enabled 1
     adb shell settings put global media.stagefright.thumbnail.prefer_hw_codecs true
@@ -1065,6 +1070,9 @@ exit 0
     adb shell settings put global persist.sys.assert.enable false
     adb shell settings put global persist.sys.opbf.enable true
     adb shell settings put global persist.service.acm.enable 0
+    adb shell settings put global hw.encoder.freerun 1
+    adb shell settings put global hw.encoder.temp.enable 1
+    adb shell settings put global hw.encoder.reencode.enable 0
     adb shell settings put global ro.hw.use_hwc_services 1
     adb shell settings put global ro.hw.use_secure_encoder_only 1
     adb shell settings put global ro.hw_timeout_multiplier 1
@@ -1080,15 +1088,18 @@ exit 0
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
     adb shell settings put global service.wait_for_bootanim 0
+    adb shell settings put global service.bootvideo 0
     adb shell settings put global sys.boot.start_preload 1
     adb shell settings put global sys.boot.end_package 1
     adb shell settings put global sys.logbootcomplete 0
     adb shell settings put global dev.bootcomplete 0
     adb shell settings put global vendor.post_boot.parsed 1
+    adb shell settings put global ro.quickboot.enable true
     adb shell settings put global ro.build.shutdown_timeout 0
     adb shell settings put global ro.warmboot.capability 1
     adb shell settings put global ro.boot.warranty_bit 0
     adb shell settings put global ro.oem_unlock_supported 1
+    adb shell settings put global ro.platform.has.security true
     adb shell settings put global ro.security.reactive.active 2
     adb shell settings put global persist.security.ams.enforcing 0
     adb shell settings put global persist.sys.strict_op_enable false
