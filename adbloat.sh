@@ -1137,6 +1137,7 @@ tweaks() {
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put global accessibility_reduce_transparency 1
     adb shell settings put global ro.workaround.noautofocus 1
+    adb shell settings put global ro.screen.has.timeout false
     adb shell settings put global ro.charger.enable_suspend true
     adb shell settings put secure adaptive_charging_enabled 0
     adb shell settings put secure screensaver_enabled 0
