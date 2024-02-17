@@ -427,6 +427,7 @@ tweaks() {
     adb shell settings put global persist.net.monitor false
     adb shell settings put global persist.debug.wfd.enable 0
     adb shell settings put global persist.data.qmi.adb_logmask 0
+    adb shell settings put global sys.deepdiagnose.support 0
     adb shell settings put global ro.bionic.ld.warning 0
     adb shell settings put global ro.platform.has.systemlog false
     adb shell settings put system status_logging_cnt 0
@@ -823,6 +824,7 @@ tweaks() {
     adb shell settings put global forced_app_standby_enabled 1
     adb shell settings put global keep_profile_in_background 0
     adb shell settings put global always_finish_activities 1
+    adb shell settings put global sys.app.oom_adj 1
     adb shell settings put global sys.isdumpstaterunning 0
     adb shell settings put global sys.config.spcm_enable true
     adb shell settings put global sys.config.samp_spcm_enable true
@@ -833,6 +835,7 @@ tweaks() {
     adb shell settings put global sys.config.spcm_db_launcher false
     adb shell settings put global sys.config.samp_oak_enable false
     adb shell settings put global sys.config.samp_oakoom_enable false
+    adb shell settings put global sys.settings.support 1
     adb shell settings put global persist.sys.ss.enable false
     adb shell settings put global persist.sys.pwctl.enable 0
     adb shell settings put global sys.ipo.pwrdncap 0
