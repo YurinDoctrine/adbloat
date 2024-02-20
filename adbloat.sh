@@ -148,6 +148,7 @@ tweaks() {
     adb shell settings put global ro.config.enable_touchboost true
     adb shell settings put global ro.vendor.touchfeature.gamemode.enable true
     adb shell settings put global ro.floatingtouch.available 1
+    adb shell settings put global ro.toastshow.enable false
     adb shell settings put global view.touch_slop 1
     adb shell settings put global view.scroll_friction 0
     adb shell settings put global view.fading_edge_length 1
@@ -613,6 +614,7 @@ tweaks() {
     adb shell settings put global debug.media.video.vpp false
     adb shell settings put global sys.media.vdec.sw 1
     adb shell settings put global ro.vendor.media_performance_class 0
+    adb shell settings put global ro.mediaScanner.enable false
     adb shell settings put global ro.media.maxresolution 0
     adb shell settings put global ro.media.dec.aud.wma.enabled 1
     adb shell settings put global ro.media.dec.vid.wmv.enabled 1
