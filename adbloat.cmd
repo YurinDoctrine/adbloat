@@ -694,6 +694,7 @@ exit 0
     adb shell settings put global persist.vendor.dpm.tcm 1
     adb shell settings put global persist.vendor.dc.enable 2
     adb shell settings put global persist.sys.support.vt false
+    adb shell settings put global persist.sys.softdetector.enable false
     adb shell settings put global ro.sf.use_latest_hwc_vsync_period 1
     adb shell settings put global ro.sf.blurs_are_expensive 0
     adb shell settings put global ro.sf.compbypass.enable 1
@@ -1142,6 +1143,7 @@ exit 0
     adb shell settings put global ro.config.hw_fast_dormancy 0
     adb shell settings put global ro.config.small_battery true
     adb shell settings put global ro.ril.power_collapse 1
+    adb shell settings put global ro.pmqos.enable true
     adb shell settings put global ro.smps.enable true
     adb shell settings put global low_power 0
     adb shell settings put global low_power_exceptions 1
