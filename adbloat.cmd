@@ -516,6 +516,7 @@ exit 0
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
+    adb shell settings put global persist.omh.enabled 0
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
     adb shell settings put global persist.sys.ssr.enable_debug 0
