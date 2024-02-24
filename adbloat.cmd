@@ -537,7 +537,9 @@ exit 0
     adb shell settings put global ro.com.android.dataroaming false
     adb shell settings put global ro.ril.enable.managed.roaming 0
     adb shell settings put global ro.wcn enabled
+    adb shell settings put global ro.config.ehrpd true
     adb shell settings put global debug.bt.lowspeed true
+    adb shell settings put global debug.bt.discoverable_time 0
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
     adb shell settings put global persist.radio.NETWORK_SWITCH 2
