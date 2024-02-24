@@ -903,6 +903,7 @@ exit 0
     adb shell settings put global debug.gr.numframebuffers 1
     adb shell settings put global persist.smart_pool 1
     adb shell settings put global ro.hardware.gralloc default
+    adb shell settings put global ro.hardware.respect_als true
     adb shell settings put global ro.hardware.hwcomposer default
     adb shell settings put global ro.hwui.render_ahead 1
     adb shell settings put global debug.hwui.renderer_mode 1
