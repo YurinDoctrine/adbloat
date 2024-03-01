@@ -458,9 +458,9 @@ exit 0
     adb shell settings put system multicore_packet_scheduler 1
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
-    adb shell settings put global net.dns1 8.8.8.8
-    adb shell settings put global net.dns2 8.8.4.4
-    adb shell settings put global private_dns_mode off
+    adb shell settings put global net.dns1 176.103.130.130
+    adb shell settings put global net.dns2 176.103.130.131
+    adb shell settings put global private_dns_mode hostname
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
