@@ -441,8 +441,6 @@ exit 0
     adb shell settings put global sys.deepdiagnose.support 0
     adb shell settings put global ro.bionic.ld.warning 0
     adb shell settings put global ro.platform.has.systemlog false
-    adb shell settings put secure upload_debug_log_pref 0
-    adb shell settings put secure upload_log_pref 0
     adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
