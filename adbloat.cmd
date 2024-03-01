@@ -454,6 +454,9 @@ exit 0
     adb shell settings put system mcf_continuity_permission_denied 1
     adb shell settings put system mcf_permission_denied 1
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put secure limit_ad_tracking 1
+    adb shell settings put secure usage_metrics_marketing_enabled 0
+    adb shell settings put secure USAGE_METRICS_UPLOAD_ENABLED 0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
     adb shell settings put secure adaptive_connectivity_enabled 0
@@ -1165,6 +1168,8 @@ exit 0
     adb shell settings put global ro.workaround.noautofocus 1
     adb shell settings put global ro.screen.has.timeout false
     adb shell settings put global ro.charger.enable_suspend true
+    adb shell settings put global LOCKSCREEN_AD_ENABLED 0
+    adb shell settings put secure search_on_lockscreen_settings 0
     adb shell settings put secure adaptive_charging_enabled 0
     adb shell settings put secure screensaver_enabled 0
     adb shell settings put secure screensaver_activate_on_sleep 0
