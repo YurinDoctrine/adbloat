@@ -302,8 +302,6 @@ tweaks() {
     adb shell settings put global ro.config.hw_restrict_gps true
     adb shell settings put global ro.config.updatelocation false
     adb shell settings put global ro.config.delay_send_signal false
-    adb shell settings put secure upload_debug_log_pref 0
-    adb shell settings put secure upload_log_pref 0
     adb shell settings put global sys_traced 0
     adb shell settings put global persist.traced.enable 0
     adb shell settings put global persist.traced_perf.enable 0
@@ -444,12 +442,15 @@ tweaks() {
     adb shell settings put system mcf_continuity_permission_denied 1
     adb shell settings put system mcf_permission_denied 1
     adb shell settings put system multicore_packet_scheduler 1
+    adb shell settings put secure upload_debug_log_pref 0
+    adb shell settings put secure upload_log_pref 0
     adb shell settings put secure adaptive_connectivity_enabled 0
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global net.dns1 176.103.130.130
     adb shell settings put global net.dns2 176.103.130.131
     adb shell settings put global private_dns_mode hostname
+    adb shell settings put global private_dns_specifier dns.adguard.com
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
@@ -542,6 +543,7 @@ tweaks() {
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
     adb shell settings put global config.disable_location true
+    adb shell settings put global location_global_kill_switch 1
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
     adb shell settings put global ro.allow.mock.location 1
