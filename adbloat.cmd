@@ -459,6 +459,7 @@ exit 0
     adb shell settings put secure USAGE_METRICS_UPLOAD_ENABLED 0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
+    adb shell settings put secure location_providers_allowed -network
     adb shell settings put secure adaptive_connectivity_enabled 0
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
