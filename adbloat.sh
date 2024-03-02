@@ -10,6 +10,11 @@ start() {
     cut -d ':' -f 2 |
     tr -d '\r' |
     xargs -L1 -t adb shell pm clear --user 0
+
+    adb shell pm list packages |
+    cut -d ':' -f 2 |
+    tr -d '\r' |
+    xargs -L1 -t adb shell pm reset-permissions -p
 }
 
 tweaks() {
