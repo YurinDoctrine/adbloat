@@ -22,7 +22,7 @@ exit 0
     ForEach-Object {
         $packageName = $_ -replace '^package:', ''
         adb shell pm clear --user 0 $packageName
-    }"
+    }
 
     adb shell pm list packages |
     ForEach-Object {
