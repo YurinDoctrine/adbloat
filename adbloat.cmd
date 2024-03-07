@@ -314,6 +314,7 @@ exit 0
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.systemui.burn_in_protection true
     adb shell settings put global ro.config.hw_simpleui_enable 1
+    adb shell settings put global ro.config.hw_dsda true
     adb shell settings put global ro.config.hw_dts true
     adb shell settings put global ro.config.hw_disable_cops true
     adb shell settings put global ro.config.hw_accesscontrol false
