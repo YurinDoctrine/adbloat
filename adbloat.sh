@@ -827,6 +827,7 @@ tweaks() {
     adb shell settings put global ro.core_ctl_min_cpu 0
     adb shell settings put global ro.core_ctl_present 1
     adb shell settings put global ro.thermal_warmreset true
+    adb shell settings put global ro.config.enable_thermal_bdata true
     adb shell settings put global persist.sys.thermal_policy_update 1
     adb shell settings put global persist.sys.thermal.enable 1
     adb shell settings put global persist.thermalmanager.enable true
