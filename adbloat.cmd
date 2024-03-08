@@ -839,6 +839,7 @@ exit 0
     adb shell settings put global ro.am.no_kill_cached_processes_post_boot_completed_duration_millis 0
     adb shell settings put global ro.ksm.default 1
     adb shell settings put global ro.cp_system_other_odex 1
+    adb shell settings put global ro.config.hw_pg_frz_all true
     adb shell settings put global ro.config.dha_pwhitelist_enable 1
     adb shell settings put global ro.config.dha_tunnable 1
     adb shell settings put global ro.has.cpu.setting true
