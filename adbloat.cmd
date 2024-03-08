@@ -109,6 +109,7 @@ exit 0
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
     adb shell settings put global ro.rom.zone 2
+    adb shell settings put global ro.config.rom_lite_old_features true
     adb shell settings put global ro.setupwizard.enterprise_mode 1
     adb shell settings put global ro.fps_enable 1
     adb shell settings put global ro.fps.capsmin 60
@@ -415,6 +416,7 @@ exit 0
     adb shell settings put global persist.bt.iot.enablelogging false
     adb shell settings put global vendor.bluetooth.startbtlogger false
     adb shell settings put global ro.vendor.connsys.dedicated.log 0
+    adb shell settings put global ro.hw_disable_instantonline true
     adb shell settings put global sys.wifitracing.started 0
     adb shell settings put global persist.zygote.core_dump 0
     adb shell settings put global persist.ai.timedebug.enable false
@@ -565,6 +567,9 @@ exit 0
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
+    adb shell settings put global ro.config.hw_restrict_gps true
+    adb shell settings put global ro.config.hw_gps_power_track false
+    adb shell settings put global ro.config.hw_support_geofence false
     adb shell settings put global config.disable_location true
     adb shell settings put global location_global_kill_switch 1
     adb shell settings put global ro.support.signalsmooth true
@@ -642,6 +647,7 @@ exit 0
     adb shell settings put global debug.media.video.vpp false
     adb shell settings put global sys.media.vdec.sw 1
     adb shell settings put global ro.vendor.media_performance_class 0
+    adb shell settings put global ro.config.hw_media_flags 2
     adb shell settings put global ro.mediaScanner.enable false
     adb shell settings put global ro.media.maxresolution 0
     adb shell settings put global ro.media.dec.aud.wma.enabled 1
@@ -810,6 +816,7 @@ exit 0
     adb shell settings put global debug.ioprio 1
     adb shell settings put global debug.hang.count 0
     adb shell settings put global debug.kill_allocating_task 1
+    adb shell settings put global ro.config.upgrade_appkill true
     adb shell settings put global ro.lmk.kill_heaviest_task true
     adb shell settings put global ro.lmk.use_minfree_levels true
     adb shell settings put global ro.lmk.vmpressurenhanced true
