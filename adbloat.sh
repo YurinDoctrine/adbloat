@@ -554,7 +554,6 @@ tweaks() {
     adb shell settings put global persist.ril.uart.flowctrl 99
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
-    adb shell settings put global ro.config.hw_restrict_gps true
     adb shell settings put global ro.config.hw_gps_power_track false
     adb shell settings put global ro.config.hw_support_geofence false
     adb shell settings put global config.disable_location true
