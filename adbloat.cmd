@@ -482,8 +482,8 @@ exit 0
     adb shell settings put global wifi_stability 1
     adb shell settings put global wifi_suspend_optimizations_enabled 2
     adb shell settings put global persist.mm.sta.enable 0
-    adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global ro.data.large_tcp_window_size true
+    adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global ro.config.hw_new_wifitopdp 1
     adb shell settings put global ro.config.wifi_fast_bss_enable true
     adb shell settings put global config.disable_rtt true
