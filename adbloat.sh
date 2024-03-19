@@ -293,6 +293,7 @@ tweaks() {
     adb shell settings put global pm.dexopt.ab-ota quicken
     adb shell settings put global pm.dexopt.forced-dexopt quicken
     adb shell settings put global ro.dex.async.opt 1
+    adb shell settings put global ro.config.vm_prioritymode 2
     adb shell settings put global ro.dalvik.vm.native.bridge 0
     adb shell settings put global persist.sys.nativebridge 1
     adb shell settings put global ro.malloc.impl jemalloc
@@ -545,6 +546,7 @@ tweaks() {
     adb shell settings put global debug.bt.discoverable_time 0
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
+    adb shell settings put global ro.config.hw_ReduceSAR true
     adb shell settings put global persist.radio.NETWORK_SWITCH 2
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
@@ -1005,6 +1007,7 @@ tweaks() {
     adb shell settings put global persist.sys.oem_smooth 1
     adb shell settings put global persist.sys.force_sw_gles 1
     adb shell settings put global ro.kernel.qemu.gles 1
+    adb shell settings put global ro.config.hw_wfd_optimize true
     adb shell settings put global persist.sys.wfd.virtual 0
     adb shell settings put global persist.sys.jankenable false
     adb shell settings put global persist.hwc.ptor.enable true
