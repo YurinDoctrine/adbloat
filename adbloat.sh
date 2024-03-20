@@ -473,6 +473,7 @@ tweaks() {
     adb shell settings put global ro.data.large_tcp_window_size true
     adb shell settings put global persist.data.tcp_rst_drop true
     adb shell settings put global ro.config.hw_new_wifitopdp 1
+    adb shell settings put global ro.config.hw_wifipro_enable true
     adb shell settings put global ro.config.wifi_fast_bss_enable true
     adb shell settings put global config.disable_rtt true
     adb shell settings put global ro.config.hw_privacymode true
