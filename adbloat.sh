@@ -299,6 +299,7 @@ tweaks() {
     adb shell settings put global ro.malloc.impl jemalloc
     adb shell settings put global ro.maple.enable 1
     adb shell settings put global tombstoned.max_tombstone_count 20
+    adb shell settings put global sys.hwsholder.count 0
     adb shell settings put global vnswap.enabled false
     adb shell settings put global cgroup_disable memory
     adb shell settings put global ro.systemui.burn_in_protection true
@@ -976,6 +977,7 @@ tweaks() {
     adb shell settings put global persist.sys.enable_iaware true
     adb shell settings put global persist.sys.periodic.enable true
     adb shell settings put global persist.tuning.qdcm 1
+    adb shell settings put global sys.iaware.eas.on true
     adb shell settings put global debug.force_no_blanking true
     adb shell settings put global ro.bq.gpu_to_cpu_unsupported 1
     adb shell settings put global ro.product.gpu.driver 1
