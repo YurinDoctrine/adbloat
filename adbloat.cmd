@@ -888,6 +888,7 @@ exit 0
     adb shell settings put global sched.colocate.enable 1
     adb shell settings put global debug.smart_scheduling 1
     adb shell settings put global sys.io.scheduler cfq
+    adb shell settings put global sys.start.first 1
     adb shell settings put global ro.am.reschedule_service true
     adb shell settings put global ro.sys.fw.bservice_enable true
     adb shell settings put global ro.sys.fw.force_adoptable true
