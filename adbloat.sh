@@ -882,6 +882,7 @@ tweaks() {
     adb shell settings put global debug.hwui.disable_vsync 0
     adb shell settings put global debug.hwui.disable_gpu_cache false
     adb shell settings put global service.sf.prime_shader_cache 1
+    adb shell settings put global service.sf.present_timestamp 0
     adb shell settings put global persist.sys.engpc.disable 0
     adb shell settings put global persist.enable_task_snapshots false
     adb shell settings put global ro.config.fha_enable true
