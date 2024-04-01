@@ -1146,6 +1146,7 @@ exit 0
     adb shell settings put global ro.platform.has.security true
     adb shell settings put global ro.security.reactive.active 2
     adb shell settings put global persist.security.ams.enforcing 0
+    adb shell settings put global persist.sys.task_isolation false
     adb shell settings put global persist.sys.strict_op_enable false
     adb shell settings put global persist.sys.disable_rescue true
     adb shell settings put global sys.checkfs.fat false
