@@ -557,6 +557,7 @@ tweaks() {
     adb shell settings put global persist.radio.add_power_save 1
     adb shell settings put global persist.radio.jbims 1
     adb shell settings put global persist.ril.uart.flowctrl 99
+    adb shell settings put global persist.sys.gz.enable false
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
     adb shell settings put global ro.config.hw_gps_power_track false
@@ -632,6 +633,7 @@ tweaks() {
     adb shell settings put global vendor.perf.workloadclassifier.enable true
     adb shell settings put global ro.vendor.iocgrp.config 1
     adb shell settings put global persist.sys.autoclearsave 2
+    adb shell settings put global persist.sys.enable_ioprefetch true
     adb shell settings put global persist.mm.enable.prefetch true
     adb shell settings put global mm.enable.smoothstreaming true
     adb shell settings put global debug.media.video.frc false
@@ -1157,6 +1159,7 @@ tweaks() {
     adb shell settings put global persist.sys.NV_POWERMODE 2
     adb shell settings put global persist.sys.smart_power 2
     adb shell settings put global sys.fw.powermanager 1
+    adb shell settings put global debug.power.monitor_tools false
     adb shell settings put global ro.product.use_charge_counter 1
     adb shell settings put global ro.charger.disable_init_blank true
     adb shell settings put global ro.config.hw_board_ipa true
