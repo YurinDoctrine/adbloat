@@ -898,6 +898,7 @@ exit 0
     adb shell settings put global ro.sys.fw.force_adoptable true
     adb shell settings put global debug.hwui.disable_vsync 0
     adb shell settings put global debug.hwui.disable_gpu_cache false
+    adb shell settings put global cache.trigger 1
     adb shell settings put global service.sf.prime_shader_cache 1
     adb shell settings put global service.sf.present_timestamp 0
     adb shell settings put global persist.sys.engpc.disable 0
