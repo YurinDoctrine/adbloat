@@ -340,6 +340,7 @@ tweaks() {
     adb shell settings put global media.metrics.enabled 0
     adb shell settings put global media.metrics 0
     adb shell settings put global debug.brcm.mm.logs 0
+    adb shell settings put global persist.sys.miui_optimization true
     adb shell settings put global sys.miui.ndcd off
     adb shell settings put global sys.debug.watchdog 0
     adb shell settings put global logd.logpersistd.enable false
@@ -817,6 +818,7 @@ tweaks() {
     adb shell settings put global persist.sys.ramboost.enable true
     adb shell settings put global persist.sys.ramboost.ioppreload true
     adb shell settings put global persist.sys.ramboost.olmemplus_option 2
+    adb shell settings put global persist.sys.memctrl on
     adb shell settings put global ro.memperf.enable true
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global sys.use_memfd true
