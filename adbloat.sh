@@ -1083,6 +1083,7 @@ tweaks() {
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
+    adb shell settings put global ro.hw.gyroscope false
     adb shell settings put global ro.config.hw_temperature_warn true
     adb shell settings put global ro.config.hw_sensorhub false
     adb shell settings put global ro.vendor.sensors.pedometer false
