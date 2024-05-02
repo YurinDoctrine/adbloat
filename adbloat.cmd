@@ -9,7 +9,6 @@ echo "Uninstall bloat apps? (NOT RECOMMENDED)"
 set /p input="yes/no >_: "
 if /i "%input%"=="yes" goto :start
 goto :tweaks
-exit 0
 
 :start
     powershell -c "adb shell pm list packages -3 |
