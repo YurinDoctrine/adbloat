@@ -462,10 +462,10 @@ tweaks() {
     adb shell settings put secure adaptive_connectivity_enabled 0
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
-    adb shell settings put global net.dns1 176.103.130.130
-    adb shell settings put global net.dns2 176.103.130.131
+    adb shell settings put global net.dns1 94.140.14.15
+    adb shell settings put global net.dns2 94.140.15.16
     adb shell settings put global private_dns_mode hostname
-    adb shell settings put global private_dns_specifier dns.adguard.com
+    adb shell settings put global private_dns_specifier dns-family.adguard.com
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
