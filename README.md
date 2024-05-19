@@ -49,7 +49,3 @@ Linux Install with Terminal `sudo apt install -f --assume-yes android-tools-adb 
   - `fastboot flash boot boot.img` - flash boot image - this is the kernel
   - `fastboot -w` - wipes device
   - `fastboot update </path/to/your/Rom.zip>` - flashes zip to the device
-
-## **Note Important**
-
-Comment packages you mightn't want them to be uninstalled...
