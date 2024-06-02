@@ -242,6 +242,9 @@ tweaks() {
     adb shell settings put global persist.cust.tel.eons 1
     adb shell settings put global persist.sys.klo on
     adb shell settings put global persist.sys.once_scan true
+    adb shell settings put global persist.mot.gps.conf.from.sim false
+    adb shell settings put global persist.mot.gps.smart_battery 1
+    adb shell settings put global persist.mot.gps.assisted false
     adb shell settings put global ro.mot.proximity.jitter false
     adb shell settings put global ro.mot.eri.losalert.delay 1000
     adb shell settings put global ro.telephony.call_ring.delay 0
@@ -561,6 +564,7 @@ tweaks() {
     adb shell settings put global persist.sys.gz.enable false
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
+    adb shell settings put global ro.pip.gated 0
     adb shell settings put global ro.config.hw_gps_power_track false
     adb shell settings put global ro.config.hw_support_geofence false
     adb shell settings put global config.disable_location true
