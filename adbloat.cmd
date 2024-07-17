@@ -760,6 +760,7 @@ goto :tweaks
     adb shell settings put global persist.sys.preload.preload_num 2
     adb shell settings put global persist.sys.preLoadDrawable.debug false
     adb shell settings put global persist.sys.preLoadDrawable.enable true
+    adb shell settings put global persist.sys.boost.launch 1
     adb shell settings put global persist.sys.powersave.rotate 1
     adb shell settings put global persist.irqbalance.enable true
     adb shell settings put global persist.device_config.runtime_native.use_app_image_startup_cache true
