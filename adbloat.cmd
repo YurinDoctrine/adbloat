@@ -1231,7 +1231,6 @@ goto :tweaks
     adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put secure sensors_off 1
     adb shell settings put secure sensors_off_enabled 1
-    adb shell settings put secure thread_priority highest HIGHEST
     adb shell settings put system background_power_saving_enable 1
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
