@@ -161,6 +161,7 @@ tweaks() {
     adb shell settings put global view.fading_edge_length 1
     adb shell settings put global persist.touch_vsync_opt 1
     adb shell settings put global persist.touch_move_opt 1
+    adb shell settings put global touch_calibration 1
     adb shell settings put global touch.size.bias 0
     adb shell settings put global touch.size.isSummed 0
     adb shell settings put global touch.size.scale 1
