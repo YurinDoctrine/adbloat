@@ -154,6 +154,7 @@ goto :tweaks
     adb shell settings put global visual_bars false
     adb shell settings put global reduce_transitions 1
     adb shell settings put global shadow_animation_scale 0
+    adb shell settings put global render_shadows_in_compositor true
     adb shell settings put global window_focus_timeout 250
     adb shell settings put global ro.launcher.anim.app.exit false
     adb shell settings put global ro.launcher.anim.launchtask false
@@ -478,6 +479,7 @@ goto :tweaks
     adb shell settings put secure upload_log_pref 0
     adb shell settings put secure location_providers_allowed -network
     adb shell settings put secure adaptive_connectivity_enabled 0
+    adb shell settings put secure ssl_session_cache null
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global net.dns1 94.140.14.15
@@ -717,6 +719,7 @@ goto :tweaks
     adb shell settings put global vendor.media.omx 0
     adb shell settings put global af.fast_track_multiplier 1
     adb shell settings put global af.thread.throttle 0
+    adb shell settings put global ota_disable_automatic_update 1
     adb shell settings put global drm.service.enabled true
     adb shell settings put global vendor.hwc.drm.scale_with_gpu 1
     adb shell settings put global persist.vendor.firmware.update true
@@ -840,6 +843,7 @@ goto :tweaks
     adb shell settings put global persist.sys.ramboost.olmemplus_option 2
     adb shell settings put global persist.sys.memctrl on
     adb shell settings put global ro.memperf.enable true
+    adb shell settings put global native_memtag_sync 1
     adb shell settings put global ram_expand_size_list 1
     adb shell settings put global sys.use_memfd true
     adb shell settings put global sys.config.bigdata_enable true
@@ -1104,6 +1108,7 @@ goto :tweaks
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global sdm.debug.disable_dest_sc 1
     adb shell settings put global sdm.debug.disable_scalar 0
+    adb shell settings put global hotword_detection_enabled 0
     adb shell settings put global ro.hw.gyroscope false
     adb shell settings put global ro.config.hw_temperature_warn true
     adb shell settings put global ro.config.hw_sensorhub false
@@ -1197,6 +1202,7 @@ goto :tweaks
     adb shell settings put global ro.pmqos.enable true
     adb shell settings put global ro.smps.enable true
     adb shell settings put global low_power 1
+    adb shell settings put global low_power_sticky 1
     adb shell settings put global low_power_exceptions 1
     adb shell settings put global pm.sleep_mode 4
     adb shell settings put global power.saving.mode 2
@@ -1225,6 +1231,7 @@ goto :tweaks
     adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put secure sensors_off 1
     adb shell settings put secure sensors_off_enabled 1
+    adb shell settings put secure thread_priority highest HIGHEST
     adb shell settings put system background_power_saving_enable 1
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
