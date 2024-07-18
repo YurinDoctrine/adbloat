@@ -33,7 +33,7 @@ tweaks() {
     adb shell cmd power set-fixed-performance-mode-enabled true
     adb shell cmd power set-adaptive-power-saver-enabled false
     adb shell cmd power set-mode 0
-    adb shell cmd netpolicy set restrict-background false
+    adb shell cmd netpolicy set restrict-background true
     adb shell cmd activity idle-maintenance
     adb shell cmd thermalservice override-status 1
     adb shell cmd looper_stats disable
@@ -172,6 +172,7 @@ tweaks() {
     adb shell settings put secure speed_mode_enable 1
     adb shell settings put system speed_mode 1
     adb shell settings put global speed_mode_on 1
+    adb shell settings put global enable_hardware_acceleration 1
     adb shell settings put global hardware_accelerated_rendering_enabled 1
     adb shell settings put global hardware_accelerated_graphics_decoding 1
     adb shell settings put global hardware_accelerated_video_decode 1
@@ -1181,7 +1182,7 @@ tweaks() {
     adb shell settings put global ro.ril.power_collapse 1
     adb shell settings put global ro.pmqos.enable true
     adb shell settings put global ro.smps.enable true
-    adb shell settings put global low_power 0
+    adb shell settings put global low_power 1
     adb shell settings put global low_power_exceptions 1
     adb shell settings put global pm.sleep_mode 4
     adb shell settings put global power.saving.mode 2
