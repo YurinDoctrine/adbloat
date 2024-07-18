@@ -373,6 +373,7 @@ tweaks() {
     adb shell settings put global sys.lmk.reportkills false
     adb shell settings put global persist.sys.lmk.reportkills false
     adb shell settings put global ro.config.hw.logsystem.send 0
+    adb shell settings put global show_non_market_apps_error 0
     adb shell settings put global anr_show_error_cause false
     adb shell settings put global debug.hwui.skia_atrace_enabled false
     adb shell settings put global persist.sys.mdlog_dumpback 0
@@ -883,6 +884,7 @@ tweaks() {
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global dynamic_power_savings_enabled 1
     adb shell settings put global adaptive_battery_management_enabled 0
+    adb shell settings put global battery_saver_constants "vibration_disabled=true,animation_disabled=true,soundtrigger_disabled=true,fullbackup_deferred=true,keyvaluebackup_deferred=true,gps_mode=low_power,data_saver=true,optional_sensors_disabled=true,advertiser_id_enabled=false"
     adb shell settings put global sched.colocate.enable 1
     adb shell settings put global debug.smart_scheduling 1
     adb shell settings put global sys.io.scheduler cfq
