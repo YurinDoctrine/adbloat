@@ -873,6 +873,7 @@ goto :tweaks
     adb shell settings put global persist.sys.thermal.enable 1
     adb shell settings put global persist.thermalmanager.enable true
     adb shell settings put global thermal_offload 0
+    adb shell settings put global allow_heat_cooldown_always 1
     adb shell settings put global persist.sys.lowcost 1
     adb shell settings put global persist.sys.binary_xml false
     adb shell settings put global unused_static_shared_lib_min_cache_period_ms 250
