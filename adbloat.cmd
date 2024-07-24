@@ -33,6 +33,7 @@ goto :tweaks
     echo "Applying Tweaks ..."
     adb shell cmd activity kill-all
     adb shell am kill-all
+    adb shell device_config put activity_manager set_sync_disabled_for_tests persistent
     adb shell device_config put activity_manager enable_background_cpu_boost true
     adb shell device_config put activity_manager force_high_refresh_rate true
     adb shell device_config put graphics render_thread_priority high
