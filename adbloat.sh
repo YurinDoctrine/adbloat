@@ -21,6 +21,11 @@ tweaks() {
     echo -e "Applying Tweaks ..."
     adb shell cmd activity kill-all
     adb shell am kill-all
+    adb shell device_config put activity_manager enable_background_cpu_boost true
+    adb shell device_config put activity_manager force_high_refresh_rate true
+    adb shell device_config put graphics render_thread_priority high
+    adb shell device_config put graphics enable_gpu_boost true
+    adb shell device_config put graphics enable_cpu_boost true
     adb shell device_config put surfaceflinger set_max_frame_rate_multiplier 0.5
     adb shell device_config put systemui window_cornerRadius 0
     adb shell device_config put systemui window_blur 0
@@ -34,6 +39,10 @@ tweaks() {
     adb shell cmd power set-adaptive-power-saver-enabled false
     adb shell cmd power set-mode 0
     adb shell cmd netpolicy set restrict-background true
+    adb shell cmd appops set com.google.android.gms START_FOREGROUND ignore
+    adb shell cmd appops set com.google.android.gms INSTANT_APP_START_FOREGROUND ignore
+    adb shell cmd appops set com.google.android.ims START_FOREGROUND ignore
+    adb shell cmd appops set com.google.android.ims INSTANT_APP_START_FOREGROUND ignore
     adb shell cmd activity idle-maintenance
     adb shell cmd thermalservice override-status 1
     adb shell cmd looper_stats disable
