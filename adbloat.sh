@@ -19,8 +19,6 @@ start() {
 
 tweaks() {
     echo -e "Applying Tweaks ..."
-    adb shell cmd activity kill-all
-    adb shell am kill-all
     adb shell device_config put runtime_native_boot pin_camera false
     adb shell device_config put privacy location_access_check_enabled false
     adb shell device_config put privacy location_accuracy_enabled false
@@ -36,8 +34,6 @@ tweaks() {
     adb shell device_config put systemui window_cornerRadius 0
     adb shell device_config put systemui window_blur 0
     adb shell device_config put systemui window_shadow 0
-    adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
-    adb shell am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell dumpsys power set_sampling_rate 0
     adb shell cmd shortcut reset-all-throttling
@@ -1257,6 +1253,10 @@ tweaks() {
     adb shell settings put system surface_palm_touch 0
     adb shell settings put system lift_to_wake 0
     adb shell settings put system charging_info_always 0
+    adb shell cmd activity kill-all
+    adb shell am kill-all
+    adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
+    adb shell am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
     echo -e "ALL DONE!"
     echo -e ""
     adb kill-server
