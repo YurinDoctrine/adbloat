@@ -1253,10 +1253,10 @@ tweaks() {
     adb shell settings put system surface_palm_touch 0
     adb shell settings put system lift_to_wake 0
     adb shell settings put system charging_info_always 0
+    adb shell am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
+    adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
     adb shell cmd activity kill-all
     adb shell am kill-all
-    adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
-    adb shell am broadcast -a android.intent.action.ACTION_OPTIMIZE_DEVICE
     echo -e "ALL DONE!"
     echo -e ""
     adb kill-server
