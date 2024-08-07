@@ -20,6 +20,8 @@ start() {
 tweaks() {
     echo -e "Applying Tweaks ..."
     adb shell device_config put runtime_native_boot pin_camera false
+    adb shell device_config put launcher ENABLE_QUICK_LAUNCH_V2 true
+    adb shell device_config put launcher enable_quick_launch_v2 true
     adb shell device_config put privacy location_access_check_enabled false
     adb shell device_config put privacy location_accuracy_enabled false
     adb shell device_config put privacy safety_protection_enabled true
