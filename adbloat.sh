@@ -483,6 +483,7 @@ tweaks() {
     adb shell settings put secure adaptive_connectivity_enabled 0
     adb shell settings put secure ssl_session_cache null
     adb shell settings put global multipath-tcp-enable 1
+    adb shell settings put global sys.net.support.netprio true
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global net.dns1 94.140.14.15
     adb shell settings put global net.dns2 94.140.15.16
