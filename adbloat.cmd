@@ -860,6 +860,7 @@ goto :tweaks
     adb shell settings put global ro.memperf.enable true
     adb shell settings put global native_memtag_sync 1
     adb shell settings put global ram_expand_size_list 1
+    adb shell settings put global sys.is_mem_low_level 1
     adb shell settings put global sys.use_memfd true
     adb shell settings put global sys.config.bigdata_enable true
     adb shell settings put global sys.config.bigdata_mem_enable true
