@@ -1122,10 +1122,22 @@ tweaks() {
     adb shell settings put global ro.vendor.sensors.step_counter false
     adb shell settings put global ro.vendor.sensors.step_detector false
     adb shell settings put global ro.vendor.sensors.pick_up false
+    adb shell settings put global ro.vendor.sensors.facing false
+    adb shell settings put global ro.vendor.sensors.multishake false
+    adb shell settings put global ro.vendor.sensors.sta_detect false
+    adb shell settings put global ro.vendor.sensors.mot_detect false
+    adb shell settings put global ro.vendor.sensors.dev_ori false
     adb shell settings put global ro.vendor.sensors.cmc false
+    adb shell settings put global ro.vendor.sensors.dpc false
+    adb shell settings put global ro.vendor.sensors.iod false
+    adb shell settings put global ro.vendor.sensors.pmd false
+    adb shell settings put global ro.vendor.sensors.noneui false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global ro.vendor.display.sensortype 0
     adb shell settings put global persist.vendor.sensors.enable.mag_filter true
+    adb shell settings put global persist.sys.sensors.cfos false
+    adb shell settings put global persist.sys.sensors.pug false
+    adb shell settings put global persist.sys.sensors.spg false
     adb shell settings put global persist.radio.sar_sar_sensor false
     adb shell settings put global persist.radio.dynamic_sar false
     adb shell settings put global persist.metadata_dynfps.disable true
