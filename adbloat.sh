@@ -1112,7 +1112,8 @@ tweaks() {
     adb shell settings put global sdm.debug.disable_rotator_downscale 1
     adb shell settings put global sdm.debug.disable_skip_validate 1
     adb shell settings put global sdm.debug.disable_dest_sc 1
-    adb shell settings put global sdm.debug.disable_scalar 0
+    adb shell settings put global sdm.debug.disable_scalar 1
+    adb shell settings put global sdm.debug.disable_avr 1
     adb shell settings put global hotword_detection_enabled 0
     adb shell settings put global ro.hw.gyroscope false
     adb shell settings put global ro.config.hw_temperature_warn true
