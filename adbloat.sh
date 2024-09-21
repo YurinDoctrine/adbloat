@@ -796,6 +796,7 @@ tweaks() {
     adb shell settings put global persist.sys.ps.enable 1
     adb shell settings put global background_gpu_usage 0
     adb shell settings put global persist.sys.gamespeed.enable true
+    adb shell settings put global sys.games.gt.prof 1
     adb shell settings put global ro.config.gameassist 1
     adb shell settings put global debug.game.video.support true
     adb shell settings put global debug.enable.gamed 1
@@ -1131,6 +1132,7 @@ tweaks() {
     adb shell settings put global ro.vendor.sensors.dpc false
     adb shell settings put global ro.vendor.sensors.iod false
     adb shell settings put global ro.vendor.sensors.pmd false
+    adb shell settings put global ro.vendor.sensors.wu false
     adb shell settings put global ro.vendor.sensors.noneui false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
     adb shell settings put global ro.vendor.display.sensortype 0
