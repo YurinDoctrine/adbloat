@@ -461,6 +461,7 @@ tweaks() {
     adb shell settings put global sys.deepdiagnose.support 0
     adb shell settings put global ro.bionic.ld.warning 0
     adb shell settings put global ro.platform.has.systemlog false
+    adb shell settings put global ro.vendor.qfusion_use_report_period false
     adb shell settings put system status_logging_cnt 0
     adb shell settings put system anr_debugging_mechanism 0
     adb shell settings put system anr_debugging_mechanism_status 0
@@ -1123,15 +1124,28 @@ tweaks() {
     adb shell settings put global ro.vendor.sensors.step_counter false
     adb shell settings put global ro.vendor.sensors.step_detector false
     adb shell settings put global ro.vendor.sensors.pick_up false
+    adb shell settings put global ro.vendor.sensors.gravity false
+    adb shell settings put global ro.vendor.sensors.proximity false
     adb shell settings put global ro.vendor.sensors.facing false
     adb shell settings put global ro.vendor.sensors.multishake false
+    adb shell settings put global ro.vendor.sensors.tilt_detector false
     adb shell settings put global ro.vendor.sensors.sta_detect false
     adb shell settings put global ro.vendor.sensors.mot_detect false
+    adb shell settings put global ro.vendor.sensors.scrn_ortn false
     adb shell settings put global ro.vendor.sensors.dev_ori false
+    adb shell settings put global ro.vendor.sensors.orientation false
+    adb shell settings put global ro.vendor.sensors.laccel false
+    adb shell settings put global ro.vendor.sensors.rotvec false
+    adb shell settings put global ro.vendor.sensors.game_rv false
+    adb shell settings put global ro.vendor.sensors.georv false
     adb shell settings put global ro.vendor.sensors.cmc false
     adb shell settings put global ro.vendor.sensors.dpc false
+    adb shell settings put global ro.vendor.sensors.amd false
     adb shell settings put global ro.vendor.sensors.iod false
     adb shell settings put global ro.vendor.sensors.pmd false
+    adb shell settings put global ro.vendor.sensors.rmd false
+    adb shell settings put global ro.vendor.sensors.smd false
+    adb shell settings put global ro.vendor.sensors.vmd false
     adb shell settings put global ro.vendor.sensors.wu false
     adb shell settings put global ro.vendor.sensors.noneui false
     adb shell settings put global ro.vendor.sdk.sensors.gestures false
