@@ -1132,6 +1132,7 @@ goto :tweaks
     adb shell settings put global ro.hw.gyroscope false
     adb shell settings put global ro.config.hw_temperature_warn true
     adb shell settings put global ro.config.hw_sensorhub false
+    adb shell settings put global ro.vendor.sensors.rawdata_mode false
     adb shell settings put global ro.vendor.sensors.pedometer false
     adb shell settings put global ro.vendor.sensors.step_counter false
     adb shell settings put global ro.vendor.sensors.step_detector false
@@ -1150,6 +1151,9 @@ goto :tweaks
     adb shell settings put global ro.vendor.sensors.rotvec false
     adb shell settings put global ro.vendor.sensors.game_rv false
     adb shell settings put global ro.vendor.sensors.georv false
+    adb shell settings put global ro.vendor.sensors.pam false
+    adb shell settings put global ro.vendor.sensors.pug false
+    adb shell settings put global ro.vendor.sensors.fns false
     adb shell settings put global ro.vendor.sensors.cmc false
     adb shell settings put global ro.vendor.sensors.dpc false
     adb shell settings put global ro.vendor.sensors.amd false
@@ -1157,6 +1161,7 @@ goto :tweaks
     adb shell settings put global ro.vendor.sensors.pmd false
     adb shell settings put global ro.vendor.sensors.rmd false
     adb shell settings put global ro.vendor.sensors.smd false
+    adb shell settings put global ro.vendor.sensors.qmd false
     adb shell settings put global ro.vendor.sensors.vmd false
     adb shell settings put global ro.vendor.sensors.wu false
     adb shell settings put global ro.vendor.sensors.noneui false
