@@ -68,7 +68,6 @@ goto :tweaks
     adb shell pm compile -a -f --check-prof false -m speed
     adb shell pm compile -a -f --secondary-dex --check-prof false -m speed
     adb shell pm compile -a -f --check-prof false --compile-layouts
-    adb shell pm bg-dexopt-job
     adb shell pm trim-caches 999999M
     adb shell wipe cache
     adb shell recovery --wipe_cache
@@ -498,10 +497,10 @@ goto :tweaks
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global sys.net.support.netprio true
     adb shell settings put global dns_resolvability_required 0
-    adb shell settings put global net.dns1 94.140.14.15
-    adb shell settings put global net.dns2 94.140.15.16
+    adb shell settings put global net.dns1 9.9.9.11
+    adb shell settings put global net.dns2 149.112.112.11
     adb shell settings put global private_dns_mode hostname
-    adb shell settings put global private_dns_specifier dns-family.adguard.com
+    adb shell settings put global private_dns_specifier dns11.quad9.net
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
@@ -1307,6 +1306,7 @@ goto :tweaks
     adb shell am broadcast -a com.android.systemui.action.CLEAR_MEMORY
     adb shell am kill-all
     adb shell cmd activity kill-all
+    adb shell pm bg-dexopt-job
     echo "ALL DONE!"
     echo.
     adb kill-server
