@@ -489,6 +489,7 @@ tweaks() {
     adb shell settings put global net.dns2 149.112.112.11
     adb shell settings put global private_dns_mode hostname
     adb shell settings put global private_dns_specifier dns11.quad9.net
+    adb shell settings put global webview_safe_browsing_enabled 0
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
     adb shell settings put global wifi_safe_mode 1
