@@ -109,6 +109,8 @@ goto :tweaks
     adb shell pm trim-caches 999999M
     adb shell sm fstrim
 
+    for /f "delims=" %%d in ('adb shell ls -a sdcard') do (adb shell touch "sdcard/%%d/.metadata_never_index" "sdcard/%%d/.noindex" "sdcard/%%d/.nomedia" "sdcard/%%d/.trackerignore")
+
     adb shell logcat -P ""
     adb shell logcat -c
 
