@@ -487,10 +487,10 @@ tweaks() {
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global sys.net.support.netprio true
     adb shell settings put global dns_resolvability_required 0
-    adb shell settings put global net.dns1 9.9.9.11
-    adb shell settings put global net.dns2 149.112.112.11
+    adb shell settings put global net.dns1 194.242.2.9
+    adb shell settings put global net.dns2 194.242.2.9
     adb shell settings put global private_dns_mode hostname
-    adb shell settings put global private_dns_specifier dns11.quad9.net
+    adb shell settings put global private_dns_specifier all.dns.mullvad.net
     adb shell settings put global webview_safe_browsing_enabled 0
     adb shell settings put global wifi_mac_randomization 2
     adb shell settings put global wifi_connected_mac_randomization_supported 2
