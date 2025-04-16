@@ -104,8 +104,9 @@ tweaks() {
 
     adb shell setprop persist.log.tag S
 
-    #adb shell wm size 1080x1920
-    #adb shell wm density 390
+    adb shell wm scaling off
+    adb shell wm disable-blur true
+    adb shell wm set-sandbox-display-apis true
 
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
