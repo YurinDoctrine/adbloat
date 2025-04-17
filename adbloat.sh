@@ -1259,6 +1259,7 @@ tweaks() {
     adb shell settings put global ro.charger.enable_suspend true
     adb shell settings put global LOCKSCREEN_AD_ENABLED 0
     adb shell settings put secure search_on_lockscreen_settings 0
+    adb shell settings put secure lock_screen_lock_after_timeout 0
     adb shell settings put secure reduce_bright_colors_activated 1
     adb shell settings put secure adaptive_charging_enabled 0
     adb shell settings put secure screensaver_enabled 0
