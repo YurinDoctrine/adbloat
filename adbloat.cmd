@@ -29,7 +29,7 @@ goto :tweaks
         adb shell pm reset-permissions -p $packageName
     }"
 
-    adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
+    adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 
 :tweaks
     echo "Applying Tweaks ..."
