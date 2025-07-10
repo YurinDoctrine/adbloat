@@ -16,7 +16,7 @@ start() {
     tr -d '\r' |
     xargs -L1 -t adb shell pm reset-permissions -p
 
-    adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
+    adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 }
 
 tweaks() {
