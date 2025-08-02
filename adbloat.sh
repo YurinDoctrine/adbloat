@@ -504,7 +504,6 @@ tweaks() {
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global net.dns1 194.242.2.9
     adb shell settings put global net.dns2 194.242.2.9
-    adb shell settings put global private_dns_mode on
     adb shell settings put global private_dns_mode hostname
     adb shell settings put global private_dns_specifier all.dns.mullvad.net
     adb shell settings put global webview_safe_browsing_enabled 0
