@@ -241,7 +241,6 @@ goto :tweaks
     adb shell settings put global skia.force_gl_texture 1
     adb shell settings put global omap.enhancement true
     adb shell settings put global ENFORCE_PROCESS_LIMIT false
-    adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
     adb shell settings put global enhanced_cpu_responsiveness 1
