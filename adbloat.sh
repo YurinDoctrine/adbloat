@@ -232,27 +232,40 @@ tweaks() {
     adb shell settings put global enhanced_processing 1
     adb shell settings put global restricted_device_performance 1,0
     adb shell settings put global sem_enhanced_cpu_responsiveness 1
+    adb shell settings put global enhanced_cpu_responsiveness 1
+    adb shell settings put global enhanced_processing 2
     adb shell settings put global debug.multicore.processing 1
     adb shell settings put global GPUTURBO_SWITCH 1
     adb shell settings put global GPUTUNER_SWITCH 1
+    adb shell settings put global zen_mode 2
     adb shell settings put global game_low_latency_mode 1
+    adb shell settings put global game_gpu_optimizing 1
     adb shell settings put global game_driver_mode 1
     adb shell settings put global game_driver_all_apps 1
     adb shell settings put global game_driver_opt_out_apps 1
     adb shell settings put global updatable_driver_all_apps 1
     adb shell settings put global updatable_driver_production_opt_out_apps 1
     adb shell settings put global persist.sys.cfu_auto 1
+    adb shell settings put global network_avoid_bad_wifi 1
+    adb shell settings put global network_scoring_ui_enabled 0
+    adb shell settings put global wifi_watchdog_roaming 0
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
+    adb shell settings put global hotword_detection_enabled 0
     adb shell settings put global mobile_data_always_on 0
+    adb shell settings put global mobile_data_keepalive_enabled 0
     adb shell settings put global background_data 0
+    adb shell settings put global data_roaming_settings 0
+    adb shell settings put global data_roaming_int 0
+    adb shell settings put global data_roaming 0
     adb shell settings put global data_saver_mode 1
     adb shell settings put global ro.wifi.signal.optimized true
     adb shell settings put global ro.sf.wifi_sleep_policy_default 2
     adb shell settings put global ro.mds.enable true
     adb shell settings put global ro.ril.hep 1
     adb shell settings put global ro.mtk_lte_support 1
+    adb shell settings put global lte_category 4
     adb shell settings put global persist.radio.lte_enabled true
     adb shell settings put global ro.config.hw_lte_support true
     adb shell settings put global ro.config.hw_volte_on true
@@ -492,6 +505,7 @@ tweaks() {
     adb shell settings put global dns_resolvability_required 0
     adb shell settings put global net.dns1 194.242.2.9
     adb shell settings put global net.dns2 194.242.2.9
+    adb shell settings put global private_dns_mode on
     adb shell settings put global private_dns_mode hostname
     adb shell settings put global private_dns_specifier all.dns.mullvad.net
     adb shell settings put global webview_safe_browsing_enabled 0
@@ -540,6 +554,7 @@ tweaks() {
     adb shell settings put global ACTIVITY_INACTIVITY_RESET_TIME false
     adb shell settings put global APP_SWITCH_DELAY_TIME false
     adb shell settings put global CONTENT_APP_IDLE_OFFSET false
+    adb shell settings put global foreground_mem_priority high
     adb shell settings put global ro.FOREGROUND_APP_ADJ 0
     adb shell settings put global ro.HOME_APP_ADJ 1
     adb shell settings put global ro.VISIBLE_APP_ADJ 2
@@ -579,6 +594,7 @@ tweaks() {
     adb shell settings put global ro.ril.avoid.pdp.overlap 1
     adb shell settings put global ro.ril.sensor.sleep.control 0
     adb shell settings put global ro.config.hw_ReduceSAR true
+    adb shell settings put global radio_bounce 1
     adb shell settings put global persist.radio.NETWORK_SWITCH 2
     adb shell settings put global persist.radio.no_wait_for_card 1
     adb shell settings put global persist.radio.data_no_toggle 1
@@ -594,6 +610,7 @@ tweaks() {
     adb shell settings put global ro.config.hw_gps_power_track false
     adb shell settings put global ro.config.hw_support_geofence false
     adb shell settings put global config.disable_location true
+    adb shell settings put global location_mode 0
     adb shell settings put global location_global_kill_switch 1
     adb shell settings put global ro.support.signalsmooth true
     adb shell settings put global ro.config.combined_signal true
@@ -978,6 +995,7 @@ tweaks() {
     adb shell settings put global debug.hwui.show_draw_calls 0
     adb shell settings put global debug.hwui.enable_bp_cache true
     adb shell settings put global debug.hwui.use_small_cache 1
+    adb shell settings put global sysui_tuner_enabled 0
     adb shell settings put global sysui_font_cache_persist true
     adb shell settings put global persist.sys.font 2
     adb shell settings put global persist.sys.font_clarity 0
@@ -1279,6 +1297,7 @@ tweaks() {
     adb shell settings put secure sensors_off 1
     adb shell settings put secure sensors_off_enabled 1
     adb shell settings put secure sensor_privacy 1
+    adb shell settings put secure systemui.google.opa_enabled 0
     adb shell settings put system background_power_saving_enable 1
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
