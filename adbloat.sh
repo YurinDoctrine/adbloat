@@ -39,6 +39,7 @@ tweaks() {
     adb shell device_config put systemui window_blur 0
     adb shell device_config put systemui window_shadow 0
     adb shell dumpsys deviceidle whitelist +com.android.systemui
+    adb shell dumpsys deviceidle whitelist +com.sec.android.app.launcher
     adb shell dumpsys power set_sampling_rate 0
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
