@@ -6,4 +6,4 @@
 6. Plug your device into your computer.
 7. On the computer, open up a terminal/command prompt and run adbloat.
 8. A dialog should show on your device, asking you to allow usb debugging. Check “always allow”, and choose “OK”.
-    - Note: If you don't see this prompt on your device, change the usb connection to MTP or File Transfer on the device.
+    - If you don't see this prompt on your device, change the usb connection to MTP or File Transfer on the device.
