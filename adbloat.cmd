@@ -123,6 +123,7 @@ goto :tweaks
     adb shell wm disable-blur true
     adb shell wm set-sandbox-display-apis true
 
+    adb shell settings put secure user_setup_complete 1
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
     adb shell settings put global ro.rom.zone 2
@@ -209,6 +210,7 @@ goto :tweaks
     adb shell settings put global hardware_accelerated_graphics_decoding 1
     adb shell settings put global hardware_accelerated_video_decode 1
     adb shell settings put global hardware_accelerated_video_encode 1
+    adb shell settings put global hardwareAccelerated true
     adb shell settings put global media.sf.hwaccel 1
     adb shell settings put global video.accelerate.hw 1
     adb shell settings put global ro.config.enable.hw_accel true
@@ -260,6 +262,7 @@ goto :tweaks
     adb shell settings put global persist.sys.cfu_auto 1
     adb shell settings put global network_avoid_bad_wifi 1
     adb shell settings put global network_scoring_ui_enabled 0
+    adb shell settings put global wifi_watchdog_on 0
     adb shell settings put global wifi_watchdog_roaming 0
     adb shell settings put global wifi.supplicant_scan_interval 300
     adb shell settings put global wifi_scan_always_enabled 0
@@ -507,10 +510,14 @@ goto :tweaks
     adb shell settings put secure limit_ad_tracking 1
     adb shell settings put secure usage_metrics_marketing_enabled 0
     adb shell settings put secure USAGE_METRICS_UPLOAD_ENABLED 0
+    adb shell settings put secure upload_apk_enable 0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
-    adb shell settings put secure location_providers_allowed -network
+    adb shell settings put secure backup_enabled null
+    adb shell settings put secure location_providers_allowed -gps,-network,-wifi
+    adb shell settings put secure mock_location 1
     adb shell settings put secure adaptive_connectivity_enabled 0
+    adb shell settings put secure bluetooth_hci_log 0
     adb shell settings put secure ssl_session_cache null
     adb shell settings put global multipath-tcp-enable 1
     adb shell settings put global sys.net.support.netprio true
@@ -786,6 +793,7 @@ goto :tweaks
     adb shell settings put global ro.amlogic.no.preloadclass 0
     adb shell settings put global ro.config.rm_preload_enabled 1
     adb shell settings put global ro.storage_manager.enabled true
+    adb shell settings put global storage_preload 1
     adb shell settings put global storage.preload.complete 1
     adb shell settings put global persist.dummy_storage 1
     adb shell settings put global persist.sys.storage_preload 1
@@ -940,6 +948,8 @@ goto :tweaks
     adb shell settings put global sys.ipo.pwrdncap 0
     adb shell settings put global dynamic_power_savings_enabled 1
     adb shell settings put global adaptive_battery_management_enabled 0
+    adb shell settings put global battery_tip_constants app_restriction_enabled=true
+    adb shell settings put global battery_stats_constants track_cpu_times_by_proc_state=false
     adb shell settings put global battery_saver_constants "vibration_disabled=true,animation_disabled=true,soundtrigger_disabled=true,fullbackup_deferred=true,keyvaluebackup_deferred=true,gps_mode=low_power,data_saver=true,optional_sensors_disabled=true,advertiser_id_enabled=false"
     adb shell settings put global sched.colocate.enable 1
     adb shell settings put global debug.smart_scheduling 1
@@ -980,6 +990,7 @@ goto :tweaks
     adb shell settings put global virtualsd.enable true
     adb shell settings put global pm.sdwake.enabled true
     adb shell settings put global ro.DontUseAnimate yes
+    adb shell settings put global debug.javafx.animation.fullspeed true
     adb shell settings put global debug.hwui.force_dark true
     adb shell settings put global debug.hwui.perfetto_profile_mode both
     adb shell settings put global debug.performance.tuning 1
@@ -1097,6 +1108,7 @@ goto :tweaks
     adb shell settings put global debug.cpurend.vsync true
     adb shell settings put global debug.gpurend.vsync true
     adb shell settings put global debug.enabletr true
+    adb shell settings put global debug.enable.gldebug 0
     adb shell settings put global debug.sf.layer_timeout 0
     adb shell settings put global debug.sf.layer_smoothness 1
     adb shell settings put global debug.sf.no_hw_vsync 0
@@ -1143,6 +1155,7 @@ goto :tweaks
     adb shell settings put global debug.qctwa.preservebuf 1
     adb shell settings put global debug.mdpcomp.idletime 0
     adb shell settings put global debug.mdpcomp.maxlayer 0
+    adb shell settings put global debug.forceAutoTextureCompression 1
     adb shell settings put global debug.doze.component 0
     adb shell settings put global debug.migrate.bigcore false
     adb shell settings put global debug.sdm.support_writeback 1
@@ -1222,6 +1235,7 @@ goto :tweaks
     adb shell settings put global ro.config.multi_task_enable true
     adb shell settings put global ro.config.max_starting_bg 2
     adb shell settings put global persist.added_boot_bgservices 2
+    adb shell settings put global wait_for_debugger 0
     adb shell settings put global service.wait_for_bootanim 0
     adb shell settings put global service.bootvideo 0
     adb shell settings put global sys.boot.start_preload 1
@@ -1241,6 +1255,7 @@ goto :tweaks
     adb shell settings put global persist.sys.strict_op_enable false
     adb shell settings put global persist.sys.disable_rescue true
     adb shell settings put global sys.checkfs.fat false
+    adb shell settings put global package_verifier_enable 0
     adb shell settings put global vendor.gatekeeper.disable_spu true
     adb shell settings put global ro.control_privapp_permissions enforce
     adb shell settings put global ro.config.dmverity false
@@ -1291,6 +1306,9 @@ goto :tweaks
     adb shell settings put global ro.charger.enable_suspend true
     adb shell settings put global LOCKSCREEN_AD_ENABLED 0
     adb shell settings put secure search_on_lockscreen_settings 0
+    adb shell settings put secure mount_ums_autostart 0
+    adb shell settings put secure lock_screen_allow_private_notifications 0
+    adb shell settings put secure lock_screen_owner_info_enabled 0
     adb shell settings put secure lock_screen_lock_after_timeout 0
     adb shell settings put secure reduce_bright_colors_activated 1
     adb shell settings put secure adaptive_charging_enabled 0
@@ -1303,6 +1321,7 @@ goto :tweaks
     adb shell settings put secure silence_gesture 0
     adb shell settings put secure skip_gesture 0
     adb shell settings put secure fingerprint_effect 0
+    adb shell settings put secure touch_exploration_enabled 0
     adb shell settings put secure adaptive_sleep 0
     adb shell settings put secure game_auto_temperature_control 0
     adb shell settings put secure sensors_off 1
