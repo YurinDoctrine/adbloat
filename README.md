@@ -1,4 +1,4 @@
-1. Setup Computer with ADB Platform Tools
+1. Setup computer with “ADB Platform Tools”.
 2. Open Settings, and select “About”.
 3. Tap on “Build number” seven times.
 4. Go back, and select “Developer options”.
