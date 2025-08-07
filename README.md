@@ -1,52 +1,9 @@
-# adbloat
-
-## Pre-Requisites for Using ADB
-
-Setup all of the following to use ADB
-
-### Setup Computer with ADB Platform Tools
-
-Windows Install with Chocolatey `choco install adb -y`
-
-Linux Install with Terminal `sudo apt install -f --assume-yes android-tools-adb android-tools-fastboot`
-
-1. Open Settings, and select “About”.
-2. Tap on “Build number” seven times.
-3. Go back, and select “Developer options”.
-4. Scroll down, and check the “Android debugging” or “USB debugging” entry under “Debugging”.
-5. Plug your device into your computer.
-6. On the computer, open up a terminal/command prompt and type adb devices.
-7. A dialog should show on your device, asking you to allow usb debugging. Check “always allow”, and choose “OK”.
+1. Setup Computer with ADB Platform Tools
+2. Open Settings, and select “About”.
+3. Tap on “Build number” seven times.
+4. Go back, and select “Developer options”.
+5. Scroll down, and check the “Android debugging” or “USB debugging” entry under “Debugging”.
+6. Plug your device into your computer.
+7. On the computer, open up a terminal/command prompt and type adb devices.
+8. A dialog should show on your device, asking you to allow usb debugging. Check “always allow”, and choose “OK”.
     - Note: If you don't see this prompt on you device change the usb connection to MTP or File Transfer on the device
-
-## ADB Commands - These commands work when device is bridged into pc
-
-`adb shell` - launches a shell on the device
-
-- `adb shell pm list packages` - list all installed packages on the device
-  - `adb shell pm list packages -3"|cut -f 2 -d ":` - lists all user installed packages
-  - `adb push <local> <remote>` - pushes the file local to remote
-  - `adb pull <remote> [<local>]` - pulls the file remote to local. If local isn’t specified, it will pull to the current folder.
-  - `adb logcat` - allows you to view the device log in real-time. You can use adb logcat -b radio to view radio logs, and adb logcat -C to view logs in colour
-  - `adb install <file>` - installs the given .apk file to your device
-  - `adb uninstall com.packagename` - uninstalls package from shell pm list packages
-    - *Note: if you encounter "[DELETE_FAILED_INTERNAL_ERROR]" type this to bypass:* `adb shell pm uninstall --user 0 <appname>`
-  - `adb reboot` - reboots system
-  - `adb reboot bootloader` - reboots to bootloader
-  - `adb reboot recovery` - reboots into recovery mode
-  - `adb reboot fastboot` - reboots into fastboot mode
-
-## Fastboot Commands - These commands work when device is in Bootloader and Fastboot Mode
-
-- `fastboot devices` - shows all connected devices
-  - `fastboot reboot` - reboots device - can add bootloader, recovery, and fastboot
-  - `fastboot oem device-info` - shows oem bootloader status (unlocked or locked)
-  - `fastboot oem unlock` - unlocks oem phones - *note: aosp and unlocked phones don't need this*
-  - `fastboot flashing unlock` - unlocks system for custom rom in pixel and other phones
-  - `fastboot flashing unlock_critical` - unlocks bootloader and system partitions - *note: this isn't generally needed*
-  - `fastboot format:ext4 userdata` - format userdata on device - *note: this will erase your entire device*
-  - `fastboot boot recovery.img` - test recovery image without flashing
-  - `fastboot flash recovery recovery.img` - flash recovery image then run `fastboot reboot recovery` to boot into it.
-  - `fastboot flash boot boot.img` - flash boot image - this is the kernel
-  - `fastboot -w` - wipes device
-  - `fastboot update </path/to/your/Rom.zip>` - flashes zip to the device
