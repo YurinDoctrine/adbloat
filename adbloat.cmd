@@ -23,7 +23,7 @@ goto :tweaks
         adb shell pm clear --user 0 $packageName
     }"
 
-    powershell -c "adb shell pm list packages |
+    powershell -c "adb shell pm list packages | Where-Object {$_ -notmatch 'call'} |
     ForEach-Object {
         $packageName = $_ -replace '^package:', ''
         adb shell pm reset-permissions -p $packageName
