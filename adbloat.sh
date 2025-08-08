@@ -14,7 +14,16 @@ start() {
     adb shell pm list packages |
     cut -d ':' -f 2 |
     tr -d '\r' |
-    xargs -L1 -t adb shell pm reset-permissions -p
+    xargs -L1 -t -I {} sh -c '
+        adb shell pm reset-permissions -p {}
+        adb shell cmd appops set {} WAKE_LOCK deny;
+        adb shell cmd appops set {} RUN_IN_BACKGROUND deny;
+        adb shell cmd appops set {} RUN_ANY_IN_BACKGROUND deny;
+        adb shell cmd appops set {} START_FOREGROUND deny;
+        adb shell cmd appops set {} INSTANT_APP_START_FOREGROUND deny;
+        adb shell cmd appops set {} ACCESS_RESTRICTED_SETTINGS deny;
+        adb shell cmd appops write-settings
+    '
 
     adb shell pm uninstall --user 0 com.google.android.googlequicksearchbox
 }
@@ -41,15 +50,12 @@ tweaks() {
     adb shell dumpsys deviceidle whitelist +com.android.systemui
     adb shell dumpsys deviceidle whitelist +com.sec.android.app.launcher
     adb shell dumpsys power set_sampling_rate 0
+    adb shell svc data disable
     adb shell cmd shortcut reset-all-throttling
     adb shell cmd power set-fixed-performance-mode-enabled true
     adb shell cmd power set-adaptive-power-saver-enabled false
     adb shell cmd power set-mode 0
     adb shell cmd netpolicy set restrict-background true
-    adb shell cmd appops set com.google.android.gms START_FOREGROUND ignore
-    adb shell cmd appops set com.google.android.gms INSTANT_APP_START_FOREGROUND ignore
-    adb shell cmd appops set com.google.android.ims START_FOREGROUND ignore
-    adb shell cmd appops set com.google.android.ims INSTANT_APP_START_FOREGROUND ignore
     adb shell cmd activity idle-maintenance
     adb shell cmd thermalservice override-status 1
     adb shell cmd looper_stats disable
@@ -99,6 +105,8 @@ tweaks() {
     adb shell rm -rf /storage/sdcard1/LOST.DIR/*
     adb shell pm trim-caches 999999M
     adb shell sm fstrim
+    adb shell cmd stats write-to-disk
+    adb shell sync
 
     for d in $(adb shell ls -a sdcard); do adb shell touch "sdcard/$d/.metadata_never_index" "sdcard/$d/.noindex" "sdcard/$d/.nomedia" "sdcard/$d/.trackerignore"; done
 
