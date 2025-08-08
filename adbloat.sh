@@ -120,6 +120,7 @@ tweaks() {
     adb shell wm set-sandbox-display-apis true
 
     adb shell settings put secure user_setup_complete 1
+    adb shell settings put global user_experience_enabled 0
     adb shell settings put global DEVICE_PROVISIONED 1
     adb shell settings put global ro.revision 0
     adb shell settings put global ro.rom.zone 2
@@ -255,17 +256,23 @@ tweaks() {
     adb shell settings put global game_driver_opt_out_apps 1
     adb shell settings put global updatable_driver_all_apps 1
     adb shell settings put global updatable_driver_production_opt_out_apps 1
-    adb shell settings put global persist.sys.cfu_auto 1
+    adb shell settings put global persist.sys.cfu_auto 0
+    adb shell settings put global ntp_server null
     adb shell settings put global network_avoid_bad_wifi 1
+    adb shell settings put global network_recommendations_enabled -1
     adb shell settings put global network_scoring_ui_enabled 0
+    adb shell settings put global netstats_enabled 0
     adb shell settings put global wifi_watchdog_on 0
     adb shell settings put global wifi_watchdog_roaming 0
     adb shell settings put global wifi.supplicant_scan_interval 300
+    adb shell settings put global wifi_framework_scan_interval_ms 0
+    adb shell settings put global wifi_scan_throttle_enabled 0
     adb shell settings put global wifi_scan_always_enabled 0
     adb shell settings put global ble_scan_always_enabled 0
     adb shell settings put global hotword_detection_enabled 0
     adb shell settings put global mobile_data_always_on 0
     adb shell settings put global mobile_data_keepalive_enabled 0
+    adb shell settings put global default_restrict_background_data 1
     adb shell settings put global background_data 0
     adb shell settings put global data_roaming_settings 0
     adb shell settings put global data_roaming_int 0
@@ -509,7 +516,7 @@ tweaks() {
     adb shell settings put secure upload_apk_enable 0
     adb shell settings put secure upload_debug_log_pref 0
     adb shell settings put secure upload_log_pref 0
-    adb shell settings put secure backup_enabled null
+    adb shell settings put secure backup_enabled 0
     adb shell settings put secure location_providers_allowed -gps,-network,-wifi
     adb shell settings put secure mock_location 1
     adb shell settings put secure adaptive_connectivity_enabled 0
@@ -528,6 +535,7 @@ tweaks() {
     adb shell settings put global wifi_safe_mode 1
     adb shell settings put global wifi_stability 1
     adb shell settings put global wifi_suspend_optimizations_enabled 2
+    adb shell settings put global wifi_always_requested 0
     adb shell settings put global persist.mm.sta.enable 0
     adb shell settings put global ro.data.large_tcp_window_size true
     adb shell settings put global persist.data.tcp_rst_drop true
@@ -581,6 +589,7 @@ tweaks() {
     adb shell settings put global hidden_api_policy 1
     adb shell settings put global hidden_api_policy_p_apps 1
     adb shell settings put global hidden_api_policy_pre_p_apps 1
+    adb shell settings put global show_hidden_icon_apps_enabled 1
     adb shell settings put global persist.omh.enabled 0
     adb shell settings put global persist.service.lgospd.enable 0
     adb shell settings put global persist.service.pcsync.enable 0
@@ -620,6 +629,7 @@ tweaks() {
     adb shell settings put global persist.sys.gz.enable false
     adb shell settings put global persist.gps.qc_nlp_in_use 0
     adb shell settings put global hw.nogps true
+    adb shell settings put global assisted_gps_enabled 0
     adb shell settings put global ro.pip.gated 0
     adb shell settings put global ro.config.hw_gps_power_track false
     adb shell settings put global ro.config.hw_support_geofence false
@@ -946,7 +956,7 @@ tweaks() {
     adb shell settings put global adaptive_battery_management_enabled 0
     adb shell settings put global battery_tip_constants app_restriction_enabled=true
     adb shell settings put global battery_stats_constants track_cpu_times_by_proc_state=false
-    adb shell settings put global battery_saver_constants "vibration_disabled=true,animation_disabled=true,soundtrigger_disabled=true,fullbackup_deferred=true,keyvaluebackup_deferred=true,gps_mode=low_power,data_saver=true,optional_sensors_disabled=true,advertiser_id_enabled=false"
+    adb shell settings put global battery_saver_constants "vibration_disabled=true,animation_disabled=true,soundtrigger_disabled=true,fullbackup_deferred=true,keyvaluebackup_deferred=true,gps_mode=low_power,data_saver=true,optional_sensors_disabled=true,advertiser_id_enabled=false,force_all_apps_standby=true,launch_boost_disabled=false"
     adb shell settings put global sched.colocate.enable 1
     adb shell settings put global debug.smart_scheduling 1
     adb shell settings put global persist.sys.io_scheduler noop
@@ -1297,20 +1307,26 @@ tweaks() {
     adb shell settings put global sys.autobrightness_optimize true
     adb shell settings put global ro.build.smartcharging 1
     adb shell settings put global accessibility_reduce_transparency 1
+    adb shell settings put global heads_up_notifications_enabled 0
+    adb shell settings put global enable_ephemeral_feature 0
     adb shell settings put global ro.workaround.noautofocus 1
     adb shell settings put global ro.screen.has.timeout false
     adb shell settings put global ro.charger.enable_suspend true
     adb shell settings put global LOCKSCREEN_AD_ENABLED 0
     adb shell settings put secure search_on_lockscreen_settings 0
-    adb shell settings put secure mount_ums_autostart 0
     adb shell settings put secure lock_screen_allow_private_notifications 0
     adb shell settings put secure lock_screen_owner_info_enabled 0
     adb shell settings put secure lock_screen_lock_after_timeout 0
+    adb shell settings put secure mount_ums_autostart 0
+    adb shell settings put secure automatic_storage_manager_enabled 1
+    adb shell settings put secure instant_apps_enabled 0
+    adb shell settings put secure spell_checker_enabled 0
     adb shell settings put secure reduce_bright_colors_activated 1
     adb shell settings put secure adaptive_charging_enabled 0
     adb shell settings put secure screensaver_enabled 0
     adb shell settings put secure screensaver_activate_on_sleep 0
     adb shell settings put secure screensaver_activate_on_dock 0
+    adb shell settings put secure camera_gesture_disabled 1
     adb shell settings put secure wake_gesture_enabled 0
     adb shell settings put secure volume_hush_gesture 0
     adb shell settings put secure hush_gesture_used 0
@@ -1324,6 +1340,9 @@ tweaks() {
     adb shell settings put secure sensors_off_enabled 1
     adb shell settings put secure sensor_privacy 1
     adb shell settings put secure systemui.google.opa_enabled 0
+    adb shell settings put secure ui_night_mode 2
+    adb shell settings put secure night_display_auto_mode 0
+    adb shell settings put secure theme_mode 2
     adb shell settings put system background_power_saving_enable 1
     adb shell settings put system perf_profile performance
     adb shell settings put system intelligent_sleep_mode 0
@@ -1331,10 +1350,15 @@ tweaks() {
     adb shell settings put system POWER_SAVE_PRE_CLEAN_MEMORY_TIME 0
     adb shell settings put system tube_amp_effect 1
     adb shell settings put system k2hd_effect 1
+    adb shell settings put system support_dolby 1
+    adb shell settings put system advanced_settings 1
     adb shell settings put system screen_auto_brightness_adj 0
     adb shell settings put system display_night_theme 1
     adb shell settings put system dark_theme 1
     adb shell settings put system font_scale 1.25
+    adb shell settings put system auto_caps 0
+    adb shell settings put system auto_punctuate 0
+    adb shell settings put system auto_replace 0
     adb shell settings put system bluetooth_discoverability 0
     adb shell settings put system motion_engine 0
     adb shell settings put system master_motion 0
@@ -1345,6 +1369,9 @@ tweaks() {
     adb shell settings put system surface_palm_touch 0
     adb shell settings put system lift_to_wake 0
     adb shell settings put system charging_info_always 0
+    adb shell settings put system notification_light_pulse 0
+    adb shell settings put system vibrate_input_devices 0
+    adb shell settings put system haptic_feedback_enabled 0
     adb shell service call sensor_privacy 9 i32 1
     adb shell service call sensor_privacy 8 i32 1
     adb shell service call sensor_privacy 4 i32 1
