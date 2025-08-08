@@ -11,7 +11,7 @@ start() {
     tr -d '\r' |
     xargs -L1 -t adb shell pm clear --user 0
 
-    adb shell pm list packages |
+    adb shell pm list packages | grep -v -e 'call' |
     cut -d ':' -f 2 |
     tr -d '\r' |
     xargs -L1 -t -I {} sh -c '
